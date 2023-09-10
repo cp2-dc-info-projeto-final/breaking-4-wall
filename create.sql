@@ -1,10 +1,14 @@
-CREATE DATABASE cadastro_usuarios;
+CREATE DATABASE IF NOT EXISTS CADASTRO;
 
-USE cadastro_usuarios;
+USE CADASTRO;
 
-CREATE TABLE usuarios (
+CREATE USER 'cadastrado'@'localhost' IDENTIFIED BY '123';
+
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrado'@'localhost';
+
+CREATE TABLE cadastrados (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL,
+    nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
-    senha VARCHAR(255) NOT NULL
+    senha VARCHAR(255) NOT NULL,
 );
