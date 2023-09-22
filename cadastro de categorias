@@ -1,0 +1,25 @@
+CREATE TABLE Categorias (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(50) NOT NULL
+);
+
+-- Agora você pode adicionar algumas categorias
+INSERT INTO Categorias (Nome) VALUES ('Ação');
+INSERT INTO Categorias (Nome) VALUES ('Comédia');
+INSERT INTO Categorias (Nome) VALUES ('Terror');
+INSERT INTO Categorias (Nome) VALUES ('Suspense');
+INSERT INTO Categorias (Nome) VALUES ('Drama');
+
+-----------------------------------------------------
+
+CREATE TABLE FilmesCategorias (
+    FilmeID INT,
+    CategoriaID INT,
+    PRIMARY KEY (FilmeID, CategoriaID),
+    FOREIGN KEY (FilmeID) REFERENCES Filmes(ID),
+    FOREIGN KEY (CategoriaID) REFERENCES Categorias(ID)
+);
+
+-- Agora você pode associar um filme a uma ou mais categorias
+INSERT INTO FilmesCategorias (FilmeID, CategoriaID) VALUES (1, 1); -- FilmeID 1 pertence à categoria Ação
+INSERT INTO FilmesCategorias (FilmeID, CategoriaID) VALUES (1, 4); -- FilmeID 1 pertence à categoria Suspense
