@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nome = $_POST["nome"];
     $email = $_POST["email"];
     $senha = $_POST["senha"];
-    
+
     $erro = false; // Inicializar a variável $erro
 
     // Validação do nome
@@ -55,8 +55,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 
     if (!$erro) {
+        // Criptografar a senha antes de inseri-la no banco de dados
+        $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+
+        // Usar consultas preparadas para evitar injeção de SQL
         $stmt = $conn->prepare("INSERT INTO cadastrados (nome, email, senha) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss", $nome, $email, $senha);
+        $stmt->bind_param("sss", $nome, $email, $senhaHash);
 
         if ($stmt->execute()) {
             $message = "O usuário foi cadastrado com sucesso.";
@@ -70,4 +74,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Feche a conexão com o banco de dados quando não precisar mais dela
 $conn->close();
-?> 
+?>
