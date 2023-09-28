@@ -1,19 +1,22 @@
-# Nome do Meu Projeto
+Breaking 4 Wall
 
 Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colégio Pedro II - Campus Duque de Caxias
 
-**Integrantes:**
- - Fulano
- - Beltrano
- - Ciclano
+Integrantes:
+ - João Paulo
+ - João Vítor
+ - Alvaro
+ - Pedro da Silva
+ - Rodrigo
 
- ## Descrição do Projeto
+Descrição do Projeto
+ A Breaking 4 Wall é um projeto de blog sobre filmes, aonde ajudaria o usuário a procurar e conhecer filmes.
 
- Nunc aliquet lobortis tristique. In pretium nisi vitae viverra venenatis. Ut iaculis sem quis arcu ornare interdum. In id condimentum arcu, sed ornare sem. Aliquam consequat at dolor eget sagittis. Praesent nec ante eget felis porttitor cursus eget suscipit urna. Sed consequat consectetur tristique.
+ O site teria avaliaçoes e comentários sobre os filmes, aonde ajudaria o usuário para ver se valeria ou não a pena assistir o filme.
 
-Sed sit amet ante sem. Nunc id sapien metus. Etiam lobortis in purus ut porta. Vestibulum at libero euismod felis feugiat tempus eu sagittis lorem. Vestibulum ultrices, mi euismod eleifend viverra, odio enim volutpat tortor, sed condimentum odio est id purus. Sed at leo vel ligula luctus bibendum in sed justo. Duis sodales consectetur vestibulum. Morbi libero quam, varius ac sodales eget, bibendum eu quam. In accumsan ac turpis vitae porttitor. Nulla eget velit in nisl vulputate sagittis. Phasellus ligula mi, viverra id vehicula nec, varius eget diam. Vestibulum id ultricies nulla, vel sagittis lorem. Sed aliquam dictum lacus quis maximus.
+ O usuário poderia navegar pelo site com ou sem login, mas se ele não estiver logado ele teria algumas restrições. 
 
-## Documentação
+Documentação
 
 - [Manual do Usuário](manual.md)
 - [Requisitos](requisitos.md)
