@@ -1,39 +1,40 @@
 <?php
-$servername = "localhost";
-$username = "usuario_mysql";
-$password = "senha_mysql";
+$message = "";
 
-// Crie uma conexão com o servidor MySQL
-$conn = new mysqli($servername, $username, $password);
+$servername = "localhost"; // Endereço do servidor de banco de dados
+$username_db = "cadastrado"; // Nome de usuário do banco de dados
+$password_db = "123"; // Senha do banco de dados
+$database = "CADASTRO"; // Nome do banco de dados
 
-// Verifique a conexão
+// Crie uma conexão com o banco de dados
+$conn = new mysqli("localhost", "cadastrado", "123", "CADASTRO");
+
+// Verifique se ocorreu algum erro na conexão
 if ($conn->connect_error) {
-    die("Erro na conexão com o servidor MySQL: " . $conn->connect_error);
+    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-// Crie o banco de dados "login"
-$sql_create_db = "CREATE DATABASE IF NOT EXISTS login";
-if ($conn->query($sql_create_db) === TRUE) {
-    echo "Banco de dados 'login' criado com sucesso<br>";
-} else {
-    echo "Erro ao criar o banco de dados: " . $conn->error . "<br>";
+// Incluir código para processar o envio do formulário de login
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $senha = $_POST["senha"];
+
+    // Verificar as credenciais do usuário
+    $stmt = $conn->prepare("SELECT id, senha FROM cadastrados WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($id, $hashed_password);
+    $stmt->fetch();
+    
+    if (password_verify($senha, $hashed_password)) {
+        $message = "Login bem-sucedido!"; // Você pode redirecionar o usuário para a página de boas-vindas aqui
+    } else {
+        $message = "Credenciais inválidas. Tente novamente.";
+    }
+    
+    $stmt->close();
 }
 
-// Use o banco de dados "login"
-$conn->select_db("login");
-
-// Crie a tabela "cadastrados"
-$sql_create_table = "CREATE TABLE IF NOT EXISTS cadastrados (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) NOT NULL,
-    senha VARCHAR(255) NOT NULL
-)";
-if ($conn->query($sql_create_table) === TRUE) {
-    echo "Tabela 'cadastrados' criada com sucesso<br>";
-} else {
-    echo "Erro ao criar a tabela: " . $conn->error . "<br>";
-}
-
-// Feche a conexão com o MySQL
+// Feche a conexão com o banco de dados quando não precisar mais dela
 $conn->close();
 ?>
