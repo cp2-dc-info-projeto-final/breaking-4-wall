@@ -7,22 +7,25 @@
     <title>Login</title>
 </head>
 <body>
+
     <div class="container">
-        <form action="process_login.php" method="POST" class="login-form">
+        <form action="login.php" method="POST" class="registration-form">
             <h2>Login</h2>
-            
-            <!-- Campo de email -->
+
+            <!-- Adicione um bloco de mensagem após o login -->
+            <?php if (!empty($message)) : ?>
+                <p><?php echo $message; ?></p>
+            <?php endif; ?>
+
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
 
-            <!-- Campo de senha -->
             <label for="senha">Senha</label>
             <input type="password" id="senha" name="senha" required>
-            
+
             <button type="submit" class="custom-button">Entrar</button>
         </form>
-        
-        <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se</a></p>
     </div>
+
 </body>
 </html>
