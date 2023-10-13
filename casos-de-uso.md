@@ -24,9 +24,7 @@
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso]()
-![diagrama-exemplo](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ff56dbdf-e81c-4877-b84b-1122d7ac2fde)
-
+![Diagrama de Casos de Uso]![WhatsApp Image 2023-10-12 at 23 01 36](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/43429689-d5c6-43c6-a1fc-4ebec0d81987)
 
 
 ## Descrição dos Casos de Uso
