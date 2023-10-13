@@ -5,17 +5,12 @@
  - [CDU 01](#CDU-01): Criar Conta
  - [CDU 02](#CDU-02): Fazer Login
  - [CDU 03](#CDU-03): Buscar Filme, atores, listas e amigos
- - [CDU 04](#CDU-04): Avaliar Filme
- - [CDU 05](#CDU-05): Explorar Detalhes do Filme
+ - [CDU 04](#CDU-04): Explorar Detalhes do Filme
+ - [CDU 05](#CDU-05): avaliar filme
  - [CDU 06](#CDU-06): Adicionar Filme à Lista
- - [CDU 07](#CDU-07): Explorar Amigos
- - [CDU 08](#CDU-08): Seguir Usuários
- - [CDU 09](#CDU-09): Explorar Filmes Populares
- - [CDU 10](#CDU-10): Criar e Participar de Listas Temáticas
- - [CDU 11](#CDU-11): Interagir com Avaliações e Comentários
- - [CDU 12](#CDU-12): Personalizar Perfil e Preferências
- - [CDU 13](#CDU-13): Reportar Conteúdo Inadequado
- 
+ - [CDU 07](#CDU-07): Explorar filmes populares
+ - [CDU 08](#CDU-08): personalizaçao de perfil
+ - 
 ## Lista dos Atores
 
  - usuario
@@ -41,13 +36,12 @@ Criar Conta
 4.	O sistema cria uma nova conta para o usuário.
 
 **Fluxo Alternativo A**
+  
+1. O sistema detecta um erro inesperado durante o processo de registro.
+2. O sistema exibe uma mensagem de erro (A Entrada Falhou. suas credenciais nao correspondem. É provavelmente atribuavel a erro humano) 
+e pede ao usuário para tentar novamente.
+3. O usuário tenta o registro novamente.
 
-1. Pellentesque id mauris id ex fringilla iaculis.
-2. Maecenas ut dui at sapien rhoncus porttitor in sed turpis.
-3. Maecenas fringilla augue id sodales volutpat.
-4. Nulla vehicula lectus eu eros faucibus porta.
-5. Morbi non sem in diam dictum aliquet sit amet at metus.
-6. Aenean dictum diam in tempus ornare.
 
 ### CDU 02
 
@@ -163,64 +157,11 @@ sociais
 2. O sistema exibe uma mensagem de erro e instrui o usuário a tentar novamente.
 
 
-** CDU 04
 
 
 
 
 
-
-
-** CDU 05
-
-
-
-
-
-
-
-
-
-** CDU 06 
-
-
-
-
-
-
-
-
-
-** CDU 07
-
-
-
-
-
-
-
-
-** CDU 08 
-
-
-
-
-
-
-
-
-
-** CDU 09
-
-
-
-
-
-
-
-
-
-** CDU 10
 
 
 
