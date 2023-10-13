@@ -24,9 +24,7 @@
 
 ## Descrição dos Casos de Uso
 
-### CDU 01
-
-Criar Conta
+### CDU Criar Conta (01)
 
 **Fluxo Principal**
 
@@ -43,9 +41,7 @@ e pede ao usuário para tentar novamente.
 3. O usuário tenta o registro novamente.
 
 
-### CDU 02
-
-Fazer Login
+### CDU Fazer Login (02)
 
 **Fluxo Principal**
 
@@ -64,7 +60,7 @@ Fazer Login
 2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
 3. O usuário pode tentar novamente inserindo as credenciais corretas.
 
-## CDU Buscar Filmes e atores (3)
+## CDU Buscar Filmes e atores (03)
 
  ### Fluxo principal 
    
@@ -82,7 +78,7 @@ Fazer Login
 2. O sistema exibe uma mensagem informando que nenhum resultado foi encontrado.
 3. usuário pode refinar sua pesquisa ou tentar buscar por termos diferentes.
 
-### CDU Explorar Detalhes do Filme (4)
+### CDU Explorar Detalhes do Filme (04)
 
 ###Fluxo principal 
     
@@ -94,7 +90,7 @@ Fazer Login
 • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
 
-### CDU Avaliar filme (5)
+### CDU Avaliar filme (05)
 
 ###Fluxo principal 
 
@@ -106,7 +102,7 @@ Fazer Login
 3.	O usuário atribui uma nota e/ou escreve uma resenha
 4.	O sistema registra a avaliação e a resenha.
 
-### CDU Adicionar Filme à Lista (6)
+### CDU Adicionar Filme à Lista (06)
 
 ###Fluxo principal
    
@@ -119,7 +115,7 @@ Fazer Login
 4. O sistema registra a sua lista.
 • Pós-condições: O filme é adicionado à lista do usuário.
 
-### CDU Explorar Filmes Populares (tela inicial) (7)
+### CDU Explorar Filmes Populares (tela inicial) (07)
 
 ###Fluxo principal
 
@@ -137,7 +133,7 @@ ou tendências.
 1. O sistema encontra problemas ao recuperar filmes populares.
 2. O sistema exibe uma mensagem de erro e sugere ao usuário tentar novamente mais tarde.
 
-### CDU Personalizar Perfil (8)
+### CDU Personalizar Perfil (08)
 
  ###Fluxo principal
 
