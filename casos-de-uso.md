@@ -21,7 +21,7 @@
  - cliente
  - funcionario
  - administrador
- - 
+
 ## Diagrama de Casos de Uso
 
 ![Diagrama de Casos de Uso](diagrama-exemplo.png)
