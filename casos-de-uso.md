@@ -11,10 +11,10 @@
  - [CDU 07](#CDU-07): Explorar Amigos
  - [CDU 08](#CDU-08): Seguir Usuários
  - [CDU 09](#CDU-09): Explorar Filmes Populares
- - [CDU 010](#CDU-010): Criar e Participar de Listas Temáticas
- - [CDU 011](#CDU-011): Interagir com Avaliações e Comentários
- - [CDU 012](#CDU-012): Personalizar Perfil e Preferências
- - [CDU 013](#CDU-013): Reportar Conteúdo Inadequado
+ - [CDU 10](#CDU-10): Criar e Participar de Listas Temáticas
+ - [CDU 11](#CDU-11): Interagir com Avaliações e Comentários
+ - [CDU 12](#CDU-12): Personalizar Perfil e Preferências
+ - [CDU 13](#CDU-13): Reportar Conteúdo Inadequado
  
 ## Lista dos Atores
 
@@ -31,14 +31,14 @@
 
 ### CDU 01
 
-Quisque id neque a erat imperdiet dictum et ut mauris.
+Criar Conta
 
 **Fluxo Principal**
 
-1. Vivamus nec velit id risus sodales fermentum ut a mi.
-2. Nunc a ligula ac libero pellentesque auctor ornare at sem.
-3. In quis ante scelerisque felis luctus malesuada.
-4. Pellentesque mattis dui quis eleifend accumsan.
+1.	O usuário acessa a página de registro.
+2.	O usuário insere suas informações pessoais.
+3.	O sistema verifica a validade das informações.
+4.	O sistema cria uma nova conta para o usuário.
 
 **Fluxo Alternativo A**
 
@@ -61,7 +61,7 @@ Quisque id neque a erat imperdiet dictum et ut mauris.
 
 ### CDU 02
 
-Morbi fringilla dolor at mattis vestibulum.
+Fazer Login
 
 **Fluxo Principal**
 
@@ -80,7 +80,7 @@ Morbi fringilla dolor at mattis vestibulum.
 
 ### CDU 03
 
-Duis nec orci quis velit faucibus hendrerit tempus vel libero.
+Buscar Filme, atores, listas e amigos
 
 **Fluxo Principal**
 
@@ -95,3 +95,66 @@ Duis nec orci quis velit faucibus hendrerit tempus vel libero.
 3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
 4. Aenean ullamcorper tellus quis nibh porttitor congue.
 5. Phasellus laoreet erat eget condimentum dictum.
+
+** CDU 04
+
+
+
+
+
+
+
+** CDU 05
+
+
+
+
+
+
+
+
+
+** CDU 06 
+
+
+
+
+
+
+
+
+
+** CDU 07
+
+
+
+
+
+
+
+
+** CDU 08 
+
+
+
+
+
+
+
+
+
+** CDU 09
+
+
+
+
+
+
+
+
+
+** CDU 10
+
+
+
+
