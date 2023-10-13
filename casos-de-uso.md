@@ -10,7 +10,7 @@
  - [CDU 06](#CDU-06): Adicionar Filme à Lista
  - [CDU 07](#CDU-07): Explorar filmes populares
  - [CDU 08](#CDU-08): personalizaçao de perfil
- - 
+ 
 ## Lista dos Atores
 
  - usuario
