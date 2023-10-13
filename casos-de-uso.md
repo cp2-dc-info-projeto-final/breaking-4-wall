@@ -18,8 +18,8 @@
  
 ## Lista dos Atores
 
- - cliente
- - funcionario
+ - usuario
+ - usuario nao registrado
  - administrador
 
 ## Diagrama de Casos de Uso
