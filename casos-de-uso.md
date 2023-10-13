@@ -16,13 +16,12 @@
  - [CDU 012](#CDU-012): Personalizar Perfil e Preferências
  - [CDU 013](#CDU-013): Reportar Conteúdo Inadequado
  
-
 ## Lista dos Atores
 
  - cliente
  - funcionario
- - administrador 
-
+ - administrador
+ - 
 ## Diagrama de Casos de Uso
 
 ![Diagrama de Casos de Uso](diagrama-exemplo.png)
