@@ -47,7 +47,6 @@ e pede ao usuário para tentar novamente.
 
 • Ator: Usuário
 • Pré-condições: O usuário tem uma conta registrada.
-• Fluxo principal:
 1. O usuário acessa a página de login.
 2. O usuário insere email ou o seu nome de usuário e senha.
 3. O sistema verifica as credenciais.
@@ -66,7 +65,6 @@ e pede ao usuário para tentar novamente.
    
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
-• Fluxo principal:
 1. O usuário acessa a barra de pesquisa.
 2. O usuário insere o título do filme ou atores.
 3. O sistema exibe resultados correspondentes.
@@ -84,7 +82,6 @@ e pede ao usuário para tentar novamente.
     
 • Ator: Usuário
 • Pré-condições: O usuário está logado e acessou um filme.
-• Fluxo principal:
 1. O usuário acessa a página de detalhes do filme.
 2. O sistema exibe informações como sinopse, elenco, diretor e resenhas
 • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
@@ -96,7 +93,6 @@ e pede ao usuário para tentar novamente.
 
 •	Ator: Usuário
 •	Pré-condições: O usuário está logado e acessou um filme.
-•	Fluxo principal:
 1.	O usuário encontra o filme desejado.
 2.	O usuário seleciona a opção de avaliar.
 3.	O usuário atribui uma nota e/ou escreve uma resenha
@@ -108,7 +104,6 @@ e pede ao usuário para tentar novamente.
    
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
-• Fluxo principal:
 1. O usuário encontra o filme desejado.
 2. O usuário seleciona a opção de adicionar à lista.
 3. O sistema adiciona o filme à lista do usuário (assistidos e para assistir).
@@ -121,7 +116,6 @@ e pede ao usuário para tentar novamente.
 
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
-• Fluxo principal:
 1. O usuário acessa a seção de filmes populares ou tendências.
 2. O sistema exibe uma lista de filmes populares com base em classificações, avaliações 
 ou tendências.
@@ -139,7 +133,6 @@ ou tendências.
 
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
-• Fluxo principal:
 1. O usuário acessa as configurações do perfil.
 2. O usuário pode adicionar uma foto, uma biografia, seus 4 filmes favoritos, seus últimos 
 4. filmes assistidos e configurar suas preferências de privacidade.
