@@ -55,7 +55,7 @@ e pede ao usuário para tentar novamente.
 • Pós-condições: O usuário está logado na plataforma
 
     ### Fluxo alternativo 
-    Fluxo Alternativo:
+   
 1. O usuário insere um nome de usuário e/ou senha incorretos.
 2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
 3. O usuário pode tentar novamente inserindo as credenciais corretas.
@@ -73,7 +73,7 @@ e pede ao usuário para tentar novamente.
 • Pós-condições: O usuário vê os resultados da pesquisa.
 
     ### Fluxo alternativo 
-    Fluxo alternativo:
+    
 1. O usuário realiza uma pesquisa, mas não há resultados correspondentes.
 2. O sistema exibe uma mensagem informando que nenhum resultado foi encontrado.
 3. usuário pode refinar sua pesquisa ou tentar buscar por termos diferentes.
@@ -129,7 +129,7 @@ ou tendências.
 • Pós-condições: O usuário descobre filmes populares entre a comunidade.
 
     ###Fluxo alternativo
-    Fluxo alternativo:
+   
 1. O sistema encontra problemas ao recuperar filmes populares.
 2. O sistema exibe uma mensagem de erro e sugere ao usuário tentar novamente mais tarde.
 
@@ -148,7 +148,7 @@ sociais
 • Pós-condições: O perfil do usuário é personalizado de acordo com suas preferências.
 
     ###Fluxo alternativo
-    Fluxo Alternativo:
+   
 1. O usuário tenta fazer o upload de uma foto de perfil, mas o sistema encontra um erro no processo.
 2. O sistema exibe uma mensagem de erro e instrui o usuário a tentar novamente.
 
