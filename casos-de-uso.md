@@ -2,10 +2,20 @@
 
 ## Lista dos Casos de Uso
 
- - [CDU 01](#CDU-01): 
- - [CDU 02](#CDU-02): 
- - [CDU 03](#CDU-03):
- - CDU :
+ - [CDU 01](#CDU-01): Criar Conta
+ - [CDU 02](#CDU-02): Fazer Login
+ - [CDU 03](#CDU-03): Buscar Filme, atores, listas e amigos
+ - [CDU 04](#CDU-04): Avaliar Filme
+ - [CDU 05](#CDU-05): Explorar Detalhes do Filme
+ - [CDU 06](#CDU-06): Adicionar Filme à Lista
+ - [CDU 07](#CDU-07): Explorar Amigos
+ - [CDU 08](#CDU-08): Seguir Usuários
+ - [CDU 09](#CDU-09): Explorar Filmes Populares
+ - [CDU 010](#CDU-010): Criar e Participar de Listas Temáticas
+ - [CDU 011](#CDU-011): Interagir com Avaliações e Comentários
+ - [CDU 012](#CDU-012): Personalizar Perfil e Preferências
+ - [CDU 013](#CDU-013): Reportar Conteúdo Inadequado
+ 
 
 ## Lista dos Atores
 
