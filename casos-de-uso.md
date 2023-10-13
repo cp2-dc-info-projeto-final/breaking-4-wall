@@ -49,52 +49,119 @@ Criar Conta
 5. Morbi non sem in diam dictum aliquet sit amet at metus.
 6. Aenean dictum diam in tempus ornare.
 
-**Fluxo Alternativo B**
-
-1. Ut elementum dolor id lorem elementum, et condimentum eros laoreet.
-2. Nulla sollicitudin arcu nec suscipit volutpat.
-3. Aliquam mattis sapien nec ornare faucibus.
-4. Sed eu massa nec enim condimentum commodo at eget ligula.
-5. Nam ultricies velit nec erat feugiat condimentum.
-6. Nam vitae lacus porttitor, sodales orci vel, lobortis arcu.
-
-
 ### CDU 02
 
 Fazer Login
 
 **Fluxo Principal**
 
-1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-2. Mauris varius massa ac fermentum scelerisque.
-3. Morbi in tortor dignissim, bibendum tellus et, varius odio.
-4. Mauris egestas leo a suscipit feugiat.
+• Ator: Usuário
+• Pré-condições: O usuário tem uma conta registrada.
+• Fluxo principal:
+1. O usuário acessa a página de login.
+2. O usuário insere email ou o seu nome de usuário e senha.
+3. O sistema verifica as credenciais.
+4. O sistema autentica o usuário e exibe o site.
+• Pós-condições: O usuário está logado na plataforma
 
-**Fluxo Alternativo A**
+    ### Fluxo alternativo 
+    Fluxo Alternativo:
+1. O usuário insere um nome de usuário e/ou senha incorretos.
+2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
+3. O usuário pode tentar novamente inserindo as credenciais corretas.
 
-1. Nulla elementum diam eu elementum rutrum.
-2. Aenean scelerisque est at nunc ornare, ac condimentum justo sollicitudin.
-3. Quisque eget risus ut est lacinia sollicitudin ac non diam.
-4. Quisque ac nulla convallis, lobortis nibh ac, tristique enim.
-5. Nulla ultricies metus nec risus mollis, interdum ultrices justo malesuada.
+## CDU Buscar Filmes e atores (3)
 
-### CDU 03
+ ### Fluxo principal 
+   
+• Ator: Usuário
+• Pré-condições: O usuário está logado.
+• Fluxo principal:
+1. O usuário acessa a barra de pesquisa.
+2. O usuário insere o título do filme ou atores.
+3. O sistema exibe resultados correspondentes.
+• Pós-condições: O usuário vê os resultados da pesquisa.
 
-Buscar Filme, atores, listas e amigos
+    ### Fluxo alternativo 
+    Fluxo alternativo:
+1. O usuário realiza uma pesquisa, mas não há resultados correspondentes.
+2. O sistema exibe uma mensagem informando que nenhum resultado foi encontrado.
+3. usuário pode refinar sua pesquisa ou tentar buscar por termos diferentes.
 
-**Fluxo Principal**
+### CDU Explorar Detalhes do Filme (4)
 
-1. Praesent interdum lectus sit amet augue tincidunt imperdiet.
-2. Duis ac dolor vel nisi imperdiet vehicula et non sem.
-3. Nunc imperdiet tortor consequat, lobortis purus non, interdum risus.
+###Fluxo principal 
+    
+• Ator: Usuário
+• Pré-condições: O usuário está logado e acessou um filme.
+• Fluxo principal:
+1. O usuário acessa a página de detalhes do filme.
+2. O sistema exibe informações como sinopse, elenco, diretor e resenhas
+• Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
-**Fluxo Alternativo A**
 
-1. Aliquam efficitur arcu ac fermentum egestas.
-2. Pellentesque ac diam vitae erat bibendum hendrerit.
-3. Mauris sed purus sit amet lectus efficitur placerat et eu diam.
-4. Aenean ullamcorper tellus quis nibh porttitor congue.
-5. Phasellus laoreet erat eget condimentum dictum.
+### CDU Avaliar filme (5)
+
+###Fluxo principal 
+
+•	Ator: Usuário
+•	Pré-condições: O usuário está logado e acessou um filme.
+•	Fluxo principal:
+1.	O usuário encontra o filme desejado.
+2.	O usuário seleciona a opção de avaliar.
+3.	O usuário atribui uma nota e/ou escreve uma resenha
+4.	O sistema registra a avaliação e a resenha.
+
+### CDU Adicionar Filme à Lista (6)
+
+###Fluxo principal
+   
+• Ator: Usuário
+• Pré-condições: O usuário está logado.
+• Fluxo principal:
+1. O usuário encontra o filme desejado.
+2. O usuário seleciona a opção de adicionar à lista.
+3. O sistema adiciona o filme à lista do usuário (assistidos e para assistir).
+4. O sistema registra a sua lista.
+• Pós-condições: O filme é adicionado à lista do usuário.
+
+### CDU Explorar Filmes Populares (tela inicial) (7)
+
+###Fluxo principal
+
+• Ator: Usuário
+• Pré-condições: O usuário está logado.
+• Fluxo principal:
+1. O usuário acessa a seção de filmes populares ou tendências.
+2. O sistema exibe uma lista de filmes populares com base em classificações, avaliações 
+ou tendências.
+3. O usuário pode navegar por diferentes gêneros e filtrar os resultados
+• Pós-condições: O usuário descobre filmes populares entre a comunidade.
+
+    ###Fluxo alternativo
+    Fluxo alternativo:
+1. O sistema encontra problemas ao recuperar filmes populares.
+2. O sistema exibe uma mensagem de erro e sugere ao usuário tentar novamente mais tarde.
+
+### CDU Personalizar Perfil (8)
+
+ ###Fluxo principal
+
+• Ator: Usuário
+• Pré-condições: O usuário está logado.
+• Fluxo principal:
+1. O usuário acessa as configurações do perfil.
+2. O usuário pode adicionar uma foto, uma biografia, seus 4 filmes favoritos, seus últimos 
+4. filmes assistidos e configurar suas preferências de privacidade.
+3. O usuário pode configurar suas notificações e vincular alguma rede das suas redes 
+sociais 
+• Pós-condições: O perfil do usuário é personalizado de acordo com suas preferências.
+
+    ###Fluxo alternativo
+    Fluxo Alternativo:
+1. O usuário tenta fazer o upload de uma foto de perfil, mas o sistema encontra um erro no processo.
+2. O sistema exibe uma mensagem de erro e instrui o usuário a tentar novamente.
+
 
 ** CDU 04
 
