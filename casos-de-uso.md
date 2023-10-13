@@ -25,10 +25,8 @@
 ## Diagrama de Casos de Uso
 
 ![Diagrama de Casos de Uso]()
-)
-[diagrama-casos-de-uso.pdf](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/files/12888700/diagrama-casos-de-uso.pdf)
 
-![Diagrama de Casos de Uso](diagrama-exemplo.png)
+
 
 ## Descrição dos Casos de Uso
 
