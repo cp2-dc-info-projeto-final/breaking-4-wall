@@ -19,8 +19,9 @@
 
 ## Lista dos Atores
 
- - Cras tempor
- - Donec a lorem
+ - cliente
+ - funcionario
+ - administrador 
 
 ## Diagrama de Casos de Uso
 
