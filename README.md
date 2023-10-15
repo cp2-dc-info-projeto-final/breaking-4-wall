@@ -23,10 +23,4 @@ Documentação
 - [Casos de Uso](casos-de-uso.md)
 - [Apresentação](apresentacao.pdf)
 
-**Diagrama de Classes**
-
-![Diagrama de Classes](diagrama-exemplo.png)
-
-**Modelagem do Banco de Dados**
-
-![Diagrama de Banco de Dados](diagrama-exemplo.png)
+  
