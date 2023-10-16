@@ -135,11 +135,16 @@ e pede ao usuário para tentar novamente.
 
 • Ator : Administrador 
 • Pré-condições : O usuário que deseja gerenciar filmes está autenticado no sistema.
-1.Cadastro de filmes: Permitir a adição de novos filmes ao sistema, incluindo informações como título, diretor, gênero, elenco, sinopse, data de lançamento e avaliações.
-2.Atualização de informações: Possibilitar a edição de detalhes de filmes, como adicionar ou remover atores, atualizar a sinopse ou a data de lançamento.
-3.Pesquisa de filmes: Oferecer aos usuários a capacidade de pesquisar filmes por gênero, diretor, atores, título, ano de lançamento, etc.
-4.Avaliações e classificações: Permitir que os usuários classifiquem e deixem comentários sobre os filmes, ajudando outros usuários a tomar decisões informadas.
-5.Recomendações: Com base no histórico de visualização dos usuários, sugerir filmes que possam ser do interesse deles.
+
+1. Cadastro de filmes: Permitir a adição de novos filmes ao sistema, incluindo informações como título, diretor, gênero, elenco, sinopse, data de lançamento e avaliações.
+
+2. Atualização de informações: Possibilitar a edição de detalhes de filmes, como adicionar ou remover atores, atualizar a sinopse ou a data de lançamento.
+
+3. Pesquisa de filmes: Oferecer aos usuários a capacidade de pesquisar filmes por gênero, diretor, atores, título, ano de lançamento, etc.
+
+4. Avaliações e classificações: Permitir que os usuários classifiquem e deixem comentários sobre os filmes, ajudando outros usuários a tomar decisões informadas.
+
+5. Recomendações: Com base no histórico de visualização dos usuários, sugerir filmes que possam ser do interesse deles.
 • Pós-condições : As informações do filme foram atualizadas com sucesso no sistema.
 
 ## CDU  Gerenciamento de Usuários (09)
@@ -148,11 +153,16 @@ e pede ao usuário para tentar novamente.
 
 • Ator : Administrador 
 • Pré-condições : O usuário que deseja gerenciar sua conta está autenticado no sistema.
-1.Cadastro de usuários: Permitir que os usuários se cadastrem na plataforma, fornecendo informações como nome, e-mail, senha e preferências de gênero de filme.
-2.Autenticação e segurança: Garantir a segurança dos dados do usuário com métodos de autenticação, como login e senha, autenticação de dois fatores, etc.                        
-3.Perfil do usuário: Permitir que os usuários personalizem seus perfis, adicionando fotos, biografias, preferências de gênero de filme, histórico de visualização, etc.
-4.Histórico de visualização: Registrar os filmes assistidos por cada usuário para oferecer recomendações personalizadas.
-5.Sistema de amigos: Permitir que os usuários conectem-se a outros usuários, sigam seus perfis e compartilhem recomendações de filmes.
+
+1. Cadastro de usuários: Permitir que os usuários se cadastrem na plataforma, fornecendo informações como nome, e-mail, senha e preferências de gênero de filme.
+
+2. Autenticação e segurança: Garantir a segurança dos dados do usuário com métodos de autenticação, como login e senha, autenticação de dois fatores, etc.                        
+
+3. Perfil do usuário: Permitir que os usuários personalizem seus perfis, adicionando fotos, biografias, preferências de gênero de filme, histórico de visualização, etc.
+
+4. Histórico de visualização: Registrar os filmes assistidos por cada usuário para oferecer recomendações personalizadas.
+
+5. Sistema de amigos: Permitir que os usuários conectem-se a outros usuários, sigam seus perfis e compartilhem recomendações de filmes.
 • Pós-condições : As informações do perfil do usuário foram atualizadas com sucesso no sistema.
  
 ### CDU Explorar Filmes Populares (tela inicial) (10)
