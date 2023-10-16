@@ -4,7 +4,7 @@
 
  - [CDU 01](#CDU-01): Criar Conta
  - [CDU 02](#CDU-02): Fazer Login
- - [CDU 03](#CDU-03): Buscar Filme, atores, listas e amigos
+ - [CDU 03](#CDU-03): Buscar Filme, atores e listas
  - [CDU 04](#CDU-04): Explorar Detalhes do Filme
  - [CDU 05](#CDU-05): avaliar filme
  - [CDU 06](#CDU-06): Adicionar Filme à Lista
