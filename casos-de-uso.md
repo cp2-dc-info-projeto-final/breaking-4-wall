@@ -21,7 +21,6 @@
 
 ![Diagrama de Casos de Uso]!![47e5d4d9-2622-403e-8ee8-fbe571ad714a](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/71e1ec2c-3645-4fcc-832d-458f3c1c4cba)
 
-
 ## Descrição dos Casos de Uso
 
 ### CDU Criar Conta (01)
