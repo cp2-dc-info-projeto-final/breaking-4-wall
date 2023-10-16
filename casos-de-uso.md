@@ -118,11 +118,15 @@ e pede ao usuário para tentar novamente.
 
 • Ator : Administrador 
 • Pré-condições : O ator que deseja gerenciar atores está autenticado no sistema.
-1.Cadastro de atores: Permitir a criação de perfis para atores, incluindo informações como nome, data de nascimento, biografia, filmografia e foto.
-2.Atualização de informações: Permitir que os atores atualizem suas informações pessoais, adicione novos créditos de filmes, atualizem sua foto de perfil, etc.
-3.Pesquisa de atores: Facilitar a busca por atores com base em critérios como nome, idade, gênero, filmes em que atuaram, etc.
-4.Classificação de atores: Permitir que os usuários classifiquem atores e deixem comentários sobre seu desempenho.
-5.Relacionamentos: Associar atores com os filmes em que atuaram, permitindo que os usuários vejam quais atores estiveram em quais filmes.
+1. Cadastro de atores: Permitir a criação de perfis para atores, incluindo informações como nome, data de nascimento, biografia, filmografia e foto.
+
+2. Atualização de informações: Permitir que os atores atualizem suas informações pessoais, adicione novos créditos de filmes, atualizem sua foto de perfil, etc.
+
+3. Pesquisa de atores: Facilitar a busca por atores com base em critérios como nome, idade, gênero, filmes em que atuaram, etc.
+
+4. Classificação de atores: Permitir que os usuários classifiquem atores e deixem comentários sobre seu desempenho.
+
+5. Relacionamentos: Associar atores com os filmes em que atuaram, permitindo que os usuários vejam quais atores estiveram em quais filmes.
 • Pós-condições : As informações do ator foram atualizadas com sucesso no sistema.
 
 ## CDU  Gerenciamento de Filmes (08)
