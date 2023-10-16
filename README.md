@@ -7,7 +7,6 @@ Integrantes:
  - João Vítor
  - Alvaro
  - Pedro da Silva
- - Rodrigo
 
 Descrição do Projeto
  A Breaking 4 Wall é um projeto de blog sobre filmes, aonde ajudaria o usuário a procurar e conhecer filmes.
