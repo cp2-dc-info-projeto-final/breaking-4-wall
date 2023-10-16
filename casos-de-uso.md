@@ -114,6 +114,8 @@ e pede ao usuário para tentar novamente.
 
 ## CDU  Gerenciamento de Atores (07)
 
+###Fluxo principal 
+
 • Ator : Administrador 
 • Pré-condições : O ator que deseja gerenciar atores está autenticado no sistema.
 1.Cadastro de atores: Permitir a criação de perfis para atores, incluindo informações como nome, data de nascimento, biografia, filmografia e foto.
@@ -124,6 +126,8 @@ e pede ao usuário para tentar novamente.
 • Pós-condições : As informações do ator foram atualizadas com sucesso no sistema.
 
 ## CDU  Gerenciamento de Filmes (08)
+
+###Fluxo principal 
 
 • Ator : Administrador 
 • Pré-condições : O usuário que deseja gerenciar filmes está autenticado no sistema.
@@ -136,14 +140,16 @@ e pede ao usuário para tentar novamente.
 
 ## CDU  Gerenciamento de Usuários (09)
 
- • Ator : Administrador 
- • Pré-condições : O usuário que deseja gerenciar sua conta está autenticado no sistema.
- 1.Cadastro de usuários: Permitir que os usuários se cadastrem na plataforma, fornecendo informações como nome, e-mail, senha e preferências de gênero de filme.
- 2.Autenticação e segurança: Garantir a segurança dos dados do usuário com métodos de autenticação, como login e senha, autenticação de dois fatores, etc.                        
- 3.Perfil do usuário: Permitir que os usuários personalizem seus perfis, adicionando fotos, biografias, preferências de gênero de filme, histórico de visualização, etc.
- 4.Histórico de visualização: Registrar os filmes assistidos por cada usuário para oferecer recomendações personalizadas.
- 5.Sistema de amigos: Permitir que os usuários conectem-se a outros usuários, sigam seus perfis e compartilhem recomendações de filmes.
- • Pós-condições : As informações do perfil do usuário foram atualizadas com sucesso no sistema.
+###Fluxo principal 
+
+• Ator : Administrador 
+• Pré-condições : O usuário que deseja gerenciar sua conta está autenticado no sistema.
+1.Cadastro de usuários: Permitir que os usuários se cadastrem na plataforma, fornecendo informações como nome, e-mail, senha e preferências de gênero de filme.
+2.Autenticação e segurança: Garantir a segurança dos dados do usuário com métodos de autenticação, como login e senha, autenticação de dois fatores, etc.                        
+3.Perfil do usuário: Permitir que os usuários personalizem seus perfis, adicionando fotos, biografias, preferências de gênero de filme, histórico de visualização, etc.
+4.Histórico de visualização: Registrar os filmes assistidos por cada usuário para oferecer recomendações personalizadas.
+5.Sistema de amigos: Permitir que os usuários conectem-se a outros usuários, sigam seus perfis e compartilhem recomendações de filmes.
+• Pós-condições : As informações do perfil do usuário foram atualizadas com sucesso no sistema.
  
 ### CDU Explorar Filmes Populares (tela inicial) (10)
 
@@ -157,14 +163,14 @@ ou tendências.
 3. O usuário pode navegar por diferentes gêneros e filtrar os resultados
 • Pós-condições: O usuário descobre filmes populares entre a comunidade.
 
-    ###Fluxo alternativo
+###Fluxo alternativo
    
 1. O sistema encontra problemas ao recuperar filmes populares.
 2. O sistema exibe uma mensagem de erro e sugere ao usuário tentar novamente mais tarde.
 
 ### CDU Personalizar Perfil (11)
 
- ###Fluxo principal
+###Fluxo principal
 
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
