@@ -49,6 +49,8 @@
 e pede ao usuário para tentar novamente.
 3. O usuário tenta o registro novamente.
 
+![Diagrama de Casos de Uso]!
+![WhatsApp Image 2023-10-15 at 00 26 32 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d1672a1d-bd4d-43fb-8669-46388b894cc8)
 
 ### Fazer Login CDU (02)
 
@@ -77,7 +79,10 @@ e pede ao usuário para tentar novamente.
 ## CDU Buscar Filmes e atores (03)
 
  ### Fluxo principal 
-   
+
+![Diagrama de Casos de Uso]!
+   ![WhatsApp Image 2023-10-15 at 00 26 32 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b84e5871-739f-4c71-99bc-22dfaa7ebb1b)
+
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
 1. O usuário acessa a barra de pesquisa.
@@ -86,6 +91,10 @@ e pede ao usuário para tentar novamente.
 • Pós-condições: O usuário vê os resultados da pesquisa.
 
     ### Fluxo alternativo 
+
+![Diagrama de Casos de Uso]!
+![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
+
     
 1. O usuário realiza uma pesquisa, mas não há resultados correspondentes.
 2. O sistema exibe uma mensagem informando que nenhum resultado foi encontrado.
@@ -94,6 +103,10 @@ e pede ao usuário para tentar novamente.
 ### CDU Explorar Detalhes do Filme (04)
 
 ###Fluxo principal 
+
+![Diagrama de Casos de Uso]!
+![WhatsApp Image 2023-10-15 at 00 26 33 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/952d904d-eaa7-4864-bcee-2bd64cd5b896)
+
     
 • Ator: Usuário
 • Pré-condições: O usuário está logado e acessou um filme.
@@ -101,10 +114,12 @@ e pede ao usuário para tentar novamente.
 2. O sistema exibe informações como sinopse, elenco, diretor e resenhas
 • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
-
 ### CDU Avaliar filme (05)
 
 ###Fluxo principal 
+
+![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 33 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/08c3aafb-69c0-4fb4-9103-6cbde37e7483)
+
 
 •	Ator: Usuário
 •	Pré-condições: O usuário está logado e acessou um filme.
@@ -116,7 +131,10 @@ e pede ao usuário para tentar novamente.
 ### CDU Adicionar Filme à Lista (06)
 
 ###Fluxo principal
-   
+
+![Diagrama de Casos de Uso]!
+   ![WhatsApp Image 2023-10-15 at 00 26 33 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8d51beab-66b3-4ba0-b787-b19e34af37d1)
+
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
 1. O usuário encontra o filme desejado.
@@ -182,6 +200,9 @@ e pede ao usuário para tentar novamente.
 
 ###Fluxo principal
 
+![Diagrama de Casos de Uso]!
+![WhatsApp Image 2023-10-15 at 00 26 34](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cfff6b30-bd07-427d-989b-863b89a0fbdb)
+
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
 1. O usuário acessa a seção de filmes populares ou tendências.
@@ -191,6 +212,9 @@ ou tendências.
 • Pós-condições: O usuário descobre filmes populares entre a comunidade.
 
 ###Fluxo alternativo
+
+![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 34 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2282ac8c-d0ff-4546-bcab-6fd2d0e963f9)
+
    
 1. O sistema encontra problemas ao recuperar filmes populares.
 2. O sistema exibe uma mensagem de erro e sugere ao usuário tentar novamente mais tarde.
@@ -198,6 +222,9 @@ ou tendências.
 ### CDU Personalizar Perfil (11)
 
 ###Fluxo principal
+
+![Diagrama de Casos de Uso]!
+![WhatsApp Image 2023-10-15 at 00 26 34 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b25e5d56-6eea-4887-b50f-e65f5efde623)
 
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
@@ -209,7 +236,10 @@ sociais
 • Pós-condições: O perfil do usuário é personalizado de acordo com suas preferências.
 
     ###Fluxo alternativo
-   
+
+![Diagrama de Casos de Uso]!
+   ![WhatsApp Image 2023-10-15 at 00 26 34 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90862fae-126c-4300-b175-bf3cc4500a0e)
+
 1. O usuário tenta fazer o upload de uma foto de perfil, mas o sistema encontra um erro no processo.
 2. O sistema exibe uma mensagem de erro e instrui o usuário a tentar novamente.
 
