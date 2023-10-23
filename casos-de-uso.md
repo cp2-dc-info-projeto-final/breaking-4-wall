@@ -55,11 +55,17 @@ e pede ao usuário para tentar novamente.
 4. O sistema autentica o usuário e exibe o site.
 • Pós-condições: O usuário está logado na plataforma
 
+![Diagrama de Casos de Uso]!!!
+![WhatsApp Image 2023-10-15 at 00 26 30 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d4c8d2cf-c865-476f-af79-29bf47fa0c4b)
+
     ### Fluxo alternativo 
    
 1. O usuário insere um nome de usuário e/ou senha incorretos.
 2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
 3. O usuário pode tentar novamente inserindo as credenciais corretas.
+
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 30](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cc1b8fa7-40e1-487f-af16-80bb08853c59)
+
 
 ## CDU Buscar Filmes e atores (03)
 
