@@ -293,6 +293,7 @@ Pré-condições: O usuário deve estar logado no sistema.
 2. O sistema confirma que o usuário deseja efetuar o logout.
 3. O sistema encerra a sessão do usuário, invalidando sua autenticação.
 4. O sistema redireciona o usuário para a página de login ou para a página inicial do sistema, dependendo da configuração do sistema.
+
 Pós-condições: O usuário foi desconectado com sucesso e não tem mais acesso às funcionalidades restritas do sistema até que faça login novamente.
 
 
