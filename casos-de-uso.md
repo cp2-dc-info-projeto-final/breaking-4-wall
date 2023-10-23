@@ -145,6 +145,8 @@ e pede ao usuário para tentar novamente.
 
 ###Fluxo principal 
 
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/184d874b-d574-48f8-9816-9d1298e3ec41)
+
 • Ator : Administrador 
 • Pré-condições : O ator que deseja gerenciar atores está autenticado no sistema.
 1. Cadastro de atores: Permitir a criação de perfis para atores, incluindo informações como nome, data de nascimento, biografia, filmografia e foto.
@@ -161,6 +163,9 @@ e pede ao usuário para tentar novamente.
 ## CDU  Gerenciamento de Filmes (08)
 
 ###Fluxo principal 
+
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2f46f288-568c-44e1-8660-1b191d7e3e10)
+
 
 • Ator : Administrador 
 • Pré-condições : O usuário que deseja gerenciar filmes está autenticado no sistema.
@@ -179,6 +184,9 @@ e pede ao usuário para tentar novamente.
 ## CDU  Gerenciamento de Usuários (09)
 
 ###Fluxo principal 
+
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8ec151cc-2aea-41ee-a8ee-c6cb96cc434b)
+
 
 • Ator : Administrador 
 • Pré-condições : O usuário que deseja gerenciar sua conta está autenticado no sistema.
