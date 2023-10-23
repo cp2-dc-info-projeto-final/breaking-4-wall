@@ -80,9 +80,8 @@ e pede ao usuário para tentar novamente.
 
  ### Fluxo principal 
 
-![Diagrama de Casos de Uso]!
-   ![WhatsApp Image 2023-10-15 at 00 26 32 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b84e5871-739f-4c71-99bc-22dfaa7ebb1b)
-
+![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 32 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b84e5871-739f-4c71-99bc-22dfaa7ebb1b)
+  
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
 1. O usuário acessa a barra de pesquisa.
@@ -92,8 +91,7 @@ e pede ao usuário para tentar novamente.
 
     ### Fluxo alternativo 
 
-![Diagrama de Casos de Uso]!
-![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
 
     
 1. O usuário realiza uma pesquisa, mas não há resultados correspondentes.
@@ -104,8 +102,8 @@ e pede ao usuário para tentar novamente.
 
 ###Fluxo principal 
 
-![Diagrama de Casos de Uso]!
-![WhatsApp Image 2023-10-15 at 00 26 33 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/952d904d-eaa7-4864-bcee-2bd64cd5b896)
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 33 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/952d904d-eaa7-4864-bcee-2bd64cd5b896)
+
 
     
 • Ator: Usuário
