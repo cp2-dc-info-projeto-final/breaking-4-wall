@@ -30,13 +30,18 @@
 
 **Fluxo Principal**
 
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 30 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ed92760b-35ca-4c89-9806-cca2f9a80f8a)
+
+
 1.	O usuário acessa a página de registro.
 2.	O usuário insere suas informações pessoais.
 3.	O sistema verifica a validade das informações.
 4.	O sistema cria uma nova conta para o usuário.
 
 **Fluxo Alternativo A**
-  
+
+![Diagrama de Casos de Uso]!!  ![WhatsApp Image 2023-10-15 at 00 26 30](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/32ad1b9c-c2cc-464b-a1e8-07a687bf943a)
+
 1. O sistema detecta um erro inesperado durante o processo de registro.
 2. O sistema exibe uma mensagem de erro (A Entrada Falhou. suas credenciais nao correspondem. É provavelmente atribuavel a erro humano) 
 e pede ao usuário para tentar novamente.
