@@ -249,6 +249,28 @@ sociais
 1. O usuário tenta fazer o upload de uma foto de perfil, mas o sistema encontra um erro no processo.
 2. O sistema exibe uma mensagem de erro e instrui o usuário a tentar novamente.
 
+### CDU: Recuperar Senha (12)
+
+Ator: Usuário
+
+Pré-condições: O usuário deve estar registrado no sistema.
+
+Pós-condições: O usuário recebe um link para redefinir sua senha.
+
+Fluxo Principal:
+
+1. O usuário acessa a página de recuperação de senha.
+2. O sistema solicita ao usuário que insira seu endereço de e-mail registrado.
+3. O usuário insere o endereço de e-mail e confirma.
+4. O sistema verifica se o endereço de e-mail existe no banco de dados.
+5. Se o endereço de e-mail existir, o sistema gera um link de redefinição de senha exclusivo e o envia para o e-mail fornecido.
+6. O usuário verifica sua caixa de entrada de e-mail.
+7. O usuário clica no link de redefinição de senha.
+8. O sistema direciona o usuário para uma página onde ele pode criar uma nova senha.
+9. O usuário define uma nova senha e confirma.
+10. O sistema atualiza a senha do usuário no banco de dados.
+11. O sistema exibe uma mensagem de confirmação de que a senha foi alterada com sucesso.
+Pós-condições: O usuário recebe um link para redefinir sua senha. 
 
 
 
