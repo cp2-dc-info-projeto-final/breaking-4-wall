@@ -5,15 +5,16 @@
  - [CDU 01](#CDU-01): Criar conta
  - [CDU 02](#CDU-02): Fazer Login
  - [CDU 03](#CDU-03): Buscar Filme, atores e listas
- - [CDU 04](#CDU-04): visualizar Detalhes 
- - [CDU 05](#CDU-05): avaliar filme
+ - [CDU 04](#CDU-04): Visualizar Detalhes 
+ - [CDU 05](#CDU-05): Avaliar filme
  - [CDU 06](#CDU-06): Adicionar Filme à Lista
- - [CDU 07](#CDU-07): gerenciar atores
- - [CDU 08](#CDU-08): gerenciar usuarios
- - [CDU 09](#CDU-09): gerenciar filmes
- - [CDU 09](#CDU-10): Explorar filmes populares
- - [CDU 10](#CDU-11): personalizaçao de perfil
-   
+ - [CDU 07](#CDU-07): Gerenciar atores
+ - [CDU 08](#CDU-08): Gerenciar usuarios
+ - [CDU 09](#CDU-09): Gerenciar filmes
+ - [CDU 10](#CDU-10): Explorar filmes populares
+ - [CDU 11](#CDU-11): Personalizaçao de perfil
+ - [CDU 12](#CDU-12): Recuperar senha
+ - [CDU 13](#CDU-13): Logout
 ## Lista dos Atores
 
  - usuario
@@ -251,13 +252,11 @@ sociais
 
 ### CDU: Recuperar Senha (12)
 
+### Fluxo Principal:
+
 Ator: Usuário
 
 Pré-condições: O usuário deve estar registrado no sistema.
-
-Pós-condições: O usuário recebe um link para redefinir sua senha.
-
-Fluxo Principal:
 
 1. O usuário acessa a página de recuperação de senha.
 2. O sistema solicita ao usuário que insira seu endereço de e-mail registrado.
@@ -270,7 +269,32 @@ Fluxo Principal:
 9. O usuário define uma nova senha e confirma.
 10. O sistema atualiza a senha do usuário no banco de dados.
 11. O sistema exibe uma mensagem de confirmação de que a senha foi alterada com sucesso.
-Pós-condições: O usuário recebe um link para redefinir sua senha. 
+Pós-condições: O usuário recebe um link para redefinir sua senha.
+
+### Fluxo Alternativo - E-mail Não Registrado:
+
+1. O usuário inicia o processo de recuperação.
+2. O usuário fornece o endereço de e-mail associado à sua conta e solicita a redefinição de senha.
+3. O sistema verifica o banco de dados para encontrar uma conta com o endereço de e-mail fornecido.
+4. Se o e-mail não estiver registrado no sistema, o sistema não encontrará correspondências.
+5. O sistema exibirá uma mensagem de erro informando que o e-mail fornecido não está associado a uma conta existente no sistema.
+6. O usuário será instruído a revisar o endereço de e-mail inserido ou a criar uma nova conta, se ainda não tiver uma.
+7. O usuário pode optar por retornar à página inicial ou seguir um link para o processo de registro, se desejado.
+
+### CDU: Logout (13)
+
+Ator: Usuário logado.
+
+### Fluxo Principal:
+
+Pré-condições: O usuário deve estar logado no sistema.
+
+1. O usuário, estando logado no sistema, decide fazer logout.
+2. O sistema confirma que o usuário deseja efetuar o logout.
+3. O sistema encerra a sessão do usuário, invalidando sua autenticação.
+4. O sistema redireciona o usuário para a página de login ou para a página inicial do sistema, dependendo da configuração do sistema.
+Pós-condições: O usuário foi desconectado com sucesso e não tem mais acesso às funcionalidades restritas do sistema até que faça login novamente.
+
 
 
 
