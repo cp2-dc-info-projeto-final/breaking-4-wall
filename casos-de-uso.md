@@ -287,6 +287,9 @@ Ator: Usuário logado.
 
 ### Fluxo Principal:
 
+![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-23 at 14 14 48](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c09f0ecc-29d6-4dbd-8ba9-7a99effa6673)
+
+
 Pré-condições: O usuário deve estar logado no sistema.
 
 1. O usuário, estando logado no sistema, decide fazer logout.
