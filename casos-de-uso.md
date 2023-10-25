@@ -254,8 +254,10 @@ sociais
 
 ### Fluxo Principal:
 
-Ator: Usuário
+![Diagrama de Casos de Uso]!!![Recuperação de Senha](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/b11659c6-d563-4e4b-8182-dfd28aae0d46)
 
+
+Ator: Usuário
 Pré-condições: O usuário deve estar registrado no sistema.
 
 1. O usuário acessa a página de recuperação de senha.
@@ -272,6 +274,9 @@ Pré-condições: O usuário deve estar registrado no sistema.
 Pós-condições: O usuário recebe um link para redefinir sua senha.
 
 ### Fluxo Alternativo - E-mail Não Registrado:
+
+![Diagrama de Casos de Uso]!!![Recuperação de Senha (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/7cef5bb6-1fb5-4af6-9111-d71ea3267509)
+
 
 1. O usuário inicia o processo de recuperação.
 2. O usuário fornece o endereço de e-mail associado à sua conta e solicita a redefinição de senha.
