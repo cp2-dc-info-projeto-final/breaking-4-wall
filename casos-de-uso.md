@@ -21,9 +21,10 @@
  - usuario nao registrado
  - administrador
 
-## Diagrama de Casos de Uso
+## Diagrama de Casos de Uso![Diagrama Casos de uso (1) drawio](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/647c8bab-786a-406f-8852-ef7c5e2995e8)
 
-![Diagrama de Casos de Uso]!![47e5d4d9-2622-403e-8ee8-fbe571ad714a](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/71e1ec2c-3645-4fcc-832d-458f3c1c4cba)
+
+![Diagrama de Casos de Uso]
 
 ## Descrição dos Casos de Uso
 
