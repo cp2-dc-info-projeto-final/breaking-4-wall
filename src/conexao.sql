@@ -2,9 +2,13 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-CREATE USER 'cadastrado'@'localhost' IDENTIFIED BY '123';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrado'@'localhost';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
+
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
+
+drop TABLE if EXISTS cadastrados;
 
 CREATE TABLE cadastrados (
     id INT AUTO_INCREMENT PRIMARY KEY,
