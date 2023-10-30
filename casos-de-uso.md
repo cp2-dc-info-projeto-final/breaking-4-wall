@@ -100,7 +100,7 @@ e pede ao usuário para tentar novamente.
 2. O sistema exibe uma mensagem informando que nenhum resultado foi encontrado.
 3. usuário pode refinar sua pesquisa ou tentar buscar por termos diferentes.
 
-### CDU Explorar Detalhes do Filme (04)
+### CDU Visualizar Detalhes do Filme (04)
 
 ###Fluxo principal 
 
