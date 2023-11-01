@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Filmes</title>
+</head>
+<body>
+    <h1>Cadastro de Filmes</h1>
+    <form action="processar_cadastro.php" method="POST">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+        <label for="ano_lancamento">Ano de Lançamento:</label>
+        <input type="number" id="ano_lancamento" name="ano_lancamento"><br><br>
+
+        <label for="diretor">Diretor:</label>
+        <input type="text" id="diretor" name="diretor"><br><br>
+
+        <label for="sinopse">Sinopse:</label><br>
+        <textarea id="sinopse" name="sinopse" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Cadastrar Filme">
+    </form>
+</body>
+</html>
