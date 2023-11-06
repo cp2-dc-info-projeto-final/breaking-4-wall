@@ -3,12 +3,12 @@ $message = "";
 
 // Informações de conexão com o banco de dados
 $servername = "localhost"; // Endereço do servidor de banco de dados
-$username_db = "cadastro"; // Nome de usuário do banco de dados
+$username_db = "cadastrados"; // Nome de usuário do banco de dados
 $password_db = "123"; // Senha do banco de dados
 $database = "CADASTRO"; // Nome do banco de dados
 
 // Crie uma conexão com o banco de dados
-$conn = new mysqli("localhost", "cadastrado", "123", "CADASTRO");
+$conn = new mysqli("localhost", "cadastrados", "123", "CADASTRO");
 
 // Verifique se ocorreu algum erro na conexão
 if ($conn->connect_error) {
