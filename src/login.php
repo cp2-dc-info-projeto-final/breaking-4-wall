@@ -7,7 +7,7 @@ $password_db = "123"; // Senha do banco de dados
 $database = "CADASTRO"; // Nome do banco de dados
 
 // Crie uma conexão com o banco de dados
-$conn = new mysqli("localhost", "cadastrado", "123", "CADASTRO");
+$conn = new mysqli("localhost", "cadastrados", "123", "CADASTRO");
 
 // Verifique se ocorreu algum erro na conexão
 if ($conn->connect_error) {
@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->fetch();
     
     if (password_verify($senha, $hashed_password)) {
-        $message = "Login bem-sucedido!"; // Você pode redirecionar o usuário para a página de boas-vindas aqui
+        header("location: index.html");
     } else {
         $message = "Credenciais inválidas. Tente novamente.";
     }
