@@ -2,7 +2,7 @@
 $message = "";
 
 $servername = "localhost"; // Endereço do servidor de banco de dados
-$username_db = "cadastrados"; // Nome de usuário do banco de dados
+$username_db = "cadastrado"; // Nome de usuário do banco de dados
 $password_db = "123"; // Senha do banco de dados
 $database = "CADASTRO"; // Nome do banco de dados
 
