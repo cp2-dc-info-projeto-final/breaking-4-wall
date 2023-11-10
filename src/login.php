@@ -6,6 +6,11 @@ $username_db = "cadastrado";
 $password_db = "123";
 $database = "CADASTRO";
 
+sql="SELECT * FROM administrador" WHERE email='$email';";
+$res = mysqli_querry($mysqli, $sql);
+
+
+
 $conn = new mysqli("localhost", "cadastrados", "123", "CADASTRO");
 
 if ($conn->connect_error) {
@@ -64,3 +69,4 @@ $conn->close();
 
 </body>
 </html>
+
