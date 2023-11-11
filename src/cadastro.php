@@ -67,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         } else {
             $message = "Erro ao inserir dados: " . $stmt->error;
         }
-
+        header("Location: index.html");
         $stmt->close();
     }
 }
