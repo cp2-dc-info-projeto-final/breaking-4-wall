@@ -6,9 +6,7 @@ $username_db = "cadastrado";
 $password_db = "123";
 $database = "CADASTRO";
 
-sql="SELECT * FROM administrador" WHERE email='$email';";
-$res = mysqli_querry($mysqli, $sql);
-
+$email = ""; // Defina uma variável para $email aqui, caso contrário, você terá um erro na consulta SQL.
 
 
 $conn = new mysqli("localhost", "cadastrados", "123", "CADASTRO");
@@ -29,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (password_verify($senha, $hashed_password)) {
         header("location: index.html");
+        exit; // Adicione esta linha para evitar que o código continue a ser executado após o redirecionamento.
     } else {
         $message = "Senha incorreta. Tente novamente.";
     }
@@ -44,7 +43,7 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 </head>
 <body>
@@ -69,4 +68,3 @@ $conn->close();
 
 </body>
 </html>
-
