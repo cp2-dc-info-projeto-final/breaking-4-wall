@@ -112,87 +112,129 @@
   <!-------------------------CARD------------------------->
 
   <!DOCTYPE html>
-  <html lang="en">
-
+  <html lang="pt">
   <head>
-    <meta charset="utf-8" />
-    <title>Swiper demo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
-    <!-- Demo styles -->
-    <style>
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 83%;
-        height: 83%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 70%;
-        height: 70%;
-        object-fit: cover;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel de Filmes Populares</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .header {
+      width: 100%;
+      background-color: #333; /* Cor do cabeçalho */
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .carousel {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      overflow: hidden;
+    }
+  
+    .carousel-container {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+  
+    .carousel-slide {
+      flex: 0 0 33.3333%; /* Cada slide terá um terço da largura do carrossel */
+      box-sizing: border-box;
+      padding: 10px; /* Espaço entre slides */
+    }
+  
+    .carousel-container img {
+      width: 100%;
+      display: block;
+    }
+  
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+      padding: 10px;
+      z-index: 2;
+    }
+  
+    .prev {
+      left: 0;
+    }
+  
+    .next {
+      right: 0;
+    }
+    
+    /* Adicione mais estilos conforme necessário */
+  </style>
   </head>
-
   <body>
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+  
+  <div class="header">
+    Filmes Populares
+  </div>
+  
+  <div class="carousel" id="carousel">
+    <div class="arrow prev" onclick="moveSlide(-3)">&#10094;</div>
+    <div class="carousel-container">
+      <!-- Adicione suas imagens de filmes aqui -->
+      <div class="carousel-slide"><img src="spider.jpg" alt="Filme 1"></div>
+      <div class="carousel-slide"><img src="john_wick.jpg" alt="Filme 2"></div>
+      <div class="carousel-slide"><img src="jogosmortais.jpg" alt="Filme 3"></div>
+      <div class="carousel-slide"><img src="opph.jpg" alt="Filme 4"></div>
+      <!-- ... -->
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        navigation: {
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+    <div class="arrow next" onclick="moveSlide(3)">&#10095;</div>
+  </div>
+  
+  <script>
+  let slideIndex = 0;
+  
+  function moveSlide(step) {
+    const carousel = document.getElementById('carousel');
+    const slides = carousel.getElementsByClassName('carousel-container')[0];
+    const totalSlides = slides.children.length;
+    slideIndex += step;
+    
+    if (slideIndex < 0) {
+      slideIndex = 0; // Para evitar que o carrossel se mova para a esquerda além do primeiro slide
+    } else if (slideIndex > totalSlides - 3) {
+      slideIndex = totalSlides - 3; // Ajusta para manter três slides visíveis
+    }
+    
+    // Calcula a nova posição do carrossel
+    const x = -slideIndex * (slides.children[0].offsetWidth + (2 * 10)); // Inclui o padding
+    slides.style.transform = `translateX(${x}px)`;
+  }
+  
+  // Ajusta o tamanho inicial do carrossel
+  window.addEventListener('load', () => {
+    moveSlide(0);
+  });
+  
+  // Reajusta o carrossel quando a janela for redimensionada
+  window.addEventListener('resize', () => {
+    moveSlide(0);
+  });
+  </script>
+  
   </body>
-
   </html>
+  
+  
+
+</body>
+</html>
 
 
 
