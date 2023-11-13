@@ -1,61 +1,81 @@
-{
-  box-sizing: border-box;
-  margin:0;
-  padding: 0;
-
-}
-body{
-  background-color: #0000FF	;
-}
-.logo{
-  width: 75px;
-  height: 75px;  
+.navbar {
+  justify-content: space-between; /* Isto alinha os itens da navegação e o formulário de pesquisa nas extremidades da barra de navegação */
 }
 
-nav.navbar img{
-  width: 75px;
-  height: 75px;  
-}
-
-
-nav.navbar{
-
-  background-color: #0000FF	;
-    background: -webkit-linear-gradient(-135deg, #0000FF	, );
-  font-size: 15px;
-
-}
-a.nav-link{
-  color: #ffff;
-
-}
-a.nav-link:hover{
-  color: black;
-}
-.nav-nav{
-  display:flex;
-
-}
-
-.nav-item{
-  margin-left:10rem;
-}
-
-div.login{
-  background:#293462 ;
-  background: -webkit-linear-gradient(-135deg, #220a4c, #444);
-  border-radius: 10px 10px 10px 10px;
-  text-align: center;
-  width:150px;
-
-
-}
-
-.basecard{
-align-items:center;
-  justify-content: center;
-}
-.container-lg{
+.form-inline {
   display: flex;
-
+  justify-content: flex-end; /* Isto alinha o formulário de pesquisa à direita */
 }
+
+/* Estilizações adicionais conforme necessário para alinhar com o seu design */
+
+
+
+/* Define o box-sizing globalmente para border-box e redefine margens e preenchimentos padrão para 0 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilização básica do corpo da página */
+  body {
+    background-color: #0000FF;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos para a classe .logo e a imagem dentro de nav.navbar */
+  .logo, nav.navbar img {
+    width: 75px;
+    height: 75px;
+  }
+  
+  /* Estilos para a navegação (.navbar) */
+  nav.navbar {
+    background: #0000FF;
+    background: -webkit-linear-gradient(-135deg, #0000FF, rgb(255, 0, 119)); /* Substitua #000000 pela cor desejada */
+    font-size: 15px;
+  }
+  
+  /* Estilos para os links de navegação */
+  a.nav-link {
+    color: #FFFF;
+  }
+  
+  /* Estilos para os links de navegação quando o mouse está sobre eles */
+  a.nav-link:hover {
+    color: black;
+  }
+  
+  /* Estilos para a classe .nav-nav (display flex) */
+  .nav-nav {
+    display: flex;
+  }
+  
+  /* Margem à esquerda para os itens de navegação (.nav-item) */
+  .nav-item {
+    margin-left: 10rem;
+  }
+  
+  /* Estilos para a classe .login */
+  div.login {
+    background: #293462;
+    background: -webkit-linear-gradient(-135deg, #220a4c, #444);
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+  }
+  
+  /* Estilos para a classe .basecard */
+  .basecard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilos para a classe .container-lg */
+  .container-lg {
+    display: flex;
+  }
+  
