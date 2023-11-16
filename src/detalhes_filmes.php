@@ -21,7 +21,7 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 $filmeId = $_GET['id'];
 
 // Prepare e execute a consulta para buscar o filme pelo ID
-$stmt = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE 1 = ?");
+$stmt = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE ID = ?");
 $stmt->bind_param("i", $filmeId);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -34,6 +34,9 @@ if ($result->num_rows === 0) {
 // Pegue os dados do filme
 $filme = $result->fetch_assoc();
 
+// Defina o caminho da imagem do poster diretamente aqui
+$caminhoImagem = "mengo.png"; // Substitua pelo nome da sua imagem
+
 // Feche a conexão com o banco de dados
 $conn->close();
 ?>
@@ -44,7 +47,6 @@ $conn->close();
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
     <style>
-        
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -70,7 +72,10 @@ $conn->close();
         .filme-sinopse {
             margin-top: 20px;
         }
-    </style>
+        .filme-imagem {
+            max-width: 100%;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +87,7 @@ $conn->close();
             <strong>Sinopse:</strong>
             <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
         </div>
+        <img class="filme-imagem" src="<?php echo $caminhoImagem; ?>" alt="Poster do filme">
     </div>
 </body>
 </html>
