@@ -80,7 +80,7 @@ $result = $conn->query($sql);
                 <?php while($row = $result->fetch_assoc()): ?>
                 <tr>
                     <td><?php echo $row["ID"]; ?></td>
-                    <td><a href="detalhes_filme.php?id=<?php echo $row['1']; ?>"><?php echo $row["Titulo"]; ?></a></td>
+                    <td><a href="detalhes_filme.php?id=<?php echo $row['ID']; ?>"><?php echo $row["Titulo"]; ?></a></td>
                     <td><?php echo $row["AnoLancamento"]; ?></td>
                     <td><?php echo $row["Diretor"]; ?></td>
                     <td><?php echo $row["Sinopse"]; ?></td>
@@ -99,4 +99,3 @@ $result = $conn->query($sql);
 
 </body>
 </html>
-
