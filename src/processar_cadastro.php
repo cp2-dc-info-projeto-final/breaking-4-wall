@@ -1,23 +1,20 @@
 <?php
-// Habilitar a exibição de erros
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
+// Dados de conexão ao banco de dados
 $servername = "localhost";
-$username = "root"; // seu nome de usuário do banco de dados
-$password = "12345"; // sua senha do banco de dados
+$username = "alvaro"; // Seu nome de usuário do banco de dados
+$password = "12345"; // Sua senha do banco de dados
 $dbname = "cadastro";
 
 // Criar conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli("localhost", "alvaro", "12345", "cadastro");
 
 // Verificar conexão
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
-// Verifique se o método POST foi usado
+// Verifique se o método POST foi usado (ou seja, o formulário foi enviado)
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Receber dados do formulário
     $titulo = $_POST['titulo'];
@@ -36,8 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erro: " . $stmt->error;
     }
 
+    // Fechar statement
     $stmt->close();
 }
 
+// Fechar conexão
 $conn->close();
-?> 
+
+?>
