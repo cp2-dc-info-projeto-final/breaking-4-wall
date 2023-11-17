@@ -4,6 +4,15 @@ CREATE DATABASE IF NOT EXISTS cadastro;
 -- Seleciona o banco de dados 'cadastro'
 USE cadastro;
 
+drop USER if EXISTS 'alvaro'@'localhost';
+
+CREATE USER 'alvaro'@'localhost' IDENTIFIED BY '12345';
+
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'alvaro'@'localhost';
+
+drop TABLE if EXISTS cadastrados;
+
+
 -- Cria a tabela 'Filmes'
 CREATE TABLE IF NOT EXISTS Filmes (
     ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -13,16 +22,4 @@ CREATE TABLE IF NOT EXISTS Filmes (
     Sinopse TEXT
 );
 
--- Cria um novo usuário com permissões limitadas
-CREATE USER IF NOT EXISTS '[alvaro]'@'localhost' IDENTIFIED BY '[12345]';
-
--- Concede permissões ao usuário para o banco de dados 'cadastro'
-GRANT SELECT, INSERT, UPDATE, DELETE ON cadastro.* TO '[alvaro]'@'localhost';
-
--- Aplica as mudanças de permissões
-FLUSH PRIVILEGES;
-
-SET PASSWORD FOR 'alvaro'@'localhost' = PASSWORD('12345');
-
-ALTER USER 'alvaro'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345';
 
