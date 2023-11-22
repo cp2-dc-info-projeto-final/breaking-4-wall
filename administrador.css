@@ -1,0 +1,40 @@
+body {
+    padding-top: 50px; /* Espaço para a barra de navegação fixa */
+}
+
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+
+/* Barra Lateral */
+.nav-pills {
+    flex-direction: column;
+}
+
+.nav-pills > li > a {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.nav-pills > li.active > a {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
