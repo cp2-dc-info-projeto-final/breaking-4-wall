@@ -1,12 +1,14 @@
 <?php
+session_start(); // Inicia a sessão para verificar o login do usuário
+
 // Configuração das variáveis de conexão com o banco de dados
 $servername = "localhost";
-$username = "alvaro"; // Substitua pelo seu usuário do banco de dados
-$password = "12345"; // Substitua pela sua senha do banco de dados
+$username = "alvaro";
+$password = "12345";
 $dbname = "cadastro";
 
 // Criar conexão
-$conn = new mysqli("localhost", "alvaro", "12345", "cadastro");
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexão
 if ($conn->connect_error) {
@@ -20,8 +22,15 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
 $filmeId = $_GET['id'];
 
-// Prepare e execute a consulta para buscar o filme pelo ID
-$stmt = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE ID = ?");
+// Consulta atualizada para incluir as categorias
+$stmt = $conn->prepare("
+    SELECT f.Titulo, f.AnoLancamento, f.Diretor, f.Sinopse, GROUP_CONCAT(c.Nome SEPARATOR ', ') AS Categorias
+    FROM Filmes f
+    LEFT JOIN FilmesCategorias fc ON f.ID = fc.FilmeID
+    LEFT JOIN Categorias c ON fc.CategoriaID = c.ID
+    WHERE f.ID = ?
+    GROUP BY f.ID
+");
 $stmt->bind_param("i", $filmeId);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -31,11 +40,11 @@ if ($result->num_rows === 0) {
     die('Filme não encontrado.');
 }
 
-// Pegue os dados do filme
+// Pegue os dados do filme, incluindo as categorias
 $filme = $result->fetch_assoc();
 
 // Defina o caminho da imagem do poster diretamente aqui
-$caminhoImagem = "mengo.png"; // Substitua pelo nome da sua imagem
+$caminhoImagem = "mengo.png"; // Este valor deve ser o caminho correto da imagem do poster
 
 // Feche a conexão com o banco de dados
 $conn->close();
@@ -47,7 +56,7 @@ $conn->close();
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
     <style>
-        body {
+               body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -76,6 +85,7 @@ $conn->close();
             max-width: 100%;
             margin-top: 20px;
         }
+
     </style>
 </head>
 <body>
@@ -87,6 +97,8 @@ $conn->close();
             <strong>Sinopse:</strong>
             <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
         </div>
+        <!-- Adiciona a exibição das categorias aqui -->
+        <p><strong>Categoria(s):</strong> <?php echo htmlspecialchars($filme['Categorias']); ?></p>
         <img class="filme-imagem" src="<?php echo $caminhoImagem; ?>" alt="Poster do filme">
     </div>
 </body>
