@@ -22,8 +22,8 @@ if (!isset($_GET['id']) || empty($_GET['id'])) {
 
 $filmeId = $_GET['id'];
 
-// Consulta atualizada para incluir as categorias
-$stmt = $conn->prepare("
+// Consulta para obter detalhes do filme
+$stmt_filme = $conn->prepare("
     SELECT f.Titulo, f.AnoLancamento, f.Diretor, f.Sinopse, GROUP_CONCAT(c.Nome SEPARATOR ', ') AS Categorias
     FROM Filmes f
     LEFT JOIN FilmesCategorias fc ON f.ID = fc.FilmeID
@@ -31,20 +31,34 @@ $stmt = $conn->prepare("
     WHERE f.ID = ?
     GROUP BY f.ID
 ");
-$stmt->bind_param("i", $filmeId);
-$stmt->execute();
-$result = $stmt->get_result();
+$stmt_filme->bind_param("i", $filmeId);
+$stmt_filme->execute();
+$result_filme = $stmt_filme->get_result();
 
-// Se nenhum filme for encontrado, exiba uma mensagem
-if ($result->num_rows === 0) {
+if ($result_filme->num_rows === 0) {
     die('Filme não encontrado.');
 }
 
-// Pegue os dados do filme, incluindo as categorias
-$filme = $result->fetch_assoc();
+$filme = $result_filme->fetch_assoc();
+$stmt_filme->close();
 
-// Defina o caminho da imagem do poster diretamente aqui
-$caminhoImagem = "mengo.png"; // Este valor deve ser o caminho correto da imagem do poster
+// Consulta para buscar os atores do filme
+$stmt_atores = $conn->prepare("
+    SELECT a.Nome 
+    FROM Atores a
+    JOIN Atuacoes at ON a.ID = at.AtorID
+    WHERE at.FilmeID = ?
+    GROUP BY a.Nome
+");
+$stmt_atores->bind_param("i", $filmeId);
+$stmt_atores->execute();
+$result_atores = $stmt_atores->get_result();
+$atores_list = '';
+while ($ator = $result_atores->fetch_assoc()) {
+    $atores_list .= htmlspecialchars($ator['Nome']) . ', ';
+}
+$atores_list = rtrim($atores_list, ', '); // Remove a última vírgula e espaço
+$stmt_atores->close();
 
 // Feche a conexão com o banco de dados
 $conn->close();
@@ -55,8 +69,9 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
+    <!-- Estilos existentes -->
     <style>
-        .filme-imagem {
+           .filme-imagem {
     max-width: 70%; /* Diminui para 70% da largura do container */
     border-radius: 8px;
     margin-top: 1em;
@@ -130,7 +145,6 @@ $conn->close();
     }
 }
 
-
     </style>
 </head>
 <body>
@@ -142,9 +156,11 @@ $conn->close();
             <strong>Sinopse:</strong>
             <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
         </div>
-        <!-- Adiciona a exibição das categorias aqui -->
-        <p><strong>Categoria(s):</strong> <?php echo htmlspecialchars($filme['Categorias']); ?></p>
-        <img class="filme-imagem" src="<?php echo $caminhoImagem; ?>" alt="Poster do filme">
+        <p class="filme-categorias"><strong>Categoria(s):</strong> <?php echo htmlspecialchars($filme['Categorias']); ?></p>
+        <!-- Adiciona a exibição dos atores aqui -->
+        <p><strong>Ator(es):</strong> <?php echo $atores_list; ?></p>
+        <img class="filme-imagem" src="<?php echo htmlspecialchars($caminhoImagem); ?>" alt="Poster do filme">
+
     </div>
 </body>
 </html>
