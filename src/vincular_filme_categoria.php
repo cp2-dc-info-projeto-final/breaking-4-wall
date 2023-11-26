@@ -1,66 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vincular Filme a Categoria</title>
-<style>
-      body { font-family: Arial, sans-serif; }
-    .container { width: 300px; padding: 16px; background-color: white; }
-    select, button {
-        width: 100%;
-        padding: 10px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-    }
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        opacity: 0.9;
-    }
-    button:hover {
-        opacity:1;
-    }
-</style>
-</head>
-<body>
-
-<div class="container">
-  <form action="processa_vinculo.php" method="POST">
-    <label for="filme">Filme:</label>
-    <select id="filme" name="filmeID">
-      <!-- Opções de filmes serão preenchidas pelo PHP abaixo -->
-    </select>
-
-    <label for="categoria">Categoria:</label>
-    <select id="categoria" name="categoriaID">
-      <!-- Opções de categorias serão preenchidas pelo PHP abaixo -->
-    </select>
-
-    <button type="submit">Vincular</button>
-  </form>
-</div>
-
 <?php
-// Código PHP para buscar as opções de filmes e categorias do banco de dados.
-
+// Configuração das variáveis de conexão com o banco de dados
 $servername = "localhost";
 $username = "vitor";
 $password = "1234567";
 $dbname = "cadastro";
 
-// Cria a conexão com o banco de dados
+// Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Checa a conexão
+// Verificar conexão
 if ($conn->connect_error) {
-  die("Falha na conexão: " . $conn->connect_error);
+    die("Falha na conexão: " . $conn->connect_error);
 }
 
 // Buscar filmes
@@ -85,13 +35,83 @@ $stmt_categorias->close();
 
 // Fechar a conexão com o banco de dados
 $conn->close();
-
-// Imprimir as opções de filmes e categorias
-echo '<script>';
-echo 'document.getElementById("filme").innerHTML = `' . $filmes_options . '`;';
-echo 'document.getElementById("categoria").innerHTML = `' . $categorias_options . '`;';
-echo '</script>';
 ?>
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincular Filme a Categoria</title>
+    <style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background-color: #ecf0f1;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        max-width: 350px;
+        width: 100%;
+    }
+    h2 {
+        text-align: center;
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+    label {
+        margin-top: 10px;
+        color: #7f8c8d;
+        font-weight: 600;
+    }
+    select, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #bdc3c7;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    button {
+        background-color: #3498db;
+        color: white;
+        font-size: 16px;
+        border: none;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+    button:hover {
+        background-color: #2980b9;
+    }
+</style>
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form action="vincular_filme_categoria.php" method="POST">
+        <label for="filme">Filme:</label>
+        <select id="filme" name="filmeID">
+            <?php echo $filmes_options; ?>
+        </select>
+
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoriaID">
+            <?php echo $categorias_options; ?>
+        </select>
+
+        <button type="submit">Vincular</button>
+    </form>
+</div>
 
 </body>
 </html>
