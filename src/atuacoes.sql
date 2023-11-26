@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS CADASTRO;
+
+USE CADASTRO;
+
+drop USER if EXISTS 'pedro'@'localhost';
+
+CREATE USER 'pedro'@'localhost' IDENTIFIED BY '123456789';
+
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'pedro'@'localhost';
+
+drop TABLE if EXISTS Atuacoes;
+
+CREATE TABLE Atuacoes (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    AtorID INT,
+    FilmeID INT,
+    FOREIGN KEY (AtorID) REFERENCES Atores(ID),
+    FOREIGN KEY (FilmeID) REFERENCES Filmes(ID)
+);
+   
