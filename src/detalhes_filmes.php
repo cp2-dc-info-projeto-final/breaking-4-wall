@@ -56,35 +56,80 @@ $conn->close();
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
     <style>
-               body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .filme-container {
-            background-color: #fff;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .filme-titulo {
-            color: #333;
-        }
-        .filme-ano {
-            color: #777;
-        }
-        .filme-diretor {
-            color: #555;
-        }
-        .filme-sinopse {
-            margin-top: 20px;
-        }
         .filme-imagem {
-            max-width: 100%;
-            margin-top: 20px;
-        }
+    max-width: 70%; /* Diminui para 70% da largura do container */
+    border-radius: 8px;
+    margin-top: 1em;
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto;
+}
+
+          body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.filme-container {
+    background-color: #fff;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.filme-titulo {
+    color: #1a1a2e;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.filme-ano,
+.filme-diretor {
+    color: #525252;
+    margin-bottom: 0.25em;
+}
+
+.filme-sinopse {
+    margin-top: 1em;
+    line-height: 1.6;
+}
+
+.filme-categorias {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 0.5em;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.filme-imagem {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 768px) {
+    .filme-container {
+        width: 95%;
+        padding: 1em;
+    }
+
+    .filme-titulo {
+        font-size: 1.5em;
+    }
+}
+
 
     </style>
 </head>
