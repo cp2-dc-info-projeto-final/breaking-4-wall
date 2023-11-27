@@ -10,7 +10,7 @@ CREATE USER 'alvaro'@'localhost' IDENTIFIED BY '12345';
 
 GRANT ALL PRIVILEGES ON CADASTRO.* TO 'alvaro'@'localhost';
 
-drop TABLE if EXISTS cadastrados;
+drop TABLE if EXISTS filmes;
 
 
 -- Cria a tabela 'Filmes'
