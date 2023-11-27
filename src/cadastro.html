@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,11 @@
     <title>Cadastro</title>
 </head>
 <body>
- 
     <div class="container">
         <form action="cadastro.php" method="POST" class="registration-form">
             <h2>Cadastro</h2>
-           
-            <!-- Adiciona um bloco de mensagem após o cadastro -->
+            
+            <!-- Bloco de mensagem após o cadastro -->
             <?php if (!empty($message)) : ?>
                 <p><?php echo $message; ?></p>
             <?php endif; ?>
@@ -27,6 +26,11 @@
             <input type="password" id="senha" name="senha" required>
            
             <button type="submit" class="custom-button">Cadastrar</button>
+
+            <!-- Link para a página de redefinição de senha -->
+            <p>
+                Esqueceu sua senha? <a href="altera_senha.php">Clique aqui para redefinir</a>.
+            </p>
         </form>
     </div>
 </body>
