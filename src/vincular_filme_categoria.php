@@ -1,42 +1,54 @@
 <?php
-// Configuração das variáveis de conexão com o banco de dados
+session_start(); // Inicia a sessão para armazenar mensagens de feedback
+
+// Dados de conexão ao banco de dados
 $servername = "localhost";
 $username = "vitor";
 $password = "1234567";
 $dbname = "cadastro";
 
-// Criar conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Variável para armazenar mensagens de feedback
+$message = '';
 
-// Verificar conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+// Checa se os dados foram enviados pelo formulário
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["filmeID"]) && isset($_POST["categoriaID"])) {
+    // Cria a conexão com o banco de dados
+    $conn = new mysqli($servername, $username, $password, $dbname);
+
+    // Checa a conexão
+    if ($conn->connect_error) {
+        die("Falha na conexão: " . $conn->connect_error);
+    }
+
+    $filmeID = $_POST["filmeID"];
+    $categoriaID = $_POST["categoriaID"];
+
+    // Prepara a inserção dos dados no banco
+    $stmt = $conn->prepare("INSERT INTO FilmesCategorias (FilmeID, CategoriaID) VALUES (?, ?)");
+    $stmt->bind_param("ii", $filmeID, $categoriaID);
+
+    // Executa o statement
+    if ($stmt->execute()) {
+        $_SESSION['message'] = "Vínculo entre filme e categoria realizado com sucesso!";
+    } else {
+        $_SESSION['message'] = "Erro ao realizar o vínculo: " . $stmt->error;
+    }
+
+    // Fecha o statement e a conexão com o banco de dados
+    $stmt->close();
+    $conn->close();
+
+    // Redireciona para a mesma página para evitar reenvio do formulário
+    header('Location: ' . $_SERVER['PHP_SELF']);
+    exit();
 }
 
-// Buscar filmes
-$stmt_filmes = $conn->prepare("SELECT ID, Titulo FROM Filmes");
-$stmt_filmes->execute();
-$result_filmes = $stmt_filmes->get_result();
-$filmes_options = '';
-while ($filme = $result_filmes->fetch_assoc()) {
-    $filmes_options .= '<option value="' . $filme['ID'] . '">' . htmlspecialchars($filme['Titulo']) . '</option>';
+// Se uma mensagem foi definida na sessão, armazena-a na variável $message e limpa a sessão
+if (isset($_SESSION['message'])) {
+    $message = $_SESSION['message'];
+    unset($_SESSION['message']);
 }
-$stmt_filmes->close();
-
-// Buscar categorias
-$stmt_categorias = $conn->prepare("SELECT ID, Nome FROM Categorias");
-$stmt_categorias->execute();
-$result_categorias = $stmt_categorias->get_result();
-$categorias_options = '';
-while ($categoria = $result_categorias->fetch_assoc()) {
-    $categorias_options .= '<option value="' . $categoria['ID'] . '">' . htmlspecialchars($categoria['Nome']) . '</option>';
-}
-$stmt_categorias->close();
-
-// Fechar a conexão com o banco de dados
-$conn->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
