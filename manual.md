@@ -1,12 +1,15 @@
 # Manual do Usuário
 
-Nullam vitae velit a eros dignissim bibendum id a enim. Vestibulum hendrerit nisl sed magna gravida, non elementum urna condimentum. Quisque porta tincidunt nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis at varius mauris. Quisque molestie ante imperdiet elit blandit, ac volutpat sem efficitur. Donec nec sem tempus, ullamcorper nisl non, blandit tortor. Etiam suscipit rutrum laoreet. Donec facilisis eros ultrices, venenatis quam nec, feugiat ante. Donec ante eros, consequat nec nibh vitae, porta vehicula orci. Duis nec eros et lorem malesuada sodales. Praesent auctor accumsan ipsum, et volutpat ex porttitor eu. Vestibulum facilisis elementum elit, hendrerit mollis velit pretium in. Curabitur tristique vel augue a sodales. Sed malesuada lacinia porttitor.
+esse e o manual de usuario do site braking4 wall, feito para auxialiar diretamente o contato do usuario com seus filmes favoritos. Nosso site possui login para os usuarios, administradores, sistemas de cadastramento de usuarios, atores, categorias, sistemas de redefiniçao de senha, sistemas de comentarios, ediçao e exclusao de filmes e outros usuarios 
 
 **Lista das Funcionalidades:**
 
- - [Funcionalidade X](#Funcionalidade-X)
- - [Funcionalidade Y](#Funcionalidade-Y)
- - [Funcionalidade Z](#Funcionalidade-Z)
+ - [Funcionalidade X](#cadastro)
+ - [Funcionalidade Y](#login)
+ - [Funcionalidade Z](#alterarsenha)
+ - [Funcionalidade Z](#enviaremail)
+ - [Funcionalidade Z](#visualizarperfil)
+ - [Funcionalidade Z](#cadastrarfilmes)
 
 ## Funcionalidade X
 
