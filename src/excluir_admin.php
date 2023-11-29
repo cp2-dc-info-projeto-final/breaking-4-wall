@@ -11,14 +11,14 @@ if (!isset($_GET['id'], $_SESSION['admin_id']) || $_GET['id'] != $_SESSION['admi
 $adminId = $_GET['id'];
 
 // Inicia uma transação para garantir a integridade dos dados
-$conexao->begin_transaction();
+$conn->begin_transaction();
 
 try {
     // Prepara a consulta SQL para excluir o administrador
     $sql = "DELETE FROM Administradores WHERE id = ?";
-    $stmt = $conexao->prepare($sql);
+    $stmt = $conn->prepare($sql);
     if ($stmt === false) {
-        throw new Exception('Não foi possível preparar a declaração: ' . $conexao->error);
+        throw new Exception('Não foi possível preparar a declaração: ' . $conn->error);
     }
 
     // Vincula o parâmetro e executa a consulta
@@ -31,7 +31,7 @@ try {
         // Se você estiver usando sessões para armazenar informações do administrador, limpe-as aqui
         unset($_SESSION['admin_id']);
         // Commit da transação
-        $conexao->commit();
+        $conn->commit();
         // Redireciona para a página de login ou para a lista de administradores
         header('Location: login_adm.php');
         exit;
@@ -40,11 +40,11 @@ try {
     }
 } catch (Exception $e) {
     // Se ocorrer algum erro, desfaz as alterações
-    $conexao->rollback();
+    $conn->rollback();
     exit('Erro ao excluir administrador: ' . $e->getMessage());
 } finally {
     // Fecha a declaração e a conexão
     $stmt->close();
-    $conexao->close();
+    $conn->close();
 }
 ?>
