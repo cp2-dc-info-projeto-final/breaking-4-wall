@@ -6,10 +6,10 @@ esse e o manual de usuario do site braking4 wall, feito para auxialiar diretamen
 
  - [cadastro ](#cadastro)    
  - [login](#login)
- - [Funcionalidade Z](#alterarsenha)
- - [Funcionalidade Z](#enviaremail)
- - [Funcionalidade Z](#visualizarperfil)
- - [Funcionalidade Z](#cadastrarfilmes)
+ - [enviar email](#enviaremail)
+ - [alterar senha](#alterarsenha)
+ - [visualizar perfil](#visualizarperfil)
+ - [cadastrar filmes](#cadastrarfilmes)
 
 ## Funcionalidade X
 
