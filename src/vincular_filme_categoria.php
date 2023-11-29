@@ -1,54 +1,71 @@
 <?php
-session_start(); // Inicia a sessão para armazenar mensagens de feedback
+session_start(); // Inicia a sessão
 
-// Dados de conexão ao banco de dados
+// Configuração das variáveis de conexão com o banco de dados
 $servername = "localhost";
 $username = "vitor";
 $password = "1234567";
 $dbname = "cadastro";
 
-// Variável para armazenar mensagens de feedback
-$message = '';
+// Criar conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Checa se os dados foram enviados pelo formulário
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["filmeID"]) && isset($_POST["categoriaID"])) {
-    // Cria a conexão com o banco de dados
-    $conn = new mysqli($servername, $username, $password, $dbname);
+// Verificar conexão
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
 
-    // Checa a conexão
-    if ($conn->connect_error) {
-        die("Falha na conexão: " . $conn->connect_error);
-    }
+// Processa a vinculação se o formulário foi submetido
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['filmeID']) && isset($_POST['categoriaID'])) {
+    $filmeID = $_POST['filmeID'];
+    $categoriaID = $_POST['categoriaID'];
 
-    $filmeID = $_POST["filmeID"];
-    $categoriaID = $_POST["categoriaID"];
-
-    // Prepara a inserção dos dados no banco
+    // Prepara a consulta para inserir a vinculação
     $stmt = $conn->prepare("INSERT INTO FilmesCategorias (FilmeID, CategoriaID) VALUES (?, ?)");
     $stmt->bind_param("ii", $filmeID, $categoriaID);
 
-    // Executa o statement
+    // Executa a consulta e verifica se foi bem-sucedida
     if ($stmt->execute()) {
-        $_SESSION['message'] = "Vínculo entre filme e categoria realizado com sucesso!";
+        $_SESSION['message'] = 'Vinculação feita com sucesso!';
     } else {
-        $_SESSION['message'] = "Erro ao realizar o vínculo: " . $stmt->error;
+        $_SESSION['message'] = 'Erro ao tentar vincular o filme à categoria.';
     }
 
-    // Fecha o statement e a conexão com o banco de dados
+    // Fecha o statement
     $stmt->close();
-    $conn->close();
-
-    // Redireciona para a mesma página para evitar reenvio do formulário
-    header('Location: ' . $_SERVER['PHP_SELF']);
-    exit();
 }
 
-// Se uma mensagem foi definida na sessão, armazena-a na variável $message e limpa a sessão
+// Buscar filmes
+$stmt_filmes = $conn->prepare("SELECT ID, Titulo FROM Filmes");
+$stmt_filmes->execute();
+$result_filmes = $stmt_filmes->get_result();
+$filmes_options = '';
+while ($filme = $result_filmes->fetch_assoc()) {
+    $filmes_options .= '<option value="' . $filme['ID'] . '">' . htmlspecialchars($filme['Titulo']) . '</option>';
+}
+$stmt_filmes->close();
+
+// Buscar categorias
+$stmt_categorias = $conn->prepare("SELECT ID, Nome FROM Categorias");
+$stmt_categorias->execute();
+$result_categorias = $stmt_categorias->get_result();
+$categorias_options = '';
+while ($categoria = $result_categorias->fetch_assoc()) {
+    $categorias_options .= '<option value="' . $categoria['ID'] . '">' . htmlspecialchars($categoria['Nome']) . '</option>';
+}
+$stmt_categorias->close();
+
+// Fechar a conexão com o banco de dados
+$conn->close();
+
+// Mensagem de retorno da tentativa de vinculação
+$message = '';
 if (isset($_SESSION['message'])) {
     $message = $_SESSION['message'];
     unset($_SESSION['message']);
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -56,7 +73,7 @@ if (isset($_SESSION['message'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincular Filme a Categoria</title>
     <style>
-    body {
+      body {
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         background-color: #ecf0f1;
         margin: 0;
@@ -104,13 +121,18 @@ if (isset($_SESSION['message'])) {
     button:hover {
         background-color: #2980b9;
     }
-</style>
     </style>
 </head>
 <body>
 
 <div class="container">
-    <form action="vincular_filme_categoria.php" method="POST">
+    <?php if ($message): ?>
+        <div class="alert">
+            <?php echo htmlspecialchars($message); ?>
+        </div>
+    <?php endif; ?>
+
+    <form action="" method="POST"> <!-- O action agora está vazio, o que significa que o formulário será submetido para o próprio arquivo. -->
         <label for="filme">Filme:</label>
         <select id="filme" name="filmeID">
             <?php echo $filmes_options; ?>
