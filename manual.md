@@ -6,7 +6,7 @@ esse e o manual de usuario do site braking4 wall, feito para auxialiar diretamen
 
  - [cadastro ](#cadastro)    
  - [login](#login)
- - [enviaremail](#enviaremail)
+ - [enviar_email](#enviaremail)
  - [alterar senha](#alterarsenha)
  - [visualizar perfil](#visualizarperfil)
  - [cadastrar filmes](#cadastrarfilmes)
