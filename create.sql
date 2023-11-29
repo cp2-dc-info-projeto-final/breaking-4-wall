@@ -126,24 +126,25 @@ CREATE TABLE filmescategorias (
 
 CREATE TABLE Administradores (
   id INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(50) NOT NULL UNIQUE,
+  usuario VARCHAR(50) NOT NULL UNIQUE,
   email VARCHAR(100) NOT NULL UNIQUE,
   senha VARCHAR(255) NOT NULL
 );
 
 ALTER TABLE Administradores ADD COLUMN is_admin BOOLEAN NOT NULL DEFAULT FALSE;
 
-INSERT INTO Administradores (nome, email, senha, is_admin)
-VALUES ('trem caro', 'tremcaro@gmail.com', 'barney', TRUE);
+INSERT INTO Administradores (usuario, email, senha)
+VALUES ('nomeusuario', 'email@dominio.com', 'senhacriptografada');
 
-SELECT nome, email, is_admin FROM Administradores
-WHERE nome = 'trem caro' AND senha = 'barney';
+SELECT * FROM Administradores
+WHERE usuario = 'nomeusuario' AND senha = 'senhacriptografada';
 
 UPDATE Administradores
-SET senha = 'sumo24'
-WHERE nome = 'Pedro';
+SET senha = 'novasenhacriptografada'
+WHERE usuario = 'nomeusuario';
 
 DELETE FROM Administradores
-WHERE nome = 'Pedro';
+WHERE usuario = 'nomeusuario';
+
 
 
