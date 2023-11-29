@@ -18,7 +18,6 @@ CREATE TABLE Atores (
     Genero VARCHAR(20),
     Biografia TEXT
 ); 
------------------------------Cadastro de atores-------------------------------            
   
 
 CREATE DATABASE IF NOT EXISTS CADASTRO;
@@ -40,13 +39,10 @@ CREATE TABLE Atuacoes (
     FOREIGN KEY (AtorID) REFERENCES Atores(ID),
     FOREIGN KEY (FilmeID) REFERENCES Filmes(ID)
 );
-   --------------------------atuacoes---------------------------------------------
 
 
--- Cria o banco de dados 'cadastro'
 CREATE DATABASE IF NOT EXISTS cadastro;
 
--- Seleciona o banco de dados 'cadastro'
 USE cadastro;
 
 drop USER if EXISTS 'alvaro'@'localhost';
@@ -58,7 +54,6 @@ GRANT ALL PRIVILEGES ON CADASTRO.* TO 'alvaro'@'localhost';
 drop TABLE if EXISTS filmes;
 
 
--- Cria a tabela 'Filmes'
 CREATE TABLE IF NOT EXISTS Filmes (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     Titulo VARCHAR(255) NOT NULL,
@@ -66,7 +61,6 @@ CREATE TABLE IF NOT EXISTS Filmes (
     Diretor VARCHAR(255),
     Sinopse TEXT
 );
-------------------------------cadastro de filmes--------------------------------
 
 
 CREATE DATABASE IF NOT EXISTS CADASTRO;
@@ -85,7 +79,6 @@ CREATE TABLE Categorias (
     ID INT PRIMARY KEY AUTO_INCREMENT,
     Nome VARCHAR(50) NOT NULL
 );
-----------------------------------categoria--------------------------------------
 
 
 CREATE DATABASE IF NOT EXISTS CADASTRO;
@@ -106,7 +99,6 @@ CREATE TABLE cadastrados (
     email VARCHAR(255) NOT NULL,
     senha VARCHAR(255) NOT NULL
 ); 
--------------------------------conexao--------------------------------------------
 
 
 
@@ -130,6 +122,5 @@ CREATE TABLE filmescategorias (
     FOREIGN KEY (FilmeID) REFERENCES Filmes(ID),
     FOREIGN KEY (CategoriaID) REFERENCES Categorias(ID)
 );
----------------------------------vincular filme e categoria
 
 
