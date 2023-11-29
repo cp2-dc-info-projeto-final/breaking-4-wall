@@ -4,7 +4,8 @@ esse e o manual de usuario do site braking4 wall, feito para auxialiar diretamen
 
 **Lista das Funcionalidades:**
 
- - [Funcionalidade X](#cadastro)
+ - [cadastro ](#cadastro)  
+ - [Funcionalidade X](#cadastro)  
  - [Funcionalidade Y](#login)
  - [Funcionalidade Z](#alterarsenha)
  - [Funcionalidade Z](#enviaremail)
