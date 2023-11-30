@@ -1,27 +1,33 @@
 <?php
 session_start();
+
+// Verifica se o usuário está logado como administrador
+if (empty($_SESSION['eh_admin']) || $_SESSION['eh_admin'] != 1) {
+    die("Acesso restrito a administradores.");
+    // Ou redirecione para outra página
+    // header("Location: pagina_de_erro.php");
+    // exit;
+}
+
 require_once 'conecta.php';
 
-if (!isset($_SESSION['admin_id'])) {
+// Busca as informações do administrador logado no banco de dados
+$adminId = $_SESSION['admin_id'];
+$sqlAdminLogado = "SELECT nome, email FROM Administradores WHERE id = ?";
+$stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+$stmtAdminLogado->bind_param("i", $adminId);
+$stmtAdminLogado->execute();
+$resultAdminLogado = $stmtAdminLogado->get_result();
+
+$adminInfo = [];
+if ($resultAdminLogado->num_rows > 0) {
+    $adminInfo = $resultAdminLogado->fetch_assoc();
+} else {
+    // Caso não encontre o administrador, redirecione para a página de login.
     header('Location: login_adm.php');
     exit;
 }
-
-$adminId = $_SESSION['admin_id'];
-
-// Busca as informações do administrador no banco de dados
-$sql = "SELECT nome, email FROM Administradores WHERE id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $adminId);
-$stmt->execute();
-$result = $stmt->get_result();
-
-$adminInfo = [];
-if ($result->num_rows > 0) {
-    $adminInfo = $result->fetch_assoc();
-}
-
-$stmt->close();
+$stmtAdminLogado->close();
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +35,7 @@ $stmt->close();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Administração</title>
+    <title>Painel de Administração - Perfil</title>
     <style>
         /* Estilos Gerais */
         body {
@@ -158,54 +164,28 @@ $stmt->close();
 <body>
 
 <div class="sidebar">
-    <h2>Painel de Administração</h2>
+<h2>Painel de Administração</h2>
     <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="lista_filmes.php">Filmes</a></li>
         <li><a href="cadastro_filmes.html">Cadastro de Filmes</a></li>
         <li><a href="cadastro_atores.html">Cadastro de Atores</a></li>
-        <li><a href="lista_usuarios.php">Administradores</a></li>
-        <li><a href="#">Usuários</a></li>
-        <li><a href="#">Configurações</a></li>
+        <li><a href="lista_cadastrados.php">Cadastrados</a></li>
+        
     </ul>
 </div>
 
 <div class="content">
-    <h1>Olá! Administrador <?php echo htmlspecialchars($adminInfo['nome'] ?? 'BR4W'); ?></h1>
+    <h1>Perfil do Administrador</h1>
     
-    <!-- Mini tabela com as informações do administrador -->
-    <?php if ($adminInfo): ?>
-    <table>
-        <tr>
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Ações</th>
-        </tr>
-        <tr>
-            <td><?php echo htmlspecialchars($adminInfo['nome']); ?></td>
-            <td><?php echo htmlspecialchars($adminInfo['email']); ?></td>
-            <td>
-                <button class="edit-btn" data-admin-id="<?php echo $adminId; ?>">Editar</button>
-                <button class="delete-btn" data-admin-id="<?php echo $adminId; ?>">Excluir</button>
-            </td>
-        </tr>
-    </table>
-    <?php endif; ?>
+    <div class="perfil-admin">
+        <p>Nome: <?php echo htmlspecialchars($adminInfo['nome']); ?></p>
+        <p>Email: <?php echo htmlspecialchars($adminInfo['email']); ?></p>
+        <p><a href="editar_administrador.php?id=<?php echo $adminId; ?>" class="edit-btn">Editar Perfil</a></p>
+        <p><a href="excluir_admin.php?id=<?php echo $adminId; ?>" class="delete-btn" onclick="return confirm('Tem certeza que deseja excluir este administrador?');">Excluir Perfil</a></p>
+    </div>
+
 </div>
-
-<script>
-    document.querySelector('.edit-btn').addEventListener('click', function() {
-        var adminId = this.getAttribute('data-admin-id');
-        window.location.href = 'editar_administrador.php?id=' + adminId;
-    });
-
-    document.querySelector('.delete-btn').addEventListener('click', function() {
-        var adminId = this.getAttribute('data-admin-id');
-        if (confirm('Tem certeza que deseja excluir este administrador?')) {
-            window.location.href = 'excluir_admin.php?id=' + adminId;
-        }
-    });
-</script>
 
 </body>
 </html>
