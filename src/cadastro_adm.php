@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Prepara a consulta SQL para inserir o administrador
     $sql = "INSERT INTO Administradores (usuario, email, senha) VALUES (?, ?, ?)";
     
-    if ($stmt = $conn->prepare($sql)) { // Mudança aqui: de $conexao para $conn
+    if ($stmt = $conn->prepare($sql)) {
         // Vincula variáveis à consulta preparada como parâmetros
         $stmt->bind_param("sss", $usuario, $email, $senhaCriptografada);
 
@@ -23,6 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             if ($stmt->execute()) {
                 echo "Administrador cadastrado com sucesso!";
+                // Adicione um link para a página de login
+                echo '<br><a href="login_adm.html">Ir para a página de login</a>';
             } else {
                 echo "Erro ao cadastrar administrador: " . $stmt->error;
             }
