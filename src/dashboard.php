@@ -1,20 +1,23 @@
 <?php
 session_start();
 
-// Verifica se o usuário está logado como administrador
-if (empty($_SESSION['eh_admin']) || $_SESSION['eh_admin'] != 1) {
-    die("Acesso restrito a administradores.");
-    // Ou redirecione para outra página
-    // header("Location: pagina_de_erro.php");
-    // exit;
-}
-
 require_once 'conecta.php';
 
-// Busca as informações do administrador logado no banco de dados
+// Verifica se o ID do administrador está na sessão e se é válido
+if (!isset($_SESSION['admin_id']) || empty($_SESSION['admin_id'])) {
+    header('Location: login_adm.php');
+    exit;
+}
+
 $adminId = $_SESSION['admin_id'];
-$sqlAdminLogado = "SELECT nome, email FROM Administradores WHERE id = ?";
+
+// Busca as informações do administrador logado no banco de dados
+$sqlAdminLogado = "SELECT usuario, email FROM Administradores WHERE id = ?";
 $stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+if (!$stmtAdminLogado) {
+    // Trata o erro adequadamente (pode ser uma questão do banco de dados ou SQL)
+    die('Erro na preparação da consulta: ' . $conn->error);
+}
 $stmtAdminLogado->bind_param("i", $adminId);
 $stmtAdminLogado->execute();
 $resultAdminLogado = $stmtAdminLogado->get_result();
@@ -28,6 +31,8 @@ if ($resultAdminLogado->num_rows > 0) {
     exit;
 }
 $stmtAdminLogado->close();
+
+// O restante do seu código HTML segue aqui...
 ?>
 
 <!DOCTYPE html>
@@ -179,7 +184,7 @@ $stmtAdminLogado->close();
     <h1>Perfil do Administrador</h1>
     
     <div class="perfil-admin">
-        <p>Nome: <?php echo htmlspecialchars($adminInfo['nome']); ?></p>
+        <p>Nome: <?php echo htmlspecialchars($adminInfo['usuario']); ?></p>
         <p>Email: <?php echo htmlspecialchars($adminInfo['email']); ?></p>
         <p><a href="editar_administrador.php?id=<?php echo $adminId; ?>" class="edit-btn">Editar Perfil</a></p>
         <p><a href="excluir_admin.php?id=<?php echo $adminId; ?>" class="delete-btn" onclick="return confirm('Tem certeza que deseja excluir este administrador?');">Excluir Perfil</a></p>
