@@ -25,7 +25,8 @@ $email = $_SESSION["email"];
         <h2>Perfil</h2>
         <p>Nome: <?php echo $nome; ?></p>
         <p>Email: <?php echo $email; ?></p>
-        <a href="index.html">Sair da conta</a>
+        <a href="logout.php">Sair</a> <!-- Botão de Logout -->
+        <a href="index.html">Ir para tela inicial</a>
     </div>
 </body>
 </html>
