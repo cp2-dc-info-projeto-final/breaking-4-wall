@@ -124,6 +124,19 @@ CREATE TABLE filmescategorias (
 );
 
 
+CREATE DATABASE IF NOT EXISTS CADASTRO;
+
+USE CADASTRO;
+
+drop USER if EXISTS ''@'localhost';
+
+CREATE USER 'poulo'@'localhost' IDENTIFIED BY 'neymar123';
+
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'poulo'@'localhost';
+
+drop TABLE if EXISTS Administradores;
+
+
 CREATE TABLE Administradores (
   id INT AUTO_INCREMENT PRIMARY KEY,
   usuario VARCHAR(50) NOT NULL UNIQUE,
@@ -145,6 +158,5 @@ WHERE usuario = 'nomeusuario';
 
 DELETE FROM Administradores
 WHERE usuario = 'nomeusuario';
-
 
 
