@@ -1,6 +1,6 @@
 # Manual do Usuário
 
-esse e o manual de usuario do site braking4 wall, feito para auxialiar diretamente o contato do usuario com seus filmes favoritos. Nosso site possui login para os usuarios, administradores, sistemas de cadastramento de usuarios, atores, categorias, sistemas de redefiniçao de senha, sistemas de comentarios, ediçao e exclusao de filmes e outros usuarios 
+Esse é o manual de usuario do site braking4 wall, feito para auxialiar diretamente o contato do usuario com seus filmes favoritos. Nosso site possui login para os usuarios, administradores, sistemas de cadastramento de usuarios, atores, categorias, sistemas de redefiniçao de senha, sistemas de comentarios, ediçao e exclusao de filmes e outros usuarios 
 
 **Lista das Funcionalidades:**
 
