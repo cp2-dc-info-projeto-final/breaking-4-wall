@@ -19,8 +19,9 @@ esse e o manual de usuario do site braking4 wall, feito para auxialiar diretamen
  - [consultar lista de filmes](#listadefilmes)
  - [excluir administrador](#excluiradministrador)
  - [excluir filme](#excluirfilme)
- - [](#)
- - [](#)
+ - [vinculo entre ator e filme](#vinculoatuaçoes)
+ - [vinculo entre filme e categoria](#vinculoatorecategoria)
+ 
 
 ## Funcionalidade X
 
