@@ -4,10 +4,10 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
 **Lista das Funcionalidades:**
 
- - [cadastro ](#cadastro)    
  - [login](#login)
  - [logout](#lpgout)
- - [enviar email](#enviaremail)
+ - [cadastro ](#cadastro)  
+ - [enviar email](#enviaremail
  - [alterar senha](#alterarsenha)
  - [visualizar perfil](#visualizarperfil)
  - [cadastrar filmes](#cadastrarfilmes)
@@ -24,9 +24,14 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [excluir administrador](#excluiradministrador)
  - [excluir filme](#excluirfilme) 
 
-## cadastrar (1)  
+## login (1)  
 
-Aliquam in convallis quam, egestas consectetur felis. Integer in dolor sit amet neque volutpat faucibus ut porttitor libero. Morbi faucibus non purus nec finibus. Pellentesque lacus nunc, ultricies quis enim at, vehicula semper nibh. Ut eget erat blandit, porta nibh sit amet, facilisis felis. Aliquam vitae consequat nisi, ut vestibulum sapien. Sed ornare quis leo quis cursus. Vestibulum ut quam odio. Donec sit amet risus augue. Curabitur venenatis a tortor ac placerat.
+para fazer o login como usuario 
+
+[](#)clique em entrar
+ 
+
+ 
 
 ## Funcionalidade Y
 
