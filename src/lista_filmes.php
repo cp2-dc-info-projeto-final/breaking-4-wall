@@ -24,43 +24,74 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <title>Lista de Filmes</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
+        /* Estilos existentes */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
 
-        h1 {
-            text-align: center;
-            color: #333;
-        }
+h1 {
+    text-align: center;
+    color: #333;
+}
 
-        table {
-            width: 100%;
-            margin-top: 20px;
-            border-collapse: collapse;
-        }
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
 
-        table, th, td {
-            border: 1px solid #ddd;
-        }
+table, th, td {
+    border: 1px solid #ddd;
+}
 
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
+th, td {
+    padding: 10px;
+    text-align: left;
+}
 
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
+th {
+    background-color: #4CAF50;
+    color: white;
+}
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos adicionados para os botões de ação */
+.action-btn {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 8px;
+    display: inline-block; /* Adicionado para melhor alinhamento dos botões */
+    font-size: 0.9em; /* Adicionado para garantir que o tamanho do texto seja adequado */
+}
+
+.edit-btn {
+    background-color: #ffc107;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+/* Adicionando estilos de hover para feedback ao usuário */
+.action-btn:hover {
+    opacity: 0.9; /* Efeito de transparência ao passar o mouse */
+    text-decoration: none; /* Garante que o texto não será sublinhado ao passar o mouse */
+}
+
+/* Adicionando estilo para o cursor para melhorar a UX */
+.action-btn:hover {
+    cursor: pointer;
+}
+
     </style>
-    <!-- Estilos e scripts necessários -->
 </head>
 <body>
     <h1>Lista de Filmes</h1>
@@ -74,16 +105,21 @@ $result = $conn->query($sql);
                     <th>Ano de Lançamento</th>
                     <th>Diretor</th>
                     <th>Sinopse</th>
+                    <th>Ações</th> <!-- Cabeçalho para os botões de ação -->
                 </tr>
             </thead>
             <tbody>
                 <?php while($row = $result->fetch_assoc()): ?>
                 <tr>
                     <td><?php echo $row["ID"]; ?></td>
-                    <td><a href="detalhes_filme.php?id=<?php echo $row['ID']; ?>"><?php echo $row["Titulo"]; ?></a></td>
+                    <td><?php echo $row["Titulo"]; ?></td>
                     <td><?php echo $row["AnoLancamento"]; ?></td>
                     <td><?php echo $row["Diretor"]; ?></td>
                     <td><?php echo $row["Sinopse"]; ?></td>
+                    <td>
+                        <a href="editar_filme.php?id=<?php echo $row['ID']; ?>" class="action-btn edit-btn">Editar</a>
+                        <a href="excluir_filme.php?id=<?php echo $row['ID']; ?>" class="action-btn delete-btn" onclick="return confirm('Tem certeza que deseja excluir este filme?');">Excluir</a>
+                    </td>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
@@ -99,3 +135,4 @@ $result = $conn->query($sql);
 
 </body>
 </html>
+
