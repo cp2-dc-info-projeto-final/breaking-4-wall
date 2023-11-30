@@ -11,9 +11,16 @@ esse e o manual de usuario do site braking4 wall, feito para auxialiar diretamen
  - [visualizar perfil](#visualizarperfil)
  - [cadastrar filmes](#cadastrarfilmes)
  - [cadastrar categoria](#cadastrarcategoria)
+ - [cadastrar administradores](#cadastraradministradores)
+ - [cadastrar atores](#cadastraratores)
+ - [detalhes do filme](#detalhesdofilme)
  - [](#)
  - [](#)
  - [](#)
+ - [](#)
+ - [](#)
+ - [](#)
+
 ## Funcionalidade X
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat molestie justo non tincidunt. Praesent tristique, elit convallis eleifend congue, nisl ex lobortis lorem, ac gravida tellus lacus eu enim. Aliquam urna turpis, convallis id turpis et, iaculis consequat nunc. Proin elit orci, imperdiet nec tristique nec, tincidunt ut nibh. Donec dignissim urna ut erat imperdiet aliquam. Vestibulum augue leo, pellentesque malesuada egestas quis, molestie at lacus. Donec rhoncus finibus lorem, accumsan interdum sapien facilisis sit amet. Integer odio magna, sodales at varius at, dapibus vitae ante. Sed ac ullamcorper ex. Ut in metus ipsum. Duis vulputate porta mi, id venenatis massa ornare vel. Nunc ornare malesuada elit sed feugiat.
