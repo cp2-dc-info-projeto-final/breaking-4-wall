@@ -14,14 +14,14 @@ $adminId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 // Verifica se estamos recebendo dados do formulário
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Aqui você vai validar e sanitizar os dados recebidos
-    $nome = $_POST['nome'];
+    $usuario = $_POST['usuario'];
     $email = $_POST['email'];
     
     // Atualiza as informações do administrador no banco de dados
-    $sql = "UPDATE Administradores SET nome = ?, email = ? WHERE id = ?";
+    $sql = "UPDATE Administradores SET usuario = ?, email = ? WHERE id = ?";
     $stmt = $conn->prepare($sql);
     if ($stmt) {
-        $stmt->bind_param("ssi", $nome, $email, $adminId);
+        $stmt->bind_param("ssi", $usuario, $email, $adminId);
         $stmt->execute();
         if ($stmt->affected_rows > 0) {
             echo "Informações atualizadas com sucesso!";
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 // Busca as informações atuais do administrador para exibir no formulário
-$sql = "SELECT nome, email FROM Administradores WHERE id = ?";
+$sql = "SELECT usuario, email FROM Administradores WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $adminId);
 $stmt->execute();
@@ -53,7 +53,7 @@ $stmt->close();
 
 <!-- Formulário de edição -->
 <form action="editar_administrador.php?id=<?php echo $adminId; ?>" method="post">
-    Nome: <input type="text" name="nome" value="<?php echo htmlspecialchars($adminInfo['nome']); ?>"><br>
+    Usuario: <input type="text" name="usuario" value="<?php echo htmlspecialchars($adminInfo['usuario']); ?>"><br>
     Email: <input type="email" name="email" value="<?php echo htmlspecialchars($adminInfo['email']); ?>"><br>
     <input type="submit" value="Salvar Alterações">
 </form>
