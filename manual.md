@@ -6,6 +6,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - [cadastro ](#cadastro)    
  - [login](#login)
+ - [logout](#lpgout)
  - [enviar email](#enviaremail)
  - [alterar senha](#alterarsenha)
  - [visualizar perfil](#visualizarperfil)
@@ -18,6 +19,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [detalhes do filme](#detalhesdofilme)
  - [editar administrador](#editaradministrador)
  - [editar filme](#editarfilme)
+ - [editar perfil](editarperfil#)
  - [consultar lista de filmes](#listadefilmes)
  - [excluir administrador](#excluiradministrador)
  - [excluir filme](#excluirfilme) 
