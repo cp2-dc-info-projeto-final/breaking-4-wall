@@ -1,15 +1,15 @@
 <?php
 $servername = "localhost";
-$username = "alvaro"; // Substitua pelo seu usuário do banco de dados
-$password = "12345"; // Substitua pela sua senha do banco de dados
-$dbname = "cadastro";
+$username = "cadastrado"; // Seu nome de usuário do banco de dados
+$password = "123"; // Sua senha do banco de dados
+$dbname = "CADASTRO"; // Nome do seu banco de dados
 
-// Criar conexão
-$conn = new mysqli("localhost", "alvaro", "12345", "cadastro");
+// Criar a conexão
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexão
+// Verificar a conexão
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Conexão falhou: " . $conn->connect_error);
 }
 
 // Consulta SQL para selecionar todos os filmes
@@ -24,79 +24,81 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <title>Lista de Filmes</title>
     <style>
-        /* Estilos existentes */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #141414;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff4081;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+        th {
+            background-color: #7b1fa2;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #282828;
+        }
+        tr:hover {
+            background-color: #373737;
+        }
+        .edit-btn, .delete-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .edit-btn {
+            background-color: #ffab40;
+        }
+        .delete-btn {
+            background-color: #f44336;
+        }
+        .edit-btn:hover, .delete-btn:hover {
+            opacity: 0.9;
+        }
+        a {
+            color: #00e5ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
 
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-th {
-    background-color: #4CAF50;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-/* Estilos adicionados para os botões de ação */
-.action-btn {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    margin-right: 8px;
-    display: inline-block; /* Adicionado para melhor alinhamento dos botões */
-    font-size: 0.9em; /* Adicionado para garantir que o tamanho do texto seja adequado */
-}
-
-.edit-btn {
-    background-color: #ffc107;
-}
-
-.delete-btn {
-    background-color: #dc3545;
-}
-
-/* Adicionando estilos de hover para feedback ao usuário */
-.action-btn:hover {
-    opacity: 0.9; /* Efeito de transparência ao passar o mouse */
-    text-decoration: none; /* Garante que o texto não será sublinhado ao passar o mouse */
-}
-
-/* Adicionando estilo para o cursor para melhorar a UX */
-.action-btn:hover {
-    cursor: pointer;
-}
-
+        /* Estilos para os botões de editar e excluir */
+        .edit-btn, .delete-btn {
+            padding: 5px 10px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .edit-btn {
+            background-color: #ffc107;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+        }
     </style>
 </head>
 <body>
     <h1>Lista de Filmes</h1>
 
-    <?php if ($result->num_rows > 0): ?>
+    <?php if ($result && $result->num_rows > 0): ?>
         <table>
             <thead>
                 <tr>
@@ -105,20 +107,20 @@ tr:nth-child(even) {
                     <th>Ano de Lançamento</th>
                     <th>Diretor</th>
                     <th>Sinopse</th>
-                    <th>Ações</th> <!-- Cabeçalho para os botões de ação -->
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
                 <?php while($row = $result->fetch_assoc()): ?>
                 <tr>
                     <td><?php echo $row["ID"]; ?></td>
-                    <td><?php echo $row["Titulo"]; ?></td>
+                    <td><a href="detalhes_filme.php?id=<?php echo $row['ID']; ?>"><?php echo $row["Titulo"]; ?></a></td>
                     <td><?php echo $row["AnoLancamento"]; ?></td>
                     <td><?php echo $row["Diretor"]; ?></td>
                     <td><?php echo $row["Sinopse"]; ?></td>
                     <td>
-                        <a href="editar_filme.php?id=<?php echo $row['ID']; ?>" class="action-btn edit-btn">Editar</a>
-                        <a href="excluir_filme.php?id=<?php echo $row['ID']; ?>" class="action-btn delete-btn" onclick="return confirm('Tem certeza que deseja excluir este filme?');">Excluir</a>
+                        <a href="editar_filme.php?id=<?php echo $row['ID']; ?>" class="edit-btn">Editar</a>
+                        <a href="excluir_filme.php?id=<?php echo $row['ID']; ?>" class="delete-btn" onclick="return confirm('Tem certeza que deseja excluir este filme?');">Excluir</a>
                     </td>
                 </tr>
                 <?php endwhile; ?>
@@ -128,11 +130,7 @@ tr:nth-child(even) {
         <p>Nenhum filme encontrado.</p>
     <?php endif; ?>
 
-    <?php
-    // Fechar conexão
-    $conn->close();
-    ?>
+    <?php $conn->close(); ?>
 
 </body>
 </html>
-
