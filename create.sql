@@ -128,7 +128,7 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-drop USER if EXISTS ''@'localhost';
+drop USER if EXISTS 'poulo'@'localhost';
 
 CREATE USER 'poulo'@'localhost' IDENTIFIED BY 'neymar123';
 
