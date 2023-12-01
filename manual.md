@@ -2,7 +2,9 @@
 
 Esse é o manual de usuário do site braking-4 wall, feito para auxialiar diretamente o contato do usuário com seus filmes favoritos. Nosso site possui login para os usuário, administradores, sistemas de cadastramento de usuário, atores, categorias, sistemas de redefiniçao de senha, sistemas de comentarios, edição e exclusão de filmes e outros usuário 
 
+
 **Lista das Funcionalidades:**
+
 
  - [login](#login)
  - [logout](#lpgout)
