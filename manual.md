@@ -6,7 +6,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - [login](#login)
  - [logout](#lpgout)
- - [cadastro ](#cadastro)  
+ - [cadastro](#cadastro)
  - [enviar email](#enviaremail)
  - [alterar senha](#alterarsenha)
  - [visualizar perfil](#visualizarperfil)
@@ -25,7 +25,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [excluir filme](#excluirfilme) 
 
 
-- login (1)  
+
+
+- Login (1)  
 
   1.1 Para fazer o login como usuario 
 
@@ -41,7 +43,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   3.1 Clique para cadastrar
 
-- alterar senha (4)
+- Alterar senha (4)
 
   4.1 Ao clicar em login o usuário será levado para a opção de "alterar senha" caso a senha esteja errada
 
