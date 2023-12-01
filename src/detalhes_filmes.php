@@ -3,9 +3,9 @@ session_start(); // Inicia a sessão para verificar o login do usuário
 
 // Configuração das variáveis de conexão com o banco de dados
 $servername = "localhost";
-$username = "alvaro";
-$password = "12345";
-$dbname = "cadastro";
+$username = "cadastrados";
+$password = "123";
+$dbname = "CADASTRO";
 
 // Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,52 +15,25 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Certifique-se de que um ID foi passado na URL
-if (!isset($_GET['id']) || empty($_GET['id'])) {
-    die('ID do filme não foi especificado.');
-}
-
-$filmeId = $_GET['id'];
+$filmeId = isset($_GET['id']) ? $_GET['id'] : die('ID do filme não foi especificado.');
 
 // Consulta para obter detalhes do filme
-$stmt_filme = $conn->prepare("
-    SELECT f.Titulo, f.AnoLancamento, f.Diretor, f.Sinopse, GROUP_CONCAT(c.Nome SEPARATOR ', ') AS Categorias
-    FROM Filmes f
-    LEFT JOIN FilmesCategorias fc ON f.ID = fc.FilmeID
-    LEFT JOIN Categorias c ON fc.CategoriaID = c.ID
-    WHERE f.ID = ?
-    GROUP BY f.ID
-");
+$stmt_filme = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE ID = ?");
 $stmt_filme->bind_param("i", $filmeId);
 $stmt_filme->execute();
 $result_filme = $stmt_filme->get_result();
-
-if ($result_filme->num_rows === 0) {
-    die('Filme não encontrado.');
-}
-
 $filme = $result_filme->fetch_assoc();
 $stmt_filme->close();
 
-// Consulta para buscar os atores do filme
-$stmt_atores = $conn->prepare("
-    SELECT a.Nome 
-    FROM Atores a
-    JOIN Atuacoes at ON a.ID = at.AtorID
-    WHERE at.FilmeID = ?
-    GROUP BY a.Nome
-");
-$stmt_atores->bind_param("i", $filmeId);
-$stmt_atores->execute();
-$result_atores = $stmt_atores->get_result();
-$atores_list = '';
-while ($ator = $result_atores->fetch_assoc()) {
-    $atores_list .= htmlspecialchars($ator['Nome']) . ', ';
-}
-$atores_list = rtrim($atores_list, ', '); // Remove a última vírgula e espaço
-$stmt_atores->close();
+// Consulta para buscar os comentários do filme
+$stmt_comentarios = $conn->prepare("SELECT comentario FROM comentarios WHERE filme_id = ?");
+$stmt_comentarios->bind_param("i", $filmeId);
+$stmt_comentarios->execute();
+$result_comentarios = $stmt_comentarios->get_result();
+$comentarios = $result_comentarios->fetch_all(MYSQLI_ASSOC);
+$stmt_comentarios->close();
 
-// Feche a conexão com o banco de dados
+
 $conn->close();
 ?>
 
@@ -69,8 +42,8 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
-    <!-- Estilos existentes -->
-    <style>
+      <!-- Estilos existentes -->
+ <style>
            .filme-imagem {
     max-width: 70%; /* Diminui para 70% da largura do container */
     border-radius: 8px;
@@ -145,6 +118,10 @@ $conn->close();
     }
 }
 
+        body {
+            font-family: Arial, sans-serif;
+        }
+        /* Adicione mais estilos conforme necessário */
     </style>
 </head>
 <body>
@@ -156,11 +133,22 @@ $conn->close();
             <strong>Sinopse:</strong>
             <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
         </div>
-        <p class="filme-categorias"><strong>Categoria(s):</strong> <?php echo htmlspecialchars($filme['Categorias']); ?></p>
-        <!-- Adiciona a exibição dos atores aqui -->
-        <p><strong>Ator(es):</strong> <?php echo $atores_list; ?></p>
-        <img class="filme-imagem" src="<?php echo htmlspecialchars($caminhoImagem); ?>" alt="Poster do filme">
 
-    </div>
-</body>
-</html>
+       <!-- Seção de comentários -->
+<div id="secao-comentarios">
+    <h3>Comentários</h3>
+    
+    <!-- Formulário para adicionar comentário -->
+    <form action="inserir_comentario.php" method="post">
+        <input type="hidden" name="filme_id" value="<?php echo $filmeId; ?>">
+        <textarea name="comentario" placeholder="Escreva seu comentário aqui..." required></textarea>
+        <button type="submit">Enviar Comentário</button>
+    </form>
+
+    <!-- Listar comentários existentes -->
+    <?php foreach ($comentarios as $comentario): ?>
+        <div class="comentario">
+            <p><?php echo htmlspecialchars($comentario['comentario']); ?></p>
+        </div>
+    <?php endforeach; ?>
+</div>
