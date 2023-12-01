@@ -27,7 +27,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [excluir filme](#excluirfilme) 
 
 
-- 
+
 
 - Login (1)  
 
@@ -87,6 +87,14 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
 - Detalhes do filme (12)
 
+- editar administrador (13)
+  
+- editar filme (14)
 
--()
--()
+- editar perfil (15)
+
+- consultar lista de filmes (16)
+
+- excluir administrador (17)
+
+- excluir filme (18)
