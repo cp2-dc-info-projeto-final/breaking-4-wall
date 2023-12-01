@@ -24,6 +24,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [excluir administrador](#excluiradministrador)
  - [excluir filme](#excluirfilme) 
 
+
 - login (1)  
 
   1.1 Para fazer o login como usuario 
