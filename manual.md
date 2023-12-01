@@ -26,44 +26,44 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
 ## login (1)  
 
-Para fazer o login como usuario 
+## Para fazer o login como usuario 
 
-clique em "login"
+## Clique em "login"
  
-## logout (2)
+## Logout (2)
 
-Para fazer logout em sua conta 
+## Para fazer logout em sua conta 
 
 Clique em "sair"
 
-## cadastrar (3)
+## Cadastrar (3)
 
-3.1 clique para cadastrar
+## 3.1 Clique para cadastrar
 
 ## alterar senha (4)
 
 ## Ao clicar em login o usuário será levado para a opção de "alterar senha" caso a senha esteja errada
 
-## visualizar perfil (5)
+## Visualizar perfil (5)
 
-## entrando na tela clique em "perfil"
+## Entrando na tela clique em "perfil"
 
 ## Seus dados serão exibidos na tela
 
 ## Pagina inial do administrador *
 
-## cadastrar filmes (6)
+## Cadastrar filmes (6)
 
-## clique em "cadastro"
+## Clique em "cadastro"
 
 ## Aperte na opção "cadastrar filmes"
 
-## cadastrar categoria (7)
+## Cadastrar categoria (7)
 
 ## Clique em "cadastro"
 
 ## Aperte na opção "cadastrar categoria"
 
-## vinculo entre filme e categoria (8)
+## Vinculo entre filme e categoria (8)
 
-## vinculo entre ator e filme (9)
+## Vinculo entre ator e filme (9)
