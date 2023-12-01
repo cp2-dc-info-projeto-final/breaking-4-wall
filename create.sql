@@ -159,4 +159,28 @@ WHERE usuario = 'nomeusuario';
 DELETE FROM Administradores
 WHERE usuario = 'nomeusuario';
 
+-- Cria o banco de dados 'cadastro'
+CREATE DATABASE IF NOT EXISTS CADASTRO;
+
+USE CADASTRO;
+
+drop USER if EXISTS 'barney'@'localhost';
+
+CREATE USER 'barney'@'localhost' IDENTIFIED BY 'abc123';
+
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'barney'@'localhost';
+
+drop TABLE if EXISTS comentarios;
+
+CREATE TABLE IF NOT EXISTS Comentarios (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    filme_id INT,
+    usuario_id INT,
+    Comentario TEXT,
+    DataHora DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (FilmeID) REFERENCES Filmes(ID),
+    FOREIGN KEY (UsuarioID) REFERENCES cadastrados(id)
+);
+
+
 
