@@ -40,6 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["newName"], $_SESSION["
         $stmt->close();
         $conn->close();
 
+        
+
         // Redireciona para a página do perfil ou outra página conforme necessário
         header("Location: perfil.php");
         exit;
@@ -54,3 +56,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["newName"], $_SESSION["
     echo "Solicitação inválida.";
 }
 ?>
+
