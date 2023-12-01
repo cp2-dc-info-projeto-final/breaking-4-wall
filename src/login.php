@@ -163,7 +163,10 @@ p {
             <label for="senha">Senha</label>
             <input type="password" id="senha" name="senha" required>
            
-            <button type="submit" class="custom-button">Entrar</button>
+            <div class="login-button">
+                <button><a href="esqueceu_senha.php">Esqueceu sua senha?</a></button>
+            </div>
+            </div><button type="submit" class="custom-button">Entrar</button>
         </form>
     </div>
 </body>
