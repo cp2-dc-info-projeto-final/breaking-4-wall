@@ -51,17 +51,21 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 5. ENVIAR EMAIL
 
+   5.1 Ao tentar recuperar a senha 
+
+ - 5.2 O usuario recebera um email
+  
   ## 6. VISUALIZAR PERFIL
 
  - 6.1 Entrando na tela clique em "perfil"
 
-  6.2 Seus dados serão exibidos na tela
+   6.2 Seus dados serão exibidos na tela
 
   ## 7. CADASTRAR ADMINISTRADORES 
 
  - 7.1 Clique em cadastrar
 
-  7.2 selecione a funçao de cadastrar administradores
+   7.2 selecione a funçao de cadastrar administradores
 
   ## 8. CADASTRAR FILMES
 
@@ -92,13 +96,31 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## 15. ADICIONAR COMENTARIO
 
   ## 16. EDITAR ADMINISTRADOR
-  
+
+   Em sua conta de administrador
+
+ - Clique em "editar administrador"
+   
   ## 17. EDITAR FILME 
+
+   Em sua conta de administrador
+
+ - Clique em "editar filme"
 
   ## 18. EDITAR PERFIL 
 
-  ## 19. CONSULTAR LISTA DE FILMES
+   Em sua conta de administrador, entre no perfil
 
+ - Clique em "editar perfil"
+
+  ## 19. CONSULTAR LISTA DE FILMES
+ 
+ - Em sua conta de administrador, clique em "lista de filmes"
+ 
   ## 20. EXCLUIR ADMINISTRADOR 
 
+ - Em sua conta de administrador, clique em "excluir administrador"
+ 
   ## 21. EXCLUIR FILME 
+
+ - 21.1. Em sua conta de administrador, clique em "excluir filme"
