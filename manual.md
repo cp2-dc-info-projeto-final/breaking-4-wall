@@ -50,7 +50,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - 4.1 Ao clicar em login o usuário será levado para a opção de "alterar senha" caso a senha esteja errada
 
   ## 5. ENVIAR EMAIL
-
+   
    5.1 Ao tentar recuperar a senha 
 
  - 5.2 O usuario recebera um email
