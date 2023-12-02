@@ -1,11 +1,9 @@
 <?php
-session_start(); // Inicia a sessão
-
+session_start();
 $message = "";
 
-// Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Informações de conexão com o banco de dados
+    // Dados de conexão com o banco de dados
     $servername = "localhost";
     $username_db = "cadastrados";
     $password_db = "123";
@@ -14,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Cria uma conexão com o banco de dados
     $conn = new mysqli($servername, $username_db, $password_db, $database);
 
-    // Verifica se ocorreu algum erro na conexão
     if ($conn->connect_error) {
         die("Erro na conexão com o banco de dados: " . $conn->connect_error);
     }
@@ -22,8 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $conn->real_escape_string($_POST["email"]);
     $senha = $_POST["senha"];
 
-    // Prepara a consulta SQL para evitar injeção de SQL
-    $stmt = $conn->prepare("SELECT id, nome, email, senha FROM cadastrados WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id, nome, email, senha, is_admin FROM cadastrados WHERE email = ?");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -32,14 +28,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user = $result->fetch_assoc();
 
         if (password_verify($senha, $user['senha'])) {
-            // Senha correta, registra o usuário como logado
             $_SESSION["loggedin"] = true;
             $_SESSION["id"] = $user["id"];
             $_SESSION["nome"] = $user["nome"];
             $_SESSION["email"] = $user["email"];
 
-            // Redireciona para a página de perfil
-            header("Location: perfil.php");
+            // Verifica se o usuário é administrador
+            if ($user['is_admin']) {
+                header("Location: dashboard.php");
+            } else {
+                header("Location: index.html");
+            }
             exit;
         } else {
             $message = "Senha inválida.";
@@ -58,116 +57,61 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+    <title>Site BR4W!</title>
+    <link rel="icon" type="image/png" href="logo.jpg" />
     <style>
-/* Estilo do corpo da página com a nova cor de fundo */
-body {
-    background-color: #561237; /* Cor de fundo atualizada baseada na imagem */
-    font-family: Arial, sans-serif;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
+        /* Seu CSS vai aqui */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
 
-/* Estilo do container do formulário de login */
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #123456; /* Cor de fundo para o container do formulário */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+        .welcome-message {
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-/* Estilos para o formulário de login */
-.login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+        .welcome-message h1 {
+            font-size: 2em;
+            color: #333;
+        }
 
-/* Estilo para os rótulos do formulário */
-.login-form label {
-    color: #FFFFFF; /* Cor do texto para contraste com o fundo escuro */
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+        .navigation-links {
+            display: flex;
+            gap: 20px;
+        }
 
-/* Estilo para os campos de entrada */
-.login-form input[type="email"],
-.login-form input[type="password"] {
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #444; /* Cor de borda ajustada para contraste */
-    background-color: #FFF;
-    color: #000;
-}
+        .navigation-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-/* Estilo para o botão de login */
-.custom-button {
-    background-color: rgb(255, 0, 119); /* Cor do botão atualizada para rosa */
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.custom-button:hover {
-    background-color: #e6007e; /* Tom mais escuro de rosa para o estado de hover */
-}
-
-/* Mensagem de erro ou sucesso */
-p {
-    background-color: #444; /* Fundo para mensagem */
-    color: #FFF;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: center;
-}
-
-/* Estilo para a mensagem de erro */
-.login-form p {
-    background-color: #ff3860; /* Cor de fundo para mensagens de erro */
-    color: #ffffff;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 15px;
-}
-
-/* Estilo para o título do formulário */
-.login-form h2 {
-    color: #FFFFFF; /* Define a cor do título para branco */
-    /* Outros estilos para h2 conforme necessário */
-}
-
+        .navigation-links a:hover {
+            background-color: #0056b3;
+        }
     </style>
-    
 </head>
 <body>
-    <div class="container">
-        <form action="login.php" method="POST" class="login-form">
-            <h2>Login</h2>
-
-            <!-- Mensagem de erro ou sucesso -->
-            <?php if (!empty($message)) : ?>
-                <p><?php echo $message; ?></p>
-            <?php endif; ?>
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-           
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" required>
-           
-            <div class="login-button">
-                <button><a href="esqueceu_senha.php">Esqueceu sua senha?</a></button>
-            </div>
-            </div><button type="submit" class="custom-button">Entrar</button>
-        </form>
+    <div class="welcome-message">
+        <h1>Site BR4W!</h1>
     </div>
+
+    <div class="navigation-links">
+        <a href="login.php" class="btn btn-primary">Login</a>
+        <a href="cadastro.html" class="btn btn-secondary">Cadastre-se</a>
+        <a href="index.html" class="btn btn-success">Navegar pelo Site</a>
+    </div>
+
 </body>
 </html>
