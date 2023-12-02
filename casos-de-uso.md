@@ -17,8 +17,8 @@
  - [CDU 13](#CDU-13): Logout
 ## Lista dos Atores
 
- - usuario
- - usuario nao registrado
+ - usuário
+ - usuário nao registrado
  - administrador
 
 ## Diagrama de Casos de Uso![Diagrama Casos de uso (1) drawio](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/647c8bab-786a-406f-8852-ef7c5e2995e8)
@@ -91,7 +91,7 @@ Fluxo principal
 3. O sistema exibe resultados correspondentes.
 • Pós-condições: O usuário vê os resultados da pesquisa.
 
-    Fluxo alternativo 
+Fluxo alternativo 
 
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
 
