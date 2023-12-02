@@ -19,6 +19,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Vinculo entre filme e categoria - adm](#vinculoatorecategoria)
  - [Vinculo entre ator e filme - adm](#vinculoatuaçoes)
  - [Detalhes do filme](#detalhesdofilme)
+ - [buscar filme](#buscarfilme)
+ - [adicionar comentario](#adicionarcomentario)
  - [Editar administrador - adm](#editaradministrador)
  - [Editar filme - adm](#editarfilme)
  - [Editar perfil - adm](editarperfil#)
@@ -71,13 +73,13 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 9.1 Clique em "cadastro"
 
-   8.2 Aperte na opção "cadastrar categoria"
+   9.2 Aperte na opção "cadastrar categoria"
 
   ## 10. CADASTRAR ATORES
 
- - 9.1 Clique em "cadastro"
+ - 10.1 Clique em "cadastro"
 
-   9.2 Aperte em "Cadastrar atores"
+   10.2 Aperte em "Cadastrar atores"
 
   ## 11. VINCULO ENTRE FILME E CATEGORIA 
 
@@ -85,14 +87,18 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 13. DETALHES DO FILME 
 
-  ## 14. EDITAR ADMINISTRADOR
+  ## 14. BUSCAR FILME
+
+  ## 15. ADICIONAR COMENTARIO
+
+  ## 16. EDITAR ADMINISTRADOR
   
-  ## 15. EDITAR FILME 
+  ## 17. EDITAR FILME 
 
-  ## 16. EDITAR PERFIL 
+  ## 18. EDITAR PERFIL 
 
-  ## 17. CONSULTAR LISTA DE FILMES
+  ## 19. CONSULTAR LISTA DE FILMES
 
-  ## 18. EXCLUIR ADMINISTRADOR 
+  ## 20. EXCLUIR ADMINISTRADOR 
 
-  ## 19. EXCLUIR FILME 
+  ## 21. EXCLUIR FILME 
