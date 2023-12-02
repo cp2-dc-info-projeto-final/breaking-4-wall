@@ -3,37 +3,37 @@ session_start();
 
 require_once 'conecta.php';
 
-// Verifica se o ID do administrador está na sessão e se é válido
-if (!isset($_SESSION['admin_id']) || empty($_SESSION['admin_id'])) {
-    header('Location: login_adm.php');
+// Verifica se o usuário está logado e se é um administrador
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header('Location: login.php');
     exit;
 }
 
-$adminId = $_SESSION['admin_id'];
+$adminId = $_SESSION["id"];
 
 // Busca as informações do administrador logado no banco de dados
-$sqlAdminLogado = "SELECT usuario, email FROM Administradores WHERE id = ?";
+$sqlAdminLogado = "SELECT nome, email, is_admin FROM Cadastrados WHERE id = ?";
 $stmtAdminLogado = $conn->prepare($sqlAdminLogado);
-if (!$stmtAdminLogado) {
-    // Trata o erro adequadamente (pode ser uma questão do banco de dados ou SQL)
-    die('Erro na preparação da consulta: ' . $conn->error);
-}
 $stmtAdminLogado->bind_param("i", $adminId);
 $stmtAdminLogado->execute();
 $resultAdminLogado = $stmtAdminLogado->get_result();
 
-$adminInfo = [];
 if ($resultAdminLogado->num_rows > 0) {
     $adminInfo = $resultAdminLogado->fetch_assoc();
+    if ($adminInfo['is_admin'] != 1) { // Se não for administrador
+        header('Location: index.html'); // Redireciona para a página inicial
+        exit;
+    }
 } else {
-    // Caso não encontre o administrador, redirecione para a página de login.
-    header('Location: login_adm.php');
+    header('Location: login.php');
     exit;
 }
+
 $stmtAdminLogado->close();
 
 // O restante do seu código HTML segue aqui...
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -42,128 +42,133 @@ $stmtAdminLogado->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Administração - Perfil</title>
     <style>
-        /* Estilos Gerais */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
+       body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
 
-        /* Estilização da Sidebar */
-        .sidebar {
-            height: 100%;
-            width: 200px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: #252839; /* Um azul escuro como base da sidebar */
-            color: #fff;
-            padding: 20px;
-        }
+/* Estilização da Sidebar */
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #252839; /* Um azul escuro como base da sidebar */
+    color: #fff;
+    padding: 20px;
+}
 
-        .sidebar h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #ff6b6b; /* Um rosa-avermelhado para o título, como na logo */
-        }
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6b6b; /* Um rosa-avermelhado para o título */
+}
 
-        .sidebar ul {
-            list-style: none;
-            padding: 0;
-        }
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
 
-        .sidebar ul li a {
-            color: #ddd;
-            text-decoration: none;
-            display: block;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
+.sidebar ul li a {
+    color: #ddd;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
 
-        .sidebar ul li a:hover {
-            background: #ff6b6b; /* Realçar com rosa-avermelhado ao passar o mouse */
-            color: #fff;
-        }
+.sidebar ul li a:hover {
+    background: #ff6b6b; /* Realçar com rosa-avermelhado ao passar o mouse */
+    color: #fff;
+}
 
-        /* Conteúdo Principal */
-        .content {
-            margin-left: 250px;
-            padding: 20px;
-            color: #333;
-        }
+/* Conteúdo Principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    color: #333;
+    max-width: calc(100% - 250px);
+    box-sizing: border-box;
+}
 
-        .content h1 {
-            color: #ff6b6b; /* Título da página com a cor rosa-avermelhada */
-        }
+.content h1 {
+    color: #ff6b6b; /* Título da página com a cor rosa-avermelhada */
+    font-size: 2.5rem; /* Tamanho do título */
+    text-align: left;
+    margin-bottom: 0.5em;
+}
 
-        /* Estilização da Tabela */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+/* Estilização do Perfil do Administrador */
+.perfil-admin {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 600px; /* Ajustar conforme necessário */
+    margin: 20px auto;
+    text-align: left;
+}
 
-        table, th, td {
-            border: 1px solid #ddd;
-            text-align: left;
-            padding: 8px;
-        }
+.perfil-admin p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
 
-        th {
-            background-color: #4a4e69; /* Azul mais claro para cabeçalho da tabela */
-            color: white;
-        }
+.perfil-admin p:last-child {
+    border-bottom: none;
+}
 
-        td {
-            background-color: #fff; /* Fundo branco para as células */
-        }
+.edit-btn, .delete-btn {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
 
-        /* Botões */
-        button {
-            padding: 10px 15px;
-            margin-right: 5px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-            outline: none; /* Remove o contorno ao focar */
-        }
+.edit-btn {
+    background-color: #4ecdc4; /* Verde-azulado para botão editar */
+    color: white;
+    margin-right: 20px;
+}
 
-        .edit-btn {
-            background-color: #4ecdc4; /* Verde-azulado para botão editar */
-            color: white;
-        }
+.delete-btn {
+    background-color: #ff6b6b; /* Rosa-avermelhado para botão excluir */
+    color: white;
+}
 
-        .delete-btn {
-            background-color: #ff6b6b; /* Rosa-avermelhado para botão excluir */
-            color: white;
-        }
+.edit-btn:hover, .delete-btn:hover {
+    opacity: 0.8;
+}
 
-        .edit-btn:hover {
-            background-color: #3b9b8f; /* Verde-azulado escuro ao passar o mouse */
-        }
+/* Resposta para dispositivos móveis */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100px; /* Menos largura para sidebar em telas menores */
+    }
 
-        .delete-btn:hover {
-            background-color: #e55050; /* Vermelho escuro ao passar o mouse */
-        }
+    .content {
+        margin-left: 120px;
+        max-width: calc(100% - 120px);
+    }
 
-        /* Resposta para dispositivos móveis */
-        @media (max-width: 768px) {
-            .sidebar {
-                width: 100px; /* Menos largura para sidebar em telas menores */
-            }
-
-            .content {
-                margin-left: 120px;
-            }
-
-            .sidebar h2,
-            .sidebar ul li a {
-                font-size: smaller; /* Texto menor para ajustar ao sidebar mais estreito */
-            }
-        }
+    .sidebar h2,
+    .sidebar ul li a {
+        font-size: smaller; /* Texto menor para ajustar ao sidebar mais estreito */
+    }
+}
     </style>
 </head>
 <body>
@@ -176,6 +181,7 @@ $stmtAdminLogado->close();
         <li><a href="cadastro_filmes.html">Cadastro de Filmes</a></li>
         <li><a href="cadastro_atores.html">Cadastro de Atores</a></li>
         <li><a href="lista_cadastrados.php">Cadastrados</a></li>
+        <li><a href="cadastro_categoria.html">Cadastro de Categorias</a></li>
         
     </ul>
 </div>
@@ -184,7 +190,7 @@ $stmtAdminLogado->close();
     <h1>Perfil do Administrador</h1>
     
     <div class="perfil-admin">
-        <p>Nome: <?php echo htmlspecialchars($adminInfo['usuario']); ?></p>
+        <p>Nome: <?php echo htmlspecialchars($adminInfo['nome']); ?></p>
         <p>Email: <?php echo htmlspecialchars($adminInfo['email']); ?></p>
         <p><a href="editar_administrador.php?id=<?php echo $adminId; ?>" class="edit-btn">Editar Perfil</a></p>
         <p><a href="excluir_admin.php?id=<?php echo $adminId; ?>" class="delete-btn" onclick="return confirm('Tem certeza que deseja excluir este administrador?');">Excluir Perfil</a></p>
