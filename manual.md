@@ -9,8 +9,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Login](#login)
  - [Logout](#lpgout)
  - [Cadastro](#cadastro)
- - [Enviar email](#enviaremail)
  - [Alterar senha](#alterarsenha)
+ - [Enviar email](#enviaremail)
  - [Visualizar perfil](#visualizarperfil)
  - [Cadastrar administradores](#cadastraradministradores)
  - [Cadastrar filmes](#cadastrarfilmes)
@@ -29,72 +29,75 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
 
 
-- Login (1)  
+  ## 1. LOGIN  
 
   1.1 Para fazer o login como usuario 
 
    1.2 Clique em "login" 
  
-- Logout (2)
+  ## 2. LOGOUT
 
   2.1 Para fazer logout em sua conta 
 
    2.2 Clique em "sair" 
 
-- Cadastrar (3)
+  ## 3. CADASTRAR
 
    3.1 Clique para "cadastrar" 
 
-- Alterar senha (4)
+  ## 4. ALTERAR SENHA
 
   4.1 Ao clicar em login o usuário será levado para a opção de "alterar senha" caso a senha esteja errada
 
-- Visualizar perfil (5)
+  ## 5. ENVIAR EMAIL
+
+
+  ## 6. VISUALIZAR PERFIL
 
   5.1 Entrando na tela clique em "perfil"
 
   5.2 Seus dados serão exibidos na tela
 
-- Pagina inial do administrador *
+- Pagina inicial do administrador *
 
-- Cadastrar administradores (6)
+  ## 7. CADASTRAR ADMINISTRADORES 
 
   6.1 Clique em cadastrar
 
   6.2 selecione a funçao de cadastrar administradores
 
-- Cadastrar filmes (7)
+  ## 8. CADASTRAR FILMES
 
   7.1 Clique em "cadastro"
 
   7.2 Aperte na opção "cadastrar filmes"
 
-- Cadastrar categoria (8)
+  ## 9. CADASTRAR CATEGORIA
 
   8.1 Clique em "cadastro"
 
   8.2 Aperte na opção "cadastrar categoria"
 
-- Cadastrar atores (9)
+  ## 10. CADASTRAR ATORES
 
   9.1 Clique em "cadastro"
 
   9.2 Aperte em "Cadastrar atores"
 
-- Vinculo entre filme e categoria (10)
+  ## 11. VINCULO ENTRE FILME E CATEGORIA 
 
-- Vinculo entre ator e filme (11)
+  ## 12. VINCULO ENTRE ATOR E FILME
 
-- Detalhes do filme (12)
+  ## 13. DETALHES DO FILME 
 
-- editar administrador (13)
+  ## 14. EDITAR ADMINISTRADOR
   
-- editar filme (14)
+  ## 15. EDITAR FILME 
 
-- editar perfil (15)
+  ## 16. EDITAR PERFIL 
 
-- consultar lista de filmes (16)
+  ## 17. CONSULTAR LISTA DE FILMES
 
-- excluir administrador (17)
+  ## 18. EXCLUIR ADMINISTRADOR 
 
-- excluir filme (18)
+  ## 19. EXCLUIR FILME 
