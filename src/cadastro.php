@@ -8,7 +8,7 @@ $password_db = "123"; // Senha do banco de dados
 $database = "CADASTRO"; // Nome do banco de dados
 
 // Crie uma conexão com o banco de dados
-$conn = new mysqli("localhost", "cadastrados", "123", "CADASTRO");
+$conn = new mysqli($servername, $username_db , $password_db, $database);
 
 // Verifique se ocorreu algum erro na conexão
 if ($conn->connect_error) {
@@ -17,14 +17,14 @@ if ($conn->connect_error) {
 
 // Incluir código para processar o envio do formulário
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST["nome"];
+    $nome = trim($_POST["nome"]); // Remova espaços no início e no fim
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
     $erro = false; // Inicializar a variável $erro
 
     // Validação do nome
-    if (empty($nome) || strpos($nome, " ") === false) {
+    if (empty($nome) || !preg_match("/\s/", $nome)) {
         echo "Preencha seu nome completo com sobrenome.<br>";
         $erro = true;
     }
@@ -64,10 +64,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             $message = "O usuário foi cadastrado com sucesso.";
+            // Redirecionar para a página de index após o cadastro
+            header("Location: index.html");
+            exit; // Não se esqueça do exit após redirecionar
         } else {
             $message = "Erro ao inserir dados: " . $stmt->error;
         }
-        header("Location: index.html");
         $stmt->close();
     }
 }
