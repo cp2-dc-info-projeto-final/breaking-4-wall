@@ -69,7 +69,7 @@ Fazer Login CDU (02)
 ![Diagrama de Casos de Uso]!!!
 ![WhatsApp Image 2023-10-15 at 00 26 30 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d4c8d2cf-c865-476f-af79-29bf47fa0c4b)
 
-    ### Fluxo alternativo 
+Fluxo alternativo
    
 1. O usuário insere um nome de usuário e/ou senha incorretos.
 2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
@@ -80,7 +80,7 @@ Fazer Login CDU (02)
 
 CDU Buscar Filmes e atores (03)
 
- ### Fluxo principal 
+Fluxo principal 
 
 ![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 32 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b84e5871-739f-4c71-99bc-22dfaa7ebb1b)
   
