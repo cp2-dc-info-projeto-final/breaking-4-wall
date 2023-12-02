@@ -102,7 +102,7 @@ e pede ao usuário para tentar novamente.
 
 ### CDU Visualizar Detalhes do Filme (04)
 
-###Fluxo principal 
+Fluxo principal 
 
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 33 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/952d904d-eaa7-4864-bcee-2bd64cd5b896)
 
