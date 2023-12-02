@@ -19,8 +19,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Vinculo entre filme e categoria - adm](#vinculoatorecategoria)
  - [Vinculo entre ator e filme - adm](#vinculoatuaçoes)
  - [Detalhes do filme](#detalhesdofilme)
- - [buscar filme](#buscarfilme)
- - [adicionar comentario](#adicionarcomentario)
+ - [Buscar filme](#buscarfilme)
+ - [Adicionar comentario](#adicionarcomentario)
  - [Editar administrador - adm](#editaradministrador)
  - [Editar filme - adm](#editarfilme)
  - [Editar perfil - adm](editarperfil#)
@@ -87,7 +87,15 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 11. VINCULO ENTRE FILME E CATEGORIA 
 
+ - 11.1 Ao clicar em "fazer junçao" 
+
+   11.2 o site exibirá o filme escolhido com a categoria escolhida
+   
   ## 12. VINCULO ENTRE ATOR E FILME
+
+   12.1 Ao clicar em "fazer junçao"
+
+ - 12.2 o site exibirá o filme com os atores de determinado filme
 
   ## 13. DETALHES DO FILME 
 
@@ -129,7 +137,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
  - 19.1 Em sua conta de administrador
  
-   19.2clique em "lista de filmes"
+   19.2 Clique em "lista de filmes"
  
   ## 20. EXCLUIR ADMINISTRADOR 
 
