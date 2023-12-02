@@ -57,8 +57,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   6.2 Seus dados serão exibidos na tela
 
-  - Pagina inicial do administrador *
-
   ## 7. CADASTRAR ADMINISTRADORES 
 
   - 7.1 Clique em cadastrar
