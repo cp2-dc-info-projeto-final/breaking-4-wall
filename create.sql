@@ -2,11 +2,11 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-drop USER if EXISTS 'paulo'@'localhost';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-CREATE USER 'paulo'@'localhost' IDENTIFIED BY '12345678';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'paulo'@'localhost';
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS Atores;
 
@@ -24,11 +24,11 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-drop USER if EXISTS 'pedro'@'localhost';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-CREATE USER 'pedro'@'localhost' IDENTIFIED BY '123456789';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'pedro'@'localhost';
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS Atuacoes;
 
@@ -45,11 +45,11 @@ CREATE DATABASE IF NOT EXISTS cadastro;
 
 USE cadastro;
 
-drop USER if EXISTS 'alvaro'@'localhost';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-CREATE USER 'alvaro'@'localhost' IDENTIFIED BY '12345';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'alvaro'@'localhost';
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS filmes;
 
@@ -67,11 +67,11 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-drop USER if EXISTS 'categorais'@'localhost';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-CREATE USER 'categorais'@'localhost' IDENTIFIED BY '123456';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'categorais'@'localhost';
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS categorias;
 
@@ -107,11 +107,11 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-drop USER if EXISTS 'vitor'@'localhost';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-CREATE USER 'vitor'@'localhost' IDENTIFIED BY '1234567';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'vitor'@'localhost';
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS filmescategorias;
 
@@ -128,11 +128,11 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-drop USER if EXISTS 'poulo'@'localhost';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-CREATE USER 'poulo'@'localhost' IDENTIFIED BY 'neymar123';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'poulo'@'localhost';
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS Administradores;
 
@@ -164,11 +164,11 @@ CREATE DATABASE IF NOT EXISTS CADASTRO;
 
 USE CADASTRO;
 
-drop USER if EXISTS 'barney'@'localhost';
+drop USER if EXISTS 'cadastrados'@'localhost';
 
-CREATE USER 'barney'@'localhost' IDENTIFIED BY 'abc123';
+CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
 
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'barney'@'localhost';
+GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS comentarios;
 
