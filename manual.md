@@ -6,7 +6,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 **Lista das Funcionalidades:**
 
 
- - [Login](#1-login)
+ - [Login](#login)
  - [Logout](#lpgout)
  - [Cadastro](#cadastro)
  - [Enviar email](#enviaremail)
@@ -33,17 +33,17 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   1.1 Para fazer o login como usuario 
 
-  1.2 Clique em "login"
+  ** 1.2 Clique em "login" **
  
 - Logout (2)
 
   2.1 Para fazer logout em sua conta 
 
-  2.2 Clique em "sair"
+  ** 2.2 Clique em "sair" **
 
 - Cadastrar (3)
 
-  3.1 Clique para cadastrar
+  ** 3.1 Clique para cadastrar **
 
 - Alterar senha (4)
 
