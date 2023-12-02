@@ -27,57 +27,55 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Excluir filme - adm](#excluirfilme) 
 
 
-
-
   ## 1. LOGIN  
 
    1.1 Para fazer o login como usuario 
 
-   - 1.2 Clique em "login" 
+ - 1.2 Clique em "login" 
  
   ## 2. LOGOUT
 
    2.1 Para fazer logout em sua conta 
 
-   - 2.2 Clique em "sair" 
+ - 2.2 Clique em "sair" 
 
   ## 3. CADASTRAR
 
-   - 3.1 Clique para "cadastrar" 
+ - 3.1 Clique para "cadastrar" 
 
   ## 4. ALTERAR SENHA
 
-  - 4.1 Ao clicar em login o usuário será levado para a opção de "alterar senha" caso a senha esteja errada
+ - 4.1 Ao clicar em login o usuário será levado para a opção de "alterar senha" caso a senha esteja errada
 
   ## 5. ENVIAR EMAIL
 
   ## 6. VISUALIZAR PERFIL
 
-  6.1 Entrando na tela clique em "perfil"
+ - 6.1 Entrando na tela clique em "perfil"
 
   6.2 Seus dados serão exibidos na tela
 
   ## 7. CADASTRAR ADMINISTRADORES 
 
-  - 7.1 Clique em cadastrar
+ - 7.1 Clique em cadastrar
 
   7.2 selecione a funçao de cadastrar administradores
 
   ## 8. CADASTRAR FILMES
 
-  - 8.1 Clique em "cadastro"
+ - 8.1 Clique em "cadastro"
 
    8.2 Aperte na opção "cadastrar filmes"
 
   ## 9. CADASTRAR CATEGORIA
 
-  - 9.1 Clique em "cadastro"
+ - 9.1 Clique em "cadastro"
 
    8.2 Aperte na opção "cadastrar categoria"
 
   ## 10. CADASTRAR ATORES
 
-  - 9.1 Clique em "cadastro"
+ - 9.1 Clique em "cadastro"
 
    9.2 Aperte em "Cadastrar atores"
 
