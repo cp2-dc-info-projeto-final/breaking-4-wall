@@ -28,7 +28,7 @@
 
 ## Descrição dos Casos de Uso
 
-### CDU Criar Conta (01)
+CDU Criar Conta (01)
 
 **Fluxo Principal**
 
@@ -54,7 +54,7 @@ e pede ao usuário para tentar novamente.
 ![Diagrama de Casos de Uso]!
 ![WhatsApp Image 2023-10-15 at 00 26 32 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d1672a1d-bd4d-43fb-8669-46388b894cc8)
 
-### Fazer Login CDU (02)
+Fazer Login CDU (02)
 
 **Fluxo Principal**
 
@@ -78,7 +78,7 @@ e pede ao usuário para tentar novamente.
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 30](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cc1b8fa7-40e1-487f-af16-80bb08853c59)
 
 
-## CDU Buscar Filmes e atores (03)
+CDU Buscar Filmes e atores (03)
 
  ### Fluxo principal 
 
@@ -91,7 +91,7 @@ e pede ao usuário para tentar novamente.
 3. O sistema exibe resultados correspondentes.
 • Pós-condições: O usuário vê os resultados da pesquisa.
 
-    ### Fluxo alternativo 
+    Fluxo alternativo 
 
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
 
@@ -100,7 +100,7 @@ e pede ao usuário para tentar novamente.
 2. O sistema exibe uma mensagem informando que nenhum resultado foi encontrado.
 3. usuário pode refinar sua pesquisa ou tentar buscar por termos diferentes.
 
-### CDU Visualizar Detalhes do Filme (04)
+CDU Visualizar Detalhes do Filme (04)
 
 Fluxo principal 
 
@@ -114,9 +114,9 @@ Fluxo principal
 2. O sistema exibe informações como sinopse, elenco, diretor e resenhas
 • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
-### CDU Avaliar filme (05)
+CDU Avaliar filme (05)
 
-###Fluxo principal 
+Fluxo principal 
 
 ![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 33 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/08c3aafb-69c0-4fb4-9103-6cbde37e7483)
 
@@ -128,9 +128,9 @@ Fluxo principal
 3.	O usuário atribui uma nota e/ou escreve uma resenha
 4.	O sistema registra a avaliação e a resenha.
 
-### CDU Adicionar Filme à Lista (06)
+CDU Adicionar Filme à Lista (06)
 
-###Fluxo principal
+Fluxo principal
 
 ![Diagrama de Casos de Uso]!
    ![WhatsApp Image 2023-10-15 at 00 26 33 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8d51beab-66b3-4ba0-b787-b19e34af37d1)
@@ -143,9 +143,9 @@ Fluxo principal
 4. O sistema registra a sua lista.
 • Pós-condições: O filme é adicionado à lista do usuário.
 
-## CDU  Gerenciamento de Atores (07)
+CDU  Gerenciamento de Atores (07)
 
-###Fluxo principal 
+Fluxo principal 
 
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/184d874b-d574-48f8-9816-9d1298e3ec41)
 
@@ -162,9 +162,9 @@ Fluxo principal
 5. Relacionamentos: Associar atores com os filmes em que atuaram, permitindo que os usuários vejam quais atores estiveram em quais filmes.
 • Pós-condições : As informações do ator foram atualizadas com sucesso no sistema.
 
-## CDU  Gerenciamento de Filmes (08)
+CDU  Gerenciamento de Filmes (08)
 
-###Fluxo principal 
+Fluxo principal 
 
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2f46f288-568c-44e1-8660-1b191d7e3e10)
 
@@ -183,9 +183,9 @@ Fluxo principal
 5. Recomendações: Com base no histórico de visualização dos usuários, sugerir filmes que possam ser do interesse deles.
 • Pós-condições : As informações do filme foram atualizadas com sucesso no sistema.
 
-## CDU  Gerenciamento de Usuários (09)
+CDU  Gerenciamento de Usuários (09)
 
-###Fluxo principal 
+Fluxo principal 
 
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8ec151cc-2aea-41ee-a8ee-c6cb96cc434b)
 
@@ -204,9 +204,9 @@ Fluxo principal
 5. Sistema de amigos: Permitir que os usuários conectem-se a outros usuários, sigam seus perfis e compartilhem recomendações de filmes.
 • Pós-condições : As informações do perfil do usuário foram atualizadas com sucesso no sistema.
  
-### CDU Explorar Filmes Populares (tela inicial) (10)
+CDU Explorar Filmes Populares (tela inicial) (10)
 
-###Fluxo principal
+Fluxo principal
 
 ![Diagrama de Casos de Uso]!
 ![WhatsApp Image 2023-10-15 at 00 26 34](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cfff6b30-bd07-427d-989b-863b89a0fbdb)
@@ -219,7 +219,7 @@ ou tendências.
 3. O usuário pode navegar por diferentes gêneros e filtrar os resultados
 • Pós-condições: O usuário descobre filmes populares entre a comunidade.
 
-###Fluxo alternativo
+Fluxo alternativo
 
 ![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 34 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2282ac8c-d0ff-4546-bcab-6fd2d0e963f9)
 
@@ -227,9 +227,9 @@ ou tendências.
 1. O sistema encontra problemas ao recuperar filmes populares.
 2. O sistema exibe uma mensagem de erro e sugere ao usuário tentar novamente mais tarde.
 
-### CDU Personalizar Perfil (11)
+CDU Personalizar Perfil (11)
 
-###Fluxo principal
+Fluxo principal
 
 ![Diagrama de Casos de Uso]!
 ![WhatsApp Image 2023-10-15 at 00 26 34 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b25e5d56-6eea-4887-b50f-e65f5efde623)
@@ -243,7 +243,7 @@ ou tendências.
 sociais 
 • Pós-condições: O perfil do usuário é personalizado de acordo com suas preferências.
 
-    ###Fluxo alternativo
+Fluxo alternativo
 
 ![Diagrama de Casos de Uso]!
    ![WhatsApp Image 2023-10-15 at 00 26 34 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90862fae-126c-4300-b175-bf3cc4500a0e)
@@ -251,9 +251,9 @@ sociais
 1. O usuário tenta fazer o upload de uma foto de perfil, mas o sistema encontra um erro no processo.
 2. O sistema exibe uma mensagem de erro e instrui o usuário a tentar novamente.
 
-### CDU: Recuperar Senha (12)
+CDU: Recuperar Senha (12)
 
-### Fluxo Principal:
+Fluxo Principal:
 
 ![Diagrama de Casos de Uso]!!![Recuperação de Senha](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/b11659c6-d563-4e4b-8182-dfd28aae0d46)
 
@@ -274,7 +274,7 @@ Pré-condições: O usuário deve estar registrado no sistema.
 11. O sistema exibe uma mensagem de confirmação de que a senha foi alterada com sucesso.
 Pós-condições: O usuário recebe um link para redefinir sua senha.
 
-### Fluxo Alternativo - E-mail Não Registrado:
+Fluxo Alternativo - E-mail Não Registrado:
 
 ![Diagrama de Casos de Uso]!!![Recuperação de Senha (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/7cef5bb6-1fb5-4af6-9111-d71ea3267509)
 
@@ -287,11 +287,11 @@ Pós-condições: O usuário recebe um link para redefinir sua senha.
 6. O usuário será instruído a revisar o endereço de e-mail inserido ou a criar uma nova conta, se ainda não tiver uma.
 7. O usuário pode optar por retornar à página inicial ou seguir um link para o processo de registro, se desejado.
 
-### CDU: Logout (13)
+CDU: Logout (13)
 
 Ator: Usuário logado.
 
-### Fluxo Principal:
+Fluxo Principal:
 
 ![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-23 at 14 14 48](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c09f0ecc-29d6-4dbd-8ba9-7a99effa6673)
 
