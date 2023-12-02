@@ -100,6 +100,12 @@ CREATE TABLE cadastrados (
     senha VARCHAR(255) NOT NULL
 ); 
 
+ALTER TABLE cadastrados
+ADD COLUMN is_admin BOOLEAN NOT NULL DEFAULT FALSE;
+
+ALTER TABLE cadastrados
+MODIFY COLUMN is_admin TINYINT NOT NULL DEFAULT 0;
+
 
 
 
@@ -174,13 +180,21 @@ drop TABLE if EXISTS comentarios;
 
 CREATE TABLE IF NOT EXISTS Comentarios (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    filme_id INT,
-    usuario_id INT,
+    FilmeId INT,
+    UsuarioId INT,
     Comentario TEXT,
     DataHora DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (FilmeID) REFERENCES Filmes(ID),
     FOREIGN KEY (UsuarioID) REFERENCES cadastrados(id)
 );
+
+ALTER TABLE comentarios
+ADD COLUMN usuario_id INT NULL,
+ADD FOREIGN KEY (usuario_id) REFERENCES cadastrados(id);
+
+ALTER TABLE comentarios
+ADD COLUMN filme_id INT,
+ADD FOREIGN KEY (filme_id) REFERENCES Filmes(ID);
 
 
 
