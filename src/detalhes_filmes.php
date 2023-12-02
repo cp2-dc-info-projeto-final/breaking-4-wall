@@ -17,13 +17,38 @@ if ($conn->connect_error) {
 
 $filmeId = isset($_GET['id']) ? $_GET['id'] : die('ID do filme não foi especificado.');
 
+$filmeId = isset($_GET['id']) ? $_GET['id'] : null;
+if (empty($filmeId)) {
+    die('ID do filme não foi especificado.');
+}
+
 // Consulta para obter detalhes do filme
 $stmt_filme = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE ID = ?");
 $stmt_filme->bind_param("i", $filmeId);
 $stmt_filme->execute();
 $result_filme = $stmt_filme->get_result();
+
+if ($result_filme->num_rows == 0) {
+    die('Nenhum filme encontrado com o ID especificado.');
+}
+
 $filme = $result_filme->fetch_assoc();
-$stmt_filme->close();
+
+
+
+// Consulta para buscar os atores do filme
+$stmt_atores = $conn->prepare("SELECT a.Nome FROM Atores a JOIN Filme_Ator fa ON a.ID = fa.ator_id WHERE fa.filme_id = ?");
+$stmt_atores->bind_param("i", $filmeId);
+$stmt_atores->execute();
+$result_atores = $stmt_atores->get_result();
+$atores = $result_atores->fetch_all(MYSQLI_ASSOC);
+
+// Consulta para buscar as categorias do filme
+$stmt_categorias = $conn->prepare("SELECT c.Nome FROM Categorias c JOIN Filme_Categoria fc ON c.ID = fc.categoria_id WHERE fc.filme_id = ?");
+$stmt_categorias->bind_param("i", $filmeId);
+$stmt_categorias->execute();
+$result_categorias = $stmt_categorias->get_result();
+$categorias = $result_categorias->fetch_all(MYSQLI_ASSOC);
 
 // Consulta para buscar os comentários do filme
 $stmt_comentarios = $conn->prepare("SELECT comentario FROM comentarios WHERE filme_id = ?");
@@ -31,9 +56,14 @@ $stmt_comentarios->bind_param("i", $filmeId);
 $stmt_comentarios->execute();
 $result_comentarios = $stmt_comentarios->get_result();
 $comentarios = $result_comentarios->fetch_all(MYSQLI_ASSOC);
+
+// Fechar as declarações preparadas
+$stmt_filme->close();
+$stmt_atores->close();
+$stmt_categorias->close();
 $stmt_comentarios->close();
 
-
+// Fechar conexão
 $conn->close();
 ?>
 
@@ -42,71 +72,93 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
-      <!-- Estilos existentes -->
- <style>
-           .filme-imagem {
-    max-width: 70%; /* Diminui para 70% da largura do container */
-    border-radius: 8px;
-    margin-top: 1em;
-    display: block; /* Garante que a imagem seja tratada como um bloco */
-    margin-left: auto; /* Centraliza a imagem horizontalmente */
-    margin-right: auto;
-}
-
-          body {
+   <style>
+    body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
+    background-color: #1a1a2e; /* Fundo escuro para realçar as cores */
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .filme-container {
-    background-color: #fff;
+    background-color: #2c2f33; /* Cor de fundo escura */
+    border: 1px solid #676767; /* Borda sutil */
+    border-radius: 8px;
+    padding: 2em;
+    margin: 20px auto;
     width: 80%;
     max-width: 800px;
-    margin: 20px auto;
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
 }
 
 .filme-titulo {
-    color: #1a1a2e;
-    font-size: 2em;
+    font-size: 2.5em;
+    color: #e4e6eb;
+    text-shadow: 1px 1px 5px #000; /* Sombra no texto para efeito 3D */
     margin-bottom: 0.5em;
 }
 
 .filme-ano,
 .filme-diretor {
-    color: #525252;
+    color: #b9bbbe;
     margin-bottom: 0.25em;
 }
 
-.filme-sinopse {
-    margin-top: 1em;
-    line-height: 1.6;
-}
-
+.filme-sinopse,
+.filme-atores,
 .filme-categorias {
-    background-color: #eaeaea;
-    color: #333;
-    padding: 0.5em;
+    background-color: #3a3b3c; /* Fundo levemente mais claro para seção */
     border-radius: 4px;
-    display: inline-block;
+    padding: 1em;
     margin-top: 1em;
 }
 
-.filme-imagem {
+.filme-sinopse strong,
+.filme-atores strong,
+.filme-categorias strong {
+    color: #0099ff; /* Azul brilhante para títulos das seções */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: linear-gradient(45deg, #ff0084, #3300ff); /* Gradiente nos itens */
+    color: white;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
+}
+
+textarea {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 4px;
+    border: 1px solid #555;
+    padding: 0.5em;
     margin-top: 1em;
 }
 
-/* Adaptação para dispositivos móveis */
+button {
+    background-color: #ff0084; /* Botão rosa para combinar com a logo */
+    border: none;
+    padding: 1em 2em;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3300ff; /* Cor de hover para combinar com a logo */
+}
+
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     .filme-container {
         width: 95%;
@@ -114,15 +166,11 @@ $conn->close();
     }
 
     .filme-titulo {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 }
+</style>
 
-        body {
-            font-family: Arial, sans-serif;
-        }
-        /* Adicione mais estilos conforme necessário */
-    </style>
 </head>
 <body>
     <div class="filme-container">
@@ -133,22 +181,35 @@ $conn->close();
             <strong>Sinopse:</strong>
             <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
         </div>
-
-       <!-- Seção de comentários -->
-<div id="secao-comentarios">
-    <h3>Comentários</h3>
-    
-    <!-- Formulário para adicionar comentário -->
-    <form action="inserir_comentario.php" method="post">
-        <input type="hidden" name="filme_id" value="<?php echo $filmeId; ?>">
-        <textarea name="comentario" placeholder="Escreva seu comentário aqui..." required></textarea>
-        <button type="submit">Enviar Comentário</button>
-    </form>
-
-    <!-- Listar comentários existentes -->
-    <?php foreach ($comentarios as $comentario): ?>
-        <div class="comentario">
-            <p><?php echo htmlspecialchars($comentario['comentario']); ?></p>
+        <div class="filme-atores">
+            <strong>Atores:</strong>
+            <ul>
+                <?php foreach ($atores as $ator): ?>
+                    <li><?php echo htmlspecialchars($ator['Nome']); ?></li>
+                <?php endforeach; ?>
+            </ul>
         </div>
-    <?php endforeach; ?>
-</div>
+        <div class="filme-categorias">
+            <strong>Categorias:</strong>
+            <ul>
+                <?php foreach ($categorias as $categoria): ?>
+                    <li><?php echo htmlspecialchars($categoria['Nome']); ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div id="secao-comentarios">
+            <h3>Comentários</h3>
+            <form action="inserir_comentario.php" method="post">
+                <input type="hidden" name="filme_id" value="<?php echo $filmeId; ?>">
+                <textarea name="comentario" placeholder="Escreva seu comentário aqui..." required></textarea>
+                <button type="submit">Enviar Comentário</button>
+            </form>
+            <?php foreach ($comentarios as $comentario): ?>
+                <div class="comentario">
+                    <p><?php echo htmlspecialchars($comentario['comentario']); ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</body>
+</html>
