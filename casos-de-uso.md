@@ -15,16 +15,17 @@
  - [CDU 11](#CDU-11): Personalizaçao de perfil
  - [CDU 12](#CDU-12): Recuperar senha
  - [CDU 13](#CDU-13): Logout
+
+   
 ## Lista dos Atores
 
  - usuário
  - usuário nao registrado
  - administrador
 
+
 ## Diagrama de Casos de Uso![Diagrama Casos de uso (1) drawio](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/647c8bab-786a-406f-8852-ef7c5e2995e8)
 
-
-![Diagrama de Casos de Uso]
 
 ## Descrição dos Casos de Uso
 
