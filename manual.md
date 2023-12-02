@@ -91,8 +91,16 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 13. DETALHES DO FILME 
 
+   13.1 Ao acessar o site como usuário
+
+ - 13.2 Clique em "detalhes do filme"
+
   ## 14. BUSCAR FILME
 
+   14.1 Ao acessar o site como usuário
+   
+ - 14.2 Clique em "buscar filme"
+  
   ## 15. ADICIONAR COMENTARIO
 
   ## 16. EDITAR ADMINISTRADOR
