@@ -103,31 +103,37 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   
   ## 15. ADICIONAR COMENTARIO
 
+   15.1 Ao acessar o site como usuário
+
+ - 15.2 Clique em "adicionar comentario"
+
   ## 16. EDITAR ADMINISTRADOR
 
-   Em sua conta de administrador
+   16.1 Em sua conta de administrador
 
- - Clique em "editar administrador"
+ - 16.2 Clique em "editar administrador"
    
   ## 17. EDITAR FILME 
 
-   Em sua conta de administrador
+   17.1 Em sua conta de administrador
 
- - Clique em "editar filme"
+ - 17.2 Clique em "editar filme"
 
   ## 18. EDITAR PERFIL 
 
-   Em sua conta de administrador, entre no perfil
+   18.1 Em sua conta de administrador, entre no perfil
 
- - Clique em "editar perfil"
+ - 18.2 Clique em "editar perfil"
 
   ## 19. CONSULTAR LISTA DE FILMES
  
- - Em sua conta de administrador, clique em "lista de filmes"
+ - 19.1 Em sua conta de administrador
+ 
+   19.2clique em "lista de filmes"
  
   ## 20. EXCLUIR ADMINISTRADOR 
 
- - Em sua conta de administrador, clique em "excluir administrador"
+ - 20.1 Em sua conta de administrador, clique em "excluir administrador"
  
   ## 21. EXCLUIR FILME 
 
