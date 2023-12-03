@@ -153,13 +153,19 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 15.2 Clique em "editar perfil"
 
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c9d9476c-6a65-42b1-a05f-281d286551ff)
+
+
   ## 16. EDITAR FILME 
 
    16.1 Em sua conta de administrador
 
+![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c9d9476c-6a65-42b1-a05f-281d286551ff)
+
  - 16.2 Clique em "editar filme"
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ccb05ab1-8c58-457e-a685-b9c2e0440706)
+  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/24fddf68-d48e-45ae-89e1-d556a6af5922)
+
 
  ## 15. EDITAR ADMINISTRADOR
 
