@@ -102,6 +102,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    9.2 Aperte na opção "cadastrar categoria"
 
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9bcd64bd-d6ac-4249-a01a-e0ab40b48e60)
+
+
   ## 10. CADASTRAR ATORES
 
  - 10.1 Clique em "cadastro"
