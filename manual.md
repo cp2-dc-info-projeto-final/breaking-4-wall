@@ -82,27 +82,21 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 7. CADASTRAR FILMES
 
- - 7.2 Clique em "cadastro"
-
-   7.2 Aperte na opção "cadastrar filmes"
+   7.1 Aperte na opção "cadastrar filmes"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cf8bd587-134f-4569-ab2b-41b79c2bc29f)
 
 
   ## 8. CADASTRAR CATEGORIA
 
- - 8.1 Clique em "cadastro"
-
-   8.2 Aperte na opção "cadastrar categoria"
+   8.1 Aperte na opção "cadastrar categoria"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9bcd64bd-d6ac-4249-a01a-e0ab40b48e60)
 
 
   ## 9. CADASTRAR ATORES
-
- - 9.1 Clique em "cadastro"
-
-   9.2 Aperte em "Cadastrar atores"
+  
+   9.1 Aperte em "Cadastrar atores"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
 
