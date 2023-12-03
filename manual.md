@@ -138,7 +138,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    14.1 Ao acessar o site como usuário
 
- - 14.2 Clique em "adicionar comentario"
+ - 14.2 Clique em "enviar comentario"
 
  - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
 
