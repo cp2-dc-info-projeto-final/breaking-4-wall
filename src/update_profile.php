@@ -1,59 +1,49 @@
 <?php
 session_start();
 
-// Verifica se o usuário está logado
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    exit("Usuário não está logado.");
+// Verifica se o usuário está logado e se o formulário foi enviado
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true || $_SERVER["REQUEST_METHOD"] != "POST") {
+    header("location: login.php");
+    exit;
 }
 
-// Verifica se o formulário foi enviado
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["newName"], $_SESSION["id"])) {
-    $servername = "localhost";
-    $username_db = "cadastrados";
-    $password_db = "123";
-    $database = "CADASTRO";
+// Configuração das variáveis de conexão com o banco de dados
+$servername = "localhost";
+$username_db = "cadastrados";
+$password_db = "123";
+$database = "CADASTRO";
 
-    // Cria a conexão com o banco de dados
-    $conn = new mysqli($servername, $username_db, $password_db, $database);
+// Conecta ao banco de dados
+$conn = new mysqli($servername, $username_db, $password_db, $database);
 
-    // Verifica se a conexão foi bem-sucedida
-    if ($conn->connect_error) {
-        die("Erro na conexão com o banco de dados: " . $conn->connect_error);
-    }
+// Verifica a conexão
+if ($conn->connect_error) {
+    die("Erro na conexão: " . $conn->connect_error);
+}
 
-    // Escapa caracteres especiais na string fornecida para uso em uma instrução SQL
-    $newName = $conn->real_escape_string(trim($_POST["newName"]));
-    $userId = $_SESSION["id"]; // A chave primária do usuário na sessão
+// Recebe o novo nome do formulário e o ID da sessão
+$newName = $conn->real_escape_string(trim($_POST["newName"]));
+$userId = $_SESSION["id"];
 
-    // Prepara a declaração de atualização na tabela 'cadastrados'
-    $stmt = $conn->prepare("UPDATE cadastrados SET nome = ? WHERE id = ?");
-    if (!$stmt) {
-        die("Erro ao preparar a declaração: " . $conn->error);
-    }
+// Prepara a consulta SQL para atualizar o nome do usuário
+$stmt = $conn->prepare("UPDATE cadastrados SET nome = ? WHERE id = ?");
+$stmt->bind_param("si", $newName, $userId);
 
-    // Vincula os parâmetros e executa a declaração
-    $stmt->bind_param("si", $newName, $userId);
-
-    if ($stmt->execute()) {
-        // Atualiza a variável de sessão
-        $_SESSION["nome"] = $newName;
-        $stmt->close();
-        $conn->close();
-
-        
-
-        // Redireciona para a página do perfil ou outra página conforme necessário
-        header("Location: perfil.php");
-        exit;
-    } else {
-        echo "Erro ao atualizar o nome: " . $stmt->error;
-    }
-
-    // Fecha a declaração e a conexão
+// Executa a consulta
+if ($stmt->execute()) {
+    // Atualiza o nome na sessão
+    $_SESSION["nome"] = $newName;
     $stmt->close();
     $conn->close();
+    // Redireciona para a página de perfil
+    header("Location: perfil.php");
+    exit;
 } else {
-    echo "Solicitação inválida.";
+    echo "Erro ao atualizar o perfil: " . $stmt->error;
 }
+
+$stmt->close();
+$conn->close();
 ?>
+
 
