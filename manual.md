@@ -141,9 +141,12 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 19. CONSULTAR LISTA DE FILMES
  
- - 19.1 Em sua conta de administrador
+  - 19.1 Em sua conta de administrador
  
    19.2 Clique em "lista de filmes"
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3c00cb36-0b49-4c6e-ac59-7d665ab2c96d)
+
  
   ## 20. EXCLUIR ADMINISTRADOR 
 
