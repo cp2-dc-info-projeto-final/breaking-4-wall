@@ -1,8 +1,8 @@
 <?php
 // Conectar ao banco de dados
 $servername = "localhost";
-$username = "alvaro";
-$password = "12345";
+$username = "cadastrados";
+$password = "123";
 $dbname = "CADASTRO";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
