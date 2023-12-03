@@ -2,11 +2,7 @@
 session_start();
 require_once 'conecta.php';
 
-// Verifica se o usuário está logado como administrador
-if (!isset($_SESSION['admin_id'])) {
-    header('Location: login.php');
-    exit;
-}
+$adminId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
 $adminId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
@@ -108,4 +104,5 @@ $stmt->close();
 
 </body>
 </html>
+
 
