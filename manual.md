@@ -195,7 +195,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
   ## 20. EXCLUIR ADMINISTRADOR 
 
- - 20.1 Em sua conta de administrador, clique em "excluir administrador"
+ - 20.1 Em sua conta de administrador, clique em "excluir perfil"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
 
