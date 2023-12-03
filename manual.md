@@ -76,8 +76,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
    
-
-
   ## 7. CADASTRAR ADMINISTRADORES 
 
  - 7.1 Clique em cadastrar
@@ -138,6 +136,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 13.2 Clique em "detalhes do filme"
 
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3ff5b99f-3958-475f-a3c8-da1d1e237aec)
+
+
   ## 14. BUSCAR FILME
 
    14.1 Ao acessar o site como usuário
@@ -161,12 +162,18 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    16.1 Em sua conta de administrador
 
  - 16.2 Clique em "editar administrador"
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9e5e2bad-4dd6-4fb7-9fff-34b6d38c89ea)
+
    
   ## 17. EDITAR FILME 
 
    17.1 Em sua conta de administrador
 
  - 17.2 Clique em "editar filme"
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ccb05ab1-8c58-457e-a685-b9c2e0440706)
+
 
   ## 18. EDITAR PERFIL 
 
@@ -196,3 +203,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## 21. EXCLUIR FILME 
 
  - 21.1. Em sua conta de administrador, clique em "excluir filme"
+
+  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
+
+
