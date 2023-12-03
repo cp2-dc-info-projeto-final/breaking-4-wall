@@ -103,19 +103,18 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 10. VINCULO ENTRE FILME E CATEGORIA 
 
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
+
    10.1 o site exibirá o filme escolhido com a categoria escolhida
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
 
-   
-  ## 11. VINCULO ENTRE ATOR E FILME
 
-   11.1 Ao clicar em "fazer junçao"
-
- - 11.2 o site exibirá o filme com os atores de determinado filme
+   ## 11. VINCULO ENTRE ATOR E FILME
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a3fd733c-1c22-4cd3-a10c-018de4f9b8b7)
 
+   - 11.1 o site exibirá o filme com os atores de determinado filme
 
   ## 12. DETALHES DO FILME 
 
