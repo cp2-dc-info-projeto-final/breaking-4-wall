@@ -1,13 +1,11 @@
 <?php
 session_start();
+
 require_once 'conecta.php';
 
-if (!isset($_SESSION['admin_id'])) {
-    header('Location: login_adm.php');
-    exit;
-}
+// A lógica para redirecionar para a tela de login foi removida. 
 
-$sqlUsers = "SELECT id, nome, email FROM Cadastrados";
+$sqlUsers = "SELECT id, nome, email FROM cadastrados";
 $stmtUsers = $conn->prepare($sqlUsers);
 
 if (!$stmtUsers) {
@@ -25,6 +23,7 @@ if ($resultUsers->num_rows > 0) {
 }
 
 $stmtUsers->close();
+$conn->close();
 ?>
 
 <!DOCTYPE html>
