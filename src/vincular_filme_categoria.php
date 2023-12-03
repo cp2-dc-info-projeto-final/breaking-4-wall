@@ -3,9 +3,9 @@ session_start(); // Inicia a sessão
 
 // Configuração das variáveis de conexão com o banco de dados
 $servername = "localhost";
-$username = "vitor";
-$password = "1234567";
-$dbname = "cadastro";
+$username = "cadastrados";
+$password = "123";
+$dbname = "CADASTRO";
 
 // Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
