@@ -33,7 +33,10 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    1.1 Para fazer o login como usuario 
 
- - 1.2 Clique em "login" 
+ - 1.2 Clique em "login"
+
+  ![Login](<img width="255" alt="Captura de tela 2023-12-02 203205" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0356f11b-66df-470b-a886-60cecc60982d">
+)
  
   ## 2. LOGOUT
 
@@ -41,9 +44,13 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 2.2 Clique em "sair" 
 
+   ![]()
+
   ## 3. CADASTRAR
 
  - 3.1 Clique para "cadastrar" 
+
+   ![]()
 
   ## 4. ALTERAR SENHA
 
