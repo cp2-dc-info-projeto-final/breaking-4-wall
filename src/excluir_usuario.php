@@ -2,27 +2,48 @@
 session_start();
 require_once 'conecta.php';
 
-if (!isset($_SESSION['admin_id'])) {
-    header('Location: login_adm.php');
-    exit;
-}
 
-if (isset($_POST['delete'])) {
+// Processa a deleção do usuário
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
     $userId = $_POST['id'];
 
-    // Prepare uma declaração para exclusão segura
-    $sql = "DELETE FROM Cadastrados WHERE id = ?";
-    $stmt = $conn->prepare($sql);
+    // Exclua os registros relacionados na tabela "comentarios"
+    $deleteComentariosSql = "DELETE FROM comentarios WHERE usuario_id = ?";
+    $deleteComentariosStmt = $conn->prepare($deleteComentariosSql);
 
-    if (!$stmt) {
-        die('Erro na preparação da consulta: ' . htmlspecialchars($conn->error));
+    if (!$deleteComentariosStmt) {
+        echo 'Erro na preparação da consulta: ' . htmlspecialchars($conn->error);
+        exit;
     }
 
-    $stmt->bind_param("i", $userId);
-    $stmt->execute();
-    $stmt->close();
+    $deleteComentariosStmt->bind_param("i", $userId);
 
-    // Redireciona de volta para a lista de usuários
-    header('Location: lista_cadastrados.php');
+    if ($deleteComentariosStmt->execute()) {
+        // Agora que os comentários foram excluídos, você pode excluir o usuário
+        $deleteUserSql = "DELETE FROM cadastrados WHERE id = ?";
+        $deleteUserStmt = $conn->prepare($deleteUserSql);
+
+        if (!$deleteUserStmt) {
+            echo 'Erro na preparação da consulta: ' . htmlspecialchars($conn->error);
+            exit;
+        }
+
+        $deleteUserStmt->bind_param("i", $userId);
+
+        if ($deleteUserStmt->execute()) {
+            echo "Usuário excluído com sucesso.";
+        } else {
+            echo "Erro ao excluir o usuário: " . $deleteUserStmt->error;
+        }
+
+        $deleteUserStmt->close();
+    } else {
+        echo "Erro ao excluir comentários: " . $deleteComentariosStmt->error;
+    }
+
+    $deleteComentariosStmt->close();
 }
+
+// Fechar conexão com o banco de dados
+$conn->close();
 ?>
