@@ -115,6 +115,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    14.1 Ao acessar o site como usuário
    
  - 14.2 Clique em "buscar filme"
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c531b7be-e43e-49a3-84ba-37bb5b41ff39)
+
   
   ## 15. ADICIONAR COMENTARIO
 
