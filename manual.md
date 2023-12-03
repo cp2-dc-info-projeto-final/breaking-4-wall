@@ -140,14 +140,14 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 14.2 Clique em "enviar comentario"
 
- - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
 
+
+ - ADM
 
   ## 15. EDITAR ADMINISTRADOR
 
-   15.1 Em sua conta de administrador
-
- - 15.2 Clique em "editar administrador"
+ - 15.1 Clique em "editar perfil"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9e5e2bad-4dd6-4fb7-9fff-34b6d38c89ea)
 
