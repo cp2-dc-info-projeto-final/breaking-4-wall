@@ -94,9 +94,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9bcd64bd-d6ac-4249-a01a-e0ab40b48e60)
 
 
-  ## 9. CADASTRAR ATORES
+  ## 9. CADASTRAR ATOR
   
-   9.1 Aperte em "Cadastrar atores"
+   9.1 Aperte em "Cadastrar ator"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
 
