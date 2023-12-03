@@ -104,7 +104,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 10. VINCULO ENTRE FILME E CATEGORIA 
 
-   10.1 Ao acessar o slider o usuario tem acessa a pagina de interaçao 
+   10.1 Ao acessar o slider o usuário tem acessa a pagina de interaçao 
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
 
@@ -115,7 +115,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    ## 11. VINCULO ENTRE ATOR E FILME
 
-   11.1 Ao acessar o slider o usuario tem acesso a pagina de interaçao 
+   11.1 Ao acessar o slider o usuário tem acesso a pagina de interação 
  
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a3fd733c-1c22-4cd3-a10c-018de4f9b8b7)
 
