@@ -84,7 +84,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    
   ## 7. CADASTRAR ADMINISTRADORES 
 
-   7.2 selecione o botao cadastrar administradores
+   7.1 selecione o botao cadastrar administradores
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90eface4-ac18-46de-985f-c1bcce774b48)
 
