@@ -104,7 +104,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 10. VINCULO ENTRE FILME E CATEGORIA 
 
-   10.1 Ao acessar o slider, o usuário tem acesso a pagina de interaçao 
+   10.1 Ao acessar o slider, o usuário tem acesso a pagina de interação
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
 
