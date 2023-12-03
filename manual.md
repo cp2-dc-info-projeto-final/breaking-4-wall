@@ -40,10 +40,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  
   ## 2. LOGOUT
-
-   2.1 Para fazer logout em sua conta 
-
- - 2.2 Clique em "sair" 
+  
+ - 2.1 Clique em "sair" 
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d05e27ec-357d-46f1-a060-b5a8370e5512)
 
