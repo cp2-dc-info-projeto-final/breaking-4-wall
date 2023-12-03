@@ -12,6 +12,7 @@ $nome = $_SESSION["nome"];
 $email = $_SESSION["email"];
 // Outros dados podem ser adicionados aqui conforme necessário
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,7 +21,6 @@ $email = $_SESSION["email"];
     <title>Perfil</title>
     <style>
         /* Estilos globais e da navbar existentes... */
-
         /* Estilo do corpo da página com a nova cor de fundo */
         body {
             background-color: #561237; /* Cor de fundo atualizada baseada na imagem */
@@ -29,7 +29,6 @@ $email = $_SESSION["email"];
             margin: 0;
             padding: 0;
         }
-
         /* Estilo do container do perfil */
         .profile-container {
             max-width: 400px;
@@ -39,21 +38,18 @@ $email = $_SESSION["email"];
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
-
         /* Estilos para a seção de informações do perfil */
         .profile-info {
             display: flex;
             flex-direction: column;
             gap: 15px;
         }
-
         /* Estilo para os rótulos das informações do perfil */
         .profile-info label {
             color: #FFFFFF;
             margin-bottom: 5px;
             font-weight: bold;
         }
-
         /* Estilo para os valores das informações */
         .profile-info p {
             background-color: #FFF;
@@ -62,7 +58,6 @@ $email = $_SESSION["email"];
             border-radius: 4px;
             border: 1px solid #444;
         }
-
         /* Estilo para os botões de ação do perfil */
         .profile-action-buttons a {
             background-color: rgb(255, 0, 119); /* Cor que complementa a navbar */
@@ -76,26 +71,45 @@ $email = $_SESSION["email"];
             display: inline-block;
             margin-top: 10px;
         }
-
         .profile-action-buttons a:hover {
             background-color: #ff3399; /* Tom mais escuro da cor do botão */
+        }
+        /* Estilo específico para o botão de logout */
+        .profile-action-buttons a.logout-button {
+            background-color: #ff4136; /* Cor vermelha para ação de sair */
+        }
+        .profile-action-buttons a.logout-button:hover {
+            background-color: #ff6347; /* Cor mais clara para o hover */
         }
     </style>
 </head>
 <body>
+    <div class="profile-container">
     <div class="profile-container">
         <div class="profile-header">
             <h2>Perfil</h2>
         </div>
         <div class="profile-info">
             <label>Nome:</label>
-            <p><?php echo htmlspecialchars($nome); ?></p>
+            <p id="nomeDisplay"><?php echo htmlspecialchars($_SESSION["nome"]); ?></p>
             <label>Email:</label>
-            <p><?php echo htmlspecialchars($email); ?></p>
+            <p><?php echo htmlspecialchars($_SESSION["email"]); ?></p>
         </div>
+
+        <!-- Formulário de Edição -->
+        <div class="profile-edit-form">
+            <form action="update_profile.php" method="post">
+                <label for="newName">Editar Nome:</label>
+                <input type="text" name="newName" id="newName" value="<?php echo htmlspecialchars($_SESSION["nome"]); ?>">
+                <input type="submit" value="Atualizar">
+            </form>
+        </div>
+
+       
         <div class="profile-action-buttons">
             <a href="logout.php">Sair</a>
-            <a href="index.html">Ir para tela inicial</a>
+            <!-- Botão para ir para a tela principal -->
+            <a href="index.html">Tela Principal</a>
         </div>
     </div>
 </body>
