@@ -44,13 +44,15 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 2.2 Clique em "sair" 
 
-   ![]()
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d05e27ec-357d-46f1-a060-b5a8370e5512)
+
 
   ## 3. CADASTRAR
 
  - 3.1 Clique para "cadastrar" 
 
-   ![]()
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/41ff87e6-f07c-4751-9174-064c72b5bdcf)
+
 
   ## 4. ALTERAR SENHA
 
@@ -68,11 +70,19 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    6.2 Seus dados serão exibidos na tela
 
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
+
+   
+
+
   ## 7. CADASTRAR ADMINISTRADORES 
 
  - 7.1 Clique em cadastrar
 
    7.2 selecione a funçao de cadastrar administradores
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90eface4-ac18-46de-985f-c1bcce774b48)
+
 
   ## 8. CADASTRAR FILMES
 
