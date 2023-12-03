@@ -73,7 +73,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
+
  - PAINEL ADMINISTRADORES
+   
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c9d9476c-6a65-42b1-a05f-281d286551ff)
 
