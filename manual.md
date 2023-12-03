@@ -73,9 +73,14 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
-
+ - 6.1 Entrando na tela clique em "perfil"
+   
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
 
    6.2 Seus dados serão exibidos na tela
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/e6c68d2d-8a9b-44e2-8c44-2571778f4f96)
+
 
  - PAINEL DE ADMINISTRADORES
 
