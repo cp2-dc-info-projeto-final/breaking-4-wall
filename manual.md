@@ -66,138 +66,140 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - 5.2 O usuario recebera um email
   
   ## 6. VISUALIZAR PERFIL
-  
+
+   6.1 Entre no site
+    
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
- - 6.1 Entrando na tela clique em "perfil"
+ - 6.2 Clique en "perfil"
    
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
 
-   6.2 Seus dados serão exibidos na tela
+   6.3 Seus dados serão exibidos na tela
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/e6c68d2d-8a9b-44e2-8c44-2571778f4f96)
 
 
  - PAINEL DE ADMINISTRADORES
 
-  ## 8. CADASTRAR FILMES
+  ## 7. CADASTRAR FILMES
 
- - 8.1 Clique em "cadastro"
+ - 7.1 Clique em "cadastro"
 
-   8.2 Aperte na opção "cadastrar filmes"
+   7.2 Aperte na opção "cadastrar filmes"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cf8bd587-134f-4569-ab2b-41b79c2bc29f)
 
 
-  ## 9. CADASTRAR CATEGORIA
+  ## 8. CADASTRAR CATEGORIA
 
- - 9.1 Clique em "cadastro"
+ - 8.1 Clique em "cadastro"
 
-   9.2 Aperte na opção "cadastrar categoria"
+   8.2 Aperte na opção "cadastrar categoria"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9bcd64bd-d6ac-4249-a01a-e0ab40b48e60)
 
 
-  ## 10. CADASTRAR ATORES
+  ## 9. CADASTRAR ATORES
 
- - 10.1 Clique em "cadastro"
+ - 9.1 Clique em "cadastro"
 
-   10.2 Aperte em "Cadastrar atores"
+   9.2 Aperte em "Cadastrar atores"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
 
 
-  ## 11. VINCULO ENTRE FILME E CATEGORIA 
+  ## 10. VINCULO ENTRE FILME E CATEGORIA 
 
- - 11.1 Ao clicar em "fazer junçao" 
+ - 10.1 Ao clicar em "fazer junçao" 
 
-   11.2 o site exibirá o filme escolhido com a categoria escolhida
+   10.2 o site exibirá o filme escolhido com a categoria escolhida
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
 
    
-  ## 12. VINCULO ENTRE ATOR E FILME
+  ## 11. VINCULO ENTRE ATOR E FILME
 
-   12.1 Ao clicar em "fazer junçao"
+   11.1 Ao clicar em "fazer junçao"
 
- - 12.2 o site exibirá o filme com os atores de determinado filme
+ - 11.2 o site exibirá o filme com os atores de determinado filme
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a3fd733c-1c22-4cd3-a10c-018de4f9b8b7)
 
 
-  ## 13. DETALHES DO FILME 
+  ## 12. DETALHES DO FILME 
 
-   13.1 Ao acessar o site como usuário
+   12.1 Ao acessar o site como usuário
 
- - 13.2 Clique em "detalhes do filme"
+ - 12.2 Clique em "detalhes do filme"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3ff5b99f-3958-475f-a3c8-da1d1e237aec)
 
 
-  ## 14. BUSCAR FILME
+  ## 13. BUSCAR FILME
 
-   14.1 Ao acessar o site como usuário
+   13.1 Ao acessar o site como usuário
    
- - 14.2 Clique em "buscar filme"
+ - 13.2 Clique em "buscar filme"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c531b7be-e43e-49a3-84ba-37bb5b41ff39)
 
   
-  ## 15. ADICIONAR COMENTARIO
+  ## 14. ADICIONAR COMENTARIO
 
-   15.1 Ao acessar o site como usuário
+   14.1 Ao acessar o site como usuário
 
- - 15.2 Clique em "adicionar comentario"
+ - 14.2 Clique em "adicionar comentario"
 
  - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
 
 
-  ## 16. EDITAR ADMINISTRADOR
+  ## 15. EDITAR ADMINISTRADOR
 
-   16.1 Em sua conta de administrador
+   15.1 Em sua conta de administrador
 
- - 16.2 Clique em "editar administrador"
+ - 15.2 Clique em "editar administrador"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9e5e2bad-4dd6-4fb7-9fff-34b6d38c89ea)
 
    
-  ## 17. EDITAR FILME 
+  ## 16. EDITAR FILME 
 
-   17.1 Em sua conta de administrador
+   16.1 Em sua conta de administrador
 
- - 17.2 Clique em "editar filme"
+ - 16.2 Clique em "editar filme"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ccb05ab1-8c58-457e-a685-b9c2e0440706)
 
 
-  ## 18. EDITAR PERFIL 
+  ## 17. EDITAR PERFIL 
 
-   18.1 Em sua conta de administrador, entre no perfil
+   17.1 Em sua conta de administrador, entre no perfil
 
- - 18.2 Clique em "editar perfil"
+ - 17.2 Clique em "editar perfil"
 
  - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b04fa592-6225-49f6-851d-e4e7cd79f2d4)
 
 
-  ## 19. CONSULTAR LISTA DE FILMES
+  ## 18. CONSULTAR LISTA DE FILMES
  
-  - 19.1 Em sua conta de administrador
+  - 18.1 Em sua conta de administrador
  
-   19.2 Clique em "lista de filmes"
+   18.2 Clique em "lista de filmes"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3c00cb36-0b49-4c6e-ac59-7d665ab2c96d)
 
  
-  ## 20. EXCLUIR ADMINISTRADOR 
+  ## 19. EXCLUIR ADMINISTRADOR 
 
- - 20.1 Em sua conta de administrador, clique em "excluir perfil"
+ - 19.1 Em sua conta de administrador, clique em "excluir perfil"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
 
  
-  ## 21. EXCLUIR FILME 
+  ## 20. EXCLUIR FILME 
 
- - 21.1. Em sua conta de administrador, clique em "excluir filme"
+ - 20.1. Em sua conta de administrador, clique em "excluir filme"
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
 
