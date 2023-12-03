@@ -110,12 +110,18 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - 11.1 Ao clicar em "fazer junçao" 
 
    11.2 o site exibirá o filme escolhido com a categoria escolhida
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
+
    
   ## 12. VINCULO ENTRE ATOR E FILME
 
    12.1 Ao clicar em "fazer junçao"
 
  - 12.2 o site exibirá o filme com os atores de determinado filme
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a3fd733c-1c22-4cd3-a10c-018de4f9b8b7)
+
 
   ## 13. DETALHES DO FILME 
 
@@ -137,6 +143,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    15.1 Ao acessar o site como usuário
 
  - 15.2 Clique em "adicionar comentario"
+
+ - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
+
 
   ## 16. EDITAR ADMINISTRADOR
 
