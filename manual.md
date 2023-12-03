@@ -71,10 +71,11 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 6.1 Entrando na tela clique em "perfil"
 
-   6.2 Seus dados serão exibidos na tela
-
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
+
+
+   6.2 Seus dados serão exibidos na tela
 
  - PAINEL DE ADMINISTRADORES
 
