@@ -164,9 +164,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ccb05ab1-8c58-457e-a685-b9c2e0440706)
 
-
- - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b04fa592-6225-49f6-851d-e4e7cd79f2d4)
-
  ## 15. EDITAR ADMINISTRADOR
 
  - 15.1 Clique em "editar admimistrador"
