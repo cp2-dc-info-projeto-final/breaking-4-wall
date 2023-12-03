@@ -20,7 +20,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Detalhes do filme](#Detalhesdofilme)
  - [Buscar filme](#Buscarfilme)
  - [Adicionar comentario](#Adicionarcomentario)
- - [Editar administrador - adm](#Editaradministrador)
+ - [Editar administrador](#Editaradministrador)
  - [Editar filme - adm](#Editarfilme)
  - [Editar perfil - adm](Editarperfil#)
  - [Consultar lista de filmes - adm](#Listadefilmes)
@@ -150,13 +150,12 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - ADM
 
-  ## 15. EDITAR ADMINISTRADOR
+ ## 15. EDITAR PERFIL 
 
- - 15.1 Clique em "editar perfil"
+   15.1 Em sua conta de administrador, entre no perfil
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9e5e2bad-4dd6-4fb7-9fff-34b6d38c89ea)
+ - 15.2 Clique em "editar perfil"
 
-   
   ## 16. EDITAR FILME 
 
    16.1 Em sua conta de administrador
@@ -166,13 +165,13 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ccb05ab1-8c58-457e-a685-b9c2e0440706)
 
 
-  ## 17. EDITAR PERFIL 
-
-   17.1 Em sua conta de administrador, entre no perfil
-
- - 17.2 Clique em "editar perfil"
-
  - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b04fa592-6225-49f6-851d-e4e7cd79f2d4)
+
+ ## 15. EDITAR ADMINISTRADOR
+
+ - 15.1 Clique em "editar admimistrador"
+
+  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
 
 
   ## 18. CONSULTAR LISTA DE FILMES
