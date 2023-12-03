@@ -75,10 +75,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
-
-  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d) 
-  
-
  - PAINEL DE ADMINISTRADORES
 
   ## 7. CADASTRAR FILMES
