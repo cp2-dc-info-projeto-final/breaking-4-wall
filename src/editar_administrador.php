@@ -10,7 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     
-    $sql = "UPDATE Cadastrado SET nome = ?, email = ? WHERE id = ?";
+    $sql = "UPDATE Cadastrados SET nome = ?, email = ? WHERE id = ?";
+
     $stmt = $conn->prepare($sql);
     if ($stmt) {
         $stmt->bind_param("ssi", $nome, $email, $adminId);
@@ -104,5 +105,6 @@ $stmt->close();
 
 </body>
 </html>
+
 
 
