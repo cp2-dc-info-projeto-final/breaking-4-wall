@@ -68,9 +68,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - 5.2 O usuario recebera um email
   
   ## 6. VISUALIZAR PERFIL
-
- - 6.1 Entrando na tela clique em "perfil"
-
+  
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
  - 6.1 Entrando na tela clique em "perfil"
