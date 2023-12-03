@@ -33,9 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["id"] = $user["id"];
             $_SESSION["nome"] = $user["nome"];
             $_SESSION["email"] = $user["email"];
+            $_SESSION["is_admin"] = $user["is_admin"];
 
             // Verifica se o usuário é um administrador
-            if ($user['is_admin'] == 1) { // 1 representa administrador
+            if ($_SESSION['is_admin'] == 1) { // 1 representa administrador
                 header("Location: dashboard.php");
             } else {
                 header("Location: index.html");
@@ -147,6 +148,18 @@ p {
     /* Outros estilos para h2 conforme necessário */
 }
 
+/* Estilo para o link "Esqueceu sua senha?" */
+.login-button button a {
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+    color: #e6007e; /* Cor do link */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+.login-button button a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+}
+
+
     </style>
     
 </head>
@@ -168,6 +181,11 @@ p {
            
             <button type="submit" class="custom-button">Entrar</button>
         </form>
+        <div class="login-button">
+    <button><a href="esqueceu_senha.php">Esqueceu sua senha?</a></button>
+</div>
+</div>
+
     </div>
 </body>
 </html>
