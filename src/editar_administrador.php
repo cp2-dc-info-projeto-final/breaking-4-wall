@@ -4,24 +4,20 @@ require_once 'conecta.php';
 
 // Verifica se o usuário está logado como administrador
 if (!isset($_SESSION['admin_id'])) {
-    header('Location: login_adm.php');
+    header('Location: login.php');
     exit;
 }
 
-// Suponha que esteja recebendo o ID do administrador pela URL (método GET)
 $adminId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-// Verifica se estamos recebendo dados do formulário
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Aqui você vai validar e sanitizar os dados recebidos
-    $usuario = $_POST['usuario'];
+    $nome = $_POST['nome'];
     $email = $_POST['email'];
     
-    // Atualiza as informações do administrador no banco de dados
-    $sql = "UPDATE Administradores SET usuario = ?, email = ? WHERE id = ?";
+    $sql = "UPDATE Cadastrado SET nome = ?, email = ? WHERE id = ?";
     $stmt = $conn->prepare($sql);
     if ($stmt) {
-        $stmt->bind_param("ssi", $usuario, $email, $adminId);
+        $stmt->bind_param("ssi", $nome, $email, $adminId);
         $stmt->execute();
         if ($stmt->affected_rows > 0) {
             echo "Informações atualizadas com sucesso!";
@@ -34,8 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 
-// Busca as informações atuais do administrador para exibir no formulário
-$sql = "SELECT usuario, email FROM Administradores WHERE id = ?";
+$sql = "SELECT nome, email FROM Cadastrados WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $adminId);
 $stmt->execute();
@@ -47,16 +42,70 @@ $stmt->close();
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <!-- Seu <head> aqui -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Administração - Perfil</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            background: #fff;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4ecdc4;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #3b9b8f;
+        }
+        @media (max-width: 768px) {
+            form {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- Formulário de edição -->
 <form action="editar_administrador.php?id=<?php echo $adminId; ?>" method="post">
-    Usuario: <input type="text" name="usuario" value="<?php echo htmlspecialchars($adminInfo['usuario']); ?>"><br>
+    Usuario: <input type="text" name="nome" value="<?php echo htmlspecialchars($adminInfo['nome']); ?>"><br>
     Email: <input type="email" name="email" value="<?php echo htmlspecialchars($adminInfo['email']); ?>"><br>
     <input type="submit" value="Salvar Alterações">
 </form>
 
 </body>
 </html>
+
