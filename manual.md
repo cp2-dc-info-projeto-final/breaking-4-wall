@@ -12,7 +12,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Alterar senha](#Alterarsenha)
  - [Enviar email](#Enviaremail)
  - [Visualizar perfil](#Visualizarperfil)
- - [Cadastrar administradores - adm](#Cadastraradministradores)
  - [Cadastrar filmes - adm](#Cadastrarfilmes)
  - [Cadastrar categoria - adm](#Cadastrarcategoria)
  - [Cadastrar atores - adm](#Cadastraratores)
@@ -80,14 +79,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
 
  - PAINEL DE ADMINISTRADORES
-
-   
-  ## 7. CADASTRAR ADMINISTRADORES 
-
-   7.1 selecione o botao cadastrar administradores
-
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90eface4-ac18-46de-985f-c1bcce774b48)
-
 
   ## 8. CADASTRAR FILMES
 
