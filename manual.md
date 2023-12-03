@@ -31,6 +31,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 1. LOGIN  
 
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/44d0f6ca-386b-420b-9847-470e66c2d8c4)
+
+
    1.1 Para fazer o login como usuario 
 
  - 1.2 Clique em "login"
