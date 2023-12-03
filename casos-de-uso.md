@@ -24,7 +24,8 @@
  - administrador
 
 
-## Diagrama de Casos de Uso![Diagrama Casos de uso (1) drawio](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/647c8bab-786a-406f-8852-ef7c5e2995e8)
+## Diagrama de Casos de Uso![Diagrama Casos de uso (1) drawio](![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/30b4e23c-22fe-4ac2-817e-a3968a8e8f0e)
+)
 
 
 ## Descrição dos Casos de Uso
