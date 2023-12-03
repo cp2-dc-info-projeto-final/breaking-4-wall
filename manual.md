@@ -35,7 +35,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 1.2 Clique em "login"
 
-  ![Login](<img width="255" alt="Captura de tela 2023-12-02 203205" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1c6bb2f9-e336-4d34-819b-49b2685cc4b0">)
+  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/92ff08d6-b4a9-4e92-90a2-c3bd2b1984fe)
+
  
   ## 2. LOGOUT
 
