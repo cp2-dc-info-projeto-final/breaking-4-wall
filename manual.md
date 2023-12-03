@@ -93,6 +93,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    8.2 Aperte na opção "cadastrar filmes"
 
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cf8bd587-134f-4569-ab2b-41b79c2bc29f)
+
+
   ## 9. CADASTRAR CATEGORIA
 
  - 9.1 Clique em "cadastro"
@@ -104,6 +107,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - 10.1 Clique em "cadastro"
 
    10.2 Aperte em "Cadastrar atores"
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
+
 
   ## 11. VINCULO ENTRE FILME E CATEGORIA 
 
@@ -165,6 +171,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 18.2 Clique em "editar perfil"
 
+ - ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b04fa592-6225-49f6-851d-e4e7cd79f2d4)
+
+
   ## 19. CONSULTAR LISTA DE FILMES
  
   - 19.1 Em sua conta de administrador
@@ -177,6 +186,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## 20. EXCLUIR ADMINISTRADOR 
 
  - 20.1 Em sua conta de administrador, clique em "excluir administrador"
+
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
+
  
   ## 21. EXCLUIR FILME 
 
