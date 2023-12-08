@@ -1,5 +1,5 @@
 <?php
-include "envia_email.php";
+include "enviar_email.php";
 include "conecta.php";
 session_start();
 
