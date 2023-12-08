@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "categorais";
-$password = "123456";
+$username = "cadastrados";
+$password = "123";
 $dbname = "CADASTRO";
 
 // Cria a conexão
