@@ -16,7 +16,7 @@ session_start();
             unset($_SESSION['msg_rec']);
         }
     ?>
-    <form action="recupera.php" method="POST">
+    <form action="recuepera.php" method="POST">
         <input type="hidden" name="operacao" value="enviar-email">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Digite seu email" required>
