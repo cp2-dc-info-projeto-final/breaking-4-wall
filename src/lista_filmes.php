@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$username = "cadastrado"; // Seu nome de usuário do banco de dados
+$username = "cadastrados"; // Seu nome de usuário do banco de dados
 $password = "123"; // Sua senha do banco de dados
 $dbname = "CADASTRO"; // Nome do seu banco de dados
 
