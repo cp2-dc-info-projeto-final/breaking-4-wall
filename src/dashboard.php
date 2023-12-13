@@ -180,9 +180,10 @@ $stmtAdminLogado->close();
         <li><a href="lista_filmes.php">Filmes</a></li>
         <li><a href="cadastro_filmes.html">Cadastro de Filmes</a></li>
         <li><a href="cadastro_atores.html">Cadastro de Atores</a></li>
+        <li><a href="vincular_atuacao.php">Vincular Atuações</a></li>
         <li><a href="lista_cadastrados.php">Cadastrados</a></li>
         <li><a href="cadastro_categoria.html">Cadastro de Categorias</a></li>
-        
+        <li><a href="vincular_filme_categoria.php">Vincular Filme e Categoria</a></li>
     </ul>
 </div>
 
