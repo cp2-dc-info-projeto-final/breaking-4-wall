@@ -1,16 +1,12 @@
 <?php
-session_start();
-$message = "";
+// Dados de conexão ao banco de dados
+$servername = "localhost";
+$username = "cadastrados";
+$password = "123";
+$dbname = "CADASTRO";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Dados de conexão com o banco de dados
-    $servername = "localhost";
-    $username_db = "cadastrados";
-    $password_db = "123";
-    $database = "CADASTRO";
-
-    // Cria uma conexão com o banco de dados
-    $conn = new mysqli($servername, $username_db, $password_db, $database);
+// Cria a conexão com o banco de dados
+$conn = new mysqli($servername, $username, $password, $dbname);
 
     if ($conn->connect_error) {
         die("Erro na conexão com o banco de dados: " . $conn->connect_error);
