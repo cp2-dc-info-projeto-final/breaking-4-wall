@@ -7,7 +7,7 @@ $password = "123"; // Sua senha do banco de dados
 $dbname = "CADASTRO";
 
 // Criar conexão
-$conn = new mysqli("localhost", "alvaro", "12345", "cadastro");
+$conn = new mysqli($servername, $username , $password, $dbname);
 
 // Verificar conexão
 if ($conn->connect_error) {
