@@ -1,14 +1,12 @@
 <?php
-
 // Dados de conexão ao banco de dados
 $servername = "localhost";
-$username = "alvaro"; // Seu nome de usuário do banco de dados
-$password = "12345"; // Sua senha do banco de dados
-$dbname = "cadastro";
+$username = "cadastrados";
+$password = "123";
+$dbname = "CADASTRO";
 
-// Criar conexão
-$conn = new mysqli("localhost", "alvaro", "12345", "cadastro");
-
+// Cria a conexão com o banco de dados
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Verificar conexão
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
