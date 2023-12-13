@@ -1,8 +1,8 @@
 <?php
 // Dados de conexão ao banco de dados
 $servername = "localhost";
-$username = "alvaro";
-$password = "12345";
+$username = "cadastrados";
+$password = "123";
 $dbname = "cadastro";
 
 // Cria a conexão com o banco de dados
