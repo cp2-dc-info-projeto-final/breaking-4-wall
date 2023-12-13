@@ -1,7 +1,6 @@
 <?php
 session_start(); // Inicia a sessão para verificar o login do usuário
 
-// Configuração das variáveis de conexão com o banco de dados
 $servername = "localhost";
 $username = "cadastrados";
 $password = "123";
