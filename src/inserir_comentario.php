@@ -17,18 +17,37 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $comentario = $_POST['comentario'];
         $usuarioId = $_SESSION['id']; // Usando o ID do usuário logado
 
-        // Insere o comentário no banco de dados
-        $stmt = $conn->prepare("INSERT INTO comentarios (filme_id, usuario_id, comentario) VALUES (?, ?, ?)");
-        $stmt->bind_param("iis", $filmeId, $usuarioId, $comentario);
-        $stmt->execute();
+        // Verifica se a ação é para excluir um comentário
+        if (isset($_POST['excluir_comentario'])) {
+            $comentarioId = $_POST['excluir_comentario'];
 
-        if ($stmt->error) {
-            echo "Erro: " . $stmt->error;
+            // Exclui o comentário se o usuário for o autor
+            $stmt_excluir = $conn->prepare("DELETE FROM comentarios WHERE ID = ? AND usuario_id = ?");
+            $stmt_excluir->bind_param("ii", $comentarioId, $usuarioId);
+            $stmt_excluir->execute();
+
+            if ($stmt_excluir->error) {
+                echo "Erro ao excluir comentário: " . $stmt_excluir->error;
+            } else {
+                echo "Comentário excluído com sucesso!";
+            }
+
+            $stmt_excluir->close();
         } else {
-            header("Location: detalhes_filme.php?id=" . $filmeId);
-            exit;
+            // Insere o comentário no banco de dados
+            $stmt_inserir = $conn->prepare("INSERT INTO comentarios (filme_id, usuario_id, comentario) VALUES (?, ?, ?)");
+            $stmt_inserir->bind_param("iis", $filmeId, $usuarioId, $comentario);
+            $stmt_inserir->execute();
+
+            if ($stmt_inserir->error) {
+                echo "Erro ao inserir comentário: " . $stmt_inserir->error;
+            } else {
+                header("Location: detalhes_filme.php?id=" . $filmeId);
+                exit;
+            }
+
+            $stmt_inserir->close();
         }
-        $stmt->close();
     } else {
         // Se o usuário não estiver logado, exibe uma mensagem
         echo "<p>Você precisa estar logado para comentar.</p>";
