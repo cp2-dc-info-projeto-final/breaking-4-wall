@@ -37,18 +37,20 @@ $filme = $result_filme->fetch_assoc();
 
 
 // Consulta para buscar os atores do filme
-$stmt_atores = $conn->prepare("SELECT a.Nome FROM Atores a JOIN Filme_Ator fa ON a.ID = fa.ator_id WHERE fa.filme_id = ?");
+$stmt_atores = $conn->prepare("SELECT a.Nome FROM Atores a JOIN Atuacoes at ON a.ID = at.AtorID WHERE at.FilmeID = ?");
 $stmt_atores->bind_param("i", $filmeId);
 $stmt_atores->execute();
 $result_atores = $stmt_atores->get_result();
 $atores = $result_atores->fetch_all(MYSQLI_ASSOC);
 
+
 // Consulta para buscar as categorias do filme
-$stmt_categorias = $conn->prepare("SELECT c.Nome FROM Categorias c JOIN Filme_Categoria fc ON c.ID = fc.categoria_id WHERE fc.filme_id = ?");
+$stmt_categorias = $conn->prepare("SELECT c.Nome FROM Categorias c JOIN filmescategorias fc ON c.ID = fc.CategoriaID WHERE fc.FilmeID = ?");
 $stmt_categorias->bind_param("i", $filmeId);
 $stmt_categorias->execute();
 $result_categorias = $stmt_categorias->get_result();
 $categorias = $result_categorias->fetch_all(MYSQLI_ASSOC);
+
 
 // Consulta para buscar os comentários do filme
 $stmt_comentarios = $conn->prepare("SELECT comentario FROM comentarios WHERE filme_id = ?");
