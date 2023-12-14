@@ -17,6 +17,7 @@ $deleteStmt->bind_param('i', $filmeId);
 
 if ($deleteStmt->execute()) {
     echo "Filme excluído com sucesso!";
+    header("Location: lista_filmes.php");
 } else {
     echo "Erro ao excluir filme: " . $deleteStmt->error;
 }
@@ -24,3 +25,4 @@ if ($deleteStmt->execute()) {
 $deleteStmt->close();
 $conn->close();
 ?>
+
