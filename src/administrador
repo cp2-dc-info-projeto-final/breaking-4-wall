@@ -1,0 +1,1 @@
+INSERT INTO cadastrados (nome, email, senha, is_admin) VALUES ('Pedro da Silva', 'breakingwall4@gmail.com', 'pedro232411', 1);
