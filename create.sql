@@ -196,5 +196,9 @@ ALTER TABLE comentarios
 ADD COLUMN filme_id INT,
 ADD FOREIGN KEY (filme_id) REFERENCES Filmes(ID);
 
+ALTER TABLE comentarios
+ADD COLUMN nome_usuario VARCHAR(255); 
+
+
 
 
