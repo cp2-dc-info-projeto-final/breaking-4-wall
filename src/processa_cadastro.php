@@ -28,6 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Executar o comando SQL
     if ($stmt->execute()) {
+        header("Location: dashboard.php");
         echo "Novo registro criado com sucesso";
     } else {
         echo "Erro: " . $stmt->error;
