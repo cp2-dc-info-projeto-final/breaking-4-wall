@@ -43,9 +43,9 @@ CDU Criar Conta (01) <h1>
 3.	O sistema verifica a validade das informações.
 4.	O sistema cria uma nova conta para o usuário.
 
-**Fluxo Alternativo **
+**Fluxo Alternativo
 
-![Diagrama de Casos de Uso]!! ![WhatsApp Image 2023-10-15 at 00 26 32](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/554b5d15-0931-4309-aed6-c3503cf141ef)
+![WhatsApp Image 2023-10-15 at 00 26 32](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/554b5d15-0931-4309-aed6-c3503cf141ef)
 
 
 1. O sistema detecta um erro inesperado durante o processo de registro.
@@ -53,7 +53,6 @@ CDU Criar Conta (01) <h1>
 e pede ao usuário para tentar novamente.
 3. O usuário tenta o registro novamente.
 
-![Diagrama de Casos de Uso]!
 ![WhatsApp Image 2023-10-15 at 00 26 32 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d1672a1d-bd4d-43fb-8669-46388b894cc8)
 
 Fazer Login CDU (02)
@@ -68,7 +67,6 @@ Fazer Login CDU (02)
 4. O sistema autentica o usuário e exibe o site.
 • Pós-condições: O usuário está logado na plataforma
 
-![Diagrama de Casos de Uso]!!!
 ![WhatsApp Image 2023-10-15 at 00 26 30 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d4c8d2cf-c865-476f-af79-29bf47fa0c4b)
 
 Fluxo alternativo
@@ -77,7 +75,7 @@ Fluxo alternativo
 2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
 3. O usuário pode tentar novamente inserindo as credenciais corretas.
 
-![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 30](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cc1b8fa7-40e1-487f-af16-80bb08853c59)
+![WhatsApp Image 2023-10-15 at 00 26 30](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cc1b8fa7-40e1-487f-af16-80bb08853c59)
 
 
 CDU Buscar Filmes e atores (03)
