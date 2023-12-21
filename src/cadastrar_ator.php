@@ -29,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Executa o statement
     if ($stmt->execute()) {
         echo "Ator cadastrado com sucesso!";
+        header("Location: dashboard.php");
     } else {
         echo "Erro ao cadastrar o ator: " . $stmt->error;
     }
