@@ -80,9 +80,9 @@ Fluxo alternativo
 
 CDU Buscar Filmes e atores (03)
 
-Fluxo principal 
+Fluxo principal
 
-![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 32 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b84e5871-739f-4c71-99bc-22dfaa7ebb1b)
+![WhatsApp Image 2023-10-15 at 00 26 32 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b84e5871-739f-4c71-99bc-22dfaa7ebb1b)
   
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
