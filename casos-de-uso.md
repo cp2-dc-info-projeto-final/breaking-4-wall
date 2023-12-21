@@ -111,6 +111,7 @@ Fluxo principal
 
    
 • Ator: Usuário
+
 • Pré-condições: O usuário está logado e acessou um filme.
 1. O usuário acessa a página de detalhes do filme.
 2. O sistema exibe informações como sinopse, elenco, diretor e resenhas
