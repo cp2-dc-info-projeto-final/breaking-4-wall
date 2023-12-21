@@ -65,6 +65,7 @@ Fluxo Principal
 2. O usuário insere email ou o seu nome de usuário e senha.
 3. O sistema verifica as credenciais.
 4. O sistema autentica o usuário e exibe o site.
+
 • Pós-condições: O usuário está logado na plataforma
 
 ![WhatsApp Image 2023-10-15 at 00 26 30 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d4c8d2cf-c865-476f-af79-29bf47fa0c4b)
@@ -89,6 +90,7 @@ Fluxo principal
 1. O usuário acessa a barra de pesquisa.
 2. O usuário insere o título do filme ou atores.
 3. O sistema exibe resultados correspondentes.
+
 • Pós-condições: O usuário vê os resultados da pesquisa.
 
 Fluxo alternativo 
@@ -112,6 +114,7 @@ Fluxo principal
 • Pré-condições: O usuário está logado e acessou um filme.
 1. O usuário acessa a página de detalhes do filme.
 2. O sistema exibe informações como sinopse, elenco, diretor e resenhas
+   
 • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
 CDU Avaliar filme (05)
@@ -159,6 +162,7 @@ Fluxo principal
 4. Classificação de atores: Permitir que os usuários classifiquem atores e deixem comentários sobre seu desempenho.
 
 5. Relacionamentos: Associar atores com os filmes em que atuaram, permitindo que os usuários vejam quais atores estiveram em quais filmes.
+
 • Pós-condições : As informações do ator foram atualizadas com sucesso no sistema.
 
 CDU  Gerenciamento de Filmes (08)
@@ -180,6 +184,7 @@ Fluxo principal
 4. Avaliações e classificações: Permitir que os usuários classifiquem e deixem comentários sobre os filmes, ajudando outros usuários a tomar decisões informadas.
 
 5. Recomendações: Com base no histórico de visualização dos usuários, sugerir filmes que possam ser do interesse deles.
+
 • Pós-condições : As informações do filme foram atualizadas com sucesso no sistema.
 
 CDU  Gerenciamento de Usuários (09)
@@ -201,6 +206,7 @@ Fluxo principal
 4. Histórico de visualização: Registrar os filmes assistidos por cada usuário para oferecer recomendações personalizadas.
 
 5. Sistema de amigos: Permitir que os usuários conectem-se a outros usuários, sigam seus perfis e compartilhem recomendações de filmes.
+
 • Pós-condições : As informações do perfil do usuário foram atualizadas com sucesso no sistema.
  
 CDU Explorar Filmes Populares (tela inicial) (10)
@@ -268,6 +274,7 @@ Pré-condições: O usuário deve estar registrado no sistema.
 9. O usuário define uma nova senha e confirma.
 10. O sistema atualiza a senha do usuário no banco de dados.
 11. O sistema exibe uma mensagem de confirmação de que a senha foi alterada com sucesso.
+
 Pós-condições: O usuário recebe um link para redefinir sua senha.
 
 Fluxo Alternativo - E-mail Não Registrado:
