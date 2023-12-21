@@ -32,7 +32,7 @@
 
 CDU Criar Conta (01) <h1>
 
-**Fluxo Principal**
+Fluxo Principal
 
 ![WhatsApp Image 2023-10-15 at 00 26 31](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fa951dfa-ba8d-4917-bd78-1bb17e376b20)
 
@@ -43,7 +43,7 @@ CDU Criar Conta (01) <h1>
 3.	O sistema verifica a validade das informações.
 4.	O sistema cria uma nova conta para o usuário.
 
-**Fluxo Alternativo
+Fluxo Alternativo
 
 ![WhatsApp Image 2023-10-15 at 00 26 32](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/554b5d15-0931-4309-aed6-c3503cf141ef)
 
