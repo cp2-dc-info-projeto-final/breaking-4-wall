@@ -102,12 +102,12 @@ Fluxo alternativo
 
 CDU Visualizar Detalhes do Filme (04)
 
-Fluxo principal 
+Fluxo principal
 
-![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 33 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/952d904d-eaa7-4864-bcee-2bd64cd5b896)
+![WhatsApp Image 2023-10-15 at 00 26 33 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/952d904d-eaa7-4864-bcee-2bd64cd5b896)
 
 
-    
+   
 • Ator: Usuário
 • Pré-condições: O usuário está logado e acessou um filme.
 1. O usuário acessa a página de detalhes do filme.
@@ -118,7 +118,7 @@ CDU Avaliar filme (05)
 
 Fluxo principal 
 
-![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 33 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/08c3aafb-69c0-4fb4-9103-6cbde37e7483)
+![WhatsApp Image 2023-10-15 at 00 26 33 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/08c3aafb-69c0-4fb4-9103-6cbde37e7483)
 
 
 •	Ator: Usuário
@@ -132,8 +132,7 @@ CDU Adicionar Filme à Lista (06)
 
 Fluxo principal
 
-![Diagrama de Casos de Uso]!
-   ![WhatsApp Image 2023-10-15 at 00 26 33 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8d51beab-66b3-4ba0-b787-b19e34af37d1)
+![WhatsApp Image 2023-10-15 at 00 26 33 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8d51beab-66b3-4ba0-b787-b19e34af37d1)
 
 • Ator: Usuário
 • Pré-condições: O usuário está logado.
@@ -147,7 +146,7 @@ CDU  Gerenciamento de Atores (07)
 
 Fluxo principal 
 
-![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/184d874b-d574-48f8-9816-9d1298e3ec41)
+![WhatsApp Image 2023-10-18 at 23 15 21 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/184d874b-d574-48f8-9816-9d1298e3ec41)
 
 • Ator : Administrador 
 • Pré-condições : O ator que deseja gerenciar atores está autenticado no sistema.
@@ -166,7 +165,7 @@ CDU  Gerenciamento de Filmes (08)
 
 Fluxo principal 
 
-![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2f46f288-568c-44e1-8660-1b191d7e3e10)
+![WhatsApp Image 2023-10-18 at 23 15 21 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2f46f288-568c-44e1-8660-1b191d7e3e10)
 
 
 • Ator : Administrador 
@@ -187,7 +186,7 @@ CDU  Gerenciamento de Usuários (09)
 
 Fluxo principal 
 
-![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-18 at 23 15 21](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8ec151cc-2aea-41ee-a8ee-c6cb96cc434b)
+![WhatsApp Image 2023-10-18 at 23 15 21](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8ec151cc-2aea-41ee-a8ee-c6cb96cc434b)
 
 
 • Ator : Administrador 
@@ -208,7 +207,6 @@ CDU Explorar Filmes Populares (tela inicial) (10)
 
 Fluxo principal
 
-![Diagrama de Casos de Uso]!
 ![WhatsApp Image 2023-10-15 at 00 26 34](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cfff6b30-bd07-427d-989b-863b89a0fbdb)
 
 • Ator: Usuário
@@ -221,7 +219,7 @@ ou tendências.
 
 Fluxo alternativo
 
-![Diagrama de Casos de Uso]!![WhatsApp Image 2023-10-15 at 00 26 34 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2282ac8c-d0ff-4546-bcab-6fd2d0e963f9)
+![WhatsApp Image 2023-10-15 at 00 26 34 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2282ac8c-d0ff-4546-bcab-6fd2d0e963f9)
 
    
 1. O sistema encontra problemas ao recuperar filmes populares.
@@ -231,7 +229,6 @@ CDU Personalizar Perfil (11)
 
 Fluxo principal
 
-![Diagrama de Casos de Uso]!
 ![WhatsApp Image 2023-10-15 at 00 26 34 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b25e5d56-6eea-4887-b50f-e65f5efde623)
 
 • Ator: Usuário
@@ -245,7 +242,6 @@ sociais
 
 Fluxo alternativo
 
-![Diagrama de Casos de Uso]!
    ![WhatsApp Image 2023-10-15 at 00 26 34 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90862fae-126c-4300-b175-bf3cc4500a0e)
 
 1. O usuário tenta fazer o upload de uma foto de perfil, mas o sistema encontra um erro no processo.
@@ -255,7 +251,7 @@ CDU: Recuperar Senha (12)
 
 Fluxo Principal:
 
-![Diagrama de Casos de Uso]!!![Recuperação de Senha](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/b11659c6-d563-4e4b-8182-dfd28aae0d46)
+![Recuperação de Senha](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/b11659c6-d563-4e4b-8182-dfd28aae0d46)
 
 
 Ator: Usuário
@@ -276,7 +272,7 @@ Pós-condições: O usuário recebe um link para redefinir sua senha.
 
 Fluxo Alternativo - E-mail Não Registrado:
 
-![Diagrama de Casos de Uso]!!![Recuperação de Senha (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/7cef5bb6-1fb5-4af6-9111-d71ea3267509)
+![Recuperação de Senha (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/7cef5bb6-1fb5-4af6-9111-d71ea3267509)
 
 
 1. O usuário inicia o processo de recuperação.
@@ -293,7 +289,7 @@ Ator: Usuário logado.
 
 Fluxo Principal:
 
-![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-23 at 14 14 48](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c09f0ecc-29d6-4dbd-8ba9-7a99effa6673)
+![WhatsApp Image 2023-10-23 at 14 14 48](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c09f0ecc-29d6-4dbd-8ba9-7a99effa6673)
 
 
 Pré-condições: O usuário deve estar logado no sistema.
