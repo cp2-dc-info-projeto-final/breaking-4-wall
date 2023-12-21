@@ -60,7 +60,9 @@ Fazer Login CDU (02)
 Fluxo Principal
 
 • Ator: Usuário
+
 • Pré-condições: O usuário tem uma conta registrada.
+
 1. O usuário acessa a página de login.
 2. O usuário insere email ou o seu nome de usuário e senha.
 3. O sistema verifica as credenciais.
@@ -86,7 +88,9 @@ Fluxo principal
 ![WhatsApp Image 2023-10-15 at 00 26 32 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/b84e5871-739f-4c71-99bc-22dfaa7ebb1b)
   
 • Ator: Usuário
+
 • Pré-condições: O usuário está logado.
+
 1. O usuário acessa a barra de pesquisa.
 2. O usuário insere o título do filme ou atores.
 3. O sistema exibe resultados correspondentes.
@@ -113,6 +117,7 @@ Fluxo principal
 • Ator: Usuário
 
 • Pré-condições: O usuário está logado e acessou um filme.
+
 1. O usuário acessa a página de detalhes do filme.
 2. O sistema exibe informações como sinopse, elenco, diretor e resenhas
    
@@ -131,7 +136,9 @@ Fluxo principal
 
 
 •	Ator: Usuário
+
 •	Pré-condições: O usuário está logado e acessou um filme.
+
 1.	O usuário encontra o filme desejado.
 2.	O usuário seleciona a opção de avaliar.
 3.	O usuário atribui uma nota e/ou escreve uma resenha
@@ -144,7 +151,9 @@ Fluxo principal
 ![WhatsApp Image 2023-10-15 at 00 26 33 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8d51beab-66b3-4ba0-b787-b19e34af37d1)
 
 • Ator: Usuário
+
 • Pré-condições: O usuário está logado.
+
 1. O usuário encontra o filme desejado.
 2. O usuário seleciona a opção de adicionar à lista.
 3. O sistema adiciona o filme à lista do usuário (assistidos e para assistir).
@@ -158,7 +167,9 @@ Fluxo principal
 ![WhatsApp Image 2023-10-18 at 23 15 21 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/184d874b-d574-48f8-9816-9d1298e3ec41)
 
 • Ator : Administrador 
+
 • Pré-condições : O ator que deseja gerenciar atores está autenticado no sistema.
+
 1. Cadastro de atores: Permitir a criação de perfis para atores, incluindo informações como nome, data de nascimento, biografia, filmografia e foto.
 
 2. Atualização de informações: Permitir que os atores atualizem suas informações pessoais, adicione novos créditos de filmes, atualizem sua foto de perfil, etc.
