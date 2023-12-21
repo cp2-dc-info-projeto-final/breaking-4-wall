@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["atorID"]) && isset($_P
     // Executa o statement
     if ($stmt->execute()) {
         echo "Vinculação realizada com sucesso!";
+        header("Location: dashboard.php");
     } else {
         echo "Erro ao vincular atuação: " . $stmt->error;
     }
