@@ -118,6 +118,11 @@ Fluxo principal
    
 • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
+Fluxo alternativo
+
+1. O usuário acessa a página de detalhes do filme mas não há nenhum detalhe.
+2. O sistema exibe uma mensagem informando que não há nenhum conteúdo.  
+
 CDU Avaliar filme (05)
 
 Fluxo principal 
