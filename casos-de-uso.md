@@ -57,7 +57,7 @@ e pede ao usuário para tentar novamente.
 
 Fazer Login CDU (02)
 
-**Fluxo Principal**
+Fluxo Principal
 
 • Ator: Usuário
 • Pré-condições: O usuário tem uma conta registrada.
@@ -93,7 +93,7 @@ Fluxo principal
 
 Fluxo alternativo 
 
-![Diagrama de Casos de Uso]!!![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
+![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
 
     
 1. O usuário realiza uma pesquisa, mas não há resultados correspondentes.
