@@ -25,16 +25,19 @@ if (empty($filmeId)) {
 // Consulta para obter detalhes do filme
 $stmt_filme = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE ID = ?");
 $stmt_filme->bind_param("i", $filmeId);
+
+// Verifica se a preparação da declaração foi bem-sucedida
+if ($stmt_filme === false) {
+    die('Erro na preparação da consulta do filme: ' . $conn->error);
+}
+
 $stmt_filme->execute();
 $result_filme = $stmt_filme->get_result();
-
 if ($result_filme->num_rows == 0) {
     die('Nenhum filme encontrado com o ID especificado.');
 }
 
 $filme = $result_filme->fetch_assoc();
-
-
 
 // Consulta para buscar os atores do filme
 $stmt_atores = $conn->prepare("SELECT a.Nome FROM Atores a JOIN Atuacoes at ON a.ID = at.AtorID WHERE at.FilmeID = ?");
@@ -43,7 +46,6 @@ $stmt_atores->execute();
 $result_atores = $stmt_atores->get_result();
 $atores = $result_atores->fetch_all(MYSQLI_ASSOC);
 
-
 // Consulta para buscar as categorias do filme
 $stmt_categorias = $conn->prepare("SELECT c.Nome FROM Categorias c JOIN filmescategorias fc ON c.ID = fc.CategoriaID WHERE fc.FilmeID = ?");
 $stmt_categorias->bind_param("i", $filmeId);
@@ -51,13 +53,19 @@ $stmt_categorias->execute();
 $result_categorias = $stmt_categorias->get_result();
 $categorias = $result_categorias->fetch_all(MYSQLI_ASSOC);
 
-
-// Consulta para buscar os comentários do filme
-$stmt_comentarios = $conn->prepare("SELECT comentario FROM comentarios WHERE filme_id = ?");
+// Consulta para buscar os comentários do filme com nome do usuário
+$stmt_comentarios = $conn->prepare("SELECT c.comentario, u.nome AS nome_usuario FROM comentarios c JOIN cadastrados u ON c.usuario_id = u.ID WHERE c.filme_id = ?");
 $stmt_comentarios->bind_param("i", $filmeId);
+
+// Verifica se a preparação da declaração foi bem-sucedida
+if ($stmt_comentarios === false) {
+    die('Erro na preparação da consulta de comentários: ' . $conn->error);
+}
+
 $stmt_comentarios->execute();
 $result_comentarios = $stmt_comentarios->get_result();
 $comentarios = $result_comentarios->fetch_all(MYSQLI_ASSOC);
+
 
 // Fechar as declarações preparadas
 $stmt_filme->close();
@@ -74,8 +82,9 @@ $conn->close();
 <head>
     <meta charset="UTF-8">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
-   <style>
-    body {
+    <!-- Adicionei um estilo básico para os comentários -->
+    <style>
+         body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #1a1a2e; /* Fundo escuro para realçar as cores */
     color: #ffffff;
@@ -171,10 +180,24 @@ button:hover {
         font-size: 1.8em;
     }
 }
-</style>
 
+        .comentario {
+            margin-top: 1em;
+            border-top: 1px solid #676767;
+            padding-top: 1em;
+        }
+
+        .comentario p {
+            margin: 0;
+        }
+
+        .comentario strong {
+            color: #0099ff;
+        }
+    </style>
 </head>
 <body>
+    <div class="filme-container">
     <div class="filme-container">
         <h1 class="filme-titulo"><?php echo htmlspecialchars($filme['Titulo']); ?></h1>
         <p class="filme-ano"><strong>Ano de Lançamento:</strong> <?php echo htmlspecialchars($filme['AnoLancamento']); ?></p>
@@ -198,7 +221,7 @@ button:hover {
                     <li><?php echo htmlspecialchars($categoria['Nome']); ?></li>
                 <?php endforeach; ?>
             </ul>
-        </div>
+                </div>
         <div id="secao-comentarios">
             <h3>Comentários</h3>
             <form action="inserir_comentario.php" method="post">
@@ -208,6 +231,7 @@ button:hover {
             </form>
             <?php foreach ($comentarios as $comentario): ?>
                 <div class="comentario">
+                    <strong><?php echo htmlspecialchars($comentario['nome_usuario']); ?>:</strong>
                     <p><?php echo htmlspecialchars($comentario['comentario']); ?></p>
                 </div>
             <?php endforeach; ?>
