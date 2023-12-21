@@ -17,6 +17,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $comentario = $_POST['comentario'];
         $usuarioId = $_SESSION['id']; // Usando o ID do usuário logado
 
+        // Recupera o nome do usuário do banco de dados
+        $stmt_usuario = $conn->prepare("SELECT nome FROM cadastrados WHERE ID = ?");
+        $stmt_usuario->bind_param("i", $usuarioId);
+        $stmt_usuario->execute();
+        $stmt_usuario->bind_result($nomeUsuario);
+        $stmt_usuario->fetch();
+        $stmt_usuario->close();
+
         // Verifica se a ação é para excluir um comentário
         if (isset($_POST['excluir_comentario'])) {
             $comentarioId = $_POST['excluir_comentario'];
@@ -35,17 +43,27 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $stmt_excluir->close();
         } else {
             // Insere o comentário no banco de dados
-            $stmt_inserir = $conn->prepare("INSERT INTO comentarios (filme_id, usuario_id, comentario) VALUES (?, ?, ?)");
-            $stmt_inserir->bind_param("iis", $filmeId, $usuarioId, $comentario);
-            $stmt_inserir->execute();
+            $stmt_inserir = $conn->prepare("INSERT INTO comentarios (filme_id, usuario_id, nome_usuario, comentario) VALUES (?, ?, ?, ?)");
 
-            if ($stmt_inserir->error) {
-                echo "Erro ao inserir comentário: " . $stmt_inserir->error;
-            } else {
-                header("Location: detalhes_filme.php?id=" . $filmeId);
-                exit;
+            // Verifica se a preparação da declaração foi bem-sucedida
+            if ($stmt_inserir === false) {
+                die('Erro na preparação da declaração de inserção de comentário: ' . $conn->error);
             }
-
+            
+            // Substitua "s" por "ss" para acomodar a coluna nome_usuario que é do tipo VARCHAR
+            $stmt_inserir->bind_param("iiss", $filmeId, $usuarioId, $nomeUsuario, $comentario);
+            $stmt_inserir->execute();
+            
+            // Verifica se a execução foi bem-sucedida
+            if ($stmt_inserir->error) {
+                die('Erro na execução da inserção de comentário: ' . $stmt_inserir->error);
+            }
+            
+            // Se a execução foi bem-sucedida, redirecione para a página de detalhes com um parâmetro de consulta indicando sucesso
+            header("Location: detalhes_filme.php?id=" . $filmeId . "&comentario_enviado=1");
+            exit();
+            
+            // Feche a declaração preparada
             $stmt_inserir->close();
         }
     } else {
