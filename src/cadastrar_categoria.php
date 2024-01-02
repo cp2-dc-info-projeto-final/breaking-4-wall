@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Executa e verifica
     if ($stmt->execute()) {
         echo "Nova categoria cadastrada com sucesso!";
+        header("Location: dashboard.php");
     } else {
         echo "Erro: " . $stmt->error;
     }
