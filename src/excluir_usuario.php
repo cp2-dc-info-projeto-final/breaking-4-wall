@@ -32,6 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['delete'])) {
 
         if ($deleteUserStmt->execute()) {
             echo "Usuário excluído com sucesso.";
+            header("Location: dashboard.php");
         } else {
             echo "Erro ao excluir o usuário: " . $deleteUserStmt->error;
         }
