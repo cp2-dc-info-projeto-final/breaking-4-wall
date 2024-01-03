@@ -10,7 +10,10 @@ if (!isset($_GET['id'])) {
 
 $filmeId = $_GET['id'];
 
-// Execute a exclusão
+// Desative temporariamente a verificação de chave estrangeira
+$conn->query("SET foreign_key_checks = 0");
+
+// Execute a exclusão do filme
 $deleteSql = "DELETE FROM Filmes WHERE ID = ?";
 $deleteStmt = $conn->prepare($deleteSql);
 $deleteStmt->bind_param('i', $filmeId);
@@ -23,6 +26,9 @@ if ($deleteStmt->execute()) {
 }
 
 $deleteStmt->close();
+
+// Reative a verificação de chave estrangeira
+$conn->query("SET foreign_key_checks = 1");
+
 $conn->close();
 ?>
-
