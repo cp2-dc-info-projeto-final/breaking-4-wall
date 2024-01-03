@@ -121,7 +121,10 @@ e pede ao usuário para tentar novamente.
    
  • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
+
  # Fluxo alternativo
+ ![0](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/b541f6c0-5c2b-4ca6-b89f-e40110cf0251)
+
 
 1. O usuário acessa a página de detalhes do filme mas não há nenhum detalhe.
 2. O sistema exibe uma mensagem informando que não há nenhum conteúdo.  
