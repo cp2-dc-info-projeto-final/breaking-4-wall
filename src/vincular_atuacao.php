@@ -1,16 +1,38 @@
 <?php
-// Configuração das variáveis de conexão com o banco de dados
-$servername = "localhost";
-$username = "cadastrados";
-$password = "123";
-$dbname = "CADASTRO";
+session_start();
 
-// Criar conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+require_once 'conecta.php';
 
-// Verificar conexão
+// Verifica se o usuário está logado e se é um administrador
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
+$adminId = $_SESSION["id"];
+
+// Busca as informações do administrador logado no banco de dados
+$sqlAdminLogado = "SELECT nome, email, is_admin FROM Cadastrados WHERE id = ?";
+$stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+$stmtAdminLogado->bind_param("i", $adminId);
+$stmtAdminLogado->execute();
+$resultAdminLogado = $stmtAdminLogado->get_result();
+
+if ($resultAdminLogado->num_rows > 0) {
+    $adminInfo = $resultAdminLogado->fetch_assoc();
+    if ($adminInfo['is_admin'] != 1) { // Se não for administrador
+        header('Location: index.html'); // Redireciona para a página inicial
+        exit;
+    }
+} else {
+    header('Location: login.php');
+    exit;
+}
+
+$stmtAdminLogado->close();
+
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Falha na conexão: " . $conn->connect_error);
 }
 
 // Buscar atores
