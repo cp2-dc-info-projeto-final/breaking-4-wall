@@ -1,3 +1,39 @@
+<?php
+session_start();
+
+require_once 'conecta.php';
+
+// Verifica se o usuário está logado e se é um administrador
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
+$adminId = $_SESSION["id"];
+
+// Busca as informações do administrador logado no banco de dados
+$sqlAdminLogado = "SELECT nome, email, is_admin FROM Cadastrados WHERE id = ?";
+$stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+$stmtAdminLogado->bind_param("i", $adminId);
+$stmtAdminLogado->execute();
+$resultAdminLogado = $stmtAdminLogado->get_result();
+
+if ($resultAdminLogado->num_rows > 0) {
+    $adminInfo = $resultAdminLogado->fetch_assoc();
+    if ($adminInfo['is_admin'] != 1) { // Se não for administrador
+        header('Location: index.html'); // Redireciona para a página inicial
+        exit;
+    }
+} else {
+    header('Location: login.php');
+    exit;
+}
+
+$stmtAdminLogado->close();
+
+// O restante do seu código HTML segue aqui...
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
