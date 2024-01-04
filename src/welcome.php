@@ -45,7 +45,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
     $stmt->close();
     $conn->close();
-}
+
 ?>
 
 <!DOCTYPE html>
