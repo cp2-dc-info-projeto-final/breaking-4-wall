@@ -257,7 +257,7 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
 
  • Pós-condições : As informações do perfil do usuário foram atualizadas com sucesso no sistema.
 
- # Fluxo Alternativo - Falha na Atualização de Informações do Perfil do Usuário:
+ # Fluxo Alternativo A- Falha na Atualização de Informações do Perfil do Usuário:
 
  ![Fluxo Alternativo CDU 09- Editar Perfil](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/3404a46a-efeb-4e14-b4a2-79070b6e9ece)
 
@@ -292,7 +292,7 @@ ou tendências.
    
  • Pós-condições: O usuário descobre filmes populares entre a comunidade.
 
- # Fluxo alternativo
+ # Fluxo alternativo A-
 
 ![WhatsApp Image 2023-10-15 at 00 26 34 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/2282ac8c-d0ff-4546-bcab-6fd2d0e963f9)
 
@@ -318,7 +318,7 @@ sociais
 
  • Pós-condições: O perfil do usuário é personalizado de acordo com suas preferências.
 
- # Fluxo alternativo
+ # Fluxo alternativo A-
 
 ![WhatsApp Image 2023-10-15 at 00 26 34 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90862fae-126c-4300-b175-bf3cc4500a0e)
 
@@ -349,7 +349,7 @@ sociais
 
  • Pós-condições: O usuário recebe um link para redefinir sua senha.
 
- # Fluxo Alternativo - E-mail Não Registrado:
+ # Fluxo Alternativo A- E-mail Não Registrado:
 
 ![Recuperação de Senha (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/7cef5bb6-1fb5-4af6-9111-d71ea3267509)
 
