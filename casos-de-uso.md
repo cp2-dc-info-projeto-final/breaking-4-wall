@@ -41,7 +41,7 @@
 3.	O sistema verifica a validade das informações.
 4.	O sistema cria uma nova conta para o usuário.
 
- # Fluxo Alternativo
+ # Fluxo Alternativo A
 
 ![WhatsApp Image 2023-10-15 at 00 26 32](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/554b5d15-0931-4309-aed6-c3503cf141ef)
 
@@ -70,7 +70,7 @@ e pede ao usuário para tentar novamente.
 
 ![WhatsApp Image 2023-10-15 at 00 26 30 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d4c8d2cf-c865-476f-af79-29bf47fa0c4b)
 
- # Fluxo alternativo
+ # Fluxo alternativo A
    
 1. O usuário insere um nome de usuário e/ou senha incorretos.
 2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
@@ -95,7 +95,7 @@ e pede ao usuário para tentar novamente.
 
 • Pós-condições: O usuário vê os resultados da pesquisa.
 
- # Fluxo alternativo 
+ # Fluxo alternativo A
 
 ![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
 
@@ -122,7 +122,7 @@ e pede ao usuário para tentar novamente.
  • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
 
- # Fluxo alternativo
+ # Fluxo alternativo A
  ![0](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/b541f6c0-5c2b-4ca6-b89f-e40110cf0251)
 
 
@@ -182,6 +182,23 @@ e pede ao usuário para tentar novamente.
 
  • Pós-condições : As informações do ator foram atualizadas com sucesso no sistema.
 
+ # Fluxo Alternativo A - Evitar Cadastro Duplicado de Ator no Mesmo Filme:
+ 
+![Fluxo Alternativo CDU 07- Duplicação de Ator](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/f18edf4b-b7e2-443f-ab47-e89528ca656f)
+
+
+1. Identificação de Tentativa de Duplicação: Durante o cadastro de atores para um filme, o sistema detecta que o ator que está sendo adicionado já está associado ao mesmo filme.
+
+2. Exibição de Mensagem de Erro: O sistema exibe imediatamente uma mensagem de erro, informando ao administrador sobre a tentativa de duplicação e a necessidade de revisão.
+
+3. Opção para Revisar Atores Cadastrados: Uma opção é apresentada ao administrador, permitindo revisar a lista de atores já cadastrados para o filme antes de prosseguir.
+
+4. Revisão da Lista de Atores: O administrador revisa a lista existente para garantir que o ator desejado não esteja duplicado, identificando e corrigindo possíveis problemas.
+
+5. Correção do Cadastro: Se necessário, o administrador corrige o cadastro excluindo o ator duplicado ou escolhendo outro ator para evitar a duplicação.
+Reenvio do Formulário e Conclusão:
+
+Após a revisão e correção, o administrador reenvia o formulário de cadastro de atores. O sistema verifica novamente e, se não houver mais duplicações, conclui o cadastro com sucesso, exibindo uma mensagem de confirmação.
  # CDU  Gerenciamento de Filmes (08)
 
  # Fluxo principal 
