@@ -218,6 +218,27 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
 
  • Pós-condições : As informações do filme foram atualizadas com sucesso no sistema.
 
+ # Fluxo Alternativo A- Falha na Atualização de Informações do Filme:
+
+![Fluxo Alternativo CDU 08- Atualizar Filmes](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/0cd1a51c-28eb-452b-815f-8c12e8e55ff4)
+
+
+ 1. Identificação de Falha na Validação: Durante o processo de atualização de informações do filme, o sistema identifica que uma ou mais informações inseridas não atendem aos critérios de validação.
+
+2. Exibição de Mensagem de Erro: O sistema exibe uma mensagem de erro indicando os campos que precisam ser corrigidos, fornecendo instruções claras sobre como corrigir os problemas.
+
+3. Correção das Informações: O administrador ajusta as informações conforme as orientações fornecidas pela mensagem de erro.
+
+4. Tentativa de Reenvio: Após a correção, o administrador tenta reenviar o formulário para atualização das informações do filme.
+
+5. Segunda Validação: O sistema realiza uma segunda validação nas informações corrigidas para garantir que todos os critérios sejam atendidos.
+
+6. Confirmação da Atualização ou Nova Correção: Se a segunda validação for bem-sucedida, o sistema exibe uma mensagem de confirmação informando que as informações do filme foram atualizadas com sucesso. Caso contrário, o fluxo retorna à correção adicional.
+
+7. Exibição das Informações Atualizadas: Se bem-sucedido, o sistema exibe as informações atualizadas na interface correspondente, refletindo as modificações feitas pelo administrador.
+
+8. Opção de Voltar ao Menu Principal: O administrador é redirecionado de volta ao menu principal do sistema de gerenciamento de filmes, onde pode escolher entre outras opções disponíveis.
+
  # CDU  Gerenciamento de Usuários (09)
 
  # Fluxo principal 
@@ -235,6 +256,24 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
 5. Sistema de amigos: Permitir que os usuários conectem-se a outros usuários, sigam seus perfis e compartilhem recomendações de filmes.
 
  • Pós-condições : As informações do perfil do usuário foram atualizadas com sucesso no sistema.
+
+ # Fluxo Alternativo - Falha na Atualização de Informações do Perfil do Usuário:
+
+ ![Fluxo Alternativo CDU 09- Editar Perfil](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/3404a46a-efeb-4e14-b4a2-79070b6e9ece)
+
+1. Identificação de Falha na Validação: Durante a atualização do perfil do usuário, o sistema identifica que uma ou mais informações inseridas não atendem aos critérios de validação.
+
+2. Exibição de Mensagem de Erro: O sistema exibe uma mensagem de erro indicando os campos que precisam ser corrigidos, fornecendo instruções claras sobre como resolver os problemas.
+
+3. Correção das Informações: O usuário ajusta as informações conforme as orientações fornecidas pela mensagem de erro.
+
+4. Tentativa de Reenvio e Segunda Validação: Após a correção, o usuário tenta reenviar o formulário para a atualização do perfil. O sistema realiza uma segunda validação para garantir que todos os critérios sejam atendidos.
+
+5. Confirmação da Atualização ou Nova Correção: Se a segunda validação for bem-sucedida, o sistema exibe uma mensagem de confirmação informando que as informações do perfil do usuário foram atualizadas com sucesso. Caso contrário, o fluxo retorna ao passo 2 para correção adicional.
+
+6. Exibição do Perfil Atualizado: Se bem-sucedido, o sistema exibe o perfil do usuário com as informações atualizadas na interface correspondente.
+
+7. Opção de Voltar ao Menu Principal: O usuário é redirecionado de volta ao menu principal do sistema, onde pode explorar outras funcionalidades disponíveis.
  
  # CDU Explorar Filmes Populares (tela inicial) (10)
 
