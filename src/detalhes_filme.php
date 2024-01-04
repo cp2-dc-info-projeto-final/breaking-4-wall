@@ -17,11 +17,6 @@ if ($conn->connect_error) {
 
 $filmeId = isset($_GET['id']) ? $_GET['id'] : die('ID do filme não foi especificado.');
 
-$filmeId = isset($_GET['id']) ? $_GET['id'] : null;
-if (empty($filmeId)) {
-    die('ID do filme não foi especificado.');
-}
-
 // Consulta para obter detalhes do filme
 $stmt_filme = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE ID = ?");
 $stmt_filme->bind_param("i", $filmeId);
@@ -40,7 +35,7 @@ if ($result_filme->num_rows == 0) {
 $filme = $result_filme->fetch_assoc();
 
 // Consulta para buscar os atores do filme
-$stmt_atores = $conn->prepare("SELECT a.Nome FROM Atores a JOIN Atuacoes at ON a.ID = at.AtorID WHERE at.FilmeID = ?");
+$stmt_atores = $conn->prepare("SELECT a.ID, a.Nome FROM Atores a JOIN Atuacoes at ON a.ID = at.AtorID WHERE at.FilmeID = ?");
 $stmt_atores->bind_param("i", $filmeId);
 $stmt_atores->execute();
 $result_atores = $stmt_atores->get_result();
@@ -65,7 +60,6 @@ if ($stmt_comentarios === false) {
 $stmt_comentarios->execute();
 $result_comentarios = $stmt_comentarios->get_result();
 $comentarios = $result_comentarios->fetch_all(MYSQLI_ASSOC);
-
 
 // Fechar as declarações preparadas
 $stmt_filme->close();
@@ -197,8 +191,7 @@ button:hover {
     </style>
 </head>
 <body>
-    <div class="filme-container">
-    <div class="filme-container">
+<div class="filme-container">
         <h1 class="filme-titulo"><?php echo htmlspecialchars($filme['Titulo']); ?></h1>
         <p class="filme-ano"><strong>Ano de Lançamento:</strong> <?php echo htmlspecialchars($filme['AnoLancamento']); ?></p>
         <p class="filme-diretor"><strong>Diretor:</strong> <?php echo htmlspecialchars($filme['Diretor']); ?></p>
@@ -210,7 +203,7 @@ button:hover {
             <strong>Atores:</strong>
             <ul>
                 <?php foreach ($atores as $ator): ?>
-                    <li><?php echo htmlspecialchars($ator['Nome']); ?></li>
+                    <li><a href="detalhes_ator.php?id=<?php echo $ator['ID']; ?>"><?php echo htmlspecialchars($ator['Nome']); ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </div>
@@ -221,7 +214,7 @@ button:hover {
                     <li><?php echo htmlspecialchars($categoria['Nome']); ?></li>
                 <?php endforeach; ?>
             </ul>
-                </div>
+        </div>
         <div id="secao-comentarios">
             <h3>Comentários</h3>
             <form action="inserir_comentario.php" method="post">
@@ -239,3 +232,4 @@ button:hover {
     </div>
 </body>
 </html>
+
