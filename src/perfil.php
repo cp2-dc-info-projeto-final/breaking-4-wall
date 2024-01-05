@@ -58,9 +58,9 @@ $email = $_SESSION["email"];
             border-radius: 4px;
             border: 1px solid #444;
         }
-        /* Estilo para os botões de ação do perfil */
+        /* Estilo para o botão de editar */
         .profile-action-buttons a {
-            background-color: rgb(255, 0, 119); /* Cor que complementa a navbar */
+            background-color: #337ab7; /* Cor azul para o botão de editar */
             color: #FFF;
             padding: 10px 20px;
             border: none;
@@ -72,19 +72,18 @@ $email = $_SESSION["email"];
             margin-top: 10px;
         }
         .profile-action-buttons a:hover {
-            background-color: #ff3399; /* Tom mais escuro da cor do botão */
+            background-color: #286090; /* Tom mais escuro da cor do botão de editar */
         }
-        /* Estilo específico para o botão de logout */
-        .profile-action-buttons a.logout-button {
-            background-color: #ff4136; /* Cor vermelha para ação de sair */
+        /* Estilo para o botão de excluir conta */
+        .profile-action-buttons a.delete-button {
+            background-color: #d9534f; /* Cor vermelha para o botão de excluir conta */
         }
-        .profile-action-buttons a.logout-button:hover {
-            background-color: #ff6347; /* Cor mais clara para o hover */
+        .profile-action-buttons a.delete-button:hover {
+            background-color: #c9302c; /* Cor mais escura para o hover do botão de excluir conta */
         }
     </style>
 </head>
 <body>
-    <div class="profile-container">
     <div class="profile-container">
         <div class="profile-header">
             <h2>Perfil</h2>
@@ -96,22 +95,55 @@ $email = $_SESSION["email"];
             <p><?php echo htmlspecialchars($_SESSION["email"]); ?></p>
         </div>
 
-        <!-- Formulário de Edição -->
-        <div class="profile-edit-form">
+        <!-- Botão de editar -->
+        <div class="profile-action-buttons">
+            <a href="#" class="edit-button" onclick="showEditOptions()">Editar</a>
+        </div>
+
+       <!-- Opções de edição -->
+        <div class="profile-edit-options" style="display: none;">
+            <!-- Formulário de Edição -->
             <form action="update_profile.php" method="post">
-                <label for="newName">Editar Nome:</label>
+                <label for="newName">Novo Nome:</label>
                 <input type="text" name="newName" id="newName" value="<?php echo htmlspecialchars($_SESSION["nome"]); ?>">
+
+                <label for="newEmail">Novo Email:</label>
+                <input type="email" name="newEmail" id="newEmail" value="<?php echo htmlspecialchars($_SESSION["email"]); ?>">
+
+                <label for="currentPassword">Senha Atual:</label>
+                <input type="password" name="currentPassword" id="currentPassword">
+
+                <label for="newPassword">Nova Senha:</label>
+                <input type="password" name="newPassword" id="newPassword">
+
                 <input type="submit" value="Atualizar">
             </form>
         </div>
 
-       
+        <!-- Botão de excluir conta -->
         <div class="profile-action-buttons">
-            <a href="logout.php">Sair</a>
-            <!-- Botão para ir para a tela principal -->
+            <a href="#" class="delete-button" onclick="confirmDelete()">Excluir Conta</a>
+        </div>
+
+        <!-- Botões de ação -->
+        <div class="profile-action-buttons">
+            <a href="logout.php" class="logout-button">Sair</a>
             <a href="index.html">Tela Principal</a>
         </div>
     </div>
+
+    <script>
+        function showEditOptions() {
+            var editOptions = document.querySelector('.profile-edit-options');
+            editOptions.style.display = 'block';
+        }
+
+        function confirmDelete() {
+            var confirmDelete = confirm("Tem certeza de que deseja excluir sua conta?");
+            if (confirmDelete) {
+                window.location.href = "deleta_conta.php";
+            }
+        }
+    </script>
 </body>
 </html>
-
