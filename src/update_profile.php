@@ -36,49 +36,58 @@ $currentPassword = sanitizeInput($_POST["currentPassword"]);
 $newPassword = sanitizeInput($_POST["newPassword"]);
 $userId = $_SESSION["id"];
 
-// Prepara a consulta SQL para verificar a senha atual
-$stmt = $conn->prepare("SELECT senha FROM cadastrados WHERE id = ?");
-$stmt->bind_param("i", $userId);
+// Verifica se a senha atual foi fornecida
+if (!empty($currentPassword)) {
+    // Prepara a consulta SQL para verificar a senha atual
+    $stmt = $conn->prepare("SELECT senha FROM cadastrados WHERE id = ?");
+    $stmt->bind_param("i", $userId);
 
-// Executa a consulta
-$stmt->execute();
-$stmt->store_result();
+    // Executa a consulta
+    $stmt->execute();
+    $stmt->store_result();
 
-if ($stmt->num_rows == 1) {
-    $stmt->bind_result($hashed_password);
-    $stmt->fetch();
+    if ($stmt->num_rows == 1) {
+        $stmt->bind_result($hashed_password);
+        $stmt->fetch();
 
-    // Verifica a senha atual
-    if (password_verify($currentPassword, $hashed_password)) {
-        // Senha atual correta, então atualiza os dados do usuário
-
-        // Atualiza o nome
-        $stmt_update_name = $conn->prepare("UPDATE cadastrados SET nome = ? WHERE id = ?");
-        $stmt_update_name->bind_param("si", $newName, $userId);
-        $stmt_update_name->execute();
-
-        // Atualiza o email
-        $stmt_update_email = $conn->prepare("UPDATE cadastrados SET email = ? WHERE id = ?");
-        $stmt_update_email->bind_param("si", $newEmail, $userId);
-        $stmt_update_email->execute();
-
-        // Se a nova senha foi fornecida, atualiza a senha
-        if (!empty($newPassword)) {
-            $hashed_new_password = password_hash($newPassword, PASSWORD_DEFAULT);
-            $stmt_update_password = $conn->prepare("UPDATE cadastrados SET senha = ? WHERE id = ?");
-            $stmt_update_password->bind_param("si", $hashed_new_password, $userId);
-            $stmt_update_password->execute();
+        // Verifica a senha atual
+        if (!password_verify($currentPassword, $hashed_password)) {
+            echo "Senha atual incorreta.";
+            exit;
         }
-
-        // Redireciona para a página de perfil
-        header("Location: perfil.php");
-        exit;
     } else {
-        echo "Senha atual incorreta.";
+        echo "Erro ao recuperar dados do usuário.";
+        exit;
     }
-} else {
-    echo "Erro ao recuperar dados do usuário.";
 }
+
+// Atualiza os dados do usuário conforme fornecido
+
+// Atualiza o nome, se fornecido
+if (!empty($newName)) {
+    $stmt_update_name = $conn->prepare("UPDATE cadastrados SET nome = ? WHERE id = ?");
+    $stmt_update_name->bind_param("si", $newName, $userId);
+    $stmt_update_name->execute();
+}
+
+// Atualiza o email, se fornecido
+if (!empty($newEmail)) {
+    $stmt_update_email = $conn->prepare("UPDATE cadastrados SET email = ? WHERE id = ?");
+    $stmt_update_email->bind_param("si", $newEmail, $userId);
+    $stmt_update_email->execute();
+}
+
+// Se a nova senha foi fornecida, atualiza a senha
+if (!empty($newPassword)) {
+    $hashed_new_password = password_hash($newPassword, PASSWORD_DEFAULT);
+    $stmt_update_password = $conn->prepare("UPDATE cadastrados SET senha = ? WHERE id = ?");
+    $stmt_update_password->bind_param("si", $hashed_new_password, $userId);
+    $stmt_update_password->execute();
+}
+
+// Redireciona para a página de perfil
+header("Location: perfil.php");
+exit;
 
 $stmt->close();
 $conn->close();
