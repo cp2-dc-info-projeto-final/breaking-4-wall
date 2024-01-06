@@ -34,7 +34,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/44d0f6ca-386b-420b-9847-470e66c2d8c4)
 
- - 1.2 Clique em "login" e após isso coloque o email e a senha e aperte em entrar.
+ - 1.2 Clique em "login" e em seguida coloque o email e a senha e aperte em entrar.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/92ff08d6-b4a9-4e92-90a2-c3bd2b1984fe)
 
@@ -82,21 +82,21 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 7. CADASTRAR FILMES
 
-   7.1 Aperte na opção "cadastrar filmes"
+   7.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cf8bd587-134f-4569-ab2b-41b79c2bc29f)
 
 
   ## 8. CADASTRAR CATEGORIA
 
-   8.1 Aperte na opção "cadastrar categoria"
+   8.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9bcd64bd-d6ac-4249-a01a-e0ab40b48e60)
 
 
   ## 9. CADASTRAR ATOR
   
-   9.1 Aperte em "Cadastrar ator"
+   9.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
 
