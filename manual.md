@@ -1,6 +1,6 @@
 # Manual do Usuário
 
-Esse é o manual de usuário do site braking-4 wall, feito para auxialiar diretamente o contato do usuário com seus filmes favoritos. Nosso site possui login para os usuário, administradores, sistemas de cadastramento de usuário, atores, categorias, sistemas de redefiniçao de senha, sistemas de comentarios, edição e exclusão de filmes e outros usuário 
+Esse é o manual de usuário do site braking-4 wall, feito para auxialiar diretamente o contato do usuário com seus filmes favoritos. Nosso site possui login para os usuário, administradores, sistemas de cadastramento de usuário, atores, categorias e administrador, sistemas de redefiniçao de senha, sistemas de comentarios, edição e exclusão de filmes e outros usuário 
 
 
 **Lista das Funcionalidades:**
@@ -131,7 +131,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    13.1 Ao acessar o site como usuário
    
- - 13.2 Clique em "buscar filme"
+ - 13.2 Coloque o nome do filme desejado em seguida clique ao lado em "buscar"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c531b7be-e43e-49a3-84ba-37bb5b41ff39)
 
@@ -140,7 +140,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    14.1 Ao acessar o site como usuário
 
- - 14.2 Clique em "enviar comentario"
+ - 14.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo para confirmar ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
 
@@ -177,14 +177,14 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
   ## 19. EXCLUIR ADMINISTRADOR 
 
- - 19.1 Em sua conta de administrador, clique em "excluir perfil"
+ - 19.1 Em sua conta de administrador, vá até a barra de excluir perfil e clique em "excluir perfil" para excluir, para editar perfil vá até a barra de editar perfil e clique em "editar perfil.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
 
  
   ## 20. EXCLUIR FILME 
 
- - 20.1. Em sua conta de administrador, clique em "excluir filme"
+ - 20.1. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
 
