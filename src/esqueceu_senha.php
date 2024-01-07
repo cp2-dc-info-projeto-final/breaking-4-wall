@@ -8,98 +8,95 @@ session_start();
     <title>Esqueci a senha | Breaking4Wall</title>
     <meta charset="utf-8">
     <style>
-        /* Estilos globais e da navbar existentes... */
-
-        /* Estilo do corpo da página com a nova cor de fundo */
         body {
-            background-color: #561237; /* Cor de fundo atualizada baseada na imagem */
+            background-color: #561237; /* Cor de fundo para o body */
             font-family: Arial, sans-serif;
-            color: #fff;
+            color: #fff; /* Cor do texto para o body */
             margin: 0;
-            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        /* Estilo do container do formulário de cadastro */
         .container {
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #123456; /* Cor de fundo para o container do formulário */
+            background-color: #123456; /* Cor de fundo para o container */
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
         }
 
-        /* Estilos para o formulário de cadastro */
-        .registration-form {
+        h2 {
+            margin-bottom: 20px;
+            color: #fff; /* Cor do texto para h2 */
+        }
+
+        form {
             display: flex;
             flex-direction: column;
             gap: 15px;
+            align-items: center;
         }
 
-        /* Estilo para os rótulos do formulário */
-        .registration-form label {
-            color: #FFFFFF; /* Cor do texto para contraste com o fundo escuro */
-            margin-bottom: 5px;
+        label {
+            color: #fff; /* Cor do texto para label */
             font-weight: bold;
         }
 
-        /* Estilo para os campos de entrada */
-        .registration-form input[type="text"],
-        .registration-form input[type="email"],
-        .registration-form input[type="password"] {
+        input[type="email"] {
+            width: 100%;
             padding: 10px;
             border-radius: 4px;
-            border: 1px solid #444; /* Cor de borda ajustada para contraste */
-            background-color: #FFF;
-            color: #000;
+            border: 1px solid #444; /* Cor da borda para campos de entrada */
+            background-color: #FFF; /* Cor de fundo para campos de entrada */
+            color: #000; /* Cor do texto para campos de entrada */
+            box-sizing: border-box;
         }
 
-        /* Estilo para o botão de cadastro */
-        .custom-button {
-            background-color: rgb(255, 0, 119); /* Cor que complementa a navbar */
-            color: #FFF;
+        button {
+            background-color: #FF0077; /* Cor de fundo para botões */
+            color: #fff; /* Cor do texto para botões */
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-decoration: none;
+            width: 100%;
         }
 
-        .custom-button:hover {
-            background-color: #ff3399; /* Tom mais escuro da cor do botão */
+        button:hover {
+            background-color: #CC0066; /* Cor de fundo alterada no hover do botão */
         }
 
-        /* Estilo para o link de redefinição de senha */
-        .registration-form p a {
-            color: #99ccff;
+        button[type="button"] {
+            background-color: #d9534f;
         }
 
-        .registration-form p a:hover {
-            color: #FFF;
-            text-decoration: underline;
-        }
-
-        /* Mensagem de feedback após o cadastro */
-        .registration-form p {
-            color: #FFF;
+        button[type="button"]:hover {
+            background-color: #c9302c;
         }
     </style>
 </head>
 <body>
-    <h2>Recuperação de Senha</h2>
-    <?php
-        if (isset($_SESSION['msg_rec'])) {
-            echo "<p>" . $_SESSION['msg_rec'] . "</p>";
-            unset($_SESSION['msg_rec']);
-        }
-    ?>
-    <form action="recuepera.php" method="POST">
-        <input type="hidden" name="operacao" value="enviar-email">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-        <br>
-        <button type="button" onclick="location.href='login.php'">Voltar</button>
-        <button type="submit">Continuar</button>
-    </form>
+    <div class="container">
+        <h2>Recuperação de Senha</h2>
+        <?php
+            if (isset($_SESSION['msg_rec'])) {
+                echo "<p>" . $_SESSION['msg_rec'] . "</p>";
+                unset($_SESSION['msg_rec']);
+            }
+        ?>
+        <form action="recuepera.php" method="POST">
+            <input type="hidden" name="operacao" value="enviar-email">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+            <button type="button" onclick="location.href='login.php'">Voltar</button>
+            <button type="submit">Continuar</button>
+        </form>
+    </div>
 </body>
 </html>
