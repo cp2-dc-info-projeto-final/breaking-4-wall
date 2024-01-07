@@ -134,10 +134,10 @@ body {
         </div>
         <div class="profile-info">
             <label>Nome:</label>
-            <p id="nomeDisplay"><?php echo htmlspecialchars($_SESSION["nome"]); ?></p>
+             <p id="nomeDisplay"><?php echo htmlspecialchars($_SESSION["nome"]); ?></p>
             <label>Email:</label>
             <p><?php echo htmlspecialchars($_SESSION["email"]); ?></p>
-        </div>
+                </div>
 
         <!-- Botão de editar -->
         <div class="profile-action-buttons">
