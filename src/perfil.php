@@ -20,67 +20,111 @@ $email = $_SESSION["email"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
     <style>
-        /* Estilos globais e da navbar existentes... */
-        /* Estilo do corpo da página com a nova cor de fundo */
-        body {
-            background-color: #561237; /* Cor de fundo atualizada baseada na imagem */
-            font-family: Arial, sans-serif;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        /* Estilo do container do perfil */
-        .profile-container {
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #123456; /* Cor de fundo para o container do perfil */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        }
-        /* Estilos para a seção de informações do perfil */
-        .profile-info {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        /* Estilo para os rótulos das informações do perfil */
-        .profile-info label {
-            color: #FFFFFF;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        /* Estilo para os valores das informações */
-        .profile-info p {
-            background-color: #FFF;
-            color: #000;
-            padding: 10px;
-            border-radius: 4px;
-            border: 1px solid #444;
-        }
-        /* Estilo para o botão de editar */
-        .profile-action-buttons a {
-            background-color: #337ab7; /* Cor azul para o botão de editar */
-            color: #FFF;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .profile-action-buttons a:hover {
-            background-color: #286090; /* Tom mais escuro da cor do botão de editar */
-        }
-        /* Estilo para o botão de excluir conta */
-        .profile-action-buttons a.delete-button {
-            background-color: #d9534f; /* Cor vermelha para o botão de excluir conta */
-        }
-        .profile-action-buttons a.delete-button:hover {
-            background-color: #c9302c; /* Cor mais escura para o hover do botão de excluir conta */
-        }
+       /* Estilos globais e da navbar existentes... */
+/* (Se houver) */
+
+/* Novos estilos adicionados */
+body {
+    background-color: #561237;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do container do perfil */
+.profile-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #123456;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para a seção de informações do perfil */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo para os rótulos das informações do perfil */
+.profile-info label {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilo para os valores das informações */
+.profile-info p {
+    background-color: #FFF;
+    color: #000;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+/* Estilo para o botão de editar */
+.profile-action-buttons a {
+    background-color: #337ab7;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.profile-action-buttons a:hover {
+    background-color: #286090;
+}
+
+/* Estilo para o botão de excluir conta */
+.profile-action-buttons a.delete-button {
+    background-color: #d9534f;
+}
+
+.profile-action-buttons a.delete-button:hover {
+    background-color: #c9302c;
+}
+
+/* Estilos para o formulário de edição */
+.profile-edit-options form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.profile-edit-options .form-group {
+    margin-bottom: 10px;
+}
+
+.profile-edit-options label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para o botão de atualizar */
+.profile-edit-options input[type="submit"] {
+    background-color: #337ab7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.profile-edit-options input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
     </style>
 </head>
 <body>
@@ -100,25 +144,32 @@ $email = $_SESSION["email"];
             <a href="#" class="edit-button" onclick="showEditOptions()">Editar</a>
         </div>
 
-       <!-- Opções de edição -->
         <div class="profile-edit-options" style="display: none;">
-            <!-- Formulário de Edição -->
-            <form action="update_profile.php" method="post">
-                <label for="newName">Novo Nome:</label>
-                <input type="text" name="newName" id="newName" value="<?php echo htmlspecialchars($_SESSION["nome"]); ?>">
-
-                <label for="newEmail">Novo Email:</label>
-                <input type="email" name="newEmail" id="newEmail" value="<?php echo htmlspecialchars($_SESSION["email"]); ?>">
-
-                <label for="currentPassword">Senha Atual:</label>
-                <input type="password" name="currentPassword" id="currentPassword">
-
-                <label for="newPassword">Nova Senha:</label>
-                <input type="password" name="newPassword" id="newPassword">
-
-                <input type="submit" value="Atualizar">
-            </form>
+    <!-- Formulário de Edição -->
+    <form action="update_profile.php" method="post">
+        <div class="form-group">
+            <label for="newName">Novo Nome:</label>
+            <input type="text" name="newName" id="newName" value="<?php echo htmlspecialchars($_SESSION["nome"]); ?>">
         </div>
+
+        <div class="form-group">
+            <label for="newEmail">Novo Email:</label>
+            <input type="email" name="newEmail" id="newEmail" value="<?php echo htmlspecialchars($_SESSION["email"]); ?>">
+        </div>
+
+        <div class="form-group">
+            <label for="currentPassword">Senha Atual:</label>
+            <input type="password" name="currentPassword" id="currentPassword">
+        </div>
+
+        <div class="form-group">
+            <label for="newPassword">Nova Senha:</label>
+            <input type="password" name="newPassword" id="newPassword">
+        </div>
+
+        <input type="submit" value="Atualizar">
+    </form>
+</div>
 
         <!-- Botão de excluir conta -->
         <div class="profile-action-buttons">
