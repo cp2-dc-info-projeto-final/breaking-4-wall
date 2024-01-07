@@ -122,14 +122,11 @@ CREATE TABLE IF NOT EXISTS Comentarios (
 
 ALTER TABLE comentarios
 ADD COLUMN usuario_id INT NULL,
-ADD FOREIGN KEY (usuario_id) REFERENCES cadastrados(id);
-
-ALTER TABLE comentarios
 ADD COLUMN filme_id INT,
+ADD COLUMN nome_usuario VARCHAR(255),
+ADD FOREIGN KEY (usuario_id) REFERENCES cadastrados(id),
 ADD FOREIGN KEY (filme_id) REFERENCES Filmes(ID);
 
-ALTER TABLE comentarios
-ADD COLUMN nome_usuario VARCHAR(255); 
 
 
 
