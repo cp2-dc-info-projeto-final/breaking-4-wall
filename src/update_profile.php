@@ -68,6 +68,9 @@ if (!empty($newName)) {
     $stmt_update_name = $conn->prepare("UPDATE cadastrados SET nome = ? WHERE id = ?");
     $stmt_update_name->bind_param("si", $newName, $userId);
     $stmt_update_name->execute();
+
+    // Atualiza o nome na sessão
+    $_SESSION["nome"] = $newName;
 }
 
 // Atualiza o email, se fornecido
@@ -75,6 +78,9 @@ if (!empty($newEmail)) {
     $stmt_update_email = $conn->prepare("UPDATE cadastrados SET email = ? WHERE id = ?");
     $stmt_update_email->bind_param("si", $newEmail, $userId);
     $stmt_update_email->execute();
+
+    // Atualiza o email na sessão
+    $_SESSION["email"] = $newEmail;
 }
 
 // Se a nova senha foi fornecida, atualiza a senha
@@ -92,3 +98,4 @@ exit;
 $stmt->close();
 $conn->close();
 ?>
+
