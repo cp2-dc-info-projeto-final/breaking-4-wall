@@ -20,16 +20,6 @@ CREATE TABLE Atores (
 ); 
   
 
-CREATE DATABASE IF NOT EXISTS CADASTRO;
-
-USE CADASTRO;
-
-drop USER if EXISTS 'cadastrados'@'localhost';
-
-CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
-
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
-
 drop TABLE if EXISTS Atuacoes;
 
 CREATE TABLE Atuacoes (
@@ -41,15 +31,6 @@ CREATE TABLE Atuacoes (
 );
 
 
-CREATE DATABASE IF NOT EXISTS cadastro;
-
-USE cadastro;
-
-drop USER if EXISTS 'cadastrados'@'localhost';
-
-CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
-
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS filmes;
 
@@ -63,15 +44,6 @@ CREATE TABLE IF NOT EXISTS Filmes (
 );
 
 
-CREATE DATABASE IF NOT EXISTS CADASTRO;
-
-USE CADASTRO;
-
-drop USER if EXISTS 'cadastrados'@'localhost';
-
-CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
-
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS categorias;
 
@@ -80,16 +52,6 @@ CREATE TABLE Categorias (
     Nome VARCHAR(50) NOT NULL
 );
 
-
-CREATE DATABASE IF NOT EXISTS CADASTRO;
-
-USE CADASTRO;
-
-drop USER if EXISTS 'cadastrados'@'localhost';
-
-CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
-
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS cadastrados;
 
@@ -109,16 +71,6 @@ MODIFY COLUMN is_admin TINYINT NOT NULL DEFAULT 0;
 
 
 
-CREATE DATABASE IF NOT EXISTS CADASTRO;
-
-USE CADASTRO;
-
-drop USER if EXISTS 'cadastrados'@'localhost';
-
-CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
-
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
-
 drop TABLE if EXISTS filmescategorias;
 
 CREATE TABLE filmescategorias (
@@ -129,16 +81,6 @@ CREATE TABLE filmescategorias (
     FOREIGN KEY (CategoriaID) REFERENCES Categorias(ID)
 );
 
-
-CREATE DATABASE IF NOT EXISTS CADASTRO;
-
-USE CADASTRO;
-
-drop USER if EXISTS 'cadastrados'@'localhost';
-
-CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
-
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS Administradores;
 
@@ -165,16 +107,6 @@ WHERE usuario = 'nomeusuario';
 DELETE FROM Administradores
 WHERE usuario = 'nomeusuario';
 
--- Cria o banco de dados 'cadastro'
-CREATE DATABASE IF NOT EXISTS CADASTRO;
-
-USE CADASTRO;
-
-drop USER if EXISTS 'cadastrados'@'localhost';
-
-CREATE USER 'cadastrados'@'localhost' IDENTIFIED BY '123';
-
-GRANT ALL PRIVILEGES ON CADASTRO.* TO 'cadastrados'@'localhost';
 
 drop TABLE if EXISTS comentarios;
 
