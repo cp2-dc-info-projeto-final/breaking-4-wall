@@ -36,7 +36,7 @@ if ($isAdmin !== 1) {
     exit;
 }
 
-$adminId = $_SESSION["id"];
+
 
 // Processa a vinculação se o formulário foi submetido
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['filmeID']) && isset($_POST['categoriaID'])) {
@@ -50,6 +50,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['filmeID']) && isset($_
     // Executa a consulta e verifica se foi bem-sucedida
     if ($stmt->execute()) {
         $_SESSION['message'] = 'Vinculação feita com sucesso!';
+        $stmt->close();
+
+        // Redireciona para dashboard.php
+        header('Location: dashboard.php');
+        exit;
     } else {
         $_SESSION['message'] = 'Erro ao tentar vincular o filme à categoria.';
     }
@@ -96,54 +101,54 @@ if (isset($_SESSION['message'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincular Filme a Categoria</title>
     <style>
-      body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        background-color: #ecf0f1;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .container {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-        max-width: 350px;
-        width: 100%;
-    }
-    h2 {
-        text-align: center;
-        color: #2c3e50;
-        margin-bottom: 20px;
-    }
-    label {
-        margin-top: 10px;
-        color: #7f8c8d;
-        font-weight: 600;
-    }
-    select, button {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        border: 1px solid #bdc3c7;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-    button {
-        background-color: #3498db;
-        color: white;
-        font-size: 16px;
-        border: none;
-        margin-top: 20px;
-        cursor: pointer;
-        transition: background-color 0.2s;
-    }
-    button:hover {
-        background-color: #2980b9;
-    }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ecf0f1;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            max-width: 350px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        label {
+            margin-top: 10px;
+            color: #7f8c8d;
+            font-weight: 600;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #7b1fa2; /* Alterado para roxo */
+            color: white;
+            font-size: 16px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #5e1770; /* Alterado para um tom mais escuro de roxo */
+        }
     </style>
 </head>
 <body>
@@ -155,7 +160,7 @@ if (isset($_SESSION['message'])) {
         </div>
     <?php endif; ?>
 
-    <form action="" method="POST"> <!-- O action agora está vazio, o que significa que o formulário será submetido para o próprio arquivo. -->
+    <form action="" method="POST">
         <label for="filme">Filme:</label>
         <select id="filme" name="filmeID">
             <?php echo $filmes_options; ?>
