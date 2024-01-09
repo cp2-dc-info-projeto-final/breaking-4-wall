@@ -32,8 +32,8 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Usuários</title>
-     <style>
-      body {
+    <style>
+        body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -69,26 +69,44 @@ $conn->close();
             background-color: #f2f2f2;
         }
 
-        form {
+        form, a {
             display: inline-block;
+            vertical-align: middle;
         }
 
         button[type=submit] {
             padding: 8px 15px;
             border: none;
-            background-color: #5cb85c;
+            background-color: #e74c3c; /* Vermelho */
             color: white;
             font-size: 14px;
             border-radius: 4px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            text-decoration: none;
         }
 
         button[type=submit]:hover {
-            background-color: #4cae4c;
+            background-color: #c0392b; /* Vermelho mais escuro no hover */
+        }
+
+        a {
+            padding: 8px 15px;
+            border: none;
+            background-color: #8e44ad; /* Roxo */
+            color: white;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #6c3483; /* Roxo mais escuro no hover */
         }
     </style>
-    <link rel="stylesheet" href="estilo.css"> <!-- Incluído o link para o arquivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <div class="container">
@@ -109,10 +127,11 @@ $conn->close();
                         <td><?php echo htmlspecialchars($user['nome']); ?></td>
                         <td><?php echo htmlspecialchars($user['email']); ?></td>
                         <td>
-                            <form action="excluir_usuario.php" method="POST">
+                            <form action="excluir_usuario.php" method="POST" style="display: inline-block; margin-right: 5px;">
                                 <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
                                 <button type="submit" name="delete">Excluir</button>
                             </form>
+                            <a href="editar_cadastrados.php?id=<?php echo $user['id']; ?>">Editar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
