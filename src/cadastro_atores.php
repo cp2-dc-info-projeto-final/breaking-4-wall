@@ -75,7 +75,7 @@ $stmtAdminLogado->close();
     button {
         width: 100%;
         padding: 10px;
-        background-color: #5cb85c;
+        background-color: #7b1fa2; /* Alterado para roxo */
         border: none;
         border-radius: 4px;
         color: white;
@@ -83,7 +83,7 @@ $stmtAdminLogado->close();
         font-size: 16px;
     }
     button:hover {
-        background-color: #4cae4c;
+        background-color: #5e1770; /* Alterado para um tom mais escuro de roxo ao passar o mouse */
     }
 </style>
 </head>
