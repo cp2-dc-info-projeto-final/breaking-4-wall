@@ -27,8 +27,8 @@ $result = $conn->query($sql);
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #141414;
-            color: #ffffff;
+            background-color: #ffffff; /* Alterado para branco */
+            color: #000000; /* Alterado para preto */
             margin: 0;
             padding: 0;
         }
@@ -44,40 +44,17 @@ $result = $conn->query($sql);
         th, td {
             padding: 15px;
             text-align: left;
-            border-bottom: 1px solid #ffffff;
+            border-bottom: 1px solid #000000; /* Alterado para preto */
         }
         th {
             background-color: #7b1fa2;
             color: #ffffff;
         }
         tr:nth-child(even) {
-            background-color: #282828;
+            background-color: #f2f2f2; /* Alterado para cinza claro */
         }
         tr:hover {
-            background-color: #373737;
-        }
-        .edit-btn, .delete-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        .edit-btn {
-            background-color: #ffab40;
-        }
-        .delete-btn {
-            background-color: #f44336;
-        }
-        .edit-btn:hover, .delete-btn:hover {
-            opacity: 0.9;
-        }
-        a {
-            color: #00e5ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+            background-color: #e0e0e0; /* Alterado para cinza mais claro */
         }
 
         /* Estilos para os botões de editar e excluir */
@@ -86,12 +63,24 @@ $result = $conn->query($sql);
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            display: inline-block; /* Para os botões ficarem lado a lado */
+            margin-right: 5px; /* Espaçamento entre os botões */
         }
         .edit-btn {
-            background-color: #ffc107;
+            background-color: #7b1fa2; /* Alterado para roxo */
         }
         .delete-btn {
-            background-color: #dc3545;
+            background-color: #f44336; /* Mantido vermelho */
+        }
+        .edit-btn:hover, .delete-btn:hover {
+            opacity: 0.9;
+        }
+        a {
+            color: #007BFF; /* Alterado para azul */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -120,7 +109,7 @@ $result = $conn->query($sql);
                     <td><?php echo $row["Sinopse"]; ?></td>
                     <td>
                         <a href="editar_filme.php?id=<?php echo $row['ID']; ?>" class="edit-btn">Editar</a>
-                        <a href="excluir_filme.php?id=<?php echo $row['ID']; ?>" class="delete-btn" onclick="return confirm('Tem certeza que deseja excluir este filme?');">Excluir</a>
+                        <a href="excluir_filme.php?id=<?php echo $row['ID']; ?>" class="delete-btn">Excluir</a>
                     </td>
                 </tr>
                 <?php endwhile; ?>
