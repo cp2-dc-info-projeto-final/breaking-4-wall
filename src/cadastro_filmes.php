@@ -1,39 +1,3 @@
-<?php
-session_start();
-
-require_once 'conecta.php';
-
-// Verifica se o usuário está logado e se é um administrador
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header('Location: login.php');
-    exit;
-}
-
-$adminId = $_SESSION["id"];
-
-// Busca as informações do administrador logado no banco de dados
-$sqlAdminLogado = "SELECT nome, email, is_admin FROM Cadastrados WHERE id = ?";
-$stmtAdminLogado = $conn->prepare($sqlAdminLogado);
-$stmtAdminLogado->bind_param("i", $adminId);
-$stmtAdminLogado->execute();
-$resultAdminLogado = $stmtAdminLogado->get_result();
-
-if ($resultAdminLogado->num_rows > 0) {
-    $adminInfo = $resultAdminLogado->fetch_assoc();
-    if ($adminInfo['is_admin'] != 1) { // Se não for administrador
-        header('Location: index.html'); // Redireciona para a página inicial
-        exit;
-    }
-} else {
-    header('Location: login.php');
-    exit;
-}
-
-$stmtAdminLogado->close();
-
-// O restante do seu código HTML segue aqui...
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -68,6 +32,7 @@ $stmtAdminLogado->close();
 
         input[type=text],
         input[type=number],
+        input[type=date], /* Adicionado o estilo para o campo de data */
         textarea {
             width: 100%;
             padding: 10px;
@@ -87,7 +52,7 @@ $stmtAdminLogado->close();
             width: 100%;
             padding: 10px;
             border: none;
-            background-color: #5cb85c;
+            background-color: #7b1fa2; /* Alterado para roxo */
             color: white;
             font-size: 16px;
             border-radius: 4px;
@@ -96,7 +61,7 @@ $stmtAdminLogado->close();
         }
 
         input[type=submit]:hover {
-            background-color: #4cae4c;
+            background-color: #5e1770; /* Alterado para um tom mais escuro de roxo ao passar o mouse */
         }
     </style>
 </head>
@@ -106,7 +71,7 @@ $stmtAdminLogado->close();
         <input type="text" id="titulo" name="titulo" required><br>
 
         <label for="anoLancamento">Ano de Lançamento:</label>
-        <input type="number" id="anoLancamento" name="anoLancamento" required><br>
+        <input type="date" id="anoLancamento" name="anoLancamento" required><br>
 
         <label for="diretor">Diretor:</label>
         <input type="text" id="diretor" name="diretor"><br>
