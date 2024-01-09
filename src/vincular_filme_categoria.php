@@ -1,19 +1,42 @@
 <?php
 session_start(); // Inicia a sessão
 
-// Configuração das variáveis de conexão com o banco de dados
+// Verifica se o usuário está logado
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
+// Conecta ao banco de dados
 $servername = "localhost";
 $username = "cadastrados";
 $password = "123";
 $dbname = "CADASTRO";
-
-// Criar conexão
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexão
+// Verifica a conexão
 if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
+
+// Obtém o ID do usuário da sessão
+$userId = $_SESSION["id"];
+
+// Consulta para verificar se o usuário é um administrador
+$stmt = $conn->prepare("SELECT is_admin FROM cadastrados WHERE ID = ?");
+$stmt->bind_param("i", $userId);
+$stmt->execute();
+$stmt->bind_result($isAdmin);
+$stmt->fetch();
+$stmt->close();
+
+// Verifica se o usuário é um administrador
+if ($isAdmin !== 1) {
+    header('Location: index.html'); // Redireciona para o index
+    exit;
+}
+
+$adminId = $_SESSION["id"];
 
 // Processa a vinculação se o formulário foi submetido
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['filmeID']) && isset($_POST['categoriaID'])) {
