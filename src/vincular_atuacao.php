@@ -101,17 +101,17 @@ $conn->close();
         }
         button {
             color: #fff;
-            background-color: #007bff;
-            border-color: #007bff;
+            background-color: #7b1fa2; /* Alterado para roxo */
+            border-color: #7b1fa2; /* Alterado para a mesma cor roxa */
             cursor: pointer;
             font-weight: bold;
         }
         button:hover {
-            background-color: #0056b3;
-            border-color: #004085;
+            background-color: #5e1770; /* Alterado para um tom mais escuro de roxo ao passar o mouse */
+            border-color: #5e1770; /* Mantido o mesmo tom mais escuro de roxo */
         }
     </style>
-    </head>
+</head>
 <body>
 
 <div class="container">
