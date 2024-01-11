@@ -129,16 +129,16 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 13. BUSCAR FILME
 
-   13.1 Ao acessar o site como usuário
+   13.1 Ao acessar o site como usuário.
    
- - 13.2 Coloque o nome do filme desejado em seguida clique ao lado em "buscar"
+ - 13.2 Coloque o nome do filme desejado em seguida clique ao lado em "buscar".
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c531b7be-e43e-49a3-84ba-37bb5b41ff39)
 
   
   ## 14. ADICIONAR COMENTARIO
 
-   14.1 Ao acessar o site como usuário
+   14.1 Ao acessar o site como usuário.
 
  - 14.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo para confirmar ação.
 
@@ -171,7 +171,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
   - 18.1 Em sua conta de administrador
  
-   18.2 Clique em "lista de filmes"
+   18.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3c00cb36-0b49-4c6e-ac59-7d665ab2c96d)
 
@@ -185,7 +185,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
   ## 20. EXCLUIR FILME 
 
- - 20.1. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar
+ - 20.1. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
 
