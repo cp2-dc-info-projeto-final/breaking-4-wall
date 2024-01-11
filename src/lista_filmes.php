@@ -27,34 +27,35 @@ $result = $conn->query($sql);
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
-            background-color: #ffffff; /* Alterado para branco */
-            color: #000000; /* Alterado para preto */
+            background-color: #E6E6FA; /* Lilás claro para harmonizar com o roxo */
+            color: #000000; /* Cor preta */
             margin: 0;
             padding: 0;
         }
         h1 {
-            color: #ff4081;
+            color: #7b1fa2; /* Roxo mais escuro */
             text-align: center;
         }
         table {
             width: 80%;
             margin: 20px auto;
             border-collapse: collapse;
+            background-color: #ffffff; /* Cor branca */
         }
         th, td {
             padding: 15px;
             text-align: left;
-            border-bottom: 1px solid #000000; /* Alterado para preto */
+            border-bottom: 1px solid #000000; /* Cor preta */
         }
         th {
-            background-color: #7b1fa2;
+            background-color: #7b1fa2; /* Roxo mais escuro */
             color: #ffffff;
         }
         tr:nth-child(even) {
-            background-color: #f2f2f2; /* Alterado para cinza claro */
+            background-color: #f2f2f2; /* Cor cinza claro */
         }
         tr:hover {
-            background-color: #e0e0e0; /* Alterado para cinza mais claro */
+            background-color: #e0e0e0; /* Cor cinza mais claro */
         }
 
         /* Estilos para os botões de editar e excluir */
@@ -67,16 +68,16 @@ $result = $conn->query($sql);
             margin-right: 5px; /* Espaçamento entre os botões */
         }
         .edit-btn {
-            background-color: #7b1fa2; /* Alterado para roxo */
+            background-color: #7b1fa2; /* Roxo mais escuro */
         }
         .delete-btn {
-            background-color: #f44336; /* Mantido vermelho */
+            background-color: #f44336; /* Cor vermelha */
         }
         .edit-btn:hover, .delete-btn:hover {
             opacity: 0.9;
         }
         a {
-            color: #007BFF; /* Alterado para azul */
+            color: #007BFF; /* Cor azul */
             text-decoration: none;
         }
         a:hover {
@@ -85,6 +86,16 @@ $result = $conn->query($sql);
     </style>
 </head>
 <body>
+</body>
+</html>
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
+
     <h1>Lista de Filmes</h1>
 
     <?php if ($result && $result->num_rows > 0): ?>
