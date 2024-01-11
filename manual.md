@@ -147,21 +147,22 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  ## 15. EDITAR PERFIL 
 
- - 15.2 Clique em "editar perfil"
+ - 15.2 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
+ - 15.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
 
  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/f7d01272-5727-49f5-857e-a3bc713753a3)
 
   ## 16. EDITAR FILME 
 
- - 16.2 Clique em "editar filme"
+ - 16.2 Clique em "editar filme" após isso coloque título,ano do lançamento,diretor e sinopse, em seguida clique em atualizar filme para confirmar ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/24fddf68-d48e-45ae-89e1-d556a6af5922)
 
 - ADM
 
- ## 15. EDITAR ADMINISTRADOR
+ ## 17. EDITAR ADMINISTRADOR
 
- - 15.1 Clique em "editar admimistrador"
+ - 15.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
 
