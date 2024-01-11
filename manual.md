@@ -6,7 +6,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 **Lista das Funcionalidades:**
 
 
- - [Login](#Login)
+ - ## [Login](#Login)
  - [Logout](#Lpgout)
  - [Cadastro](#Cadastro)
  - [Alterar senha](#Alterarsenha)
