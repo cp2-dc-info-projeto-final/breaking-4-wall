@@ -6,15 +6,13 @@
  - [CDU 02](#CDU-02): Fazer Login
  - [CDU 03](#CDU-03): Buscar Filme, atores e listas
  - [CDU 04](#CDU-04): Visualizar Detalhes 
- - [CDU 05](#CDU-05): Avaliar filme
- - [CDU 06](#CDU-06): Adicionar Filme à Lista
- - [CDU 07](#CDU-07): Gerenciar atores
- - [CDU 08](#CDU-08): Gerenciar usuarios
- - [CDU 09](#CDU-09): Gerenciar filmes
- - [CDU 10](#CDU-10): Explorar filmes populares
- - [CDU 11](#CDU-11): Personalizaçao de perfil
- - [CDU 12](#CDU-12): Recuperar senha
- - [CDU 13](#CDU-13): Logout
+ - [CDU 05](#CDU-05): Gerenciar atores
+ - [CDU 06](#CDU-06): Gerenciar usuarios
+ - [CDU 07](#CDU-07): Gerenciar filmes
+ - [CDU 08](#CDU-08): Explorar filmes populares
+ - [CDU 09](#CDU-09): Personalizaçao de perfil
+ - [CDU 10](#CDU-10): Recuperar senha
+ - [CDU 11](#CDU-11): Logout
 
    
 ## Lista dos Atores
