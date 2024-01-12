@@ -127,42 +127,8 @@ e pede ao usuário para tentar novamente.
 1. O usuário acessa a página de detalhes do filme mas não há nenhum detalhe.
 2. O sistema exibe uma mensagem informando que não há nenhum conteúdo.  
 
- # CDU Avaliar filme (05)
 
- # Fluxo principal 
-
-![WhatsApp Image 2023-10-15 at 00 26 33 (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/08c3aafb-69c0-4fb4-9103-6cbde37e7483)
-
-
- •	Ator: Usuário
-
- •	Pré-condições: O usuário está logado e acessou um filme.
-
-1.	O usuário encontra o filme desejado.
-2.	O usuário seleciona a opção de avaliar.
-3.	O usuário atribui uma nota e/ou escreve uma resenha
-4.	O sistema registra a avaliação e a resenha.
-
- • Pós-condições: O filme é avaliado no sistema.
-
- # CDU Adicionar Filme à Lista (06)
-
- # Fluxo principal
-
-![WhatsApp Image 2023-10-15 at 00 26 33 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8d51beab-66b3-4ba0-b787-b19e34af37d1)
-
- • Ator: Usuário
-
- • Pré-condições: O usuário está logado.
-
-1. O usuário encontra o filme desejado.
-2. O usuário seleciona a opção de adicionar à lista.
-3. O sistema adiciona o filme à lista do usuário (assistidos e para assistir).
-4. O sistema registra a sua lista.
-   
- • Pós-condições: O filme é adicionado à lista do usuário.
-
- # CDU  Gerenciamento de Atores (07)
+ # CDU  Gerenciamento de Atores (05)
 
  # Fluxo principal 
 
@@ -197,7 +163,7 @@ e pede ao usuário para tentar novamente.
 Reenvio do Formulário e Conclusão:
 
 Após a revisão e correção, o administrador reenvia o formulário de cadastro de atores. O sistema verifica novamente e, se não houver mais duplicações, conclui o cadastro com sucesso, exibindo uma mensagem de confirmação.
- # CDU  Gerenciamento de Filmes (08)
+ # CDU  Gerenciamento de Filmes (06)
 
  # Fluxo principal 
 
@@ -237,7 +203,7 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
 
 8. Opção de Voltar ao Menu Principal: O administrador é redirecionado de volta ao menu principal do sistema de gerenciamento de filmes, onde pode escolher entre outras opções disponíveis.
 
- # CDU  Gerenciamento de Usuários (09)
+ # CDU  Gerenciamento de Usuários (07)
 
  # Fluxo principal 
 
@@ -273,7 +239,7 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
 
 7. Opção de Voltar ao Menu Principal: O usuário é redirecionado de volta ao menu principal do sistema, onde pode explorar outras funcionalidades disponíveis.
  
- # CDU Explorar Filmes Populares (tela inicial) (10)
+ # CDU Explorar Filmes Populares (tela inicial) (08)
 
  # Fluxo principal
 
@@ -298,7 +264,7 @@ ou tendências.
 1. O sistema encontra problemas ao recuperar filmes populares.
 2. O sistema exibe uma mensagem de erro e sugere ao usuário tentar novamente mais tarde.
 
- # CDU Personalizar Perfil (11)
+ # CDU Personalizar Perfil (09)
 
  # Fluxo principal
 
@@ -323,7 +289,7 @@ sociais
 1. O usuário tenta fazer o upload de uma foto de perfil, mas o sistema encontra um erro no processo.
 2. O sistema exibe uma mensagem de erro e instrui o usuário a tentar novamente.
 
- # CDU: Recuperar Senha (12)
+ # CDU: Recuperar Senha (10)
 
  # Fluxo Principal:
 
@@ -359,7 +325,7 @@ sociais
 6. O usuário será instruído a revisar o endereço de e-mail inserido ou a criar uma nova conta, se ainda não tiver uma.
 7. O usuário pode optar por retornar à página inicial ou seguir um link para o processo de registro, se desejado.
 
- # CDU: Logout (13)
+ # CDU: Logout (11)
 
  # Fluxo Principal:
 
