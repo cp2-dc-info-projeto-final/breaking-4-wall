@@ -71,114 +71,108 @@ $stmt_comentarios->close();
 $conn->close();
 ?>
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title><?php echo htmlspecialchars($filme['Titulo']); ?></title>
-    <!-- Adicionei um estilo básico para os comentários -->
     <style>
-         body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a2e; /* Fundo escuro para realçar as cores */
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
 
-.filme-container {
-    background-color: #2c2f33; /* Cor de fundo escura */
-    border: 1px solid #676767; /* Borda sutil */
-    border-radius: 8px;
-    padding: 2em;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
-}
+        .filme-container {
+            background-color: #2c2f33;
+            border: 1px solid #676767;
+            border-radius: 8px;
+            padding: 2em;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
 
-.filme-titulo {
-    font-size: 2.5em;
-    color: #e4e6eb;
-    text-shadow: 1px 1px 5px #000; /* Sombra no texto para efeito 3D */
-    margin-bottom: 0.5em;
-}
+        .filme-card {
+            margin-bottom: 20px;
+        }
 
-.filme-ano,
-.filme-diretor {
-    color: #b9bbbe;
-    margin-bottom: 0.25em;
-}
+        .filme-titulo {
+            font-size: 2.5em;
+            color: #e4e6eb;
+            text-shadow: 1px 1px 5px #000;
+            margin-bottom: 0.5em;
+        }
 
-.filme-sinopse,
-.filme-atores,
-.filme-categorias {
-    background-color: #3a3b3c; /* Fundo levemente mais claro para seção */
-    border-radius: 4px;
-    padding: 1em;
-    margin-top: 1em;
-}
+        .filme-info {
+            background-color: #3a3b3c;
+            border-radius: 4px;
+            padding: 1em;
+            margin-top: 1em;
+        }
 
-.filme-sinopse strong,
-.filme-atores strong,
-.filme-categorias strong {
-    color: #0099ff; /* Azul brilhante para títulos das seções */
-}
+        .filme-details {
+            margin-bottom: 20px;
+        }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+        .filme-ano,
+        .filme-diretor {
+            color: #b9bbbe;
+            margin-bottom: 0.25em;
+        }
 
-li {
-    background: linear-gradient(45deg, #ff0084, #3300ff); /* Gradiente nos itens */
-    color: white;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-    border-radius: 4px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
-}
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-textarea {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid #555;
-    padding: 0.5em;
-    margin-top: 1em;
-}
+        li {
+            background: linear-gradient(45deg, #ff0084, #3300ff);
+            color: white;
+            padding: 0.5em;
+            margin-bottom: 0.5em;
+            border-radius: 4px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
 
-button {
-    background-color: #ff0084; /* Botão rosa para combinar com a logo */
-    border: none;
-    padding: 1em 2em;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 1em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
-    transition: background-color 0.3s ease;
-}
+        textarea {
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #555;
+            padding: 0.5em;
+            margin-top: 1em;
+        }
 
-button:hover {
-    background-color: #3300ff; /* Cor de hover para combinar com a logo */
-}
+        button {
+            background-color: #ff0084;
+            border: none;
+            padding: 1em 2em;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1em;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
 
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    .filme-container {
-        width: 95%;
-        padding: 1em;
-    }
-
-    .filme-titulo {
-        font-size: 1.8em;
-    }
-}
+        button:hover {
+            background-color: #3300ff;
+        }
 
         .comentario {
             margin-top: 1em;
             border-top: 1px solid #676767;
             padding-top: 1em;
+            text-align: left; /* Alinha o texto do comentário à esquerda */
         }
 
         .comentario p {
@@ -190,46 +184,92 @@ button:hover {
         }
     </style>
 </head>
+
 <body>
-<div class="filme-container">
-        <h1 class="filme-titulo"><?php echo htmlspecialchars($filme['Titulo']); ?></h1>
-        <p class="filme-ano"><strong>Ano de Lançamento:</strong> <?php echo htmlspecialchars($filme['AnoLancamento']); ?></p>
-        <p class="filme-diretor"><strong>Diretor:</strong> <?php echo htmlspecialchars($filme['Diretor']); ?></p>
-        <div class="filme-sinopse">
-            <strong>Sinopse:</strong>
-            <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
-        </div>
-        <div class="filme-atores">
-            <strong>Atores:</strong>
-            <ul>
-                <?php foreach ($atores as $ator): ?>
-                    <li><a href="detalhes_ator.php?id=<?php echo $ator['ID']; ?>"><?php echo htmlspecialchars($ator['Nome']); ?></a></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <div class="filme-categorias">
-            <strong>Categorias:</strong>
-            <ul>
-                <?php foreach ($categorias as $categoria): ?>
-                    <li><?php echo htmlspecialchars($categoria['Nome']); ?></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-        <div id="secao-comentarios">
-            <h3>Comentários</h3>
-            <form action="inserir_comentario.php" method="post">
-                <input type="hidden" name="filme_id" value="<?php echo $filmeId; ?>">
-                <textarea name="comentario" placeholder="Escreva seu comentário aqui..." required></textarea>
-                <button type="submit">Enviar Comentário</button>
-            </form>
-            <?php foreach ($comentarios as $comentario): ?>
-                <div class="comentario">
-                    <strong><?php echo htmlspecialchars($comentario['nome_usuario']); ?>:</strong>
-                    <p><?php echo htmlspecialchars($comentario['comentario']); ?></p>
+    <!-- Detalhes do Filme -->
+    <div class="filme-container">
+        <div class="filme-card">
+            <?php
+            // Exemplo de URLs das imagens
+            $filmeData = array(
+                1 => array('imagem' => 'spider.jpg'),
+                2 => array('imagem' => 'john_wick.png'),
+                3 => array('imagem' => 'jogosmortais.jpg'),
+                4 => array('imagem' => 'opph.jpg'),
+                5 => array('imagem' => 'tubarao.png'),
+                6 => array('imagem' => 'vingadores ultimato.png'),
+                7 => array('imagem' => 'exorcista.png'),
+            );
+
+            // Obtém o ID do filme da consulta GET
+            $filmeId = isset($_GET['id']) ? $_GET['id'] : null;
+
+            // Verifica se o ID do filme é válido e existe nos dados do filme
+            if ($filmeId && array_key_exists($filmeId, $filmeData)) {
+                $filmeInfo = $filmeData[$filmeId];
+                ?>
+                <!-- Cartão <?php echo $filmeId; ?> -->
+                <div class="card movie-card">
+                    <a href="detalhes_filme.php?id=<?php echo $filmeId; ?>">
+                        <img src="<?php echo $filmeInfo['imagem']; ?>" class="card-img-top zoom-img" alt="Filme <?php echo $filmeId; ?>">
+                    </a>
                 </div>
-            <?php endforeach; ?>
+            <?php
+            } else {
+                // Se o ID do filme não for válido, você pode exibir uma mensagem ou redirecionar para uma página de erro.
+                echo "ID do filme não válido.";
+            }
+            ?>
+        </div>
+
+        <div class="filme-info">
+            <div class="filme-details">
+                <h1 class="filme-titulo"><?php echo htmlspecialchars($filme['Titulo']); ?></h1>
+                <p class="filme-ano"><strong>Ano de Lançamento:</strong> <?php echo htmlspecialchars($filme['AnoLancamento']); ?></p>
+                <p class="filme-diretor"><strong>Diretor:</strong> <?php echo htmlspecialchars($filme['Diretor']); ?></p>
+            </div>
+            <div class="filme-sinopse">
+                <strong>Sinopse:</strong>
+                <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
+            </div>
+            <div class="filme-atores">
+                <strong>Atores:</strong>
+                <ul>
+                    <?php foreach ($atores as $ator): ?>
+                        <li><a href="detalhes_ator.php?id=<?php echo $ator['ID']; ?>"><?php echo htmlspecialchars($ator['Nome']); ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <div class="filme-categorias">
+                <strong>Categorias:</strong>
+                <ul>
+                    <?php foreach ($categorias as $categoria): ?>
+                        <li><?php echo htmlspecialchars($categoria['Nome']); ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <div id="secao-comentarios">
+                <h3>Comentários</h3>
+                <form action="inserir_comentario.php" method="post">
+                    <input type="hidden" name="filme_id" value="<?php echo $filmeId; ?>">
+                    <textarea name="comentario" placeholder="Escreva seu comentário aqui..." required></textarea>
+                    <button type="submit">Enviar Comentário</button>
+                </form>
+                <?php foreach ($comentarios as $comentario): ?>
+                    <div class="comentario">
+                        <strong><?php echo htmlspecialchars($comentario['nome_usuario']); ?>:</strong>
+                        <p><?php echo htmlspecialchars($comentario['comentario']); ?></p>
+                    </div>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
+
+    <!-- JavaScript e Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
 
