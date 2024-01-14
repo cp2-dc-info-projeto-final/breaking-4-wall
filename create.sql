@@ -62,14 +62,6 @@ CREATE TABLE cadastrados (
     senha VARCHAR(255) NOT NULL
 ); 
 
-ALTER TABLE cadastrados
-ADD COLUMN is_admin BOOLEAN NOT NULL DEFAULT FALSE;
-
-ALTER TABLE cadastrados
-MODIFY COLUMN is_admin TINYINT NOT NULL DEFAULT 0;
-
-
-
 
 drop TABLE if EXISTS filmescategorias;
 
@@ -91,8 +83,6 @@ CREATE TABLE Administradores (
   email VARCHAR(100) NOT NULL UNIQUE,
   senha VARCHAR(255) NOT NULL
 );
-
-ALTER TABLE Administradores ADD COLUMN is_admin BOOLEAN NOT NULL DEFAULT FALSE;
 
 INSERT INTO Administradores (usuario, email, senha)
 VALUES ('nomeusuario', 'email@dominio.com', 'senhacriptografada');
