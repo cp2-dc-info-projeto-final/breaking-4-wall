@@ -3,172 +3,192 @@
 
 <head>
   <meta charset="UTF-8">
-
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/navbar.css">
-  <!--------------------------CSS Rodapé---------------------------->
-  <link rel="stylesheet" href="css/rodape.css">
-  <!-------------------------------------------------------------->
-  <!--------------------------CSS CARD---------------------------->
+  <link rel="stylesheet" href="rodape.css">
   <link rel="stylesheet" href="css/card.css">
-  <!-------------------------------------------------------------->
-  <!--------------------------CSS TEXT---------------------------->
   <link rel="stylesheet" href="css/text.css">
-  <!-------------------------------------------------------------->
   <link rel="stylesheet" href="css/apresentacao.css">
-  <!--------------------------BOOTSTRAP---------------------------->
-  <!--------------------------------------------->
   <link rel="icon" type="image/png" href="logo.jpg" />
-
-
-  
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <!-------------------------------------------------------------->
-
-  <!-----------------------------Link-------------------------------->
   <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
   <title>BR4W</title>
-</head>
 
-<body>
-
-
-  <!-------------------Barra de Navegação------------------>
-  <nav class="navbar navbar-expand-lg">
-    <a href="index.html"><img src="logoo.png" width="220" height="220"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto"> <!-- Utilize mx-auto para centralizar os itens -->
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="perfil.php">Perfil</a>
-            </li>
-           
-            <li class="nav-item">
-                <a class="nav-link" href="cadastro.html">Cadastre-se</a>
-            </li>
-            <li class="nav-item">
-                <div class="login">
-                    <a class="nav-link" href="login.php">Login</a>
-                </div>
-            </li>
-        </ul>
-        <form class="d-flex" action="pesquisar.php" method="get">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="search_query">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-      
-    </div>
-</nav>
-
-
-  
-  
-  <!------------------------------------------------------->
-
-  <!--------------------------Texto----------------------->
-
-
-  <!------------------------------------------------------>
-  <script src="js/script.js"></script>
-
-  <!------------------------------------------------------>
-
-
-  <!-------------------------CARD------------------------->
-
-  <!DOCTYPE html>
-  <html lang="pt">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carousel de Filmes Populares</title>
   <style>
     body, html {
       margin: 0;
       padding: 0;
       width: 100%;
       height: 100%;
+      background-color: #333;
+      font-family: 'Arial', sans-serif;
     }
-  
+
     .header {
       width: 100%;
-      background-color: #333; /* Cor do cabeçalho */
+      background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px 0;
+      padding: 20px 0;
+      font-family: 'Georgia', serif;
+      font-size: 36px;
     }
-  
+
+    .divider {
+      width: 100%;
+      background-color: #333;
+      height: 2px;
+    }
+
     .carousel {
       position: relative;
       width: 100%;
       margin: auto;
       overflow: hidden;
+      background-color: #333;
     }
-  
+
     .carousel-container {
       display: flex;
       transition: transform 0.5s ease;
     }
-  
+
     .carousel-slide {
-      flex: 0 0 33.3333%; /* Cada slide terá um terço da largura do carrossel */
+      flex: 0 0 33.3333%;
       box-sizing: border-box;
-      padding: 10px; /* Espaço entre slides */
+      padding: 10px;
     }
-  
-    .carousel-container img {
-      width: 100%;
-      display: block;
-    }
-  
+
     .carousel-container a {
       display: block;
       text-decoration: none;
     }
-  
+
+    .carousel-container img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel-container img:hover {
+      transform: scale(1.1);
+    }
+
     .arrow {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       cursor: pointer;
-      background-color: #000;
-      color: #fff;
-      padding: 10px;
-      z-index: 2;
+      color: white;
+      font-size: 24px;
+      border: none;
+      background: none;
+      z-index: 1;
     }
-  
-    .prev {
+
+    .arrow.prev {
       left: 0;
     }
-  
-    .next {
+
+    .arrow.next {
       right: 0;
     }
-    
-    /* Adicione mais estilos conforme necessário */
+
+    .footer-container {
+      background-color: #333;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .col-lg-6 {
+      width: 50%;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .zoom-img {
+      transition: transform 0.3s ease;
+    }
+
+    .zoom-img:hover {
+      transform: scale(1.1);
+    }
   </style>
-  </head>
-  <body>
-  
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg">
+    <a href="index.html"><img src="logoo.png" width="220" height="220"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="perfil.php">Perfil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+        </li>
+        <li class="nav-item">
+          <div class="login">
+            <a class="nav-link" href="login.php">Login</a>
+          </div>
+        </li>
+      </ul>
+      <form class="d-flex" action="pesquisar.php" method="get">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="search_query">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <hr class="divider">
+
   <div class="header">
     Filmes Populares
   </div>
-  
+
   <div class="carousel" id="carousel">
-    <div class="arrow prev" onclick="moveSlide(-3)">&#10094;</div>
+    <button class="arrow prev" onclick="moveSlide(-1)"><i class="fas fa-arrow-left"></i></button>
     <div class="carousel-container">
-      <!-- Adicione suas imagens de filmes aqui com os links -->
       <div class="carousel-slide">
         <a href="detalhes_filme.php?id=1">
           <img src="spider.jpg" alt="Filme 1">
@@ -189,122 +209,101 @@
           <img src="opph.jpg" alt="Filme 4">
         </a>
       </div>
-      <!-- ... -->
     </div>
-    <div class="arrow next" onclick="moveSlide(3)">&#10095;</div>
+    <button class="arrow next" onclick="moveSlide(1)"><i class="fas fa-arrow-right"></i></button>
   </div>
-  
+
+ 
+<div class="header" style="margin-top: 30px;">
+  Filmes Premiados
+</div>
+
+<div class="container mt-5">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <a href="detalhes_filme.php?id=5">
+          <img src="tubarao.png" class="card-img-top zoom-img" alt="Filme 5">
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <a href="detalhes_filme.php?id=6">
+          <img src="vingadores ultimato.png" class="card-img-top zoom-img" alt="Filme 6">
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <a href="detalhes_filme.php?id=7">
+          <img src="exorcista.png" class="card-img-top zoom-img" alt="Filme 7">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script>
-  let slideIndex = 0;
-  
-  function moveSlide(step) {
-    const carousel = document.getElementById('carousel');
-    const slides = carousel.getElementsByClassName('carousel-container')[0];
-    const totalSlides = slides.children.length;
-    slideIndex += step;
-    
-    if (slideIndex < 0) {
-      slideIndex = 0; // Para evitar que o carrossel se mova para a esquerda além do primeiro slide
-    } else if (slideIndex > totalSlides - 3) {
-      slideIndex = totalSlides - 3; // Ajusta para manter três slides visíveis
+    let slideIndex = 0;
+
+    function moveSlide(step) {
+      const carousel = document.getElementById('carousel');
+      const slides = carousel.getElementsByClassName('carousel-container')[0];
+      const totalSlides = slides.children.length;
+      slideIndex += step;
+
+      if (slideIndex < 0) {
+        slideIndex = 0;
+      } else if (slideIndex > totalSlides - 3) {
+        slideIndex = totalSlides - 3;
+      }
+
+      const x = -slideIndex * (slides.children[0].offsetWidth + (2 * 10));
+      slides.style.transform = `translateX(${x}px)`;
     }
-    
-    // Calcula a nova posição do carrossel
-    const x = -slideIndex * (slides.children[0].offsetWidth + (2 * 10)); // Inclui o padding
-    slides.style.transform = `translateX(${x}px)`;
-  }
-  
-  // Ajusta o tamanho inicial do carrossel
-  window.addEventListener('load', () => {
-    moveSlide(0);
-  });
-  
-  // Reajusta o carrossel quando a janela for redimensionada
-  window.addEventListener('resize', () => {
-    moveSlide(0);
-  });
+
+    window.addEventListener('load', () => {
+      moveSlide(0);
+    });
+
+    window.addEventListener('resize', () => {
+      moveSlide(0);
+    });
   </script>
-  
-  </body>
-  </html>
-  
-  <!-------------------RODAPÉ------------------>
-  <footer class="bg-dark text-center text-white">
-    <div class="container p-4">
-        <section class="mb-4">
-            <p></p>
-        </section>
 
-        <section class="">
-            <div class="row">
-              <style>
-                .smaller-lighter-text {
-                    font-size: smaller;
-                    font-weight: lighter;
-                }
-            </style>
-            
-                <!-- Links Bloco 1 -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase" style="font-size: smaller; font-weight: lighter;">instagram_desenvolvedores</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="https://www.instagram.com/jv_limaa16/" class="text-white">João Vitor</a></li>
-                        <li><a href="https://www.instagram.com/alvaro_caetano01/" class="text-white">Alvaro Caetano</a></li>
-                        <li><a href="https://www.instagram.com/pedro.rodrigues01/" class="text-white">Pedro Rodrigues</a></li>
-                        <li><a href="https://www.instagram.com/linharesrodrigo04/" class="text-white">Rodrigo Linhares</a></li>
-                        <li><a href="https://www.instagram.com/jp_oliv07/" class="text-white">João Paulo</a></li>
-                    </ul>
-                </div>
-
-                <!-- Links Bloco 2 -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase" style="font-size: smaller; font-weight: lighter;">instagram_desenvolvedores</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="https://www.instagram.com/jv_limaa16/" class="text-white">João Vitor</a></li>
-                        <li><a href="https://www.instagram.com/alvaro_caetano01/" class="text-white">Alvaro Caetano</a></li>
-                        <li><a href="https://www.instagram.com/pedro.rodrigues01/" class="text-white">Pedro Rodrigues</a></li>
-                        <li><a href="https://www.instagram.com/linharesrodrigo04/" class="text-white">Rodrigo Linhares</a></li>
-                        <li><a href="https://www.instagram.com/jp_oliv07/" class="text-white">João Paulo</a></li>
-
-                    </ul>
-                </div>
-
-                <!-- Links Bloco 3 -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase" style="font-size: smaller; font-weight: lighter;">instagram_desenvolvedores</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="https://www.instagram.com/jv_limaa16/" class="text-white">João Vitor</a></li>
-                        <li><a href="https://www.instagram.com/alvaro_caetano01/" class="text-white">Alvaro Caetano</a></li>
-                        <li><a href="https://www.instagram.com/pedro.rodrigues01/" class="text-white">Pedro Rodrigues</a></li>
-                        <li><a href="https://www.instagram.com/linharesrodrigo04/" class="text-white">Rodrigo Linhares</a></li>
-                        <li><a href="https://www.instagram.com/jp_oliv07/" class="text-white">João Paulo</a></li>
-
-                    </ul>
-                </div>
-
-                <!-- Links Bloco 4 -->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                  <h5 class="text-uppercase" style="font-size: smaller; font-weight: lighter;">instagram_desenvolvedores</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="https://www.instagram.com/jv_limaa16/" class="text-white">João Vitor</a></li>
-                        <li><a href="https://www.instagram.com/alvaro_caetano01/" class="text-white">Alvaro Caetano</a></li>
-                        <li><a href="https://www.instagram.com/pedro.rodrigues01/" class="text-white">Pedro Rodrigues</a></li>
-                        <li><a href="https://www.instagram.com/linharesrodrigo04/" class="text-white">Rodrigo Linhares</a></li>
-                        <li><a href="https://www.instagram.com/jp_oliv07/" class="text-white">João Paulo</a></li>
-
-                    </ul>
-                </div>
-            </div>
-        </section>
+  <footer class="footer-container">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 mb-4 mb-md-0 text-center">
+          <h5 class="footer-heading" style="font-family: 'Georgia', serif;">Desenvolvedores</h5>
+          <ul class="footer-list">
+            <li class="footer-list-item"><a href="https://www.instagram.com/jv_limaa16/">João Vitor</a></li>
+            <li class="footer-list-item"><a href="https://www.instagram.com/alvaro_caetano01/">Alvaro Caetano</a></li>
+            <li class="footer-list-item"><a href="https://www.instagram.com/pedro.rodrigues01/">Pedro Rodrigues</a></li>
+            <li class="footer-list-item"><a href="https://www.instagram.com/linharesrodrigo04/">Rodrigo Linhares</a></li>
+            <li class="footer-list-item"><a href="https://www.instagram.com/jp_oliv07/">João Paulo</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center footer-rights">
+          <p class="mb-0" style="font-family: 'Georgia', serif;">Todos os direitos reservados <strong>br4w</strong></p>
+          <a class="text-white" href="#"></a>
+        </div>
+      </div>
     </div>
+  </footer>
 
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        Todos os direitos reservados br4w
-        <a class="text-white" href=""></a>
-    </div>
-</footer>
-  
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 </body>
 
 </html>
