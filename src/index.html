@@ -38,6 +38,11 @@
       padding: 20px 0;
       font-family: 'Georgia', serif;
       font-size: 36px;
+      position: relative;
+    }
+
+    .header span.led {
+      text-shadow: 0 0 10px #fff, 0 0 20px #0b798d, 0 0 30px #051551;
     }
 
     .divider {
@@ -148,7 +153,6 @@
       transform: scale(1.1);
     }
   </style>
-
 </head>
 
 <body>
@@ -162,13 +166,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
+          <span class="led"></span>
           <a class="nav-link" aria-current="page" href="perfil.php">Perfil</a>
         </li>
         <li class="nav-item">
+          <span class="led"></span>
           <a class="nav-link" href="cadastro.html">Cadastre-se</a>
         </li>
         <li class="nav-item">
           <div class="login">
+            <span class="led"></span>
             <a class="nav-link" href="login.php">Login</a>
           </div>
         </li>
@@ -183,7 +190,7 @@
   <hr class="divider">
 
   <div class="header">
-    Filmes Populares
+    <span class="led">Filmes Populares</span>
   </div>
 
   <div class="carousel" id="carousel">
@@ -213,41 +220,40 @@
     <button class="arrow next" onclick="moveSlide(1)"><i class="fas fa-arrow-right"></i></button>
   </div>
 
- 
-<div class="header" style="margin-top: 30px;">
-  Filmes Premiados
-</div>
+  <div class="header" style="margin-top: 30px;">
+    <span class="led">Filmes Premiados</span>
+  </div>
 
-<div class="container mt-5">
-  <div class="row">
-    <!-- Card 1 -->
-    <div class="col-md-4">
-      <div class="card">
-        <a href="detalhes_filme.php?id=5">
-          <img src="tubarao.png" class="card-img-top zoom-img" alt="Filme 5">
-        </a>
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="detalhes_filme.php?id=5">
+            <img src="tubarao.png" class="card-img-top zoom-img" alt="Filme 5">
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Card 2 -->
-    <div class="col-md-4">
-      <div class="card">
-        <a href="detalhes_filme.php?id=6">
-          <img src="vingadores ultimato.png" class="card-img-top zoom-img" alt="Filme 6">
-        </a>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="detalhes_filme.php?id=6">
+            <img src="vingadores ultimato.png" class="card-img-top zoom-img" alt="Filme 6">
+          </a>
+        </div>
       </div>
-    </div>
 
-    <!-- Card 3 -->
-    <div class="col-md-4">
-      <div class="card">
-        <a href="detalhes_filme.php?id=7">
-          <img src="exorcista.png" class="card-img-top zoom-img" alt="Filme 7">
-        </a>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <a href="detalhes_filme.php?id=7">
+            <img src="exorcista.png" class="card-img-top zoom-img" alt="Filme 7">
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <script>
     let slideIndex = 0;
