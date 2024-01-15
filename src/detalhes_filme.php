@@ -192,13 +192,13 @@ $conn->close();
             <?php
             // Exemplo de URLs das imagens
             $filmeData = array(
-                1 => array('imagem' => 'spider.jpg'),
-                2 => array('imagem' => 'john_wick.png'),
-                3 => array('imagem' => 'jogosmortais.jpg'),
-                4 => array('imagem' => 'opph.jpg'),
-                5 => array('imagem' => 'tubarao.png'),
-                6 => array('imagem' => 'vingadores ultimato.png'),
-                7 => array('imagem' => 'exorcista.png'),
+                1 => array('imagem' => 'spiderm.png'),
+                2 => array('imagem' => 'john_wickd.png'),
+                3 => array('imagem' => 'jogosmortaisd.png'),
+                4 => array('imagem' => 'oppenheimer.png'),
+                5 => array('imagem' => 'tuba.png'),
+                6 => array('imagem' => 'vingadores.png'),
+                7 => array('imagem' => 'exorcistad.png'),
             );
 
             // Obtém o ID do filme da consulta GET
