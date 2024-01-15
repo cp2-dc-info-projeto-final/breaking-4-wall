@@ -53,23 +53,20 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/41ff87e6-f07c-4751-9174-064c72b5bdcf)
 
 
-  ## 4. ALTERAR SENHA
-
- - 4.1 Ao clicar em login o usuário será levado para a opção de "alterar senha" caso a senha esteja errada
-
-  ## 5. ENVIAR EMAIL
-   
-   5.1 Ao tentar recuperar a senha 
-
- - 5.2 O usuario recebera um email
   
-  ## 6. VISUALIZAR PERFIL
+  ## 4. ENVIAR EMAIL
+   
+   4.1 Ao tentar recuperar a senha, o usuário colocará seu email no campo indicado e clicar em continuar para confirmar ação,posterior a issoo usuário receberá em seu email sua nova senha.
 
- - 6.1 Clique em "perfil"
+ 
+  
+  ## 5. VISUALIZAR PERFIL
+
+ - 5.1 Clique em "perfil"
    
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
 
-   6.2 O usuário será redirecionado para a tela inicial
+   5.2 O usuário será redirecionado para a tela inicial
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
 
@@ -80,112 +77,112 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c9d9476c-6a65-42b1-a05f-281d286551ff)
 
 
-  ## 7. CADASTRAR FILMES
+  ## 6. CADASTRAR FILMES
 
-   7.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
+   6.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cf8bd587-134f-4569-ab2b-41b79c2bc29f)
 
 
-  ## 8. CADASTRAR CATEGORIA
+  ## 7. CADASTRAR CATEGORIA
 
-   8.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
+   7.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9bcd64bd-d6ac-4249-a01a-e0ab40b48e60)
 
 
-  ## 9. CADASTRAR ATOR
+  ## 8. CADASTRAR ATOR
   
-   9.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
+   8.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
 
   USUARIO 
 
-  ## 10. VINCULO ENTRE FILME E CATEGORIA 
+  ## 9. VINCULO ENTRE FILME E CATEGORIA 
 
-   10.1 Ao acessar o slider, o usuário tem acesso a pagina de interação
+   9.1 Ao acessar o slider, o usuário tem acesso a pagina de interação
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
 
-   10.2 O site exibirá o filme escolhido com a categoria escolhida
+   9.2 O site exibirá o filme escolhido com a categoria escolhida
 
-   ## 11. VINCULO ENTRE ATOR E FILME
+   ## 10. VINCULO ENTRE ATOR E FILME
 
-   11.1 Ao acessar o slider o usuário tem acesso a pagina de interação 
+   10.1 Ao acessar o slider o usuário tem acesso a pagina de interação 
  
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a3fd733c-1c22-4cd3-a10c-018de4f9b8b7)
 
-   - 11.2 O site exibirá o filme com os atores de determinado filme
+   - 10.2 O site exibirá o filme com os atores de determinado filme
 
-  ## 12. DETALHES DO FILME 
+  ## 11. DETALHES DO FILME 
 
-   12.1 Ao acessar o site como usuário
+   11.1 Ao acessar o site como usuário
 
- - 12.2 Clique em "detalhes do filme"
+ - 11.2 Clique em "detalhes do filme"
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3ff5b99f-3958-475f-a3c8-da1d1e237aec)
 
 
-  ## 13. BUSCAR FILME
+  ## 12. BUSCAR FILME
 
-   13.1 Ao acessar o site como usuário.
+   12.1 Ao acessar o site como usuário.
    
- - 13.2 Coloque o nome do filme desejado em seguida clique ao lado em "buscar".
+ - 12.2 Coloque o nome do filme desejado em seguida clique ao lado em "buscar".
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c531b7be-e43e-49a3-84ba-37bb5b41ff39)
 
   
-  ## 14. ADICIONAR COMENTARIO
+  ## 13. ADICIONAR COMENTARIO
 
-   14.1 Ao acessar o site como usuário.
+   13.1 Ao acessar o site como usuário.
 
- - 14.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo para confirmar ação.
+ - 13.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo para confirmar ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
 
 
- ## 15. EDITAR PERFIL 
+ ## 14. EDITAR PERFIL 
 
- - 15.2 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
- - 15.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
+ - 14.1 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
+ - 14.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
 
  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/f7d01272-5727-49f5-857e-a3bc713753a3)
 
-  ## 16. EDITAR FILME 
+  ## 15. EDITAR FILME 
 
- - 16.2 Clique em "editar filme" após isso coloque título,ano do lançamento,diretor e sinopse, em seguida clique em atualizar filme para confirmar ação.
+ - 15.1 Clique em "editar filme" após isso coloque título,ano do lançamento,diretor e sinopse, em seguida clique em atualizar filme para confirmar ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/24fddf68-d48e-45ae-89e1-d556a6af5922)
 
 - ADM
 
- ## 17. EDITAR ADMINISTRADOR
+ ## 16. EDITAR ADMINISTRADOR
 
- - 15.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
+ - 16.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
 
 
-  ## 18. CONSULTAR LISTA DE FILMES
+  ## 17. CONSULTAR LISTA DE FILMES
  
-  - 18.1 Em sua conta de administrador
+  - 17.1 Em sua conta de administrador
  
-   18.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
+   17.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3c00cb36-0b49-4c6e-ac59-7d665ab2c96d)
 
  
-  ## 19. EXCLUIR ADMINISTRADOR 
+  ## 18. EXCLUIR ADMINISTRADOR 
 
- - 19.1 Em sua conta de administrador, vá até a barra de excluir perfil e clique em "excluir perfil" para excluir, para editar perfil vá até a barra de editar perfil e clique em "editar perfil.
+ - 18.1 Em sua conta de administrador, vá até a barra de excluir perfil e clique em "excluir perfil" para excluir, para editar perfil vá até a barra de editar perfil e clique em "editar perfil.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
 
  
-  ## 20. EXCLUIR FILME 
+  ## 19. EXCLUIR FILME 
 
- - 20.1. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar.
+ - 19.1. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
 
