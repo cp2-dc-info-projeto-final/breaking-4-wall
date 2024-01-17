@@ -11,28 +11,29 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 $adminId = $_SESSION["id"];
 
-// Busca as informações do administrador logado no banco de dados
-$sqlAdminLogado = "SELECT nome, email, is_admin FROM Cadastrados WHERE id = ?";
+// Busca as informações do administrador logado na tabela Administradores
+$sqlAdminLogado = "SELECT usuario, email FROM Administradores WHERE id = ?";
 $stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+
+if (!$stmtAdminLogado) {
+    die("Erro na preparação da consulta: " . $conn->error);
+}
+
 $stmtAdminLogado->bind_param("i", $adminId);
 $stmtAdminLogado->execute();
 $resultAdminLogado = $stmtAdminLogado->get_result();
 
 if ($resultAdminLogado->num_rows > 0) {
     $adminInfo = $resultAdminLogado->fetch_assoc();
-    if ($adminInfo['is_admin'] != 1) { // Se não for administrador
-        header('Location: index.html'); // Redireciona para a página inicial
-        exit;
-    }
 } else {
+    // Se não encontrar o administrador, redireciona para o login
     header('Location: login.php');
     exit;
 }
 
 $stmtAdminLogado->close();
-
-// O restante do seu código HTML segue aqui...
 ?>
+
 
 
 <!DOCTYPE html>
@@ -178,6 +179,7 @@ $stmtAdminLogado->close();
     <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="lista_filmes.php">Filmes</a></li>
+        <li><a href="cadastro_adm.php">Cadastrado de ADM</a></li>
         <li><a href="cadastro_filmes.php">Cadastro de Filmes</a></li>
         <li><a href="cadastro_atores.php">Cadastro de Atores</a></li>
         <li><a href="vincular_atuacao.php">Vincular Atuações</a></li>
@@ -191,7 +193,7 @@ $stmtAdminLogado->close();
     <h1>Perfil do Administrador</h1>
     
     <div class="perfil-admin">
-        <p>Nome: <?php echo htmlspecialchars($adminInfo['nome']); ?></p>
+        <p>Nome: <?php echo htmlspecialchars($adminInfo['usuario']); ?></p>
         <p>Email: <?php echo htmlspecialchars($adminInfo['email']); ?></p>
         <p><a href="editar_administrador.php?id=<?php echo $adminId; ?>" class="edit-btn">Editar Perfil</a></p>
         <p><a href="excluir_admin.php?id=<?php echo $adminId; ?>" class="delete-btn" onclick="return confirm('Tem certeza que deseja excluir este administrador?');">Excluir Perfil</a></p>
