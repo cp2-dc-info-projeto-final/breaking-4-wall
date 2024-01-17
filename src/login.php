@@ -20,41 +20,47 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST["senha"];
 
     // Prepara a consulta SQL para verificar se o usuário é um administrador
-    $stmt = $conn->prepare("SELECT id, nome, email, senha, is_admin FROM cadastrados WHERE email = ?");
-    $stmt->bind_param("s", $email);
-    $stmt->execute();
-    $result = $stmt->get_result();
+    $stmt_admin = $conn->prepare("SELECT id, usuario, email, senha FROM Administradores WHERE email = ?");
+    $stmt_admin->bind_param("s", $email);
+    $stmt_admin->execute();
+    $result_admin = $stmt_admin->get_result();
 
-    if ($result->num_rows === 1) {
-        $user = $result->fetch_assoc();
+    $stmt_user = $conn->prepare("SELECT id, nome, email, senha FROM cadastrados WHERE email = ?");
+    $stmt_user->bind_param("s", $email);
+    $stmt_user->execute();
+    $result_user = $stmt_user->get_result();
 
-        if (password_verify($senha, $user['senha'])) {
-            $_SESSION["loggedin"] = true;
-            $_SESSION["id"] = $user["id"];
-            $_SESSION["nome"] = $user["nome"];
-            $_SESSION["email"] = $user["email"];
-            $_SESSION["is_admin"] = $user["is_admin"];
-
-            // Verifica se o usuário é um administrador
-            if ($_SESSION['is_admin'] == 1) { // 1 representa administrador
-                header("Location: dashboard.php");
-            } else {
-                header("Location: index.html");
-            }
-            exit;
-        } else {
-            $message = "Senha inválida.";
-        }
+    if ($result_admin->num_rows === 1) {
+        $user = $result_admin->fetch_assoc();
+        $is_admin = true;
+    } elseif ($result_user->num_rows === 1) {
+        $user = $result_user->fetch_assoc();
+        $is_admin = false;
     } else {
         $message = "Nenhuma conta encontrada com esse e-mail.";
     }
 
-    $stmt->close();
+    if (!empty($user) && password_verify($senha, $user['senha'])) {
+        $_SESSION["loggedin"] = true;
+        $_SESSION["id"] = $user["id"];
+        $_SESSION["nome"] = isset($user["nome"]) ? $user["nome"] : $user["usuario"];
+        $_SESSION["email"] = $user["email"];
+
+        if ($is_admin) {
+            header("Location: dashboard.php");
+        } else {
+            header("Location: index.html");
+        }
+        exit;
+    } else {
+        $message = "Senha inválida.";
+    }
+
+    $stmt_admin->close();
+    $stmt_user->close();
     $conn->close();
 }
 ?>
-
-
 
 
 <!DOCTYPE html>
