@@ -167,7 +167,7 @@ body {
 <body>
     <div class="container">
         <form action="cadastro_adm.php" method="POST" class="registration-form">
-            <h2>Cadastro</h2>
+            <h2>Cadastro Administrador</h2>
             
             <!-- Bloco de mensagem após o cadastro -->
             <?php if (!empty($message)) : ?>
