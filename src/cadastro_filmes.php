@@ -32,7 +32,8 @@
 
         input[type=text],
         input[type=number],
-        input[type=date], /* Adicionado o estilo para o campo de data */
+        input[type=date],
+        input[type=tel], /* Adicionado o estilo para o campo de avaliação do IMDb */
         textarea {
             width: 100%;
             padding: 10px;
@@ -78,6 +79,9 @@
 
         <label for="sinopse">Sinopse:</label>
         <textarea id="sinopse" name="sinopse"></textarea><br>
+
+        <label for="avaliacaoImdb">Avaliação IMDb:</label>
+        <input type="tel" id="avaliacaoImdb" name="avaliacaoImdb" placeholder="Ex: 7.5"><br>
 
         <input type="submit" value="Cadastrar Filme">
     </form>
