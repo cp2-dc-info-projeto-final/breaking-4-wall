@@ -130,6 +130,17 @@ $conn->close();
             margin-bottom: 0.25em;
         }
 
+        .filme-avaliacao {
+            display: inline-block;
+            margin-left: 20px;
+            color: #b9bbbe;
+        }
+
+        .filme-imdb-logo {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
@@ -182,6 +193,11 @@ $conn->close();
         .comentario strong {
             color: #0099ff;
         }
+        
+        .numero-amarelo {
+    color: #ffcc00; 
+        }
+
     </style>
 </head>
 
@@ -190,16 +206,15 @@ $conn->close();
     <div class="filme-container">
         <div class="filme-card">
             <?php
-            // Exemplo de URLs das imagens
-            $filmeData = array(
-                1 => array('imagem' => 'spiderm.png'),
-                2 => array('imagem' => 'john_wickd.png'),
-                3 => array('imagem' => 'jogosmortaisd.png'),
-                4 => array('imagem' => 'oppenheimer.png'),
-                5 => array('imagem' => 'tuba.png'),
-                6 => array('imagem' => 'vingadores.png'),
-                7 => array('imagem' => 'exorcistad.png'),
-            );
+          $filmeData = array(
+            1 => array('imagem' => 'spiderm.png', 'avaliacao_imdb' => '8.6'),
+            2 => array('imagem' => 'john_wickd.png', 'avaliacao_imdb' => '7.7'),
+            3 => array('imagem' => 'jogosmortaisd.png', 'avaliacao_imdb' => '6.6'),
+            4 => array('imagem' => 'oppenheimer.png', 'avaliacao_imdb' => '8.4'),
+            5 => array('imagem' => 'tuba.png', 'avaliacao_imdb' => '8.1'),
+            6 => array('imagem' => 'vingadores.png', 'avaliacao_imdb' => '8.4'),
+            7 => array('imagem' => 'exorcistad.png', 'avaliacao_imdb' => '8.2'),
+        );
 
             // Obtém o ID do filme da consulta GET
             $filmeId = isset($_GET['id']) ? $_GET['id'] : null;
@@ -227,7 +242,23 @@ $conn->close();
                 <h1 class="filme-titulo"><?php echo htmlspecialchars($filme['Titulo']); ?></h1>
                 <p class="filme-ano"><strong>Ano de Lançamento:</strong> <?php echo htmlspecialchars($filme['AnoLancamento']); ?></p>
                 <p class="filme-diretor"><strong>Diretor:</strong> <?php echo htmlspecialchars($filme['Diretor']); ?></p>
-            </div>
+
+               <!-- Avaliação IMDb -->
+                <div class="filme-avaliacao">
+                    <strong>Avaliação IMDb:</strong>
+                    <span class="numero-amarelo">
+                        <?php echo isset($filmeInfo['avaliacao_imdb']) ? htmlspecialchars($filmeInfo['avaliacao_imdb']) : 'N/A'; ?>
+                    </span>
+                </div>
+
+                <!-- Link do IMDb -->
+                <div class="filme-imdb-logo">
+                    <a href="https://www.imdb.com" target="_blank">
+                        <img src="logo imdb.png" alt="IMDb" width="50">
+                    </a>
+                </div>
+
+
             <div class="filme-sinopse">
                 <strong>Sinopse:</strong>
                 <p><?php echo htmlspecialchars($filme['Sinopse']); ?></p>
@@ -272,4 +303,3 @@ $conn->close();
 </body>
 
 </html>
-
