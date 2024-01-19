@@ -43,6 +43,8 @@ CREATE TABLE IF NOT EXISTS Filmes (
     Sinopse TEXT
 );
 
+ALTER TABLE Filmes
+ADD COLUMN AvaliacaoImdb DECIMAL(3,1) DEFAULT NULL;
 
 
 drop TABLE if EXISTS categorias;
