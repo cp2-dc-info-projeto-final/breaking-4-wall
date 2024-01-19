@@ -1,4 +1,5 @@
 <?php
+
 session_start(); // Inicia a sessão para verificar o login do usuário
 
 // Configuração das variáveis de conexão com o banco de dados
@@ -17,8 +18,8 @@ if ($conn->connect_error) {
 
 $filmeId = isset($_GET['id']) ? $_GET['id'] : die('ID do filme não foi especificado.');
 
-// Consulta para obter detalhes do filme
-$stmt_filme = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse FROM Filmes WHERE ID = ?");
+// Consulta para obter detalhes do filme, incluindo a avaliação IMDb
+$stmt_filme = $conn->prepare("SELECT Titulo, AnoLancamento, Diretor, Sinopse, AvaliacaoImdb FROM Filmes WHERE ID = ?");
 $stmt_filme->bind_param("i", $filmeId);
 
 // Verifica se a preparação da declaração foi bem-sucedida
@@ -33,6 +34,9 @@ if ($result_filme->num_rows == 0) {
 }
 
 $filme = $result_filme->fetch_assoc();
+
+// Avaliação IMDb diretamente da tabela, sem atribuir 'N/A' se for nula
+$avaliacaoImdb = isset($filme['AvaliacaoImdb']) ? htmlspecialchars($filme['AvaliacaoImdb']) : '';
 
 // Consulta para buscar os atores do filme
 $stmt_atores = $conn->prepare("SELECT a.ID, a.Nome FROM Atores a JOIN Atuacoes at ON a.ID = at.AtorID WHERE at.FilmeID = ?");
@@ -69,8 +73,8 @@ $stmt_comentarios->close();
 
 // Fechar conexão
 $conn->close();
-?>
 
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -232,7 +236,7 @@ $conn->close();
             <?php
             } else {
                 // Se o ID do filme não for válido, você pode exibir uma mensagem ou redirecionar para uma página de erro.
-                echo "ID do filme não válido.";
+                echo "";
             }
             ?>
         </div>
@@ -243,11 +247,11 @@ $conn->close();
                 <p class="filme-ano"><strong>Ano de Lançamento:</strong> <?php echo htmlspecialchars($filme['AnoLancamento']); ?></p>
                 <p class="filme-diretor"><strong>Diretor:</strong> <?php echo htmlspecialchars($filme['Diretor']); ?></p>
 
-               <!-- Avaliação IMDb -->
+              <!-- Avaliação IMDb -->
                 <div class="filme-avaliacao">
                     <strong>Avaliação IMDb:</strong>
                     <span class="numero-amarelo">
-                        <?php echo isset($filmeInfo['avaliacao_imdb']) ? htmlspecialchars($filmeInfo['avaliacao_imdb']) : 'N/A'; ?>
+                        <?php echo htmlspecialchars($avaliacaoImdb); ?>
                     </span>
                 </div>
 
