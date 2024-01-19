@@ -2,12 +2,12 @@
 
 // Dados de conexão ao banco de dados
 $servername = "localhost";
-$username = "cadastrados"; // Seu nome de usuário do banco de dados
-$password = "123"; // Sua senha do banco de dados
+$username = "cadastrados";
+$password = "123";
 $dbname = "CADASTRO";
 
 // Criar conexão
-$conn = new mysqli($servername, $username , $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar conexão
 if ($conn->connect_error) {
@@ -21,17 +21,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $anoLancamento = $_POST['anoLancamento'];
     $diretor = $_POST['diretor'];
     $sinopse = $_POST['sinopse'];
+    $avaliacaoImdb = $_POST['avaliacaoImdb'];
 
     // Preparar o comando SQL
-    $stmt = $conn->prepare("INSERT INTO Filmes (Titulo, AnoLancamento, Diretor, Sinopse) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("siss", $titulo, $anoLancamento, $diretor, $sinopse);
+    $stmt = $conn->prepare("INSERT INTO Filmes (Titulo, AnoLancamento, Diretor, Sinopse, AvaliacaoImdb) VALUES (?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssd", $titulo, $anoLancamento, $diretor, $sinopse, $avaliacaoImdb);
 
     // Executar o comando SQL
     if ($stmt->execute()) {
         header("Location: dashboard.php");
-        echo "Novo registro criado com sucesso";
+        echo "Filme cadastrado com sucesso!";
     } else {
-        echo "Erro: " . $stmt->error;
+        echo "Erro ao cadastrar o filme: " . $stmt->error;
     }
 
     // Fechar statement
