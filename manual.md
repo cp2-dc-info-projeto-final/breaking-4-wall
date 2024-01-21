@@ -110,6 +110,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    ## 10. VINCULO ENTRE ATOR E FILME
 
    10.1 Ao acessar o slider o usuário tem acesso a pagina de interação 
+
+   <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
+
  
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a3fd733c-1c22-4cd3-a10c-018de4f9b8b7)
 
