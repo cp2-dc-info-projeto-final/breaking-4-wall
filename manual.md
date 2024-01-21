@@ -80,6 +80,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## 6. CADASTRAR FILMES
 
    6.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
+   
+<img width="310" alt="Captura de tela 2024-01-10 221740" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ba2e2930-7aee-471a-9e57-fb592437ba57">
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cf8bd587-134f-4569-ab2b-41b79c2bc29f)
 
@@ -95,6 +97,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   
    8.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
 
+<img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
+
+
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
 
   USUARIO 
@@ -102,6 +107,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## 9. VINCULO ENTRE FILME E CATEGORIA 
 
    9.1 Ao acessar o slider, o usuário tem acesso a pagina de interação
+   
+<img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
 
