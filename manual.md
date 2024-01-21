@@ -88,9 +88,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    7.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9bcd64bd-d6ac-4249-a01a-e0ab40b48e60)
+<img width="244" alt="Captura de tela 2024-01-10 222531" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/4c05631a-3fe5-4230-b4fd-cb28a4a55e05">
 
-
+  
   ## 8. CADASTRAR ATOR
   
    8.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
