@@ -113,9 +113,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
 
- 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a3fd733c-1c22-4cd3-a10c-018de4f9b8b7)
-
    - 10.2 O site exibirá o filme com os atores de determinado filme
 
   ## 11. DETALHES DO FILME 
@@ -149,6 +146,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 14.1 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
  - 14.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
+
+<img width="315" alt="Captura de tela 2024-01-10 223036" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d823e320-f51b-4a41-bb55-2adffac96172">
 
  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/f7d01272-5727-49f5-857e-a3bc713753a3)
 
