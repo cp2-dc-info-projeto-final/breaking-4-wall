@@ -174,7 +174,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
    17.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3c00cb36-0b49-4c6e-ac59-7d665ab2c96d)
+<img width="828" alt="Captura de tela 2024-01-10 231710" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/f8faa77e-4bb9-47a2-b21c-2b269435c24a">
+
 
  
   ## 18. EXCLUIR ADMINISTRADOR 
