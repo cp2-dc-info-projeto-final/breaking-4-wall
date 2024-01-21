@@ -9,7 +9,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  -  [Login](#Login)
  - [Logout](#Lpgout)
  - [Cadastro](#Cadastro)
- - [Alterar senha](#Alterarsenha)
  - [Enviar email](#Enviaremail)
  - [Visualizar perfil](#Visualizarperfil)
  - [Cadastrar filmes - adm](#Cadastrarfilmes)
