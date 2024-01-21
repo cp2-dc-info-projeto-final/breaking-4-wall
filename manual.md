@@ -83,8 +83,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    
 <img width="310" alt="Captura de tela 2024-01-10 221740" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ba2e2930-7aee-471a-9e57-fb592437ba57">
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cf8bd587-134f-4569-ab2b-41b79c2bc29f)
-
 
   ## 7. CADASTRAR CATEGORIA
 
@@ -100,8 +98,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 <img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
 
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/6485daba-5c93-447d-9672-567d32fd10b4)
-
   USUARIO 
 
   ## 9. VINCULO ENTRE FILME E CATEGORIA 
@@ -110,8 +106,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    
 <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/761ab11b-cdee-4dd2-99e7-3317c498f42c)
-
+  
    9.2 O site exibirá o filme escolhido com a categoria escolhida
 
    ## 10. VINCULO ENTRE ATOR E FILME
@@ -128,8 +123,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 11.2 Clique em "detalhes do filme"
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/3ff5b99f-3958-475f-a3c8-da1d1e237aec)
+<img width="332" alt="Captura de tela 2024-01-10 224506" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/94f3a8ad-9412-460e-a067-b60ca7a08a1e">
 
+   
 
   ## 12. BUSCAR FILME
 
@@ -156,7 +152,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
 <img width="315" alt="Captura de tela 2024-01-10 223036" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d823e320-f51b-4a41-bb55-2adffac96172">
 
- ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/f7d01272-5727-49f5-857e-a3bc713753a3)
 
   ## 15. EDITAR FILME 
 
