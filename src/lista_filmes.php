@@ -1,4 +1,40 @@
 <?php
+session_start();
+
+require_once 'conecta.php';
+
+// Verifica se o usuário está logado e se é um administrador
+if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
+    header('Location: login.php');
+    exit;
+}
+
+$adminId = $_SESSION["id"];
+
+// Busca as informações do administrador logado na tabela Administradores
+$sqlAdminLogado = "SELECT usuario, email FROM Administradores WHERE id = ?";
+$stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+
+if (!$stmtAdminLogado) {
+    die("Erro na preparação da consulta: " . $conn->error);
+}
+
+$stmtAdminLogado->bind_param("i", $adminId);
+$stmtAdminLogado->execute();
+$resultAdminLogado = $stmtAdminLogado->get_result();
+
+if ($resultAdminLogado->num_rows > 0) {
+    $adminInfo = $resultAdminLogado->fetch_assoc();
+} else {
+    // Se não encontrar o administrador, redireciona para o login
+    header('Location: login.php');
+    exit;
+}
+
+$stmtAdminLogado->close();
+?>
+
+<?php
 $servername = "localhost";
 $username = "cadastrados"; // Seu nome de usuário do banco de dados
 $password = "123"; // Sua senha do banco de dados
