@@ -11,29 +11,28 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
 $adminId = $_SESSION["id"];
 
-// Busca as informações do administrador logado no banco de dados
-$sqlAdminLogado = "SELECT nome, email, is_admin FROM Cadastrados WHERE id = ?";
+// Busca as informações do administrador logado na tabela Administradores
+$sqlAdminLogado = "SELECT usuario, email FROM Administradores WHERE id = ?";
 $stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+
+if (!$stmtAdminLogado) {
+    die("Erro na preparação da consulta: " . $conn->error);
+}
+
 $stmtAdminLogado->bind_param("i", $adminId);
 $stmtAdminLogado->execute();
 $resultAdminLogado = $stmtAdminLogado->get_result();
 
 if ($resultAdminLogado->num_rows > 0) {
     $adminInfo = $resultAdminLogado->fetch_assoc();
-    if ($adminInfo['is_admin'] != 1) { // Se não for administrador
-        header('Location: index.html'); // Redireciona para a página inicial
-        exit;
-    }
 } else {
+    // Se não encontrar o administrador, redireciona para o login
     header('Location: login.php');
     exit;
 }
 
 $stmtAdminLogado->close();
 
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
-}
 
 // Buscar atores
 $stmt_atores = $conn->prepare("SELECT ID, Nome FROM Atores");
