@@ -1,40 +1,37 @@
 <?php
-session_start(); // Inicia a sessão
+session_start();
 
-// Verifica se o usuário está logado
+require_once 'conecta.php';
+
+// Verifica se o usuário está logado e se é um administrador
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     header('Location: login.php');
     exit;
 }
 
-// Conecta ao banco de dados
-$servername = "localhost";
-$username = "cadastrados";
-$password = "123";
-$dbname = "CADASTRO";
-$conn = new mysqli($servername, $username, $password, $dbname);
+$adminId = $_SESSION["id"];
 
-// Verifica a conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+// Busca as informações do administrador logado na tabela Administradores
+$sqlAdminLogado = "SELECT usuario, email FROM Administradores WHERE id = ?";
+$stmtAdminLogado = $conn->prepare($sqlAdminLogado);
+
+if (!$stmtAdminLogado) {
+    die("Erro na preparação da consulta: " . $conn->error);
 }
 
-// Obtém o ID do usuário da sessão
-$userId = $_SESSION["id"];
+$stmtAdminLogado->bind_param("i", $adminId);
+$stmtAdminLogado->execute();
+$resultAdminLogado = $stmtAdminLogado->get_result();
 
-// Consulta para verificar se o usuário é um administrador
-$stmt = $conn->prepare("SELECT is_admin FROM cadastrados WHERE ID = ?");
-$stmt->bind_param("i", $userId);
-$stmt->execute();
-$stmt->bind_result($isAdmin);
-$stmt->fetch();
-$stmt->close();
-
-// Verifica se o usuário é um administrador
-if ($isAdmin !== 1) {
-    header('Location: index.html'); // Redireciona para o index
+if ($resultAdminLogado->num_rows > 0) {
+    $adminInfo = $resultAdminLogado->fetch_assoc();
+} else {
+    // Se não encontrar o administrador, redireciona para o login
+    header('Location: login.php');
     exit;
 }
+
+$stmtAdminLogado->close();
 
 
 
