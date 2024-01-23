@@ -87,6 +87,10 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  <img width="332" alt="Captura de tela 2024-01-10 224506" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/94f3a8ad-9412-460e-a067-b60ca7a08a1e">
 
+ - 6.3 Detalhes do ator
+
+  <img width="719" alt="Captura de tela 2024-01-23 190952" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/799cadef-66ca-4432-9c9e-f13e6767e894">
+
 
   ## 7. BUSCAR FILME
 
