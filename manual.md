@@ -58,7 +58,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 5. Editar/excluir/sair 
 
-  ## Visualizar perfil
+  Visualizar perfil
 
  - 17.1 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
  - 17.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
