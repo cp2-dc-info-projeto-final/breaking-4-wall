@@ -62,7 +62,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   Visualizar perfil
 
- <img width="335" alt="Captura de tela 2024-01-23 181404" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1bba9de8-dfcc-4387-8324-14f87028182d">
+ <img width="377" alt="Captura de tela 2024-01-23 181800" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1e4c083a-ebda-4965-8bcd-73ea662da983">
 
  - 5.1 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
  - 
