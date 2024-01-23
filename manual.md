@@ -60,21 +60,21 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 5. Editar/excluir/sair 
 
-  Visualizar perfil
+ - 5.1 Clique em Visualizar perfil
 
  <img width="377" alt="Captura de tela 2024-01-23 181800" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1e4c083a-ebda-4965-8bcd-73ea662da983">
 
- - 5.1 Clique em "editar" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
+ - 5.2 Clique em "editar" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
    
- - 5.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
+ - 5.3 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
 
    <img width="315" alt="Captura de tela 2024-01-10 223036" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d823e320-f51b-4a41-bb55-2adffac96172">
 
- - 5.3 Clique em "perfil"
+ - 5.4 Clique em "perfil"
    
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
 
- - 5.4 O usuário será redirecionado para a tela inicial
+ - 5.5 O usuário será redirecionado para a tela inicial
 
   <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
 
