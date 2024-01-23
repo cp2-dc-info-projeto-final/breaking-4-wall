@@ -31,7 +31,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 1. CADASTRAR
 
- - 3.1 Clique para "cadastrar" e em seguida coloque seus dados corretamente, Nome,Email e Senha, depois é so apertar no cadastrar abaixo para confirmar.
+ - 1.1 Clique para "cadastrar" e em seguida coloque seus dados corretamente, Nome,Email e Senha, depois é so apertar no cadastrar abaixo para confirmar.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/41ff87e6-f07c-4751-9174-064c72b5bdcf)
 
@@ -49,7 +49,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
   ## 3. LOGOUT
   
- - 2.1 Clique em "sair" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja sair" aperte em OK para confirmar a ação.
+ - 3.1 Clique em "sair" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja sair" aperte em OK para confirmar a ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d05e27ec-357d-46f1-a060-b5a8370e5512)
 
