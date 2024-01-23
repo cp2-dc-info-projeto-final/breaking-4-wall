@@ -16,6 +16,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## Funcionalidades do administrador
   
+ - [Cadastrar administrador - adm](#Cadastraradministrador)
  - [Cadastrar filmes - adm](#Cadastrarfilmes)
  - [Cadastrar categoria - adm](#Cadastrarcategoria)
  - [Cadastrar atores - adm](#Cadastraratores)
@@ -100,71 +101,73 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
 - PAINEL DE ADMINISTRADORES
 
-  
-  ## 9. CADASTRAR FILMES
+  ## 9.Cadastrar administrador
 
-   9.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
+  
+  ## 10. CADASTRAR FILMES
+
+   10.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
    
   <img width="310" alt="Captura de tela 2024-01-10 221740" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ba2e2930-7aee-471a-9e57-fb592437ba57">
 
 
-  ## 10. CADASTRAR CATEGORIA
+  ## 11. CADASTRAR CATEGORIA
 
-   10.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
+   11.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
 
   <img width="244" alt="Captura de tela 2024-01-10 222531" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/4c05631a-3fe5-4230-b4fd-cb28a4a55e05">
 
   
-  ## 11. CADASTRAR ATOR
+  ## 12. CADASTRAR ATOR
   
-  11.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
+  12.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
 
   <img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
   
 
-  ## 12. VINCULO ENTRE FILME E CATEGORIA 
+  ## 13. VINCULO ENTRE FILME E CATEGORIA 
 
-   12.1 Ao acessar o slider, o usuário tem acesso a pagina de interação
+   13.1 Ao acessar o slider, o usuário tem acesso a pagina de interação
    
   <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
 
-   12.2 O site exibirá o filme escolhido com a categoria escolhida
+   13.2 O site exibirá o filme escolhido com a categoria escolhida
 
-   ## 13. VINCULO ENTRE ATOR E FILME
+   ## 14. VINCULO ENTRE ATOR E FILME
 
-   13.1 Ao acessar o slider o usuário tem acesso a pagina de interação 
+   14.1 Ao acessar o slider o usuário tem acesso a pagina de interação 
 
    <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
 
-   - 13.2 O site exibirá o filme com os atores de determinado filme
+   - 14.2 O site exibirá o filme com os atores de determinado filme
 
 
- ## 14. EDITAR ADMINISTRADOR
+ ## 15. EDITAR ADMINISTRADOR
 
- - 14.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
+ - 15.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
 
 
-  ## 15. CONSULTAR LISTA DE FILMES
+  ## 16. CONSULTAR LISTA DE FILMES
  
-  - 15.1 Em sua conta de administrador
+  - 16.1 Em sua conta de administrador
  
-   15.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
+   16.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
 
    <img width="828" alt="Captura de tela 2024-01-10 231710" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/f8faa77e-4bb9-47a2-b21c-2b269435c24a">
 
- - 15.3 Clique em "editar filme" após isso coloque título,ano do lançamento,diretor e sinopse, em seguida clique em atualizar filme para confirmar ação.
+ - 16.3 Clique em "editar filme" após isso coloque título,ano do lançamento,diretor e sinopse, em seguida clique em atualizar filme para confirmar ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/24fddf68-d48e-45ae-89e1-d556a6af5922)
 
-  - 15.4. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar.
+  - 16.4. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
 
-  ## 16. EXCLUIR ADMINISTRADOR 
+  ## 17. EXCLUIR ADMINISTRADOR 
 
- - 16.1 Em sua conta de administrador, vá até a barra de excluir perfil e clique em "excluir perfil" para excluir, para editar perfil vá até a barra de editar perfil e clique em "editar perfil.
+ - 17.1 Em sua conta de administrador, vá até a barra de excluir perfil e clique em "excluir perfil" para excluir, para editar perfil vá até a barra de editar perfil e clique em "editar perfil.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
 
