@@ -103,6 +103,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 8.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo para confirmar ação.
 
+ <img width="610" alt="Captura de tela 2024-01-23 184939" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/5ed9ed95-43c5-4a52-b399-fb46f8bca430">
 
 - PAINEL DE ADMINISTRADORES
 
