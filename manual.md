@@ -40,33 +40,33 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 2.1 Entre no site
 
-  <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
+   <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
 
 
  - 2.2 Clique em "login" e em seguida coloque o email e a senha e aperte em entrar.
 
 
-  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/92ff08d6-b4a9-4e92-90a2-c3bd2b1984fe)
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/92ff08d6-b4a9-4e92-90a2-c3bd2b1984fe)
 
  
   ## 3. LOGOUT
  
  - 3.1 Clique em "sair" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja sair" aperte em OK para confirmar a ação.
 
-  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d05e27ec-357d-46f1-a060-b5a8370e5512)
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d05e27ec-357d-46f1-a060-b5a8370e5512)
 
 
   ## 4. ENVIAR EMAIL
    
  - 4.1 Ao tentar recuperar a senha, o usuário colocará seu email no campo indicado e clicar em continuar para confirmar ação,posterior a issoo usuário receberá em seu email sua nova senha.
 
-  ![img](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d18ff30e-4ccb-4e1c-9e1e-607bcaf0ec0d)
+   ![img](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d18ff30e-4ccb-4e1c-9e1e-607bcaf0ec0d)
 
   ## 5. Editar/excluir/sair 
 
  - 5.1 Clique em Visualizar perfil
 
- <img width="377" alt="Captura de tela 2024-01-23 181800" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1e4c083a-ebda-4965-8bcd-73ea662da983">
+   <img width="377" alt="Captura de tela 2024-01-23 181800" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1e4c083a-ebda-4965-8bcd-73ea662da983">
 
  - 5.2 Clique em "editar" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
    
@@ -76,11 +76,11 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 5.4 Clique em "perfil"
    
-  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
 
  - 5.5 O usuário será redirecionado para a tela inicial
 
-  <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
+   <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
 
 
  ## 6. DETALHES DO FILME 
@@ -89,11 +89,11 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 6.2 Clique em "detalhes do filme"
 
- <img width="332" alt="Captura de tela 2024-01-10 224506" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/94f3a8ad-9412-460e-a067-b60ca7a08a1e">
+   <img width="332" alt="Captura de tela 2024-01-10 224506" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/94f3a8ad-9412-460e-a067-b60ca7a08a1e">
 
  - 6.3 Detalhes do ator
 
-  <img width="719" alt="Captura de tela 2024-01-23 190952" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/799cadef-66ca-4432-9c9e-f13e6767e894">
+   <img width="719" alt="Captura de tela 2024-01-23 190952" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/799cadef-66ca-4432-9c9e-f13e6767e894">
 
 
   ## 7. BUSCAR FILME
@@ -111,40 +111,40 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 8.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo para confirmar ação.
 
- <img width="610" alt="Captura de tela 2024-01-23 184939" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/5ed9ed95-43c5-4a52-b399-fb46f8bca430">
+   <img width="610" alt="Captura de tela 2024-01-23 184939" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/5ed9ed95-43c5-4a52-b399-fb46f8bca430">
 
 - PAINEL DE ADMINISTRADORES
 
   ## 9.Cadastrar administrador
 
- <img width="372" alt="Captura de tela 2024-01-23 182536" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d9b8b147-a9db-4b14-82a3-78da4d0692fa">
+   <img width="372" alt="Captura de tela 2024-01-23 182536" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d9b8b147-a9db-4b14-82a3-78da4d0692fa">
 
   ## 10. CADASTRAR FILMES
 
    10.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
    
-  <img width="310" alt="Captura de tela 2024-01-10 221740" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ba2e2930-7aee-471a-9e57-fb592437ba57">
+    <img width="310" alt="Captura de tela 2024-01-10 221740" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ba2e2930-7aee-471a-9e57-fb592437ba57">
 
 
   ## 11. CADASTRAR CATEGORIA
 
    11.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
 
-  <img width="244" alt="Captura de tela 2024-01-10 222531" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/4c05631a-3fe5-4230-b4fd-cb28a4a55e05">
+    <img width="244" alt="Captura de tela 2024-01-10 222531" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/4c05631a-3fe5-4230-b4fd-cb28a4a55e05">
 
   
   ## 12. CADASTRAR ATOR
   
   12.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
 
-  <img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
+    <img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
   
 
   ## 13. VINCULO ENTRE FILME E CATEGORIA 
 
    13.1 Ao acessar o slider, o usuário tem acesso a pagina de interação
    
-  <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
+    <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
 
 
    13.2 O site exibirá o filme escolhido com a categoria escolhida
@@ -154,7 +154,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    14.1 Ao acessar o slider o usuário tem acesso a pagina de interação 
 
-   <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
+    <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
 
    - 14.2 O site exibirá o filme com os atores de determinado filme
 
@@ -163,7 +163,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 15.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
 
-  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
+   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
 
 
   ## 16. CONSULTAR LISTA DE FILMES
