@@ -50,7 +50,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  
   ## 3. LOGOUT
-  
+ 
  - 3.1 Clique em "sair" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja sair" aperte em OK para confirmar a ação.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d05e27ec-357d-46f1-a060-b5a8370e5512)
@@ -60,6 +60,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    
  - 4.1 Ao tentar recuperar a senha, o usuário colocará seu email no campo indicado e clicar em continuar para confirmar ação,posterior a issoo usuário receberá em seu email sua nova senha.
 
+  ![img](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d18ff30e-4ccb-4e1c-9e1e-607bcaf0ec0d)
 
   ## 5. Editar/excluir/sair 
 
