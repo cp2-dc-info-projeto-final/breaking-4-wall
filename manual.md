@@ -94,7 +94,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    
  - 7.2 Coloque o nome do filme desejado em seguida clique ao lado em "buscar".
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c531b7be-e43e-49a3-84ba-37bb5b41ff39)
+   <img width="654" alt="Captura de tela 2024-01-23 182728" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/afb159fd-5fbb-4729-a233-7d727f6ad9b9">
 
   
   ## 8. ADICIONAR COMENTARIO
@@ -108,7 +108,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 9.Cadastrar administrador
 
-  
+ <img width="372" alt="Captura de tela 2024-01-23 182536" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d9b8b147-a9db-4b14-82a3-78da4d0692fa">
+
   ## 10. CADASTRAR FILMES
 
    10.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
@@ -160,7 +161,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  
    16.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
 
-   <img width="828" alt="Captura de tela 2024-01-10 231710" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/f8faa77e-4bb9-47a2-b21c-2b269435c24a">
+   <img width="792" alt="Captura de tela 2024-01-23 184145" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fa8fed97-ab22-456b-8fcd-824c69fae061">
+
 
  - 16.3 Clique em "editar filme" após isso coloque título,ano do lançamento,diretor e sinopse, em seguida clique em atualizar filme para confirmar ação.
 
