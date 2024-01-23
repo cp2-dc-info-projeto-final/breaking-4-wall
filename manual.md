@@ -9,7 +9,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Login](#Login)
  - [Logout](#Lpgout)
  - [Enviar email](#Enviaremail)
- - [Visualizar perfil](#Visualizarperfil)
+ - [Editar/excluir/sair](#Visualizarperfil)
  - [Detalhes do filme](#Detalhesdofilme)
  - [Buscar filme](#Buscarfilme)
  - [Adicionar comentario](#Adicionarcomentario)
@@ -91,11 +91,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - 8.1 Ao acessar o site como usuário.
 
  - 8.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo para confirmar ação.
-
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/7e6b3d0f-4c21-45d0-957a-59ab3030c7a7)
-
-
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/c9d9476c-6a65-42b1-a05f-281d286551ff)
 
 
 - PAINEL DE ADMINISTRADORES
