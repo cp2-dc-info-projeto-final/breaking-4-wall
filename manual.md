@@ -64,8 +64,8 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  <img width="377" alt="Captura de tela 2024-01-23 181800" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1e4c083a-ebda-4965-8bcd-73ea662da983">
 
- - 5.1 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
- - 
+ - 5.1 Clique em "editar" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
+   
  - 5.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
 
    <img width="315" alt="Captura de tela 2024-01-10 223036" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d823e320-f51b-4a41-bb55-2adffac96172">
