@@ -62,18 +62,22 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   Visualizar perfil
 
- - 17.1 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
- - 17.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
+ <img width="335" alt="Captura de tela 2024-01-23 181404" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1bba9de8-dfcc-4387-8324-14f87028182d">
+
+ - 5.1 Clique em "editar perfil" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
+ - 
+ - 5.2 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
 
    <img width="315" alt="Captura de tela 2024-01-10 223036" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d823e320-f51b-4a41-bb55-2adffac96172">
 
- - 5.1 Clique em "perfil"
+ - 5.3 Clique em "perfil"
    
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
 
- - 5.2 O usuário será redirecionado para a tela inicial
+ - 5.4 O usuário será redirecionado para a tela inicial
 
-  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d320b232-58cf-4e68-bebc-47d50209409d)
+  <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
+
 
  ## 6. DETALHES DO FILME 
 
