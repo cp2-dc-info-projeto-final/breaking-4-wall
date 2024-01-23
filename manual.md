@@ -40,7 +40,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 2.1 Entre no site
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/44d0f6ca-386b-420b-9847-470e66c2d8c4)
+  <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
 
  - 2.2 Clique em "login" e em seguida coloque o email e a senha e aperte em entrar.
 
