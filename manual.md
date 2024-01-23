@@ -42,7 +42,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
 
+
  - 2.2 Clique em "login" e em seguida coloque o email e a senha e aperte em entrar.
+
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/92ff08d6-b4a9-4e92-90a2-c3bd2b1984fe)
 
@@ -57,6 +59,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## 4. ENVIAR EMAIL
    
  - 4.1 Ao tentar recuperar a senha, o usuário colocará seu email no campo indicado e clicar em continuar para confirmar ação,posterior a issoo usuário receberá em seu email sua nova senha.
+
 
   ## 5. Editar/excluir/sair 
 
@@ -142,7 +145,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    
   <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
 
+
    13.2 O site exibirá o filme escolhido com a categoria escolhida
+
 
    ## 14. VINCULO ENTRE ATOR E FILME
 
