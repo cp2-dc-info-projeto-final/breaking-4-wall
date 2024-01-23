@@ -6,9 +6,9 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 **Lista das Funcionalidades:**
 
 
- -  [Login](#Login)
- - [Logout](#Lpgout)
  - [Cadastro](#Cadastro)
+ - [Login](#Login)
+ - [Logout](#Lpgout)
  - [Enviar email](#Enviaremail)
  - [Visualizar perfil](#Visualizarperfil)
  - [Cadastrar filmes - adm](#Cadastrarfilmes)
