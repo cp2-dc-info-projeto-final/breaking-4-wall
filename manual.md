@@ -87,7 +87,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 6.1 Ao acessar o site como usuário
 
- - 6.2 Clique em "detalhes do filme"
+ - 6.2 Clique em "detalhes do filme" em seguida o usuário poderá ver todas as informações do filme como sinopse, atores, categoria, além disso poderá comentar e ver comentários de outros usuários.
 
    <img width="332" alt="Captura de tela 2024-01-10 224506" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/94f3a8ad-9412-460e-a067-b60ca7a08a1e">
 
