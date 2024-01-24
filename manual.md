@@ -180,7 +180,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/24fddf68-d48e-45ae-89e1-d556a6af5922)
 
-  - 16.4. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao lado em "editar filme" se deseja editar.
+  - 16.4. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao abaixo em "editar filme" se deseja editar.
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
 
