@@ -78,7 +78,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
    
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
 
- - 5.5 O usuário será redirecionado para a tela inicial
+ - 5.5 Ao clicar em "ir para a tela inicial" o usuário será redirecionado para a tela inicial.
 
    <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
 
@@ -116,7 +116,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 - PAINEL DE ADMINISTRADORES
 
   ## 9.Cadastrar administrador
-  - 9.1 Para cadastrar um administrador outro administrador já castrado deverá colocar nome,email e senha e em seguida clicar abaixo em cadastrar para confirmar ação
+  - 9.1 Para cadastrar um administrador outro administrador já castrado deverá colocar nome,email e senha e em seguida clicar abaixo em "cadastrar" para confirmar ação
 
    <img width="372" alt="Captura de tela 2024-01-23 182536" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d9b8b147-a9db-4b14-82a3-78da4d0692fa">
 
