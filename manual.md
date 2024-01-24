@@ -152,7 +152,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    ## 14. VINCULO ENTRE ATOR E FILME
 
-   14.1 Ao acessar o slider, o administrador vai colocar um filme e uma categoria, posterior a isso clicar em "vincular" para confirmar ação.
+   14.1 Ao acessar o slider, o administrador vai colocar um ator e um filme, posterior a isso clicar em "vincular" para confirmar ação.
 
     <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
 
