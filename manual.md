@@ -116,6 +116,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 - PAINEL DE ADMINISTRADORES
 
   ## 9.Cadastrar administrador
+  - 9.1 Para cadastrar um administrador outro administrador já castrado deverá colocar nome,email e senha e em seguida clicar abaixo em cadastrar para confirmar ação
 
    <img width="372" alt="Captura de tela 2024-01-23 182536" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d9b8b147-a9db-4b14-82a3-78da4d0692fa">
 
@@ -185,7 +186,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 17. EXCLUIR ADMINISTRADOR 
 
- - 17.1 Em sua conta de administrador, vá até a barra de excluir perfil e clique em "excluir perfil" para excluir, para editar perfil vá até a barra de editar perfil e clique em "editar perfil.
+ - 17.1 Em sua conta de administrador, vá até a barra de editar perfil e clique em "editar perfil" para confirmar ação, para excluir perfil vá abaixo até a barra de excluir perfil e clique em "excluir perfil" para confirmar ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
 
