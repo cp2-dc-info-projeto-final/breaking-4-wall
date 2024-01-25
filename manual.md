@@ -27,16 +27,22 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
  - [Excluir administrador - adm](#Excluiradministrador)
  
 
+  ## Página Inicial
+  - Onde fica uma parte das funções do site como: Perfil, Cadastro, Login, Barra de busca e os Filmes cadastrados.
+ 
+ <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/bdf9d7f5-dc06-4e5a-a032-f8dd5f55defa">
 
   ## 1. CADASTRAR
 
- - 1.1 Clique para "cadastrar" e em seguida coloque seus dados corretamente, Nome,Email e Senha, depois é so apertar no cadastrar abaixo para confirmar.
+ - 1.1 Clique em "Cadastro" 
+ 
+  <img width="83" alt="Captura de tela 2024-01-23 181230" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/85960bde-9dad-489b-9d50-e91256ea7023">
 
-   <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/bdf9d7f5-dc06-4e5a-a032-f8dd5f55defa">
+- 1.2 Em seguida coloque seus dados corretamente, Nome,Email e Senha, depois é so apertar no cadastrar abaixo para confirmar.
 
-   <img width="83" alt="Captura de tela 2024-01-23 181230" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/85960bde-9dad-489b-9d50-e91256ea7023">
+  <img width="348" alt="Captura de tela 2024-01-25 194030" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/6282cb65-24d5-46e0-b70e-815a85396152">
 
-  ## 2. LOGIN  
+ ## 2. LOGIN  
 
  - 2.1 Entre no site
 
