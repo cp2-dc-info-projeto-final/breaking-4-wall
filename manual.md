@@ -5,7 +5,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## Funcionalidades do usuario 
   
- - [Cadastrar](#1-Cadastro)
+ - [Cadastrar](#1-Cadastrar)
  - [Login](#Login)
  - [Logout](#Lpgout)
  - [Enviar email](#Enviaremail)
