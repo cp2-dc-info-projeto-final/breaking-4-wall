@@ -5,7 +5,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## Funcionalidades do usuario 
   
- - [Cadastro](#Cadastro)
+ - [Cadastrar](#1-Cadastro)
  - [Login](#Login)
  - [Logout](#Lpgout)
  - [Enviar email](#Enviaremail)
@@ -44,82 +44,86 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  ## 2. LOGIN  
 
- - 2.1 Entre no site
-
-   <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
-
-
- - 2.2 Clique em "login" e em seguida coloque o email e a senha e clique em entrar para confirmar ação.
-
-
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/92ff08d6-b4a9-4e92-90a2-c3bd2b1984fe)
-
+ - 2.1 Já cadastrado no site
  
-  ## 3. LOGOUT
- 
- - 3.1 Clique em "sair" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja sair" aperte em OK para confirmar a ação.
+ - Clique em "login"
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d05e27ec-357d-46f1-a060-b5a8370e5512)
+   <img width="142" alt="Captura de tela 2024-01-25 194351" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/413e44e4-d9c3-43b5-aed1-dd448e69e2be">
 
 
-  ## 4. ENVIAR EMAIL
+ - 2.2 E em seguida coloque o email e a senha e clique em entrar para confirmar ação.
+
+<img width="361" alt="Captura de tela 2024-01-25 194554" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/8eb20a62-6b86-402f-be2b-1a5e446f1681">
+
+
+  ## 3. ENVIAR EMAIL
    
- - 4.1 Ao tentar recuperar a senha, o usuário colocará seu email no campo indicado e clicar em continuar para confirmar ação,posterior a issoo usuário receberá em seu email sua nova senha.
+ - 3.1 Ao tentar recuperar a senha, o usuário colocará seu email no campo indicado e clicar em continuar para confirmar ação,posterior a issoo usuário receberá em seu email sua nova senha.
 
    ![img](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d18ff30e-4ccb-4e1c-9e1e-607bcaf0ec0d)
 
-  ## 5. Editar/excluir/sair 
+  ## 4.Perfil Usuário
 
- - 5.1 Clique em Visualizar perfil
+ - 4.1 Clique em Perfil
 
-   <img width="377" alt="Captura de tela 2024-01-23 181800" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1e4c083a-ebda-4965-8bcd-73ea662da983">
+ <img width="66" alt="Captura de tela 2024-01-25 195157" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/735f7db0-504c-490f-adf9-2bb523f74663">
 
- - 5.2 Clique em "editar" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
-   
- - 5.3 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
+ - 4.2 Clique em "editar" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
+ - 4.3 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
+
+ <img width="377" alt="Captura de tela 2024-01-23 181800" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/1e4c083a-ebda-4965-8bcd-73ea662da983">
 
    <img width="315" alt="Captura de tela 2024-01-10 223036" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d823e320-f51b-4a41-bb55-2adffac96172">
 
- - 5.4 Clique em "perfil"
-   
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/8dc78f3f-80b8-48c8-8570-35ee34155c1b)
+ - 4.4 Clique em "Excuir Conta" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja excluir a conta" aperte em OK para confirmar a ação.
 
- - 5.5 Ao clicar em "ir para a tela inicial" o usuário será redirecionado para a tela inicial.
+ <img width="114" alt="Captura de tela 2024-01-25 195547" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/1f3fa0e2-1315-4ebc-8b70-f338f0d381d0">
+
+  - 4.5 Clique em "sair" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja sair" aperte em OK para confirmar a ação.
+
+  <img width="62" alt="Captura de tela 2024-01-25 195914" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/4fbba68d-d5b0-44b6-8c61-1bfc8d78b90c">
+
+ - 4.6 Ao clicar em "ir para a tela inicial" o usuário será redirecionado para a tela inicial.
 
    <img width="948" alt="Captura de tela 2024-01-23 181113" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cd339bcd-018e-45fb-b2a8-3b9df9a396ab">
 
+ ## 5. DETALHES DO FILME 
 
- ## 6. DETALHES DO FILME 
+ - 5.1 Ao acessar o site como usuário
 
- - 6.1 Ao acessar o site como usuário
+ - 5.2 Clique em "detalhes do filme" em seguida o usuário poderá ver todas as informações do filme como sinopse, atores, categoria, avaliação do imdb aonde clica na logo e é redirecionado para o site do imdb, além disso poderá comentar e ver comentários de outros usuários.
 
- - 6.2 Clique em "detalhes do filme" em seguida o usuário poderá ver todas as informações do filme como sinopse, atores, categoria, além disso poderá comentar e ver comentários de outros usuários.
+ <img width="322" alt="Captura de tela 2024-01-25 200520" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/c29f5e57-9c01-426d-9afb-825dd157ccec">
 
-   <img width="332" alt="Captura de tela 2024-01-10 224506" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/94f3a8ad-9412-460e-a067-b60ca7a08a1e">
-
- - 6.3 Detalhes do ator- Ao clicar no nome do ator o usuário poderá ver as informações do ator, como data de nascmento, nacionalidade, gênero e biografia
+ - 5.3 Detalhes do ator- Ao clicar no nome do ator o usuário poderá ver as informações do ator, como data de nascmento, nacionalidade, gênero e biografia
 
    <img width="719" alt="Captura de tela 2024-01-23 190952" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/799cadef-66ca-4432-9c9e-f13e6767e894">
 
+  ## 6. ADICIONAR COMENTARIO
 
+ - 6.1 Ao acessar o site como usuário.
+
+ - 6.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo em "enviar comentário" para confirmar ação.
+
+<img width="541" alt="Captura de tela 2024-01-25 201212" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/38a10592-37f4-4f9a-96dc-a70a2e613e90">
+
+ - 6.3 Após isso seu comentário sera registrado como os de outros usuários.
+ 
+  <img width="610" alt="Captura de tela 2024-01-23 184939" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/5ed9ed95-43c5-4a52-b399-fb46f8bca430">
+ 
   ## 7. BUSCAR FILME
 
  - 7.1 Ao acessar o site como usuário.
    
- - 7.2 Coloque o nome do filme desejado em seguida clique ao lado em "buscar".
+ - 7.2 Coloque o nome ou inicial do filme desejado em seguida clique ao lado em "buscar".
 
-   <img width="654" alt="Captura de tela 2024-01-23 182728" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/afb159fd-5fbb-4729-a233-7d727f6ad9b9">
+   <img width="238" alt="Captura de tela 2024-01-25 202208" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/27f32cb5-8d30-4093-acbe-a0169eaa83e8">
 
-  
-  ## 8. ADICIONAR COMENTARIO
+  - 7.3 Após a busca ele exibe os Filmes encontrados:
 
- - 8.1 Ao acessar o site como usuário.
-
- - 8.2 Clique no local indicado para enviar comentario,comente e em seguida clique abaixo em "enviar comentário" para confirmar ação.
-
-   <img width="610" alt="Captura de tela 2024-01-23 184939" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/5ed9ed95-43c5-4a52-b399-fb46f8bca430">
-
-- PAINEL DE ADMINISTRADORES
+  <img width="623" alt="Captura de tela 2024-01-25 202132" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/06d76cbd-6b40-4436-b621-aed1a6e68bd0">
+ 
+## - PAINEL DE ADMINISTRADORES
 
   ## 9.Cadastrar administrador
   - 9.1 Para cadastrar um administrador outro administrador já castrado deverá colocar nome,email e senha e em seguida clicar abaixo em "cadastrar" para confirmar ação
