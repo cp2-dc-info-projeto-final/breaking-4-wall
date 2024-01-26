@@ -177,9 +177,10 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  ## 14. EDITAR ADMINISTRADOR
 
- - 14.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
+ - 14.1 Clique em "editar admimistrador" após isso coloque o nome, email e a nova senha  desejada, em seguida clique em salvar alterações para confirmar ação.
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
+  <img width="417" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/c94b9ace-df85-4ca2-9135-51d39acb6556">
+
 
 
   ## 15. Consultar Lista De Filmes
