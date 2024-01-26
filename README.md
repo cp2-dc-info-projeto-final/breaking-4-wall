@@ -20,10 +20,10 @@ Estamos comprometidos em criar um ambiente amigável e informativo para todos os
 
 ## Documentação
 
-- [Manual do Usuário](manual.md)
-- [Requisitos](requisitos.md)
-- [Casos de Uso](casos-de-uso.md)
-- [Apresentação](apresentacao.pdf)
+- [Manual do Usuário](Doc/manual.md)
+- [Requisitos](Doc/requisitos.md)
+- [Casos de Uso](Doc/casos-de-uso.md)
+- [Apresentação](Doc/apresentacao.pdf)
 
 ## Modelagem Banco de Dados
 
