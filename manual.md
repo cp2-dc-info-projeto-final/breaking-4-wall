@@ -7,7 +7,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   
  - [Cadastrar](#1-Cadastrar)
  - [Login](#2-Login)
- - [Enviar Email](#3-Enviar)
+ - [EnviarEmail](#3-EnviarEmail)
  - [Perfil Usuário](#4-PerfilUsuário)
  - [Detalhes do filme](#5-Detalhesdofilme)
  - [Adicionar comentario](#6-Adicionarcomentario)
