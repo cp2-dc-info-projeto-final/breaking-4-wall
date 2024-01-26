@@ -3,18 +3,20 @@
 Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colégio Pedro II - Campus Duque de Caxias
 
 ## Integrantes:
- - João Paulo
- - João Vítor
- - Alvaro
- - Pedro da Silva
+ - João Paulo https://github.com/jpcp2
+ - João Vítor https://github.com/Alunocp2jv
+ - Alvaro https://github.com/Alvaro1668
+ - Pedro da Silva https://github.com/pedrosumo23
  - Rodrigo Linhares
 
 ## Descrição do Projeto
- A Breaking 4 Wall é um projeto de blog sobre filmes, aonde ajudaria o usuário a procurar e conhecer filmes.
+ A Breaking 4 Wall é um projeto de blog dedicado ao universo cinematográfico, proporcionando aos usuários uma experiência única na busca e descoberta de filmes. Em nosso site, oferecemos avaliações detalhadas e comentários aprofundados sobre diversos filmes, auxiliando os usuários na decisão de assistir ou não a determinada produção.
 
- O site teria avaliaçoes e comentários sobre os filmes, aonde ajudaria o usuário para ver se valeria ou não a pena assistir o filme.
+Os visitantes têm a opção de navegar pelo site tanto com quanto sem realizar o login. No entanto, é importante ressaltar que usuários não autenticados podem encontrar algumas restrições em relação a determinados recursos.
 
- O usuário poderia navegar pelo site com ou sem login, mas se ele não estiver logado ele teria algumas restrições. 
+Ao se cadastrar e fazer o login, os usuários desbloqueiam funcionalidades exclusivas, permitindo uma experiência mais personalizada. Dessa forma, eles terão acesso a recursos adicionais, participar de discussões na comunidade Breaking 4 Wall.
+
+Estamos comprometidos em criar um ambiente amigável e informativo para todos os apaixonados por cinema, garantindo que a Breaking 4 Wall seja uma plataforma indispensável na jornada cinematográfica de cada usuário.
 
 ## Documentação
 
@@ -27,7 +29,6 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
 
 
-## Documento de Requisitos
 
 ## Requisitos Funcionais
 
