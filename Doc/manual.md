@@ -75,8 +75,6 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 4.3 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
 
-   <img width="315" alt="Captura de tela 2024-01-10 223036" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d823e320-f51b-4a41-bb55-2adffac96172">
-
  - 4.4 Clique em "Excuir Conta" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja excluir a conta" aperte em OK para confirmar a ação.
 
  <img width="114" alt="Captura de tela 2024-01-25 195547" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/1f3fa0e2-1315-4ebc-8b70-f338f0d381d0">
