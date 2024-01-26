@@ -71,10 +71,13 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
  - 4.2 Clique em "editar" após isso coloque o nome,email e a senha nova desejada, em seguida clique em atualizar para confirmar ação.
 
-<img width="270" alt="Captura de tela 2024-01-25 203235" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/09a7646c-4023-4d42-a497-418336cf18e6">
+<img width="351" alt="Captura de tela 2024-01-25 235607" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/6104c76f-b427-4b27-b93a-707fecc3ef99">
+
 
  - 4.3 O usuário não precisa necessariamente atualizar todos os seus dados, somente os que forem desejado.
 
+ <img width="270" alt="Captura de tela 2024-01-25 203235" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/09a7646c-4023-4d42-a497-418336cf18e6">
+ 
  - 4.4 Clique em "Excuir Conta" e posterior a isso aparecerá uma mensagem falando "tem certeza que deseja excluir a conta" aperte em OK para confirmar a ação.
 
  <img width="114" alt="Captura de tela 2024-01-25 195547" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/1f3fa0e2-1315-4ebc-8b70-f338f0d381d0">
