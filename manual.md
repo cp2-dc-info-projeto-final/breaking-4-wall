@@ -15,15 +15,17 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## Funcionalidades do administrador
   
- - [Cadastrar administrador - adm](#Cadastraradministrador)
- - [Cadastrar filmes - adm](#Cadastrarfilmes)
- - [Cadastrar categoria - adm](#Cadastrarcategoria)
- - [Cadastrar atores - adm](#Cadastraratores)
- - [Vinculo entre filme e categoria - adm](#Vinculoatorecategoria)
- - [Vinculo entre ator e filme - adm](#Vinculoatuaçoes)
- - [Editar administrador - adm](#Editaradministrador)                                       
- - [Consultar lista de filmes - adm](#Listadefilmes)
- - [Excluir administrador - adm](#Excluiradministrador)
+ - [Cadastrar administrador - adm](#8-Cadastraradministrador)
+ - [Cadastro de Filmes - adm](#9-Cadastrodefilmes)
+ - [Cadastro de Categoria - adm](#10-Cadastrodecategoria)
+ - [Cadastro de Atores - adm](#11-Cadastrodeatores)
+ - [Vinculo entre filme e categoria - adm](#12-Vinculoentrefilmeecategoria)
+ - [Vinculo entre ator e filme - adm](#13-Vinculoentreatorefilme)
+ - [Editar administrador - adm](#14-Editaradministrador)                                       
+ - [Consultar lista de filmes - adm](#15-ConsultarListadefilmes)
+ -  [Lista de Cadastrados - adm](#16-ListadeCadastrados)
+ - [Excluir administrador - adm](#17-Excluiradministrador)
+
  
 
   ## Página Inicial
@@ -136,55 +138,55 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ## 9. Cadastro de Filmes
 
-   10.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, avaliação do imdb em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
+   9.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, avaliação do imdb em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
    
    <img width="281" alt="Captura de tela 2024-01-25 205614" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/f18dfc43-d482-4245-9553-1c8c6622a615">
 
- ## 11. Cadastro de Categoria
+ ## 10. Cadastro de Categoria
 
-   11.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
+   10.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
 
    <img width="244" alt="Captura de tela 2024-01-10 222531" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/4c05631a-3fe5-4230-b4fd-cb28a4a55e05">
 
   
-  ## 12. CADASTRAR ATOR
+  ## 11. Cadastro de Ator
   
-  12.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
+  11.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
 
   <img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
   
 
-  ## 13. VINCULO ENTRE FILME E CATEGORIA 
+  ## 12. Vincula Entre Filme e Categoria 
 
-   13.1 Ao acessar o slider, o administrador vai colocar um filme e categoria, posterior a isso clicar em "vincular" para confirmar ação.
+   12.1 Ao acessar o slider, o administrador vai colocar um filme e categoria, posterior a isso clicar em "vincular" para confirmar ação.
    
   <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
 
 
-   13.2 O site exibirá o filme escolhido com a categoria escolhida
+   12.2 O site exibirá o filme escolhido com a categoria escolhida
 
 
-   ## 14. VINCULO ENTRE ATOR E FILME
+   ## 13. Vinculo Entre Ator e Filme
 
-   14.1 Ao acessar o slider, o administrador vai colocar um ator e um filme, posterior a isso clicar em "vincular" para confirmar ação.
+   13.1 Ao acessar o slider, o administrador vai colocar um ator e um filme, posterior a isso clicar em "vincular" para confirmar ação.
 
    <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
 
-   - 14.2 O site exibirá o filme com os atores de determinado filme
+   - 13.2 O site exibirá o filme com os atores de determinado filme
 
 
- ## 15. EDITAR ADMINISTRADOR
+ ## 14. EDITAR ADMINISTRADOR
 
- - 15.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
+ - 14.1 Clique em "editar admimistrador" após isso coloque o nome e o email novo desejado, em seguida clique em salvar alterações para confirmar ação.
 
    ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/0e6b71ce-bf8a-46e9-8c8d-cd5d549308b9)
 
 
-  ## 16. CONSULTAR LISTA DE FILMES
+  ## 15. Consultar Lista De Filmes
  
-  - 16.1 Em sua conta de administrador
+  - 15.1 Em sua conta de administrador
  
-   16.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
+   15.2 Clique em "lista de filmes" após isso o admimistrador terá a visão da tela com ano do lançamento diretor e sinopse do filme,ao lado uma barra com a opção "excluir" para excluir filme e outra "editar" para editar filme.
 
    <img width="792" alt="Captura de tela 2024-01-23 184145" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fa8fed97-ab22-456b-8fcd-824c69fae061">
 
@@ -195,23 +197,25 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   - 16.4. Em sua conta de administrador, clique em "excluir filme" se deseja excluir e ao abaixo em "editar filme" se deseja editar.
 
-  ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
+ <img width="51" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/bdd1abfb-d57a-4161-8564-316bb5d03e44">
 
-  ## 17. Lista de Cadastrados
-    - 17.1 O Administrador acessa a lista e vê todos os usuários cadastrados.
 
-  <img width="645" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/072daaa6-69a7-48fb-bbca-3634daeb277b">
+  ## 16. Lista de Cadastrados
+  - 16.1 O Administrador acessa a lista e vê todos os usuários cadastrados.
 
-    - 17.2 O ADM pode tanto excluir o Usuário como edita-lo após clicar em editar, o adm atualiza as informações para o usuário que náo consegue fazer por conta própia.
+    <img width="645" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/072daaa6-69a7-48fb-bbca-3634daeb277b">
 
-  <img width="647" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/80176140-b47d-4e2f-b30d-b80cc667fbf7">
+  - 16.2 O ADM pode tanto excluir o Usuário como edita-lo após clicar em editar, o adm atualiza as informações para o usuário que náo consegue fazer por conta própia.
+
+    <img width="647" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/80176140-b47d-4e2f-b30d-b80cc667fbf7">
 
   
-  ## 17. EXCLUIR ADMINISTRADOR 
+  ## 17. Excluir Administrador 
 
  - 17.1 Em sua conta de administrador, vá até a barra de editar perfil e clique em "editar perfil" para confirmar ação, para excluir perfil vá abaixo até a barra de excluir perfil e clique em "excluir perfil" para confirmar ação.
 
-   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/62341926-972a-44af-8242-a933b3147da8)
+ <img width="499" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/18996a48-bc57-43d1-9cc9-23a70fd9884b">
+
 
  
 
