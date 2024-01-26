@@ -205,7 +205,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## 16. Lista de Cadastrados
   - 16.1 O Administrador acessa a lista e vê todos os usuários cadastrados.
 
-    <img width="645" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/072daaa6-69a7-48fb-bbca-3634daeb277b">
+   <img width="647" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/823e6e8d-8672-4fef-96d7-851ce3b3dbd5">
 
   - 16.2 O ADM pode tanto excluir o Usuário como edita-lo após clicar em editar, o adm atualiza as informações para o usuário que náo consegue fazer por conta própia.
 
