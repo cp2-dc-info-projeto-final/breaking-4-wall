@@ -3,10 +3,10 @@
 Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colégio Pedro II - Campus Duque de Caxias
 
 ## Integrantes:
- - João Paulo https://github.com/jpcp2
- - João Vítor https://github.com/Alunocp2jv
- - Alvaro https://github.com/Alvaro1668
- - Pedro da Silva https://github.com/pedrosumo23
+ - João Paulo - https://github.com/jpcp2
+ - João Vítor - https://github.com/Alunocp2jv
+ - Alvaro - https://github.com/Alvaro1668
+ - Pedro da Silva - https://github.com/pedrosumo23
  - Rodrigo Linhares
 
 ## Descrição do Projeto
