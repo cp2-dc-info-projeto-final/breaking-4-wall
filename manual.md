@@ -6,13 +6,12 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   ## Funcionalidades do usuario 
   
  - [Cadastrar](#1-Cadastrar)
- - [Login](#Login)
- - [Logout](#Lpgout)
- - [Enviar email](#Enviaremail)
- - [Editar/excluir/sair](#Editar/excluir/sair)
- - [Detalhes do filme](#Detalhesdofilme)
- - [Buscar filme](#Buscarfilme)
- - [Adicionar comentario](#Adicionarcomentario)
+ - [Login](#2-Login)
+ - [Enviar email](#3-EnviarEmail)
+ - [Perfil Usuário](#4-PerfilUsuário)
+ - [Detalhes do filme](#5-Detalhesdofilme)
+ - [Adicionar comentario](#6-Adicionarcomentario)
+ - [Buscar filme](#7-Buscarfilme)
 
   ## Funcionalidades do administrador
   
@@ -125,37 +124,41 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
   <img width="623" alt="Captura de tela 2024-01-25 202132" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/06d76cbd-6b40-4436-b621-aed1a6e68bd0">
  
 ## - PAINEL DE ADMINISTRADORES
+  - Painel onde o ADM cadastra filme, ator e gerência usuários.
 
-  ## 9.Cadastrar administrador
-  - 9.1 Para cadastrar um administrador outro administrador já castrado deverá colocar nome,email e senha e em seguida clicar abaixo em "cadastrar" para confirmar ação
+<img width="838" alt="Captura de tela 2024-01-25 205038" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/5a7987b9-6450-4576-8958-f5eea34766f7">
+
+
+  ## 8.Cadastrar administrador
+  - 8.1 Para cadastrar um administrador outro administrador já castrado deverá colocar nome,email e senha e em seguida clicar abaixo em "cadastrar" para confirmar ação
 
    <img width="372" alt="Captura de tela 2024-01-23 182536" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d9b8b147-a9db-4b14-82a3-78da4d0692fa">
 
-  ## 10. CADASTRAR FILMES
+  ## 9. Cadastro de Filmes
 
-   10.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
+   10.1 Aperte na opção "cadastrar filmes" em seguida coloque o título,ano do lançamento,diretor,atores e sinopse, avaliação do imdb em seguida clique abaixo em "cadastrar filme" pra confirmar a ação.
    
-    <img width="310" alt="Captura de tela 2024-01-10 221740" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/ba2e2930-7aee-471a-9e57-fb592437ba57">
+   <img width="281" alt="Captura de tela 2024-01-25 205614" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/f18dfc43-d482-4245-9553-1c8c6622a615">
 
-
-  ## 11. CADASTRAR CATEGORIA
+ ## 11. Cadastro de Categoria
 
    11.1 Aperte na opção "cadastrar categoria" em seguida o nome da categoria após é so clicar abaixo em "cadastrar" pra confirmar a ação.
 
-    <img width="244" alt="Captura de tela 2024-01-10 222531" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/4c05631a-3fe5-4230-b4fd-cb28a4a55e05">
+   <img width="244" alt="Captura de tela 2024-01-10 222531" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/4c05631a-3fe5-4230-b4fd-cb28a4a55e05">
 
   
   ## 12. CADASTRAR ATOR
   
   12.1 Aperte em "Cadastrar ator" em seguida coloque o nome,data de nascimento,nacionalidade,genero e biografia, em seguida clique em "cadastrar ator" para confirmar a ação.
 
-    <img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
+  <img width="378" alt="Captura de tela 2024-01-10 222003" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/9941462b-3578-42b7-9ca8-4ec210695e43">
   
 
   ## 13. VINCULO ENTRE FILME E CATEGORIA 
 
    13.1 Ao acessar o slider, o administrador vai colocar um filme e categoria, posterior a isso clicar em "vincular" para confirmar ação.
-    <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
+   
+  <img width="295" alt="Captura de tela 2024-01-10 222624" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d80c16f0-0468-4d1f-adca-95fc5e6eb9a5">
 
 
    13.2 O site exibirá o filme escolhido com a categoria escolhida
@@ -165,7 +168,7 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
    14.1 Ao acessar o slider, o administrador vai colocar um ator e um filme, posterior a isso clicar em "vincular" para confirmar ação.
 
-    <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
+   <img width="339" alt="Captura de tela 2024-01-10 222125 (1)" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/fd51056a-c786-4516-bcee-67ff354c000b">
 
    - 14.2 O site exibirá o filme com os atores de determinado filme
 
@@ -194,6 +197,16 @@ Esse é o manual de usuário do site braking-4 wall, feito para auxialiar direta
 
   ![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/a044dc49-e6c7-4f84-a7d2-4575e788b40b)
 
+  ## 17. Lista de Cadastrados
+    - 17.1 O Administrador acessa a lista e vê todos os usuários cadastrados.
+
+  <img width="645" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/072daaa6-69a7-48fb-bbca-3634daeb277b">
+
+    - 17.2 O ADM pode tanto excluir o Usuário como edita-lo após clicar em editar, o adm atualiza as informações para o usuário que náo consegue fazer por conta própia.
+
+  <img width="647" alt="image" src="https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/80176140-b47d-4e2f-b30d-b80cc667fbf7">
+
+  
   ## 17. EXCLUIR ADMINISTRADOR 
 
  - 17.1 Em sua conta de administrador, vá até a barra de editar perfil e clique em "editar perfil" para confirmar ação, para excluir perfil vá abaixo até a barra de excluir perfil e clique em "excluir perfil" para confirmar ação.
