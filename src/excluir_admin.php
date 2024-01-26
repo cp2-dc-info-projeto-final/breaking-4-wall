@@ -4,8 +4,8 @@ require_once 'conecta.php';
 
 // Verifica se o usuário está logado e se o ID foi passado
 if (!isset($_GET['id'], $_SESSION['admin_id']) || $_GET['id'] != $_SESSION['admin_id']) {
-    // Redireciona para a página de login ou exibe uma mensagem de erro
-    exit('Operação não permitida.');
+    // Se não estiver logado ou o ID não corresponder, não faça nada (nenhuma mensagem será exibida)
+    // Você pode adicionar lógica adicional aqui, se necessário
 }
 
 $adminId = $_GET['id'];
@@ -27,13 +27,12 @@ try {
     
     // Verifica se a exclusão foi bem-sucedida
     if ($stmt->affected_rows > 0) {
-        echo "Administrador excluído com sucesso.";
         // Se você estiver usando sessões para armazenar informações do administrador, limpe-as aqui
         unset($_SESSION['admin_id']);
         // Commit da transação
         $conn->commit();
         // Redireciona para a página de login ou para a lista de administradores
-        header('Location: login_adm.php');
+        header('Location: cadastro_adm.php');
         exit;
     } else {
         throw new Exception('Nenhum administrador foi excluído.');
@@ -41,7 +40,7 @@ try {
 } catch (Exception $e) {
     // Se ocorrer algum erro, desfaz as alterações
     $conn->rollback();
-    exit('Erro ao excluir administrador: ' . $e->getMessage());
+    // Você pode registrar ou lidar com o erro de alguma forma, mas evite exibir detalhes sensíveis no navegador
 } finally {
     // Fecha a declaração e a conexão
     $stmt->close();
