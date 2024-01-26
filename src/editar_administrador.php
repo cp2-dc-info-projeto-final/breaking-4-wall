@@ -4,30 +4,55 @@ require_once 'conecta.php';
 
 $adminId = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
-$adminId = isset($_GET['id']) ? intval($_GET['id']) : 0;
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    
-    $sql = "UPDATE Cadastrados SET nome = ?, email = ? WHERE id = ?";
+    $nome = isset($_POST['nome']) ? $_POST['nome'] : null;
+    $email = isset($_POST['email']) ? $_POST['email'] : null;
+    $senhaAtual = isset($_POST['senha_atual']) ? $_POST['senha_atual'] : null;
+    $novaSenha = isset($_POST['nova_senha']) ? $_POST['nova_senha'] : null;
 
-    $stmt = $conn->prepare($sql);
-    if ($stmt) {
-        $stmt->bind_param("ssi", $nome, $email, $adminId);
-        $stmt->execute();
-        if ($stmt->affected_rows > 0) {
-            echo "Informações atualizadas com sucesso!";
+    $sqlSelect = "SELECT senha FROM Administradores WHERE id = ?";
+    $stmtSelect = $conn->prepare($sqlSelect);
+    $stmtSelect->bind_param("i", $adminId);
+    $stmtSelect->execute();
+    $resultSelect = $stmtSelect->get_result();
+    $row = $resultSelect->fetch_assoc();
+    $senhaAtualBanco = $row['senha'];
+
+    if (empty($senhaAtual) || password_verify($senhaAtual, $senhaAtualBanco) || empty($senhaAtualBanco)) {
+        // A senha atual está correta ou não há senha definida, então podemos proceder com a atualização
+
+        if (!empty($novaSenha)) {
+            $senhaHash = password_hash($novaSenha, PASSWORD_DEFAULT);
         } else {
-            echo "Nenhuma informação foi alterada.";
+            $senhaHash = $senhaAtualBanco; // Mantém a senha existente se não for fornecida uma nova senha
         }
-        $stmt->close();
+
+        $sqlUpdate = "UPDATE Administradores SET usuario = COALESCE(?, usuario), email = COALESCE(?, email), senha = ? WHERE id = ?";
+        $stmtUpdate = $conn->prepare($sqlUpdate);
+        
+        if ($stmtUpdate) {
+            $stmtUpdate->bind_param("sssi", $nome, $email, $senhaHash, $adminId);
+            $stmtUpdate->execute();
+
+            if ($stmtUpdate->affected_rows > 0) {
+                header("Location: dashboard.php");
+                exit();
+            } else {
+                echo "Nenhuma informação foi alterada.";
+            }
+
+            $stmtUpdate->close();
+        } else {
+            echo "Erro ao preparar a consulta: " . $conn->error;
+        }
     } else {
-        echo "Erro ao preparar a consulta: " . $conn->error;
+        echo "Senha atual incorreta. Tente novamente.";
     }
+
+    $stmtSelect->close();
 }
 
-$sql = "SELECT nome, email FROM Cadastrados WHERE id = ?";
+$sql = "SELECT usuario, email FROM Administradores WHERE id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $adminId);
 $stmt->execute();
@@ -35,6 +60,7 @@ $result = $stmt->get_result();
 $adminInfo = $result->fetch_assoc();
 $stmt->close();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -67,7 +93,8 @@ $stmt->close();
             color: #333;
         }
         input[type="text"],
-        input[type="email"] {
+        input[type="email"],
+        input[type="password"] {
             width: calc(100% - 22px);
             padding: 10px;
             margin-top: 5px;
@@ -98,13 +125,12 @@ $stmt->close();
 <body>
 
 <form action="editar_administrador.php?id=<?php echo $adminId; ?>" method="post">
-    Usuario: <input type="text" name="nome" value="<?php echo htmlspecialchars($adminInfo['nome']); ?>"><br>
+    Usuário: <input type="text" name="nome" value="<?php echo htmlspecialchars($adminInfo['usuario']); ?>"><br>
     Email: <input type="email" name="email" value="<?php echo htmlspecialchars($adminInfo['email']); ?>"><br>
+    Senha Atual: <input type="password" name="senha_atual"><br>
+    Nova Senha: <input type="password" name="nova_senha"><br>
     <input type="submit" value="Salvar Alterações">
 </form>
 
 </body>
 </html>
-
-
-
