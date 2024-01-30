@@ -180,4 +180,6 @@ UPDATE Filmes SET AvaliacaoImdb = 8.4 WHERE Titulo = 'Vingadores: Ultimato';
 UPDATE Filmes SET AvaliacaoImdb = 8.6 WHERE Titulo = 'O Exorcista';
 
 
-
+-- ADM que ja vem cadastro 
+INSERT INTO Administradores (usuario, email, senha)
+VALUES ('br4wadm tcc', 'breakingwall4@gmail.com', '$2y$10$VjzjZqi3s1IlpoZuqrVBVOz2iAfFO76N68eWDebY5/Y9Awjjh1n2W');
