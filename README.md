@@ -27,7 +27,8 @@ Estamos comprometidos em criar um ambiente amigável e informativo para todos os
 
 ## Modelagem Banco de Dados
 
-https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/https://linksharing.samsungcloud.com/cDoD0yHK65Nf
+![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/ca755d55-74b5-4d96-b1d4-837e0ebf8ac2)
+
 
 
 ## Requisitos Funcionais
