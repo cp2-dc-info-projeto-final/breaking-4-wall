@@ -5,7 +5,7 @@ require_once 'conecta.php';
 
 // Verifica se o usuário está logado e se é um administrador
 if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header('Location: login.html');
+    header('Location: login.php');
     exit;
 }
 
