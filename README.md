@@ -3,9 +3,9 @@
 Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colégio Pedro II - Campus Duque de Caxias
 
 # Login do ADM: 
-Usuario: br4wadm tcc 
-Email: Breakingwall4@gmail.com
-Senha: 12345678
+ - Usuario: br4wadm tcc 
+ - Email: Breakingwall4@gmail.com
+ - Senha: 12345678
 
 ## Integrantes:
  - João Paulo - https://github.com/jpcp2
