@@ -4,7 +4,7 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
 
 # Login do ADM: 
  - Usuario: br4wadm tcc 
- - Email: Breakingwall4@gmail.com
+ - Email: breakingwall4@gmail.com
  - Senha: 12345678
 
 ## Integrantes:
