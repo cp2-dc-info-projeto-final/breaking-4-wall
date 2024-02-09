@@ -159,7 +159,7 @@ O sistema deve ser acessível em diferentes dispositivos e tamanhos de tela.
 3.	O sistema verifica a validade das informações.
 4.	O sistema cria uma nova conta para o usuário.
 
- # Fluxo Alternativo A
+ # Fluxo Alternativo A - Usuário insere informações erradas no campo de cadastro
 
 ![WhatsApp Image 2023-10-15 at 00 26 32](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/554b5d15-0931-4309-aed6-c3503cf141ef)
 
@@ -188,7 +188,7 @@ e pede ao usuário para tentar novamente.
 
 ![WhatsApp Image 2023-10-15 at 00 26 30 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d4c8d2cf-c865-476f-af79-29bf47fa0c4b)
 
- # Fluxo alternativo A
+ # Fluxo alternativo A - Usuário insere e-mail ou senha incorretos
    
 1. O usuário insere um nome de usuário e/ou senha incorretos.
 2. O sistema não consegue autenticar as credenciais e exibe uma mensagem de erro.
@@ -213,7 +213,7 @@ e pede ao usuário para tentar novamente.
 
 • Pós-condições: O usuário vê os resultados da pesquisa.
 
- # Fluxo alternativo A
+ # Fluxo alternativo A - Usuário busca filme não cadastrado no bd
 
 ![WhatsApp Image 2023-10-15 at 00 26 33](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/941a495c-452b-49e0-8ad1-f024c186ce80)
 
@@ -240,7 +240,7 @@ e pede ao usuário para tentar novamente.
  • Pós-condições: O usuário obtém informações detalhadas sobre o filme.
 
 
- # Fluxo alternativo A
+ # Fluxo alternativo A - Usuário precisa estar logado para comentar 
  ![0](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/142441842/b541f6c0-5c2b-4ca6-b89f-e40110cf0251)
 
 
@@ -361,7 +361,7 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
  
  # CDU Explorar Filmes Populares (tela inicial) (08)
 
- # Fluxo principal
+ # Fluxo principal - Erro ao acessa filme populares
 
 ![WhatsApp Image 2023-10-15 at 00 26 34](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/cfff6b30-bd07-427d-989b-863b89a0fbdb)
 
@@ -402,7 +402,7 @@ sociais
 
  • Pós-condições: O perfil do usuário é personalizado de acordo com suas preferências.
 
- # Fluxo alternativo A-
+ # Fluxo alternativo A - Erro ao editar perfil
 
 ![WhatsApp Image 2023-10-15 at 00 26 34 (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/90862fae-126c-4300-b175-bf3cc4500a0e)
 
