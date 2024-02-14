@@ -117,6 +117,19 @@ o sistema deve ter uma boa aparência, padronizado e explicativo.
 
 O sistema deve ser acessível em diferentes dispositivos e tamanhos de tela.
   
+## RNF 06
+O sistema deve ser altamente disponível, garantindo um tempo de atividade mínimo e rápida recuperação em caso de falhas.
+
+## RNF 07
+O desempenho do sistema deve ser otimizado para garantir tempos de resposta rápidos, especialmente em operações críticas.
+
+## RNF 08
+A segurança do sistema deve incluir medidas de proteção contra ataques de segurança, como ataques de injeção de SQL, XSS (Cross-Site Scripting) e CSRF (Cross-Site Request Forgery).
+
+## RNF 09
+O sistema deve ser escalável, capaz de lidar com um aumento significativo no número de usuários e no volume de dados sem comprometer o desempenho.
+
+##
 
 # Documento de Casos de Uso
 
