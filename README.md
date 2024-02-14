@@ -12,7 +12,7 @@ Projeto Final do Curso Técnico Integrado de Desenvolvimento de Sistemas - Colé
  - João Vítor - https://github.com/Alunocp2jv
  - Alvaro - https://github.com/Alvaro1668
  - Pedro da Silva - https://github.com/pedrosumo23
- - Rodrigo Linhares
+ - Rodrigo Linhares - 
 
 ## Descrição do Projeto
  A Breaking 4 Wall é um projeto de blog dedicado ao universo cinematográfico, proporcionando aos usuários uma experiência única na busca e descoberta de filmes. Em nosso site, oferecemos avaliações detalhadas e comentários aprofundados sobre diversos filmes, auxiliando os usuários na decisão de assistir ou não a determinada produção.
@@ -365,7 +365,9 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
 
 8. Opção de Voltar ao Menu Principal: O administrador é redirecionado de volta ao menu principal do sistema de gerenciamento de filmes, onde pode escolher entre outras opções disponíveis.
 
-Fluxo Alternativo: Cadastro de Filme já Existente
+# Fluxo Alternativo B -  Cadastro de Filme já Existente:
+
+![Recuperação de Senha (1)-Page-1 drawio (3)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/151775051/25577807-f099-4308-a264-db64bd819aec)
 
 1. Após selecionar a opção de cadastrar um novo filme, o sistema exibe o formulário de cadastro de filmes.
 2. O administrador preenche todas as informações necessárias para o novo filme.
@@ -379,9 +381,6 @@ a. Alterar o título ou o ano de lançamento do filme.
 b. Cancelar o processo de cadastro do filme.
 9. Se o administrador optar por alterar as informações, o fluxo retorna ao passo 3.
 10. Se o administrador optar por cancelar o processo de cadastro, o fluxo é encerrado e nenhum filme é cadastrado no sistema.
-
-
-
 
 
  # CDU  Gerenciamento de Usuários (07)
@@ -547,6 +546,8 @@ Pós-condições:
 
 As informações do administrador (nome, email e/ou senha) são atualizadas no sistema.
 
+![Recuperação de Senha (1)-Page-1 drawio (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/151775051/fd90bf96-bae6-482a-925d-3a3f733b80d6)
+
 Fluxo Alternativo A -  Alteração de Senha erro
 
 
@@ -557,8 +558,7 @@ Fluxo Alternativo A -  Alteração de Senha erro
 5. Se a senha atual estiver correta e a nova senha atender aos critérios de segurança, o sistema atualiza a senha no banco de dados.
 6. Caso contrário, o sistema exibe uma mensagem de erro informando que a senha atual está incorreta ou que a nova senha não atende aos critérios de segurança.
 
-
-
+![Recuperação de Senha (1)-Page-1 drawio (2)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/151775051/66f571d4-9207-40bc-abb5-4d463ed95778)
 
 
 
