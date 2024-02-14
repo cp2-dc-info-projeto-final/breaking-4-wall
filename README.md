@@ -146,6 +146,7 @@ O sistema deve ser escalável, capaz de lidar com um aumento significativo no n�
  - [CDU 09](#CDU-09): Personalizaçao de perfil
  - [CDU 10](#CDU-10): Recuperar senha
  - [CDU 11](#CDU-11): Logout
+ - [CDU 12](#CDU-12): Editar ADM
 
    
 ## Lista dos Atores
