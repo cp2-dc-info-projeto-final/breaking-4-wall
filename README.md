@@ -182,6 +182,32 @@ O sistema deve ser escalável, capaz de lidar com um aumento significativo no n�
 e pede ao usuário para tentar novamente.
 3. O usuário tenta o registro novamente.
 
+ # Fluxo Alternativo B - Usuário Cadastrado Redirecionado para o Login
+
+Ator Principal: Usuário Cadastrado
+
+Pré-condições:
+
+Usuário cadastrado no sistema.
+Acesso à página inicial do sistema.
+Fluxo Principal:
+
+1. O usuário acessa a página inicial do sistema.
+2. O sistema detecta que o usuário já está cadastrado.
+3. O sistema exibe uma mensagem de boas-vindas personalizada ao usuário, informando que ele já possui um cadastro.
+4. O sistema exibe um botão ou link "Fazer Login".
+5. O usuário clica no botão/link "Fazer Login".
+6. O sistema redireciona o usuário para a página de login.
+7. O usuário fornece suas credenciais de login (por exemplo, e-mail e senha).
+8. O sistema verifica as credenciais fornecidas pelo usuário.
+9. Se as credenciais estiverem corretas, o sistema autentica o usuário e redireciona para a página inicial do sistema, dando acesso às funcionalidades disponíveis para usuários cadastrados.
+10. Se as credenciais estiverem incorretas, o sistema exibe uma mensagem de erro e permite que o usuário tente fazer login novamente.
+Pós-condições:
+
+Usuário logado e pode acessar funcionalidades restritas.
+
+
+ # Fluxo Alternativo C - Usuario nao registrado 
 ![WhatsApp Image 2023-10-15 at 00 26 32 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d1672a1d-bd4d-43fb-8669-46388b894cc8)
 
  # Fazer Login CDU (02)
