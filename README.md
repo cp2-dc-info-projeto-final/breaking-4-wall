@@ -154,8 +154,8 @@ O sistema deve ser escalável, capaz de lidar com um aumento significativo no n�
  - usuário nao registrado
  - administrador
 
+![Diagrama Casos de uso (1) drawio](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/151775051/e4f4b8d5-648d-4fcf-9562-fb5d12ad7b44)
 
-!(![image](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/30b4e23c-22fe-4ac2-817e-a3968a8e8f0e)
 
 
 
