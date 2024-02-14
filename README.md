@@ -206,7 +206,8 @@ Pós-condições:
 
 Usuário logado e pode acessar funcionalidades restritas.
 
-
+![Recuperação de Senha (1)-Page-1 drawio](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/151775051/5035f488-e0f0-4801-975a-154d10696825)
+g
  # Fluxo Alternativo C - Usuario nao registrado 
 ![WhatsApp Image 2023-10-15 at 00 26 32 (1)](https://github.com/cp2-dc-info-projeto-final/breaking-4-wall/assets/143643654/d1672a1d-bd4d-43fb-8669-46388b894cc8)
 
@@ -501,8 +502,39 @@ sociais
 
  • Pós-condições: O usuário foi desconectado com sucesso e não tem mais acesso às funcionalidades restritas do sistema até que faça login novamente.
 
+# CDU: Editar Informações do Administrador (Nome, Email e Senha) (12)
+
+Ator Principal: Administrador
+
+Pré-condições:
+
+O administrador está autenticado no sistema.
+O administrador possui permissão para editar suas próprias informações.
+Fluxo Principal:
+
+1. O administrador acessa a página de configurações ou perfil.
+2. O sistema exibe as informações atuais do administrador, incluindo nome, email e opção para alterar a senha.
+3. O administrador seleciona a opção de edição.
+4. O administrador altera o nome, email e/ou senha nos campos fornecidos.
+5. O administrador confirma as alterações.
+6. O sistema valida as alterações feitas pelo administrador.
+7. Se as alterações forem válidas, o sistema atualiza as informações do administrador no banco de dados.
+8. O sistema exibe uma mensagem de sucesso informando que as alterações foram salvas.
+9. O fluxo é encerrado.
+
+Pós-condições:
+
+As informações do administrador (nome, email e/ou senha) são atualizadas no sistema.
+
+Fluxo Alternativo A -  Alteração de Senha erro
 
 
+O administrador opta por alterar a senha.
+O sistema solicita ao administrador que insira a senha atual e a nova senha desejada.
+O administrador fornece as informações solicitadas.
+O sistema verifica a autenticidade da senha atual.
+Se a senha atual estiver correta e a nova senha atender aos critérios de segurança, o sistema atualiza a senha no banco de dados.
+Caso contrário, o sistema exibe uma mensagem de erro informando que a senha atual está incorreta ou que a nova senha não atende aos critérios de segurança.
 
 
 
