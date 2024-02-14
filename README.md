@@ -323,6 +323,7 @@ g
 Reenvio do Formulário e Conclusão:
 
 Após a revisão e correção, o administrador reenvia o formulário de cadastro de atores. O sistema verifica novamente e, se não houver mais duplicações, conclui o cadastro com sucesso, exibindo uma mensagem de confirmação.
+ 
  # CDU  Gerenciamento de Filmes (06)
 
  # Fluxo principal 
@@ -362,6 +363,25 @@ Após a revisão e correção, o administrador reenvia o formulário de cadastro
 7. Exibição das Informações Atualizadas: Se bem-sucedido, o sistema exibe as informações atualizadas na interface correspondente, refletindo as modificações feitas pelo administrador.
 
 8. Opção de Voltar ao Menu Principal: O administrador é redirecionado de volta ao menu principal do sistema de gerenciamento de filmes, onde pode escolher entre outras opções disponíveis.
+
+Fluxo Alternativo: Cadastro de Filme já Existente
+
+1. Após selecionar a opção de cadastrar um novo filme, o sistema exibe o formulário de cadastro de filmes.
+2. O administrador preenche todas as informações necessárias para o novo filme.
+3. O administrador clica em "Salvar" para adicionar o filme ao sistema.
+4. O sistema verifica se já existe um filme com o mesmo título e ano de lançamento cadastrado.
+5. O sistema detecta que um filme com o mesmo título e ano de lançamento já está cadastrado.
+6. O sistema exibe uma mensagem de erro informando que o filme já existe no sistema.
+7. O administrador é redirecionado de volta ao formulário de cadastro de filmes para corrigir as informações.
+8. O administrador pode optar por:
+a. Alterar o título ou o ano de lançamento do filme.
+b. Cancelar o processo de cadastro do filme.
+9. Se o administrador optar por alterar as informações, o fluxo retorna ao passo 3.
+10. Se o administrador optar por cancelar o processo de cadastro, o fluxo é encerrado e nenhum filme é cadastrado no sistema.
+
+
+
+
 
  # CDU  Gerenciamento de Usuários (07)
 
@@ -529,12 +549,12 @@ As informações do administrador (nome, email e/ou senha) são atualizadas no s
 Fluxo Alternativo A -  Alteração de Senha erro
 
 
-O administrador opta por alterar a senha.
-O sistema solicita ao administrador que insira a senha atual e a nova senha desejada.
-O administrador fornece as informações solicitadas.
-O sistema verifica a autenticidade da senha atual.
-Se a senha atual estiver correta e a nova senha atender aos critérios de segurança, o sistema atualiza a senha no banco de dados.
-Caso contrário, o sistema exibe uma mensagem de erro informando que a senha atual está incorreta ou que a nova senha não atende aos critérios de segurança.
+1. O administrador opta por alterar a senha.
+2. O sistema solicita ao administrador que insira a senha atual e a nova senha desejada.
+3. O administrador fornece as informações solicitadas.
+4. O sistema verifica a autenticidade da senha atual.
+5. Se a senha atual estiver correta e a nova senha atender aos critérios de segurança, o sistema atualiza a senha no banco de dados.
+6. Caso contrário, o sistema exibe uma mensagem de erro informando que a senha atual está incorreta ou que a nova senha não atende aos critérios de segurança.
 
 
 
