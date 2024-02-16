@@ -99,6 +99,7 @@ WHERE usuario = 'nomeusuario';
 DELETE FROM Administradores
 WHERE usuario = 'nomeusuario';
 
+ALTER TABLE Administradores ADD COLUMN tipo VARCHAR(20) NOT NULL DEFAULT 'Admin';
 
 drop TABLE if EXISTS comentarios;
 
