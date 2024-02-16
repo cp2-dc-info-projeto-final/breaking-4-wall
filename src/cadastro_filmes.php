@@ -108,7 +108,7 @@ $stmtAdminLogado->close();
         <input type="text" id="titulo" name="titulo" required><br>
 
         <label for="anoLancamento">Ano de Lançamento:</label>
-        <input type="date" id="anoLancamento" name="anoLancamento" required><br>
+        <input type="number" id="anoLancamento" name="anoLancamento" min="1800" max="2100" required><br>
 
         <label for="diretor">Diretor:</label>
         <input type="text" id="diretor" name="diretor"><br>
