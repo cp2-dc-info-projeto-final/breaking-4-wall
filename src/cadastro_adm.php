@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($stmt->execute()) {
             $message = "O usuário foi cadastrado com sucesso.";
             // Redirecionar para a página de index após o cadastro
-            header("Location: login.php");
+            header("Location: login_adm.php");
             exit; // Não se esqueça do exit após redirecionar
         } else {
             $message = "Erro ao inserir dados: " . $stmt->error;
