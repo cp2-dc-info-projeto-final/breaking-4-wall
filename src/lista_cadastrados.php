@@ -33,26 +33,45 @@ if ($resultAdminLogado->num_rows > 0) {
 
 $stmtAdminLogado->close();
 
-// A lógica para redirecionar para a tela de login foi removida. 
+// Consulta para buscar os usuários cadastrados na tabela Administradores
+$sqlUsersAdmin = "SELECT id, usuario, email FROM Administradores";
+$stmtUsersAdmin = $conn->prepare($sqlUsersAdmin);
 
-$sqlUsers = "SELECT id, nome, email FROM cadastrados";
-$stmtUsers = $conn->prepare($sqlUsers);
-
-if (!$stmtUsers) {
+if (!$stmtUsersAdmin) {
     die('Erro na preparação da consulta: ' . htmlspecialchars($conn->error));
 }
 
-$stmtUsers->execute();
-$resultUsers = $stmtUsers->get_result();
+$stmtUsersAdmin->execute();
+$resultUsersAdmin = $stmtUsersAdmin->get_result();
 
-$usersInfo = [];
-if ($resultUsers->num_rows > 0) {
-    while ($row = $resultUsers->fetch_assoc()) {
-        $usersInfo[] = $row;
+$usersInfoAdmin = [];
+if ($resultUsersAdmin->num_rows > 0) {
+    while ($row = $resultUsersAdmin->fetch_assoc()) {
+        $usersInfoAdmin[] = $row;
     }
 }
 
-$stmtUsers->close();
+$stmtUsersAdmin->close();
+
+// Consulta para buscar os usuários cadastrados na tabela cadastrados
+$sqlUsersCadastrados = "SELECT id, nome, email FROM cadastrados";
+$stmtUsersCadastrados = $conn->prepare($sqlUsersCadastrados);
+
+if (!$stmtUsersCadastrados) {
+    die('Erro na preparação da consulta: ' . htmlspecialchars($conn->error));
+}
+
+$stmtUsersCadastrados->execute();
+$resultUsersCadastrados = $stmtUsersCadastrados->get_result();
+
+$usersInfoCadastrados = [];
+if ($resultUsersCadastrados->num_rows > 0) {
+    while ($row = $resultUsersCadastrados->fetch_assoc()) {
+        $usersInfoCadastrados[] = $row;
+    }
+}
+
+$stmtUsersCadastrados->close();
 $conn->close();
 ?>
 
@@ -107,7 +126,6 @@ $conn->close();
         button[type=submit] {
             padding: 8px 15px;
             border: none;
-            background-color: #e74c3c; /* Vermelho */
             color: white;
             font-size: 14px;
             border-radius: 4px;
@@ -118,6 +136,22 @@ $conn->close();
 
         button[type=submit]:hover {
             background-color: #c0392b; /* Vermelho mais escuro no hover */
+        }
+
+        .btn-excluir {
+            background-color: #e74c3c; /* Vermelho */
+        }
+
+        .btn-excluir:hover {
+            background-color: #c0392b; /* Vermelho mais escuro no hover */
+        }
+
+        .btn-adm {
+            background: -webkit-linear-gradient(-135deg, #fff, rgb(233, 6, 249));
+        }
+
+        .btn-adm:hover {
+            background-color: darkgreen; /* Verde mais escuro no hover */
         }
 
         a {
@@ -145,23 +179,44 @@ $conn->close();
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nome</th>
+                    <th>Usuário/Nome</th>
                     <th>Email</th>
+                    <th>Tipo</th>
                     <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($usersInfo as $user): ?>
+                <?php foreach ($usersInfoAdmin as $user): ?>
+                    <tr>
+                        <td><?php echo htmlspecialchars($user['id']); ?></td>
+                        <td><?php echo htmlspecialchars($user['usuario']); ?></td>
+                        <td><?php echo htmlspecialchars($user['email']); ?></td>
+                        <td>Administrador</td>
+                        <td>
+                            <form action="excluir_admin.php" method="POST" style="display: inline-block; margin-right: 5px;">
+                                <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
+                                <button type="submit" name="delete" class="btn-excluir">Excluir</button>
+                            </form>
+                            <a href="editar_administrador.php?id=<?php echo $user['id']; ?>">Editar</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+                <?php foreach ($usersInfoCadastrados as $user): ?>
                     <tr>
                         <td><?php echo htmlspecialchars($user['id']); ?></td>
                         <td><?php echo htmlspecialchars($user['nome']); ?></td>
                         <td><?php echo htmlspecialchars($user['email']); ?></td>
+                        <td>Usuário</td>
                         <td>
                             <form action="excluir_usuario.php" method="POST" style="display: inline-block; margin-right: 5px;">
                                 <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
-                                <button type="submit" name="delete">Excluir</button>
+                                <button type="submit" name="delete" class="btn-excluir">Excluir</button>
                             </form>
                             <a href="editar_cadastrados.php?id=<?php echo $user['id']; ?>">Editar</a>
+                            <form action="transformar_admin.php" method="POST" style="display: inline-block; margin-right: 5px;">
+                                <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
+                                <button type="submit" name="transformar_admin" class="btn-adm">Tornar Adm </button>
+                            </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>
